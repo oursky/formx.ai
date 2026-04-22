@@ -1,0 +1,662 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# ---------------------------------------------------------------------------
+# HTML extension redirects (Webflow legacy URLs → clean Astro URLs)
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/pricing.html"
+  to = "/pricing"
+  status = 301
+
+[[redirects]]
+  from = "/why-formx.html"
+  to = "/why-formx"
+  status = 301
+
+[[redirects]]
+  from = "/talk-with-us.html"
+  to = "/talk-with-us"
+  status = 301
+
+[[redirects]]
+  from = "/schedule-demo.html"
+  to = "/schedule-demo"
+  status = 301
+
+[[redirects]]
+  from = "/partner-program.html"
+  to = "/partner-program"
+  status = 301
+
+[[redirects]]
+  from = "/referral-program.html"
+  to = "/referral-program"
+  status = 301
+
+[[redirects]]
+  from = "/data-privacy-policy.html"
+  to = "/data-privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-service.html"
+  to = "/terms-of-service"
+  status = 301
+
+[[redirects]]
+  from = "/service-level-agreement.html"
+  to = "/service-level-agreement"
+  status = 301
+
+[[redirects]]
+  from = "/whats-new.html"
+  to = "/whats-new"
+  status = 301
+
+[[redirects]]
+  from = "/products/*.html"
+  to = "/products/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/*.html"
+  to = "/solutions/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/tools/*.html"
+  to = "/tools/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*.html"
+  to = "/blog/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/whats-new/*.html"
+  to = "/whats-new/:splat"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# /documents/* → /solutions/* (documents section was merged into solutions)
+# identity-documents is a slug mismatch — must come before the catch-all
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/documents/identity-documents"
+  to = "/solutions/id-card-ocr"
+  status = 301
+
+[[redirects]]
+  from = "/documents/identity-documents/*"
+  to = "/solutions/id-card-ocr"
+  status = 301
+
+[[redirects]]
+  from = "/documents/*"
+  to = "/solutions/:splat"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# /post/* → /blog/* (legacy blog URL migration)
+# Specific slugs that have no matching /blog/ page go to /blog index.
+# Must come before the catch-all.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/post/best-ocr-software"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/convert-pdf-bank-statements-into-csv"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/customer-loyalty-program-data"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/data-extraction-tools"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/optical-character-recognition"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/uipath-rpa-invoice-receipt-processing-with-ocr-using-formx"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/:slug"
+  to = "/blog/:slug"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Short aliases & legacy page names
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/talk-with-us"
+  to = "/schedule-demo"
+  status = 301
+
+[[redirects]]
+  from = "/sla"
+  to = "/service-level-agreement"
+  status = 301
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms-of-service"
+  status = 301
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/schedule-demo"
+  status = 301
+
+[[redirects]]
+  from = "/case-studies"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/events/formx-genai-academy"
+  to = "/"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Solutions / section moves
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/solutions/receipt"
+  to = "/solutions/receipts"
+  status = 301
+
+# Chain: healthcare → medical → ocr-medical (keep both so direct hits on /medical work)
+[[redirects]]
+  from = "/solutions/healthcare"
+  to = "/solutions/ocr-medical"
+  status = 301
+
+[[redirects]]
+  from = "/solutions/medical"
+  to = "/solutions/ocr-medical"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Misc legacy paths
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/mobile-document-capture/receipt-scanning-sdk"
+  to = "/solutions/receipts"
+  status = 301
+
+[[redirects]]
+  from = "/documents/id-cards"
+  to = "/solutions/id-card-ocr"
+  status = 301
+
+[[redirects]]
+  from = "/category/:splat"
+  to = "/blog-post-category/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/whats-new/smart-learning"
+  to = "/whats-new/2025-09-22"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Tools slug renames
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/tools/invoice-converter"
+  to = "/tools/invoice-extraction"
+  status = 301
+
+[[redirects]]
+  from = "/tools/invoice-data-extraction"
+  to = "/tools/invoice-extractor"
+  status = 301
+
+[[redirects]]
+  from = "/blog/pdf-to-xml-converter"
+  to = "/tools/pdf-to-xml-converter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tools/pdf-to-%5Bxml%5D%28https://www.formx.ai/tools/pdf-to-xml-converter%29-converter"
+  to = "/tools/pdf-to-xml-converter"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Blog slug renames (1:1 remaps to a different slug)
+# force = true needed where the source post still exists as a static file
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/pdf-to-google-sheets"
+  to = "/blog/convert-pdf-to-google-sheets"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/5-best-ocr-software-of-2021-extract-text-from-images"
+  to = "/blog/best-ocr-software"
+  status = 301
+
+[[redirects]]
+  from = "/post/5-best-ocr-software-of-2021-extract-text-from-images"
+  to = "/blog/best-ocr-software"
+  status = 301
+
+[[redirects]]
+  from = "/blog/data-extraction-tools"
+  to = "/blog/best-data-extraction-software"
+  status = 301
+
+[[redirects]]
+  from = "/blog/optical-character-recognition"
+  to = "/blog/what-is-ocr-and-how-business-leverage"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-to-automate-purchase-order-processing-with-ai-for-operational-efficiency"
+  to = "/blog/automate-purchase-orders-with-ai-for-efficiency"
+  status = 301
+
+[[redirects]]
+  from = "/blog/retail-"
+  to = "/blog/retail-automation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-compliance-trends-in-2025-key-insights"
+  to = "/blog/protect-your-business-the-threat-of-fake-bank-statements-and-how-to-defend-yourself"
+  status = 301
+
+[[redirects]]
+  from = "/blog/liveness-detection-a-cornerstone-of-secure-and-convenient-digital-experiences"
+  to = "/blog/google-ocr-how-to-use-free-options-and-ai-alternatives"
+  status = 301
+
+[[redirects]]
+  from = "/blog/hyperautomation-explained-transform-your-business-with-intelligent-automation"
+  to = "/blog/hyperautomation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/unlock-efficiency-a-complete-guide-to-rpa-tools-for-streamlining-your-business-operations"
+  to = "/blog/hyperautomation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/unlocking-efficiency-how-ai-knowledge-management-software-transforms-the-way-you-work"
+  to = "/blog/ai-powered-erp-revolutionizing-invoice-processing"
+  status = 301
+
+[[redirects]]
+  from = "/blog/improve-insurance-customer-experience"
+  to = "/blog/the-8-day-roi"
+  status = 301
+
+[[redirects]]
+  from = "/blog/document-management-workflow"
+  to = "/blog/document-digitization"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/multi-region-server"
+  to = "/blog/ai-for-global-invoice-management-simplified"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → accounting automation guide
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/accounting-automation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/automate-sap-ap-processing-with-ai-ocr-to-save-time-and-reduce-manual-keying"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/mastering-automated-reconciliation-transform-your-financial-processes-with-formx"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/automated-invoice-processing"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/accounts-payable-best-practices"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → scaling corporate operations
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/enterprise-automation-transform-workflows-with-formx-ai"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/automated-form-processing"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+[[redirects]]
+  from = "/blog/expense-automation"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+[[redirects]]
+  from = "/blog/automation-insurance"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+[[redirects]]
+  from = "/blog/data-automation"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+[[redirects]]
+  from = "/blog/best-ocr-software"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+[[redirects]]
+  from = "/blog/data-entry-software"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → invoice OCR / breaking paper bottleneck
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/ai-ocr-revolutionizing-document-processing-with-formx-ai"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/uipath-rpa-invoice-receipt-processing-with-ocr-using-formx"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/intelligent-document-processing"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/conquer-invoice-chaos-automate-processing-with-ocr-invoice-processing"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/conquer-invoice-reconciliation-automation-vs-manual-methods"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/master-bank-reconciliation-with-formx-ai-automated-accurate-and-efficient"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → multilingual / global growth paradox
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/ai-multilingual-document-processing-for-businesses"
+  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/overcoming-multilingual-invoice-processing-challenges"
+  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → healthcare latency tax
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/healthcare-automation"
+  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/unstructured-data-healthcare"
+  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Blog consolidations → developers blueprint / autonomous data pipelines
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/unlock-python-ocr-with-formx-revolutionize-data-extractio"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  status = 301
+
+[[redirects]]
+  from = "/blog/top-ocr-api"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/what-is-ocr-and-how-business-leverage"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/automate-kyc-with-ocr-ai"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
+# Blog pages with no replacement → /blog index
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/idp-ai-transforming-workflow-automation"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/hardware-integrated-idp-boosting-accuracy-efficiency"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-for-multilingual-document-processing"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/generative-ai-for-summarization-decision-making"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-legal-document-review-risk-analysis-revolution"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/extract-pdf-data-to-excel-best-methods-practices"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/convert-pdfs-to-google-docs-easily"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/convert-pdf-to-csv-for-business-analytics"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/convert-pdf-to-csv-easy-accurate-methods"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/free-tools-to-convert-pdfs-to-google-sheets"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/convert-pdf-to-xml-for-seamless-data-integration"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/convert-pdf-tables-to-google-sheets-easily"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/master-the-payable-period-formula-for-cash-flow"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/master-the-days-to-pay-formula-for-business-success"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-powered-document-processing-the-ultimate-guide"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-powered-forms-revolutionizing-data-capture"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-invoice-processing-automate-accounts-payable"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-tools-for-efficient-pdf-data-extraction"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-scalability-matters-in-ai-document-processing"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-powered-document-processing-benefits"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/choose-the-best-iam-solution-for-your-organization"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-revolutionizing-document-workflows"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-driven-document-management-in-2025"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/master-data-parsing-for-effective-data-management"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/transform-semi-structured-data-with-ai-tools"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/three-way-matching-in-accounts-payable-explained"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-in-accounts-payable-transforming-finance"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/automate-invoice-reconciliation-with-ai-tools"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/pdf-data-extraction-trends-in-finance-healthcare"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-powered-inventory-management-for-retail"
+  to = "/blog"
+  status = 301

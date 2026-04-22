@@ -1,0 +1,74 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="Bank Statement Converter | Convert Bank Statement PDF to CSV"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/bank-statement-converter"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title">Bank Statement Converter</h1>
+      <p class="section__header__content">AI powered bank statement converter to instantly convert bank statement PDF to Excel, CSV or JSON</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/bank-statement" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What Data Can I Extract Using This PDF Bank Statement Converter?",
+        answer: `FormX can extract all data needed for businesses to expedite various application processes. These extraction items include but are not limited to the name and address of account owner, open and close balances, issue date of the statement, all transactions, and more.`,
+      },
+      {
+        question: "What Types of Bank Statements Can Be Converted?",
+        answer: `FormX can extract data from all kinds of bank statements with various layouts and formats as it is not a template-based solution. Training a new extractor is also simple and requires as little as one sample image. <a href="https://formextractorai.com/signup" target="_blank">Sign up for a free trial</a> to see how simple it is to automate bank statement data extraction.`,
+      },
+      {
+        question: "How Does FormX Convert PDF Bank Statement to Excel, CSV, or JSON?",
+        answer: `FormX leverages different AI technologies, such as OCR, Machine Learning, Large Language Models like GPT-4, etc., to do more than just converting images of bank statements into machine-encoded texts. It can understand the content of the bank statements, identify relevant data fields, and return them in structured data formats like Excel, CSV, or JSON, which can be directly used by other systems or applications for workflow automation or data analysis.<br />`,
+      },
+      {
+        question: "Is the Extracted Data Safe With FormX?",
+        answer: `Certainly. Bank statement contains financial and personal data that should only be accessible to authorized parties. FormX does not use or store the extracted data in any permanent storage. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "Is The Online PDF Bank Statement Converter Free to Use?",
+        answer: `Yes, this PDF bank statement convert is free to use.<br /><br />If you wish to integrate automated bank statement data extraction with other applications, you can <a href="https://formextractorai.com/signup" target="_blank">sign up for a free trial</a> of FormX or <a href="/talk-with-us" target="_blank">contact us</a> to learn more about how FormX can be of help to your business.<br /><br />FormX offers a more advanced solution with pre-built extraction models, or extractor, including receipt, bank statement, invoice, and more. You can also build your own custom extractor with as little as one sample.`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Make Your Image to Excel Conversion Intelligent and Automated with FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual data entry with FormX to automate data extraction and improve productivity by 10 times." />
+            <StatCard number="92%" label="Accuracy" description="Our proprietary image pre-processing and OCR result post-processing ensure a 92% extraction accuracy, minimizing the need for human intervention." />
+            <StatCard number="6" label="Months" description="On average, businesses can realize the return on investment (ROI) of business automation within 6 months after implementing FormX.ai." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

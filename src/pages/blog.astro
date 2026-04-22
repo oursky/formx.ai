@@ -1,0 +1,78 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import BlogCard from '@/components/blog/BlogCard.astro';
+import { getAllPosts, CATEGORY_LABELS, formatDate } from '@/lib/blog';
+
+const allPosts = await getAllPosts();
+const featuredPost = allPosts[0];
+const remainingPosts = allPosts.slice(1);
+
+const categories = Object.entries(CATEGORY_LABELS);
+---
+
+<PageLayout
+  title="FormX.ai Blog - Document Processing & AI Resources"
+  description="Read the latest articles on AI document processing, OCR, invoice automation, and more from the FormX.ai team."
+  canonicalUrl="https://www.formx.ai/blog"
+>
+  <div class="section blog-hero">
+    <div class="container-default w-container">
+      <h1 class="title blog">Resource Center</h1>
+
+      {/* Featured Post */}
+      {featuredPost && (
+        <div>
+          <a href={`/blog/${featuredPost.id}`} class="card blog-post-featured-last w-inline-block">
+            <div class="card-blog-post-featured-content-last">
+              <div class="badge blog-post-featured">
+                <div class="text-block-4">{CATEGORY_LABELS[featuredPost.data.category]}</div>
+              </div>
+              <h2 class="h3-title-small">{featuredPost.data.title}</h2>
+              <p>{featuredPost.data.excerpt}</p>
+              <div class="divider blog-post-featured"></div>
+              <div class="card-blog-post-featured-about-wrapper">
+                <div class="card-blog-post-date">{formatDate(featuredPost.data.date)}</div>
+              </div>
+            </div>
+            <div class="image-wrapper card-blog-post-featured-last">
+              <img
+                src={featuredPost.data.featured_image}
+                alt={featuredPost.data.featured_image_alt || featuredPost.data.title}
+                class="image card-blog-post-featured-last-image"
+                loading="eager"
+              />
+            </div>
+          </a>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <div class="top-content latest-posts">
+    <div class="container-default w-container">
+      <div class="split-content top-latest-posts-left">
+        <h2>All Articles</h2>
+      </div>
+
+      {/* Category filter tabs */}
+      <div class="blog-categories-grid">
+        <a href="/blog" class="button-blog-category all w-button">All</a>
+        {categories.map(([slug, label]) => (
+          <a href={`/blog-post-category/${slug}`} class="button-blog-category w-button">
+            {label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section blog-posts-section">
+    <div class="container-default w-container">
+      <div class="blog-post-grid">
+        {remainingPosts.map((post) => (
+          <BlogCard {post} />
+        ))}
+      </div>
+    </div>
+  </div>
+</PageLayout>

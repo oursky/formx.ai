@@ -1,0 +1,69 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="P60 Converter - Convert P60 Data Instantly | FormX.ai"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/p60-converter"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title"><span class="heading-gradient">P60 Converter<br/>‍</span>Automatically pull Every Field from a P60</h1>
+      <p class="section__header__content">Upload a P60 PDF or image. FormX reads every field - total pay, tax deducted, National Insurance contributions, employer details - and returns structured data instantly.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/invoice/" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What does this P60 converter do?",
+        answer: `A P60 converter is a tool that automatically reads HMRC Form P60 and converts every field - total pay, tax deducted, National Insurance contributions, and employer details - into structured data without manual entry. FormX uses OCR and AI to convert P60 data into Excel or JSON in seconds. <a href="/talk-with-us">Get in touch</a> to learn more!<br />`,
+      },
+      {
+        question: "What P60 fields does FormX extract?",
+        answer: `FormX converts all standard P60 fields including employee name and NI number (masked), employer name and PAYE reference, total pay, total tax deducted, employee and employer NI contributions, NI category letter, statutory payments, and student loan deductions. <a href="/talk-with-us">Schedule a Demo</a> to see how simple it is to automate P60 form extraction.<br />`,
+      },
+      {
+        question: "What file formats does the P60 converter accept?",
+        answer: `FormX accepts PDF, JPG, and PNG. This includes scanned paper P60s, photographs taken on a phone, and digitally generated PDFs from payroll software such as Sage, Xero, QuickBooks, and ADP. <a href="/talk-with-us">Contact us</a> for integrating with different tools to automate your process.<br />`,
+      },
+      {
+        question: "Is it free to convert P60 data?",
+        answer: `Yes - the free tier allows single P60 conversion with no signup required. Batch processing of multiple P60s and API access require a free trial account. <a href="/talk-with-us">Reach out to us</a> and we can setup a demo account for you.<br />`,
+      },
+      {
+        question: "Is it safe to upload P60 forms?",
+        answer: `FormX is ISO 27001 and SOC 2 Type II certified. All uploaded documents are encrypted in transit (TLS 1.2+) and at rest (AES-256). National Insurance numbers are masked in all output by default. Documents are not retained after conversion. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "Can FormX extract P60 data via API for batch processing?",
+        answer: `Yes. FormX provides a REST API that accepts P60 PDFs and returns structured JSON - making it a P60 extractor suitable for enterprise integration. The API connects with Sage, Xero, Workday, BambooHR, Microsoft Dynamics 365, Zapier, and N8N. API\u00a0documentation is available at <a href="https://help.formx.ai/reference/document-extraction">here</a>. You can also customise extracted fields through the FormX portal.<br />`,
+      },
+      {
+        question: "What is the difference between a P60 and a P45?",
+        answer: `A P60 is issued by your employer at the end of each tax year (5 April) and summarises your total pay and tax for that year. A P45 is issued when you leave a job and shows your pay and tax up to your leaving date. FormX can process both document types.<br />`,
+      },
+      {
+        question: "Can I tailor what I need to extract from P60 forms?",
+        answer: `Yes. FormX lets you customise exactly which fields to extract and how the output is structured.<br /><br /><a href="/talk-with-us">Contact us</a> to setup a trial account for you.<br />`,
+      },
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

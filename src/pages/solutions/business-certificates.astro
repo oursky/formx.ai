@@ -1,0 +1,77 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+---
+
+<PageLayout
+  title="Business Certificates Extraction - Scan &amp; Extract Information from Your Business Certificates"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/business-certificates"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Business Certificates"
+    heading="Extract from Certificates"
+    subheading="Digitalize and extract details from certificates"
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_kv-businesscert.svg",
+      alt: "",
+      width: 968.5
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Digitalize Images to structured JSON"
+    body='FormX.ai can extract data such as license number and company name from certificate and license documents. Our OCR technology and machine learning algorithm enable your apps to fill forms by scanning or uploading images to provide a smooth user experience. Our API supports the following documents out of the box:<ul role="list" class="_2-block-flex-content-list w-list-unstyled"><li class="_2-block-flex-content-list-item text-color-838c9b">Business Registration (BR)</li><li class="_2-block-flex-content-list-item text-color-838c9b">Certificate of Incorporation (CI)</li><li class="_2-block-flex-content-list-item text-color-838c9b">Industry Licenses (e.g. Food Business, Hawkers, Travel Agency)</li></ul>'
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    image={{
+      src: "/images/pages/solutions_businesscert-01@2x.webp",
+      alt: "",
+      srcset: "/images/pages/solutions_businesscert-01@2x-p-500.webp 500w, /images/pages/solutions_businesscert-01@2x-p-800.webp 800w, /images/pages/solutions_businesscert-01@2x-p-1080.webp 1080w, /images/pages/solutions_businesscert-01@2x.webp 1370w",
+      sizes: "(max-width: 767px) 100vw, 685px"
+    }}
+  />
+
+  <FeatureGrid
+    heading="Why Use FormX's Business Certificate OCR?"
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_businesscert-icon-01.svg",
+        iconWidth: 80,
+        title: "Effortless API Integration",
+        description: "Easily integrate with mobile and web apps with the API JSON result"
+      },
+      {
+        icon: "/images/pages/solutions_businesscert-icon-02.svg",
+        iconWidth: 80,
+        title: "Low/No-code Set Up",
+        description: "Your extractors can be configured and tested without coding using FormX's user-friendly web portal"
+      },
+      {
+        icon: "/images/pages/solutions_businesscert-icon-03.svg",
+        iconWidth: 80,
+        title: "Mobile Phone Ready",
+        description: "Document photos are passed through series of optimizations to boost extraction accuracy in mobile device cameras"
+      }
+    ]}
+  />
+
+  <CTACard
+    heading="Easily Automate Business Certificate Processing Today with FormX!"
+    ctaSecondary={{ text: "Schedule Demo ->", href: "/talk-with-us" }}
+  />
+
+  <div class="section product-section bg-f7f8fc"></div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

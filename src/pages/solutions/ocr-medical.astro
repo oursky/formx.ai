@@ -1,0 +1,174 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+---
+
+<PageLayout
+  title="Revolutionize Medical &amp; Healthcare with FormX.ai's OCR: Streamline, Secure, and Enhance Patient Care"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/ocr-medical"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Medical"
+    heading="Unleash the Power of OCR for Medical Records: Streamline Workflow &amp; Enhance Patient Care"
+    subheading="FormX.ai's innovative OCR+AI&nbsp; technology extracts data from medical documents with unmatched accuracy, optimizing workflows and empowering better patient care."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/healthcare_kv@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/healthcare_kv@2x-p-500.webp 500w, /images/pages/healthcare_kv@2x-p-800.webp 800w, /images/pages/healthcare_kv@2x-p-1080.webp 1080w, /images/pages/healthcare_kv@2x.webp 1464w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <div class="section product-section">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Understanding OCR in Medical:<br/><span class="special-text">A Simplified Explanation</span></h2>
+          <div class="product-subheading">OCR, or Optical Character Recognition, is a technology that transforms images<br/>of text into machine-readable data.</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="intro-grid">
+            <div class="card-bg-gray">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions_medical_understand-ocr_physician-notes.svg" loading="lazy" width="128" alt="" class="card-svg intro-svg" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Physician notes</h6>
+                <div class="svg-card-description">Diagnoses, medications, treatment plans</div>
+              </div>
+            </div>
+            <div class="card-bg-gray">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions_medical_understand-ocr_reports.svg" loading="lazy" width="128" alt="" class="card-svg intro-svg" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Laboratory reports</h6>
+                <div class="svg-card-description">Blood test results, imaging findings</div>
+              </div>
+            </div>
+            <div class="card-bg-gray">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions_medical_understand-ocr_prescription-forms.svg" loading="lazy" width="128" alt="" class="card-svg intro-svg" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Prescription forms</h6>
+                <div class="svg-card-description">Medication names, dosages, refill instructions</div>
+              </div>
+            </div>
+            <div class="card-bg-gray">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions_medical_understand-ocr_patient-forms.svg" loading="lazy" width="128" alt="" class="card-svg intro-svg" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Patient intake forms</h6>
+                <div class="svg-card-description">Demographic information, medical history, insurance details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <FeatureGrid
+    heading="Transform Medical Records with FormX.ai"
+    subheading="Streamline workflows, enhance accuracy, and improve patient care with our advanced OCR technology for medical documents."
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/Flash-circle.svg",
+        iconWidth: 128,
+        title: "Improved Efficiency",
+        description: "Eliminate the need for manual data entry, saving valuable time and resources for healthcare professionals."
+      },
+      {
+        icon: "/images/pages/Error-Triangle.svg",
+        iconWidth: 80,
+        title: "Enhanced Accuracy",
+        description: "Eliminate human errors associated with manual data entry, leading to more accurate and reliable patient records."
+      },
+      {
+        icon: "/images/pages/users-group.svg",
+        iconWidth: 80,
+        title: "Accessibility and Collaboration",
+        description: "Securely access and share patient information across different healthcare providers, facilitating seamless collaboration and improved patient care."
+      },
+      {
+        icon: "/images/pages/chart-magnifier.svg",
+        iconWidth: 128,
+        title: "Data-driven Insights",
+        description: "Analyze patient data to gain valuable insights into health trends and personalize treatment plans for better outcomes."
+      }
+    ]}
+  />
+
+  <FeatureGrid
+    heading="Eliminate Errors, Ensure Data Integrity with Medical-Grade LLM+OCR"
+    subheading="FormX.ai's cutting-edge technology ensures zero human errors in the data extraction process. This is achieved by employing advanced machine learning algorithms trained on extensive healthcare datasets."
+    bgClass="bg-f7f8fc"
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/solutions_insurance-icon-1@2x.webp",
+        iconWidth: 128,
+        title: "Physician notes",
+        description: "Extract diagnoses, medications, and treatment plans."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-2@2x.webp",
+        iconWidth: 80,
+        title: "Laboratory reports",
+        description: "Extract blood test results, imaging findings, and other diagnostic data."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-3@2x.webp",
+        iconWidth: 80,
+        title: "Prescription forms",
+        description: "Capture medication names, dosages, and refill instructions."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-1@2x.webp",
+        iconWidth: 128,
+        title: "Patient intake forms",
+        description: "Extract demographic information, medical history, and insurance details."
+      }
+    ]}
+  />
+
+  <TwoBlockSection
+    heading="Protecting Patient Privacy and Security"
+    body="FormX.ai prioritizes patient privacy and security. Our platform complies with the highest data privacy regulations, ensuring the protection of sensitive patient information. Additionally, our robust security measures safeguard against unauthorized access and data breaches."
+    imagePosition="right"
+    linkHref="/talk-with-us"
+    linkText="Chat with our team ->"
+    image={{
+      src: "/images/pages/Frame-622@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/Frame-622@2x-p-500.png 500w, /images/pages/Frame-622@2x-p-800.png 800w, /images/pages/Frame-622@2x-p-1080.png 1080w, /images/pages/Frame-622@2x.webp 1370w",
+      sizes: "(max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Empowering Healthcare Professionals and Improving Patient Outcomes"
+    body='FormX.ai empowers healthcare professionals by providing them with readily accessible, accurate, and complete patient information. This enables them to:<ul role="list" class="_2-block-flex-content-list w-list-unstyled"><li class="_2-block-flex-content-list-item text-color-838c9b">Make faster and more informed medical decisions.</li><li class="_2-block-flex-content-list-item text-color-838c9b">Provide personalized and effective treatment plans.</li><li class="_2-block-flex-content-list-item text-color-838c9b">Improve communication and coordination between healthcare providers.</li><li class="_2-block-flex-content-list-item text-color-838c9b">Reduce administrative burdens and focus on patient care.</li></ul>'
+    imagePosition="left"
+    image={{
+      src: "/images/pages/solutions_insurance-01@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/solutions_insurance-01@2x-p-500.webp 500w, /images/pages/solutions_insurance-01@2x-p-800.webp 800w, /images/pages/solutions_insurance-01@2x-p-1080.webp 1080w, /images/pages/solutions_insurance-01@2x-p-1600.webp 1600w, /images/pages/solutions_insurance-01@2x-p-2000.webp 2000w, /images/pages/solutions_insurance-01@2x.webp 2400w",
+      sizes: "(max-width: 991px) 95vw, 940px"
+    }}
+  />
+</PageLayout>

@@ -1,0 +1,14 @@
+---
+import { CATEGORY_LABELS } from '@/lib/blog';
+
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+const label = CATEGORY_LABELS[category] ?? category;
+---
+
+<a href={`/blog-post-category/${category}`} class="badge blog-post-category">
+  {label}
+</a>

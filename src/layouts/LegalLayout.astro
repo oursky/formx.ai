@@ -1,0 +1,45 @@
+---
+import PageLayout from './PageLayout.astro';
+
+interface Props {
+  title: string;
+  heading: string;
+  description?: string;
+  canonicalUrl?: string;
+}
+
+const { title, heading, description = '', canonicalUrl } = Astro.props;
+---
+
+<PageLayout {title} {description} {canonicalUrl}>
+  <section class="section">
+    <div class="w-layout-blockcontainer container-default w-container">
+      <div>
+        <h1 class="terms-title">{heading}</h1>
+        <div class="w-richtext legal-content">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  /* Map plain markdown headings to the same styles as the Webflow classes */
+  .legal-content :global(h2) {
+    margin-top: 16px;
+    font-family: Inter, sans-serif;
+    font-size: 31px;
+  }
+  .legal-content :global(h3) {
+    margin-top: 14px;
+    font-size: 23px;
+  }
+  .legal-content :global(h4) {
+    margin-top: 16px;
+    font-size: 17px;
+  }
+  .legal-content :global(h5) {
+    margin-top: 14px;
+  }
+</style>

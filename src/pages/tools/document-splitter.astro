@@ -1,0 +1,86 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="AI Document Splitter | Split &amp; Classify PDF Documents Automatically"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/document-splitter"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title"><span class="heading-gradient">AI Document Splitter<br/></span>Intelligently Split and Classify Your Documents</h1>
+      <p class="section__header__content">Upload a multi-document PDF and AI identifies where each document starts and ends - splitting and naming them automatically.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/split-classify/" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What types of documents can the AI Document Splitter handle?",
+        answer: `This automated pdf splitter for mixed documents can split and classify any document type - finance documents, legal documents, contracts, NDAs, agreements, bank statements, invoices, tax documents, IDs, passports, medical records, HR forms, and more. It works on any PDF regardless of layout since it reads content, not templates. <a href="/talk-with-us">Get in touch</a> to learn more!<br />`,
+      },
+      {
+        question: "What PDF formats does the document splitter support?",
+        answer: `FormX works on both native digital PDFs and scanned documents. Mixed PDFs containing a combination of digital and scanned pages are also supported. The free tool processes the first 20 pages. <a href="/talk-with-us">Schedule a Demo</a> if you wish to process larger files or integrate via API.<br />`,
+      },
+      {
+        question: "Can I process more than 20 pages or upload in bulk?",
+        answer: `Yes. The free tool is limited to 20 pages and single file uploads. A FormX trial account gives you access to batch processing (multiple PDFs at once), larger file sizes, and full API access for workflow integration. <a href="/talk-with-us">Contact us</a> to discuss volume needs.<br />`,
+      },
+      {
+        question: "How are the split documents named?",
+        answer: `FormX automatically generates file names based on the document content - for example, "Contract_AcmeCorp_2024.pdf" or "BankStatement_March2025.pdf". The free tool uses a default naming convention. With a free trial or paid plan, you can customise the naming format to match your filing system or DMS requirements. <a href="/talk-with-us">Reach out to us</a> to customise through the FormX portal.<br />`,
+      },
+      {
+        question: "How does AI document splitting work?",
+        answer: `FormX combines OCR, Machine Learning, and Large Language Models to read and understand the content of every page in your PDF. It identifies logical document boundaries - where one document ends and another begins - based on content, layout, and structure, not just page numbers or blank pages.<br />`,
+      },
+      {
+        question: "Is my data safe when uploading PDFs?",
+        answer: `Yes. FormX is ISO 27001 and SOC 2 Type II certified. Documents are processed in real time and not stored in any permanent storage after splitting. FormX does not use or share your document data. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for further details.<br />`,
+      },
+      {
+        question: "Can I integrate the document splitter into my own workflow?",
+        answer: `Yes. FormX provides a full REST API that returns split document files and a structured JSON index containing each document's file name, page range, and document type. SDKs are available for Python, Node.js, Java, and .NET. See our <a href="https://help.formx.ai/reference/document-extraction" target="_blank">API documentation here</a>.<br />`,
+      },
+      {
+        question: "What industries use AI document splitting?",
+        answer: `Finance and AP teams use it to split batched vendor invoice scans - where multiple invoices from different suppliers are scanned into one PDF and need separating for processing. Law firms use it to split legal bundles and due diligence packs. Insurance companies use it to process claims submission packages. Accounting firms use it to separate client document packs. HR teams use it to split onboarding document bundles.<br /><br />If you have a specific use case you wish to discuss, <a href="/talk-with-us">contact us here</a> to speak with our specialist consultants and see how FormX can be of help to your business.<br />`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Make Your Document Sorting Intelligent and Automated with FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual PDF sorting and renaming with FormX to automate document splitting and improve processing speed by 10 times." />
+            <StatCard number=">95%" label="Document Detection Accuracy" description="FormX delivers 95%+ accuracy in document boundary detection and classification, even on scanned or mixed-format PDFs." />
+            <StatCard number="Unlimited" label="Document Types" description="Contracts, invoices, bank statements, IDs, medical records, HR forms, and more - all classified and split automatically in a single pass." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

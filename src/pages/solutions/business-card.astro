@@ -1,0 +1,130 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+---
+
+<PageLayout
+  title="Business Card Extraction - Scan &amp; Extract Information from Your Business Card"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/business-card"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Business Card"
+    heading="Business Card OCR"
+    subheading="Auto-extract data from business cards for contact management, email marketing automation, and more."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/documenttype_kv-business-card@2x.webp",
+      alt: "",
+      width: 968.5
+    }}
+  />
+
+  <FeatureGrid
+    heading="Build Your Low / No-code Business Card Processing Workflow with FormX"
+    subheading="A variety of documents, each with its own layouts and formats, can be used as address proofs. Machine Learning allows us to recognize different address proof documents and extract the required data fields for address verification."
+    bgClass="bg-f7f8fc"
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/Group-250@2x.webp",
+        iconWidth: 128,
+        title: "Upload business cards to everyday platforms",
+        description: "You can send business card images to Slack, Microsoft Teams, Google Forms, etc. The images will then be sent to FormX for extraction."
+      },
+      {
+        icon: "/images/pages/Group-251@2x.webp",
+        iconWidth: 80,
+        title: "Data extraction with FormX",
+        description: "FormX will then extract data like name, phone number, email address, company name, and more."
+      },
+      {
+        icon: "/images/pages/Group-252@2x.webp",
+        iconWidth: 80,
+        title: "Data saved to designated database",
+        description: "The extracted results will then be saved at the selected databases, including but not limited to Excel/GSheets, Google Drive, OneDrive, and more."
+      },
+      {
+        icon: "/images/pages/Group-253@2x.webp",
+        iconWidth: 128,
+        title: "Auto-create new contacts",
+        description: "New contacts can then be created on your systems/SaaS, such as Hubspot, Pipedrive, Twilio, MailChimp, etc., for you to manage new contacts or drive automated campaigns."
+      }
+    ]}
+  />
+
+  <TwoBlockSection
+    heading="Auto-Extract Contact Info from All Business Cards"
+    body="Our business card OCR automatically extracts all relevant data from business cards for you to easily manage new contacts, run automated email sequence, and more to boost marketing and sales efficiency."
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    image={{
+      src: "/images/pages/solutions_businesscard-01@2x.webp",
+      alt: "",
+      width: 968.5
+    }}
+  />
+
+  <FeatureGrid
+    heading="Why Use FormX's Business Card OCR?"
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/Group-239.webp",
+        iconWidth: 80,
+        title: "90%+ Accuracy",
+        description: "Unique models of image pre-processing & OCR result post-processing enable our business card OCR API to achieve 90%+ data extraction accuracy."
+      },
+      {
+        icon: "/images/pages/Group-240.webp",
+        iconWidth: 80,
+        title: "Effortless API Integration",
+        description: "Easily integrate with any platforms or apps for data input and outputs to build a automated business card processing workflow."
+      },
+      {
+        icon: "/images/pages/Group-241.webp",
+        iconWidth: 80,
+        title: "Intuitive User Interface",
+        description: "Simple drag & drop, clear instructions and setting interface to help you easily set up your automated workflow without writing a single line of code."
+      }
+    ]}
+  />
+
+  <CTACard
+    heading="Easily Automate Business Card Processing Today with FormX!"
+    ctaSecondary={{ text: "Schedule Demo ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How does FormX's business card OCR work?",
+        answer: "FormX leverages machine learning, natural language processing, and large language models to recognize and extract relevant information, including name, phone number, email address, etc., from business card stored as PDF files or images. In contrast with templated-based solutions, FormX can extract data regardless of the formats as it's powered by advanced AI technologies.<br/>"
+      },
+      {
+        question: "What kinds of business cards can the business card OCR process?",
+        answer: "Our business card OCR can extract data from all kinds of business card - regardless of their format. FormX isn't limited to specific templates and is capable of converting any business cards into structured that can be directly used by all kinds of platforms and apps.<br/>"
+      },
+      {
+        question: "What information can I extract from business cards?",
+        answer: "Common data fields that can be extracted using our business card OCR include name, email address, phone number, name of company, and more.<br/>"
+      },
+      {
+        question: "What are the pricing plans of FormX?",
+        answer: `FormX provides free trial for users to test out our features and process the first 100 pages for free. For monthly subscription, our Starter plan costs USD $299 / month, allowing you to process up to 3,000 pages. For enterprises with more documents to process, you may <a href="/talk-with-us">contact our team</a> for more detailed discussion.<br/>`
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

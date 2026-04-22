@@ -1,0 +1,232 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+
+const faqItems = [
+  {
+    question: 'What does "100 free pages" mean?',
+    answer: 'All document extractions via our web portal or through APIs are counted as 1 API call.<br/><br/>On free plan, your first 100 calls are on us for you to try out FormX.ai and feel free to contact us if you need help.',
+  },
+  {
+    question: 'Do you save or encrypt any uploaded document?',
+    answer: 'We only save the master document uploaded to our web portal, or the documents you uploaded for training a custom models. Any images uploaded via API or web portal test are in-memory only and disposed once extraction is done. We will not use your document for optimizing our AI models or any other purposes unless you request us to do so.<br/><br/>All API calls are encrypted with HTTPS.',
+  },
+  {
+    question: 'Do you offer volume discount or private cloud deployment?',
+    answer: 'Yes, we work with enterprises to customize the plan that suits their needs. Please contact us!<br/>',
+  },
+  {
+    question: 'May I have a different SLA on latency and throughput of the API calls?',
+    answer: 'Yes! We provide tailor-made SLA commitment for Enterprise Clients, please contact us!<br/>\u200d<br/>For Business Plan, the minimal throughput is 180 RPM (Requests per Min) for API call without Product Line Item, or 30 RPM for API call with Product Line Item, without a SLA commitment.',
+  },
+  {
+    question: 'Where do you host FormX.ai and process the data?',
+    answer: 'FormX.ai is hosted on GCP and Azure cloud.<br/>',
+  },
+  {
+    question: 'What is the accuracy for receipt extractions?',
+    answer: 'Accuracy rate depends on a lot of factors, and it also depends on how accuracy are defined.<br/><br/>As a reference, most of our previous clients would have at least 70% of accuracy by fields.<br/><br/>If we limit to only images with good quality (no blur, no lighting problems), from our client\'s feedback, general fields such as date, time &amp; amount can have accuracies over 90%.<br/><br/>You can contact us with around 100 receipts as sample, and we will share an accuracy report with you.',
+  },
+  {
+    question: 'What are the latency for receipt processing?',
+    answer: 'Usually it is 4 - 8 seconds, excluding the image uploading time. (It is not a SLA commitment)<br/><br/>Image uploading time will depend on the image file size and network speed, which we have no control on. We suggest you to resize the images to a smaller one to reduce the uploading time.<br/><br/>If you need a better latency or a SLA commitment, please contact us for an Enterprise plan.',
+  },
+];
+---
+
+<PageLayout
+  title="FormX.ai Pricing - Try the First 100 Pages for Free - Document Extractor"
+  description=""
+  canonicalUrl="https://www.formx.ai/pricing"
+>
+  <!-- Pricing header + table -->
+  <div class="section pricing bg-f0f4f9 overflow-scroll">
+    <div class="w-layout-blockcontainer pricing-page-header w-container">
+      <h1 data-w-id="727a87c6-748b-6e23-bcc5-fea53b0f3df8" class="title pricing">FormX.ai Pricing:<br/>&#x200D;<span class="text-highlight">Streamline Your Data, Scale Your Success</span></h1>
+      <p data-w-id="727a87c6-748b-6e23-bcc5-fea53b0f3dfa">Transform tedious paperwork into instant insights with FormX.ai, your AI-powered solution for effortless data extraction and streamlined workflows.</p>
+    </div>
+    <div id="pricing-scroll" class="container-default pricing overflow-scroll w-container">
+      <div class="w-layout-grid pricing-grid">
+        <!-- Pay-as-you-go -->
+        <div id="w-node-_727a87c6-748b-6e23-bcc5-fea53b0f3dfe-a1f314ea" class="card-pricing-item pay-as-you-go">
+          <div class="pricing-card">
+            <div class="pricing-card-top pricing-card-inner">
+              <div class="pricing-card-tier">Pay-as-you-go</div>
+              <div class="pricing-card-description">Only pay for what you process</div>
+            </div>
+            <div class="pricing-card-cta-wrap">
+              <div class="pricing-card-price-wrap">
+                <div class="pricing-card-price-wrap">
+                  <div class="pricing-card-price">$0.3</div>
+                  <div>per page</div>
+                </div>
+              </div>
+              <a href="https://formextractorai.com/signup" target="_blank" class="button-secondary pricing-card-inner w-button">Free Trial</a>
+            </div>
+          </div>
+          <div class="pricing-card-bottom">
+            <div class="pricing-card-inner-wrap">
+              <ul role="list" class="_2-block-flex-content-list pricing">
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">First 100 pages for free trial, and $0.3 after 100 pages</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">No minimum commitment. Pay per page* starting from $0.30.</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Ideal for low-volume users or one-off processing</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">Advanced Features are not included</div></li>
+              </ul>
+            </div>
+            <div class="pricing-features-button bg-white">
+              <div class="pricing-features-button-text">Features</div>
+              <img src="/images/pages/Arrow---Down-2.svg" loading="lazy" alt="" class="pricing-features-svg"/>
+            </div>
+          </div>
+        </div>
+        <!-- Starter -->
+        <div id="w-node-_08a9b541-f6bf-1533-0c3c-b3da0313bb96-a1f314ea" class="card-pricing-item starter">
+          <div class="pricing-card">
+            <div class="pricing-card-top pricing-card-inner">
+              <div class="pricing-popular-wrap">
+                <div class="pricing-card-tier">Starter</div>
+                <div class="pricing-popular-tag">Popular</div>
+              </div>
+              <div class="pricing-card-description">Perfect for small businesses and individual users, the Starter plan handles 3,000 pages per month, letting you automate data capture and boost efficiency with ease.</div>
+            </div>
+            <div class="pricing-card-cta-wrap">
+              <div class="pricing-card-price-wrap">
+                <div class="pricing-card-price">$299</div>
+                <div>per month/extractor</div>
+              </div>
+              <a href="https://formextractorai.com/signup" target="_blank" class="button-primary pricing-card-inner w-button">Get Started</a>
+            </div>
+          </div>
+          <div class="pricing-card-bottom">
+            <div class="pricing-card-inner-wrap">
+              <ul role="list" class="_2-block-flex-content-list pricing">
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Community Forum Support</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">After 3,000 pages: $0.1 per page</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">20 Smart Learning Samples</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Accuracy Center Access for Bulk Dataset Management</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">Split &amp; Classify</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">AI Code Mapping</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">Fraud &amp; AI Images Detection</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">Advanced Table Extraction</div></li>
+                <li class="_2-block-flex-content-list-item-no-offer"><div class="pricing-list-item-text">Other Advanced Features</div></li>
+              </ul>
+            </div>
+            <div class="pricing-features-button bg-white">
+              <div class="pricing-features-button-text">Features</div>
+              <img src="/images/pages/Arrow---Down-2.svg" loading="lazy" alt="" class="pricing-features-svg"/>
+            </div>
+          </div>
+        </div>
+        <!-- Enterprise -->
+        <div id="w-node-d52e6378-789c-5901-eb2d-9e27c45cd926-a1f314ea" class="card-pricing-item">
+          <div class="pricing-card">
+            <div class="pricing-card-top pricing-card-inner">
+              <div class="pricing-card-tier">Enterprise</div>
+              <div class="pricing-card-description">Need custom solutions for high-volume data processing? Our Enterprise plan is tailored to your specific needs, ensuring seamless integration and scalable data extraction power.</div>
+            </div>
+            <div class="pricing-card-cta-wrap">
+              <div class="pricing-card-price-wrap">
+                <div class="pricing-card-price">Custom</div>
+              </div>
+              <a href="/talk-with-us" class="button-secondary pricing-card-inner w-button">Talk to an Expert</a>
+            </div>
+          </div>
+          <div class="pricing-card-bottom">
+            <div class="pricing-card-inner-wrap">
+              <ul role="list" class="_2-block-flex-content-list pricing">
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Custom SLA</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Dedicated Account Manager</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Onboarding Support</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Private Cloud Deployment for Enhanced Security</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">All Features in Starter Plan</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Split &amp; Classify</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">AI Code Mapping</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Fraud &amp; AI Images Detection</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Advanced Table Extraction</div></li>
+                <li class="_2-block-flex-content-list-item"><div class="pricing-list-item-text">Other Advanced Features</div></li>
+              </ul>
+            </div>
+            <div class="pricing-features-button bg-white">
+              <div class="pricing-features-button-text">Features</div>
+              <img src="/images/pages/Arrow---Down-2.svg" loading="lazy" alt="" class="pricing-features-svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features grid -->
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Beyond page limits, find features to fit your goals</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_4-block-grid">
+            <div class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Group-1955@2x.webp" loading="lazy" width="48" alt="" class="card-svg small"/>
+              </div>
+              <div class="svg-card-content-wrapper plain-svg-card-align-left">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Pre-trained Models</div>
+                <div class="svg-card-description plain-svg-card-align-left">Tackle common documents like invoices, receipts, and ID cards with ease thanks to our pre-trained AI models.</div>
+              </div>
+            </div>
+            <div id="w-node-_2dbcc816-bcf3-b517-6edc-f6201c93dd50-a1f314ea" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Group-1956@2x.webp" loading="lazy" width="48" alt="" class="card-svg small"/>
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text">Custom Builders</div>
+                <div class="svg-card-description plain-svg-card-align-left">Need something more bespoke? Our custom builders handle even the most intricate documents, ensuring every detail is captured and validated.</div>
+              </div>
+            </div>
+            <div id="w-node-_2dbcc816-bcf3-b517-6edc-f6201c93dd58-a1f314ea" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Group-1958@2x.webp" loading="lazy" width="48" alt="" class="card-svg small"/>
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">API Integration</div>
+                <div class="svg-card-description plain-svg-card-align-left">Seamlessly connect FormX.ai to your existing CRM, ERP, or any workflow tool, creating a unified data hub.</div>
+              </div>
+            </div>
+            <div id="w-node-_57d186fe-a0a2-538d-2ca8-507e792ea304-a1f314ea" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Group-1957@2x.webp" loading="lazy" width="48" alt="" class="card-svg small"/>
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Security and Compliance</div>
+                <div class="svg-card-description plain-svg-card-align-left">Rest assured, your data is safe with us. We adhere to the highest security standards and comply with relevant regulations.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="card-xl bg-green-gradient">
+        <div class="card-xl-vertical-wrap text-center">
+          <div class="card-xl-content-wrap">
+            <h2 class="card-xl-title color-white"> See FormX work on your documents</h2>
+            <div class="card-xl-description color-white pricing">Book a quick demo and we will test FormX.ai with your real documents. Live extraction with zero commitment plus a free trial account. See exactly how FormX works before making any decisions!</div>
+            <a href="/talk-with-us" class="button-primary button-white button-center w-button">Speak with an Expert -&gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <FAQSection
+    heading="From Claims to Invoices:&nbsp;&nbsp;Real-World Solutions for Streamlining Data Entry"
+    items={faqItems}
+  />
+
+  <section class="bg-f0f4f9"></section>
+</PageLayout>

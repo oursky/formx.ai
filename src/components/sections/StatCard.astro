@@ -1,0 +1,24 @@
+---
+interface Props {
+  number: string;
+  label: string;
+  description?: string;
+  bgClass?: string;
+}
+
+const { number, label, description, bgClass = 'bg-white' } = Astro.props;
+---
+
+<div class={`statistic-card-wrapper ${bgClass}`}>
+  <div class="statistic-card-inner">
+    <div class="statistic-card-top">
+      <div class="statistic-card-top-number">{number}</div>
+      <div class="statistic-card-top-title">{label}</div>
+    </div>
+    {description && (
+      <div class="statistic-card-bottom">
+        <div class="statistic-card-description paragraph-small text-center">{description}</div>
+      </div>
+    )}
+  </div>
+</div>

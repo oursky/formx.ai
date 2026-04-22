@@ -1,0 +1,74 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="Image to Excel Converter | Convert JPG to Excel"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/image-to-excel-converter"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title">JPEG to Excel Converter</h1>
+      <p class="section__header__content">AI-powered image to excel tool to convert PDF, PNG and JPG to excel. Convert JPG to Excel within seconds with our free online tool.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/extract-image" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How Does FormX Convert Image to Excel?",
+        answer: `FormX leverages AI technologies, such as Optical Character Recognition, Machine Learning and Large Language Models like GPT-4, to not only recognize texts within digital images but more importantly understand the content in order to accurately extract data from your images and return them in structured formats like Excel, CSV, or JSON.<br /><br /><a href="https://formextractorai.com/signup" target="_blank">Sign up for a free trial</a> or <a href="/talk-with-us">contact us</a> to see how our advanced solution can help you convert images to Excel with 90%+ accuracy.`,
+      },
+      {
+        question: "What Kinds of Images Can Be Converted Into Excel?",
+        answer: `All kinds of images containing texts or tabular data can be converted into Excel. FormX has several pre-built extractors, including invoice, bank statement, bill of lading, etc., that allows users to extract tabular data and other relevant information from images and convert them into Excel file so that the data can be edited or manipulated.`,
+      },
+      {
+        question: "Is the Extracted Data Safe With FormX?",
+        answer: `Certainly. Data security and privacy are of utmost importance for us and we understand that many of the processed images may contain personal or confidential data. Rest assured that FormX does not use or store the extracted results in any permanent storage. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "Does This Image to Excel Converter Work on All Browsers and OS?",
+        answer: `Yes, you can use this converter to convert images to Excel on any browser and OS as long as you have a stable internet connection.<br />`,
+      },
+      {
+        question: "Is This\u00a0Image to Excel Tool Free to Use?",
+        answer: `Yes, this tool is free to use.<br />&#8203;<br />Aside from the free tool, FormX also offers a more advanced solution with pre-built extraction models, or extractors, including receipt, bank statement, invoice, and more, for businesses to automate data extraction. You can also build your own custom extractor with as little as one sample.<br />&#8203;<br /><a href="https://formextractorai.com/signup" target="_blank">Sign up for a free trial</a> or <a href="/talk-with-us" target="_blank">contact us</a> to learn more about our Intelligent Document Processing solution.`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Make Your Image to Excel Conversion Intelligent and Automated with FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual data entry with FormX to automate data extraction and improve productivity by 10 times." />
+            <StatCard number="92%" label="Accuracy" description="Our proprietary image pre-processing and OCR result post-processing ensure a 92% extraction accuracy, minimizing the need for human intervention." />
+            <StatCard number="6" label="Months" description="On average, businesses can realize the return on investment (ROI) of business automation within 6 months after implementing FormX.ai." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

@@ -1,0 +1,51 @@
+---
+title: "FormX April 2026 Update: Bounding Boxes, Azure Claude Support, and More"
+description: "FormX's April 2026 update brings two features in early access: extraction results now include bounding box coordinates so you know exactly where on the document each value was found, and Azure-hosted Claude models are now supported for Enterprise teams through AnthropicFoundry. The release also includes accuracy improvements for smart learning and MRZ extraction fixes."
+excerpt: "FormX's April 2026 update brings two features in early access: extraction results now include bounding box coordinates so you know exactly where on the document each value was found, and Azure-hosted Claude models are now supported for Enterprise teams through AnthropicFoundry. The release also includes accuracy improvements for smart learning and MRZ extraction fixes."
+category: automation
+author: FormX
+date: 2026-04-16
+featured_image: "/images/blog/formxrelease0327.jpg"
+featured_image_alt: "FormX April 2026 Update: Bounding Boxes, Azure Claude Support, and More"
+canonical_url: "/blog/formx-april-2026-update-bounding-boxes-azure-claude-support-and-more"
+---
+
+This month's release includes two features in early access, accuracy improvements for smart learning, and a handful of fixes.
+
+## Bounding Box in Extraction Results (Early Access)
+
+Detection region fields now return a `bounding_box` alongside the extracted value. The bounding box tells you where on the document FormX found each piece of data: the coordinates of the region that was captured.
+
+A few things this makes easier:
+
+  * If you're building a review UI where a human confirms extracted values, you can highlight the exact region on the source document instead of asking reviewers to hunt for the value manually.
+  * When an extraction looks wrong, checking the bounding box tells you what region the model was looking at.
+  * If you're passing extracted data to another system, you can carry positional context along with the value.
+
+
+
+This feature is currently available to selected users. Broader rollout is planned. Reach out if you'd like early access.
+
+## Azure Claude Model Support (Enterprise)
+
+FormX now supports Claude models hosted on Azure through AnthropicFoundry. If your infrastructure runs on Azure and you've been waiting to use Claude in production, this removes the main blocker.
+
+Previously, using Claude with FormX required a separate Anthropic API setup. With AnthropicFoundry support, teams on Azure can connect directly without managing an additional integration point.
+
+Available on Enterprise plans. Contact us to learn more.
+
+## Smart Extraction for Smart Learning
+
+Smart learning now applies training samples in a consistent order when building prompts. Extraction results are more stable and predictable across similar documents.
+
+If you've been using smart learning and noticed variability in results, this change should help.
+
+## Other Changes
+
+  * Improved passport MRZ field extraction
+  * Troubleshooting improvements for teams running parallel UAT and production environments
+  * Misc bug fixes and security updates
+
+
+
+Questions? Reach out through the [FormX portal](<https://auth.formextractorai.com/login>) or contact your account manager.

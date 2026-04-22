@@ -1,0 +1,83 @@
+---
+interface BlockImage {
+  src: string;
+  alt: string;
+  width?: number;
+  srcset?: string;
+  sizes?: string;
+}
+
+interface Props {
+  heading: string;
+  body: string;
+  image: BlockImage;
+  imagePosition?: 'left' | 'right';
+  bgClass?: string;
+  linkHref?: string;
+  linkText?: string;
+}
+
+const {
+  heading,
+  body,
+  image,
+  imagePosition = 'right',
+  bgClass = '',
+  linkHref,
+  linkText,
+} = Astro.props;
+
+const imageFirst = imagePosition === 'left';
+---
+
+<div class={`section product-section ${bgClass}`.trim()}>
+  <div class="container-default w-container">
+    <div class="product-2-block-wrapper">
+      {imageFirst ? (
+        <>
+          <div class="product-2-block-image-wrapper">
+            <img
+              src={image.src}
+              loading="lazy"
+              width={image.width}
+              alt={image.alt}
+              srcset={image.srcset}
+              sizes={image.sizes}
+            />
+          </div>
+          <div class="product-2-block-text-wrapper">
+            <h2 class="product-2-block-heading">{heading}</h2>
+            <div class="product-2-block-paragraph" set:html={body} />
+            {linkHref && linkText && (
+              <a href={linkHref} target="_blank" class="inter-tight link-semibold text-highlight-green-20">
+                {linkText}
+              </a>
+            )}
+          </div>
+        </>
+      ) : (
+        <>
+          <div class="product-2-block-text-wrapper">
+            <h2 class="product-2-block-heading">{heading}</h2>
+            <div class="product-2-block-paragraph" set:html={body} />
+            {linkHref && linkText && (
+              <a href={linkHref} target="_blank" class="inter-tight link-semibold text-highlight-green-20">
+                {linkText}
+              </a>
+            )}
+          </div>
+          <div class="product-2-block-image-wrapper">
+            <img
+              src={image.src}
+              loading="lazy"
+              width={image.width}
+              alt={image.alt}
+              srcset={image.srcset}
+              sizes={image.sizes}
+            />
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</div>

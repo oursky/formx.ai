@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@/components/header/Header.astro';
+import FooterForm from '@/components/footer/FooterForm.astro';
+import Footer from '@/components/footer/Footer.astro';
+import CookieConsent from '@/components/footer/CookieConsent.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  twitterCard?: string;
+  canonicalUrl?: string;
+  noIndex?: boolean;
+  bodyClass?: string;
+  showFooterForm?: boolean;
+}
+
+const { showFooterForm = false, ...baseProps } = Astro.props;
+---
+
+<BaseLayout {...baseProps}>
+  <slot name="head" slot="head" />
+  <div class="page-wrapper">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    {showFooterForm && <FooterForm />}
+    <Footer />
+    <CookieConsent />
+  </div>
+</BaseLayout>

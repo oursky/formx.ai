@@ -1,0 +1,16 @@
+---
+import { getEntry, render } from 'astro:content';
+import LegalLayout from '@/layouts/LegalLayout.astro';
+
+const entry = await getEntry('legal', 'data-privacy-policy');
+const { Content } = await render(entry);
+---
+
+<LegalLayout
+  title={entry.data.title}
+  heading={entry.data.heading}
+  description={entry.data.description}
+  canonicalUrl={entry.data.canonicalUrl}
+>
+  <Content />
+</LegalLayout>

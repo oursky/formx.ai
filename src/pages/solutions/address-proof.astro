@@ -1,0 +1,168 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+---
+
+<PageLayout
+  title="Address Proof Extraction API - Scan &amp; Extract Data from Your Address Proof"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/address-proof"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Address&nbsp;Proof"
+    heading="Address Proof OCR API"
+    subheading="Automatically convert images or PDFs of address proofs to structured data to speed up your address verification process."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/documenttype_kv-address-proof@2x.webp",
+      alt: "",
+      width: 968.5
+    }}
+  />
+
+  <FeatureGrid
+    heading="Extract Data from Different Address Proof Documents"
+    subheading="A variety of documents, each with its own layouts and formats, can be used as address proofs. Machine Learning allows us to recognize different address proof documents and extract the required data fields for address verification."
+    bgClass="bg-f7f8fc"
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/Group-250@2x.webp",
+        iconWidth: 128,
+        title: "Telecom Bills",
+        description: "Bills issued within three months by communication service providers that clearly indicate the current address and full name of the person."
+      },
+      {
+        icon: "/images/pages/Group-251@2x.webp",
+        iconWidth: 80,
+        title: "Utility Bills",
+        description: "Utility bills include water, electricity, and gas bills issued within three months."
+      },
+      {
+        icon: "/images/pages/Group-252@2x.webp",
+        iconWidth: 80,
+        title: "Financial Statements",
+        description: "Bank statement or other financial statements issued by banks not older than three months."
+      },
+      {
+        icon: "/images/pages/Group-253@2x.webp",
+        iconWidth: 128,
+        title: "Government Issued Documents",
+        description: "Any government issued document containing the issue date, the person's full name and current residential address."
+      }
+    ]}
+  />
+
+  <TwoBlockSection
+    heading="Intelligently Process Proof of Address and Extract What Is Needed"
+    body="FormX does more than just extracting texts from different proofs of residence. Powered by OCR and machine learning, our solution recognizes different address proofs, optimize images for extraction, and convert them into structured data that can be directly used by other software for you to automate KYC processes.Easily extract data fields needed to verify address, including but not limited to:"
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    image={{
+      src: "/images/pages/solutions_addressproof-01@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/solutions_addressproof-01@2x-p-500.webp 500w, /images/pages/solutions_addressproof-01@2x-p-800.webp 800w, /images/pages/solutions_addressproof-01@2x-p-1080.webp 1080w, /images/pages/solutions_addressproof-01@2x.webp 1370w",
+      sizes: "968px"
+    }}
+  />
+
+  <FeatureGrid
+    heading="Automate Address Proof Data Extraction to:"
+    subheading="Don't miss out on the field-proven solution that FormX.ai offers. Experience a return on investment in just three months."
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/Group-239@2x.webp",
+        iconWidth: 128,
+        title: "Improve Operational Efficiency",
+        description: "Replacing manual data entry with Address Proof OCR allows you to speed up address verification process to deliver faster customer service."
+      },
+      {
+        icon: "/images/pages/solutions_logistic-icon-2.svg",
+        iconWidth: 80,
+        title: "Reduce Processing Costs",
+        description: "You can significantly reduce processing costs related to manually extracting data from address proofs with FormX.ai."
+      },
+      {
+        icon: "/images/pages/Group-1968@2x-1.webp",
+        iconWidth: 80,
+        title: "Eliminate Human Errors",
+        description: "Spelling, grammar, or even punctuation mistakes associated with manual data entry can be avoided as FormX.ai can generate results with high accuarcy."
+      }
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default heading-content w-container">
+      <div class="home-heading">
+        <h2 class="text-center">Convert Address Proof Documents into Structured Data</h2>
+      </div>
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="_2-block-flex tabs-with-image w-tabs">
+        <div class="hover-change tabs w-tab-menu">
+          <a data-w-tab="Tab 1" class="hover-change-content w-inline-block w-tab-link w--current">
+            <div class="hover-change-title">Step 1. Create Your Address Proof Form</div>
+            <div style="height:0px" class="hover-change-description">On the web portal, you can create your own address proof extractor and specify what items, such as date, subtotal, total amount, product info / line items, etc., you wish to extract.</div>
+          </a>
+          <a data-w-tab="Tab 2" class="hover-change-content w-inline-block w-tab-link">
+            <div class="hover-change-title">Step 2. Upload address proofs to test &amp; verify</div>
+            <div style="height:0px" class="hover-change-description">Once the extractor has been created, you can upload images of different address proofs and check the JSON outputs to verify the results</div>
+          </a>
+          <a data-w-tab="Tab 3" class="hover-change-content w-inline-block w-tab-link">
+            <div class="hover-change-title">Step 3. Integrate FormX with your software or use the Desktop App</div>
+            <div style="height:0px" class="hover-change-description">Once the results are verified, you can then integrate your software with FormX. FormX will use your Address Proof Extractor and extract data from all your uploaded images. You can also use our Desktop App for batch processing.</div>
+          </a>
+        </div>
+        <div class="_2-block-flex-image tabs w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+            <img width="600" sizes="(max-width: 479px) 100vw, 600px" alt="" src="/images/pages/solutions_addressproof-02@2x.webp" loading="eager" srcset="/images/pages/solutions_addressproof-02@2x-p-500.webp 500w, /images/pages/solutions_addressproof-02@2x-p-800.webp 800w, /images/pages/solutions_addressproof-02@2x-p-1080.webp 1080w, /images/pages/solutions_addressproof-02@2x.webp 1230w" />
+          </div>
+          <div data-w-tab="Tab 2" class="w-tab-pane">
+            <img width="600" sizes="(max-width: 479px) 100vw, 600px" alt="" src="/images/pages/solutions_addressproof-02@2x.webp" loading="eager" srcset="/images/pages/solutions_addressproof-02@2x-p-500.webp 500w, /images/pages/solutions_addressproof-02@2x-p-800.webp 800w, /images/pages/solutions_addressproof-02@2x-p-1080.webp 1080w, /images/pages/solutions_addressproof-02@2x.webp 1230w" />
+          </div>
+          <div data-w-tab="Tab 3" class="w-tab-pane">
+            <img width="615" sizes="(max-width: 479px) 100vw, 615px" alt="" src="/images/pages/solutions_addressproof-02@2x.webp" loading="eager" srcset="/images/pages/solutions_addressproof-02@2x-p-500.webp 500w, /images/pages/solutions_addressproof-02@2x-p-800.webp 800w, /images/pages/solutions_addressproof-02@2x-p-1080.webp 1080w, /images/pages/solutions_addressproof-02@2x.webp 1230w" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <CTACard
+    heading="Automate Invoice Data Extraction with OCR &amp; ML"
+    ctaSecondary={{ text: "Schedule Demo ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How does your Address Proof Recognition and Extraction API work?",
+        answer: "By leveraging the power of machine learning and other AI technologies, FormX can recognize different address proof documents, pre-process it for extraction, extract the texts, and return strctured data, in the form of JSON or csv files, for further analysis or processing.<br/>"
+      },
+      {
+        question: "What kinds of address proofs can FormX process?",
+        answer: "FormX can recognize and extract data from utility bills, telecom bills, financial statements, and other documents issued by the government for businesses to verify their clients' address and prevent fraud. New address proof extraction models can be developed upon request.<br/>"
+      },
+      {
+        question: "How will FormX handle the extracted data? Will the extracted data be used by FormX?",
+        answer: "To protect your data, FormX will not use your documents or the extracted data in any way. Any processed images or files for aynchronized API calls aren't stored by FormX in any way.<br/>"
+      },
+      {
+        question: "What are the pricing plans of FormX?",
+        answer: "FormX provides free trial for users to test out our features and process the first 100 pages for free. For monthly subscription, our Starter plan costs USD $299 / month, allowing you to process up to 3,000 pages. For enterprises with more documents to process, you may contact our team for more detailed discussion.<br/>"
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

@@ -1,0 +1,70 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="Free PDF to CSV Converter Tool Online | Convert PDF to CSV"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/pdf-to-csv-converter"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title">PDF to CSV Converter Tool</h1>
+      <p class="section__header__content">Free PDF to CSV converter tool online that converts PDF to CSV files for free online.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/extract-pdf" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How to Convert PDF to CSV?",
+        answer: `Converting PDF files to CSV using FormX only takes three steps.<ul role="list"><li class="faq-list-item">Step 1. Upload your PDF files</li><li class="faq-list-item">Step 2. Wait for FormX to convert your PDF files into CSV.</li><li class="faq-list-item">Step 3. Download the CSV outputs.</li></ul><div class="referral-faq-a">The CSV file can then be uploaded to various applications, such as Excel, Google Sheets, Quickbooks, Xero, and more, for you to process the extracted data. For more specific use case, <a href="/talk-with-us">contact our expert</a> to see how FormX can help you automate converting your PDF files to CSV or <a href="https://auth.formextractorai.com/signup" target="_blank">sign up for a free trial</a>.</div>`,
+      },
+      {
+        question: "Why Convert PDF to CSV?",
+        answer: `Portable Document File (PDF) is often used to store and transfer information between or within organizations since it can preserve the original formatting and is universally accessible. However, PDF isn't an structured document format, making it very difficult to extract specific data for further processing or automation.<br /> <br />A comma-separated value (CSV) file, on the other hand, stores the data in a tabular format. Each line of the file is a data record and the fields of each record are separated by commas. This allows most spreadsheet or accounting programs to recognize CSV files and perform various tasks on the extracted data.<br /><br />Converting PDF to CSV then allows businesses to extract valuable data from PDF files and transform it into a format that is more much manageable and compatible with different software applications for further processing or analysis.`,
+      },
+      {
+        question: "Is the Extracted Data Safe With FormX?",
+        answer: `Rest assured that all your the extracted data will not be used or stored in any permanent storage by FormX in any way. We understand that many of the processed PDF files may contain personal or confidential data. Read our data <a href="/data-privacy-policy" target="_blank">privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "Is This PDF to CSV Tool Free to Use?",
+        answer: `Yes, this PDF to CSV converter is free to use.<br />&#8203;<br />Aside from the free tool, FormX also offers a more advanced solution with pre-built extraction models, or extractor, including receipt, bank statement, invoice, and more. You can also build your own custom extractor with as little as one sample as FormX is powered by machine learning and large language model like GPT-4.<br />&#8203;<br /><a href="https://formextractorai.com" target="_blank">Sign up for a free trial</a> or <a href="/talk-with-us" target="_blank">contact us</a> to learn more about our Intelligent Document Processing solution.`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Make Your PDF to CSV Conversion Intelligent and Automated with FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual data entry with FormX to automate data extraction and improve productivity by 10 times." />
+            <StatCard number="92%" label="Accuracy" description="Our proprietary image pre-processing and OCR result post-processing ensure a 92% extraction accuracy, minimizing the need for human intervention." />
+            <StatCard number="6" label="Months" description="On average, businesses can realize the return on investment (ROI) of business automation within 6 months after implementing FormX.ai." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

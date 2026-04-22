@@ -1,0 +1,189 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+---
+
+<PageLayout
+  title="AI-Powered Bookkeeping Automation | Boost Efficiency &amp; Delight Clients"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/bookkeeping"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Bookkeeping"
+    heading="Turn Data Entry into Client Delight with FormX.ai"
+    subheading="Reduce errors, improve turnaround times, and keep your clients happy."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_kv-bookkeeping.webp",
+      alt: "",
+      width: 1200,
+      srcset: "/images/pages/solutions_kv-bookkeeping-p-500.webp 500w, /images/pages/solutions_kv-bookkeeping-p-800.webp 800w, /images/pages/solutions_kv-bookkeeping-p-1080.webp 1080w, /images/pages/solutions_kv-bookkeeping-p-1600.webp 1600w, /images/pages/solutions_kv-bookkeeping-p-2000.webp 2000w, /images/pages/solutions_kv-bookkeeping.webp 2400w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    }}
+  />
+
+  <FeatureGrid
+    heading="Boost Your Bookkeeping Efficiency and Delight Your Clients"
+    subheading="Work Smarter, Clients Happier: Streamline processes and build stronger relationships with faster turnarounds."
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/Group-1986.svg",
+        iconWidth: 128,
+        title: "Reduced Errors & Faster Turnarounds",
+        description: "FormX.ai's AI-powered data extraction minimizes manual entry mistakes, leading to cleaner and more accurate records."
+      },
+      {
+        icon: "/images/pages/Group-1987.svg",
+        iconWidth: 80,
+        title: "Happier Clients, Stronger Relationships",
+        description: "Improved accuracy and faster turnarounds reduce client frustration and delays, leading to happier clients."
+      },
+      {
+        icon: "/images/pages/Group-1988.svg",
+        iconWidth: 80,
+        title: "More Time for Client Communication & Strategy",
+        description: "Free up valuable time spent on tedious data entry tasks with FormX.ai."
+      }
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="card-xl bg-white">
+        <div class="card-xl-2-block-wrapper">
+          <div class="card-xl-content-wrap"></div>
+        </div>
+        <div class="card-xl-testimonial-wrap">
+          <img src="/images/pages/Group-1974.svg" loading="lazy" width="Auto" alt="" class="card-xl-testimonial-icon" />
+          <div class="card-xl-testimonial text-center">"Since using FormX.ai, I've been able to reduce turnaround times for my clients by 20%. They're thrilled with the faster service, and it frees up my time to offer more strategic insights."</div>
+          <div class="card-xl-testimonial-author-wrap">
+            <div class="card-xl-testimonial-author-photo">
+              <img src="/images/pages/sarah_ng-profile_image.webp" loading="lazy" width="80.5" alt="" class="image-65" />
+            </div>
+            <div class="card-xl-testimonial-author-info-wrap">
+              <div class="card-xl-testimonial-author-info-name">Sarah Ng</div>
+              <div class="card-xl-testimonial-author-info-position">Bookkeeper at Accounting in Singapore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default heading-content w-container">
+      <div class="product-heading-wrapper ml-auto mr-auto mb-60">
+        <h2 class="product-heading">How FormX.ai Works:Powerful Pre-Processing for Seamless Integration</h2>
+        <div class="product-subheading">FormX.ai empowers you to streamline your bookkeeping workflow with its robust AI-powered document processing.<br/>Here's how it simplifies your tasks:</div>
+      </div>
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="_2-block-flex tabs-with-image w-tabs">
+        <div class="hover-change tabs w-tab-menu">
+          <a data-w-tab="Tab 1" class="hover-change-content w-inline-block w-tab-link w--current">
+            <div class="hover-change-title">Effortless Integration</div>
+            <div style="height:0px" class="hover-change-description">No need to overhaul your existing systems! FormX.ai integrates seamlessly with your current accounting software and cloud storage platforms through our secure API.</div>
+          </a>
+          <a data-w-tab="Tab 2" class="hover-change-content w-inline-block w-tab-link">
+            <div class="hover-change-title">Intelligent Document Pre-Processing</div>
+            <div style="height:0px" class="hover-change-description">Automate data extraction from financial documents, enhance security with PII protection, and gain valuable insights for asset portfolio analysis.</div>
+          </a>
+          <a data-w-tab="Tab 3" class="hover-change-content w-inline-block w-tab-link">
+            <div class="hover-change-title">Secure JSON Output</div>
+            <div style="height:0px" class="hover-change-description">Improve accuracy and efficiency in your retail business with FormX.ai. Automate receipt data extraction, centralize customer information, and make accurate product recommendations.</div>
+          </a>
+          <a data-w-tab="Tab 4" class="hover-change-content w-inline-block w-tab-link">
+            <div class="hover-change-title">Enhanced Security and Scalability</div>
+            <div style="height:0px" class="hover-change-description">Improve accuracy and efficiency in your retail business with FormX.ai. Automate receipt data extraction, centralize customer information, and make accurate product recommendations.</div>
+          </a>
+        </div>
+        <div class="_2-block-flex-image tabs w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+            <img width="600" sizes="(max-width: 767px) 100vw, 600px" alt="" src="/images/pages/solutions_bookkeeping-howworks-01@2x.webp" loading="eager" srcset="/images/pages/solutions_bookkeeping-howworks-01@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-howworks-01@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-howworks-01@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-howworks-01@2x-p-1600.webp 1600w, /images/pages/solutions_bookkeeping-howworks-01@2x-p-2000.webp 2000w, /images/pages/solutions_bookkeeping-howworks-01@2x.webp 2400w" />
+          </div>
+          <div data-w-tab="Tab 2" class="w-tab-pane">
+            <img width="600" sizes="100vw" alt="" src="/images/pages/solutions_bookkeeping-howworks-02@2x.webp" loading="eager" srcset="/images/pages/solutions_bookkeeping-howworks-02@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-howworks-02@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-howworks-02@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-howworks-02@2x-p-1600.webp 1600w, /images/pages/solutions_bookkeeping-howworks-02@2x-p-2000.webp 2000w, /images/pages/solutions_bookkeeping-howworks-02@2x.webp 2400w" />
+          </div>
+          <div data-w-tab="Tab 3" class="w-tab-pane">
+            <img width="615" sizes="100vw" alt="" src="/images/pages/solutions_bookkeeping-howworks-03@2x.webp" loading="eager" srcset="/images/pages/solutions_bookkeeping-howworks-03@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-howworks-03@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-howworks-03@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-howworks-03@2x-p-1600.webp 1600w, /images/pages/solutions_bookkeeping-howworks-03@2x-p-2000.webp 2000w, /images/pages/solutions_bookkeeping-howworks-03@2x.webp 2400w" />
+          </div>
+          <div data-w-tab="Tab 4" class="w-tab-pane">
+            <img width="615" sizes="100vw" alt="" src="/images/pages/solutions_bookkeeping-howworks-04@2x.webp" loading="eager" srcset="/images/pages/solutions_bookkeeping-howworks-04@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-howworks-04@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-howworks-04@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-howworks-04@2x-p-1600.webp 1600w, /images/pages/solutions_bookkeeping-howworks-04@2x-p-2000.webp 2000w, /images/pages/solutions_bookkeeping-howworks-04@2x.webp 2400w" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <FeatureGrid
+    heading="Benefits of API Integration"
+    subheading="The API integration simplifies your workflow, frees up valuable time,and lays the groundwork for future automation."
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/Flow-chart.svg",
+        iconWidth: 128,
+        title: "Streamlined Workflow",
+        description: "Reduce manual document preparation time with intelligent pre-processing."
+      },
+      {
+        icon: "/images/pages/Data-Set.svg",
+        iconWidth: 128,
+        title: "Field-proven Automation",
+        description: "Lay the groundwork for seamless data extraction."
+      },
+      {
+        icon: "/images/pages/Up-graph-line.svg",
+        iconWidth: 80,
+        title: "Improved Efficiency",
+        description: "Free up valuable time for other tasks while documents are prepared for future automation."
+      },
+      {
+        icon: "/images/pages/Shield-lock-3.svg",
+        iconWidth: 80,
+        title: "Increased Security",
+        description: "Ensure the safety of your client information with secure data transfer."
+      }
+    ]}
+  />
+
+  <TwoBlockSection
+    heading="Unlock Efficiency, Choose Your Plan"
+    body="Tailored plans for every bookkeeping need.<br/>Visit our Pricing Page for details."
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    linkHref="/pricing"
+    linkText="Learn More ->"
+    image={{
+      src: "/images/pages/solutions_bookkeeping-01@2x.webp",
+      alt: "",
+      width: 685,
+      srcset: "/images/pages/solutions_bookkeeping-01@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-01@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-01@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-01@2x.webp 1370w",
+      sizes: "(max-width: 767px) 100vw, 685px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Bookkeeping in the Age of AI: Conquer Data Entry &amp;Embrace a Brighter Future"
+    body="Discover how AI automation can revolutionize<br/>your bookkeeping workflow."
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    linkHref="/blog"
+    linkText="Read the Blog ->"
+    image={{
+      src: "/images/pages/solutions_bookkeeping-02@2x.webp",
+      alt: "",
+      width: 685,
+      srcset: "/images/pages/solutions_bookkeeping-02@2x-p-500.webp 500w, /images/pages/solutions_bookkeeping-02@2x-p-800.webp 800w, /images/pages/solutions_bookkeeping-02@2x-p-1080.webp 1080w, /images/pages/solutions_bookkeeping-02@2x.webp 1370w",
+      sizes: "(max-width: 767px) 100vw, 685px"
+    }}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

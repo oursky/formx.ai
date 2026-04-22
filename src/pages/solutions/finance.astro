@@ -1,0 +1,100 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+---
+
+<PageLayout
+  title="Streamline Financial Operations with FormX.ai | Automate Data Extraction &amp; Enhance Security"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/finance"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Finance"
+    heading="Automate Financial Statement Processing with Powerful OCR Technology"
+    subheading="Boost Efficiency and Eliminate Manual Data Entry from Financial Statements with FormX.ai"
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_kv-finance@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_kv-finance@2x-p-500.webp 500w, /images/pages/solutions_kv-finance@2x-p-800.webp 800w, /images/pages/solutions_kv-finance@2x-p-1080.webp 1080w, /images/pages/solutions_kv-finance@2x.webp 1200w",
+      sizes: "(max-width: 479px) 100vw, 600px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Effortlessly Extract Data from All Your Financial Documents with OCR"
+    body="FormX.ai streamlines finance workflows by automatically extracting data from invoices, receipts, bank statements, and other financial documents using powerful OCR technology."
+    imagePosition="right"
+    image={{
+      src: "/images/pages/solutions_finance-01@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_finance-01@2x-p-500.png 500w, /images/pages/solutions_finance-01@2x-p-800.png 800w, /images/pages/solutions_finance-01@2x-p-1080.png 1080w, /images/pages/solutions_finance-01@2x.webp 1200w",
+      sizes: "(max-width: 479px) 100vw, 600px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Seamlessly Integrate OCR for Financial Statement Processing"
+    body="FormX.ai's robust APIs empower you to integrate powerful OCR technology directly into your existing workflows. Automate data extraction and validation from financial statements for faster, more efficient processing."
+    imagePosition="left"
+    image={{
+      src: "/images/pages/solutions_what-is-ocr@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_what-is-ocr@2x-p-500.webp 500w, /images/pages/solutions_what-is-ocr@2x-p-800.webp 800w, /images/pages/solutions_what-is-ocr@2x.webp 1410w",
+      sizes: "(max-width: 479px) 100vw, 600px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Effortlessly Process Financial Statements Directly Within Xero"
+    body="FormX.ai integrates seamlessly with Xero, allowing you to leverage powerful OCR technology for automatic data extraction from your financial statements directly within your accounting software."
+    imagePosition="right"
+    linkHref="/blog/unleash-xero-automation-powerhouse-automating-xero-accounts-payable-with-formx-ai"
+    linkText="Learn more about Xero support ->"
+    image={{
+      src: "/images/pages/solutions_finance-03@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_finance-03@2x-p-500.png 500w, /images/pages/solutions_finance-03@2x-p-800.png 800w, /images/pages/solutions_finance-03@2x-p-1080.png 1080w, /images/pages/solutions_finance-03@2x.webp 1200w",
+      sizes: "(max-width: 479px) 100vw, 600px"
+    }}
+  />
+
+  <FeatureGrid
+    heading="Boost Finance Productivity with Automated OCR Processing"
+    subheading="FormX.ai delivers a powerful and proven solution to streamline financial statement processing. See a return on investment in just three months with these key benefits:"
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_insurance-icon-1@2x.webp",
+        iconWidth: 128,
+        title: "Effortless Automation with OCR",
+        description: "Simply scan your financial statements and let FormX.ai's OCR technology extract data automatically. Free your finance team to focus on higher-value analysis."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-2@2x.webp",
+        iconWidth: 80,
+        title: "Eliminate Data Entry Errors",
+        description: "Our advanced OCR technology ensures accurate data extraction, minimizing human errors that can occur with manual processing."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-3@2x.webp",
+        iconWidth: 80,
+        title: "Enhanced Financial Data Accuracy",
+        description: "Automated data extraction streamlines processing and reduces the risk of errors. This translates to highly accurate and timely financial data for better business decisions."
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

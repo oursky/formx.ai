@@ -1,0 +1,86 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="Invoice OCR API | Extract Data from Invoices Automatically"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/invoice-ocr-api"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title"><span class="heading-gradient">Invoice OCR API<br/></span>for Enterprise Integration</h1>
+      <p class="section__header__content">Extract structured invoice data via REST API. Integrate with SAP, NetSuite, QuickBooks, or any ERP system. JSON or Excel output.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/invoice/" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What data fields does an Invoice OCR API extract?",
+        answer: `FormX can extract all data needed for businesses to expedite various application processes. These extraction items include but are not limited to the vendor or purchaser's name, total amount, issue date, due date, all transactions, and more. You can also customise or train our extractors to extract exactly what you need. <a href="/talk-with-us">Get in touch</a> to learn more!<br />`,
+      },
+      {
+        question: "What invoice formats does the FormX OCR API support?",
+        answer: `FormX can extract data from all kinds of Invoice with various layouts and formats as it is not a template-based solution. Training a new extractor is also simple and requires as little as one sample image. <a href="/talk-with-us">Schedule a Demo</a> to see how simple it is to automate invoice data extraction.<br />`,
+      },
+      {
+        question: "How do I integrate an Invoice OCR API with SAP or NetSuite?",
+        answer: `FormX provides a full REST API that connects directly with SAP S/4HANA, SAP Business One, Oracle NetSuite, QuickBooks Online and Desktop, Microsoft Dynamics 365, and any other ERP system. SDKs are available for Python, Node.js, Java, and .NET. <a href="/talk-with-us">Contact us</a> for pre-built integration guides for SAP and NetSuite.<br />`,
+      },
+      {
+        question: "What does the Invoice OCR API return?",
+        answer: `The API returns a structured JSON object containing all extracted invoice fields: vendor name and address, invoice number, issue and due dates, line items (description, quantity, unit price, tax), subtotal, tax total, grand total, currency, and payment terms. <a href="/talk-with-us">Reach out to us</a> to customise extracted fields through the FormX portal.<br />`,
+      },
+      {
+        question: "How does invoice OCR work technically?",
+        answer: `FormX combines OCR, Machine Learning, and Large Language Models to do more than convert invoices into machine-encoded text. It understands invoice content, identifies relevant data fields, and returns structured JSON, Excel, or CSV, ready for direct use in ERP systems or workflow automation.<br />`,
+      },
+      {
+        question: "Is invoice data safe when using an OCR API?",
+        answer: `Certainly. Invoice contains financial and personal data that should only be accessible to authorized parties. FormX does not use or store the extracted data in any permanent storage. We are also ISO27001 certified and SoC 2 Type 2 audited. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "What does the Invoice OCR API\u00a0JSON response look like?",
+        answer: `The API returns a structured JSON object containing all extracted invoice fields: vendor name and address, invoice number, issue and due dates, line items (description, quantity, unit price, tax), subtotal, tax total, grand total, currency, and payment terms. See our <a href="https://help.formx.ai/reference/document-extraction" target="_blank">API documentation here</a>. You can also customise extracted fields through the FormX portal.<br />`,
+      },
+      {
+        question: "Can I tailor what I need to extract from invoices or receipts?",
+        answer: `Yes, FormX offers more advanced customisation and tailoring for you exact needs. We can process a wide range of documents including receipts, bank statement, tax slips, or anything else you require.<br /><br />If you wish to integrate automated invoice data extraction with other applications, you can <a href="https://formextractorai.com/signup" target="_blank">create a trial account</a> or <a href="/talk-with-us">contact us</a> to learn more about how FormX can be of help to your business.<br />`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Automate Your Invoice Extraction With FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual data entry with FormX to automate data extraction and improve productivity by 10 times." />
+            <StatCard number=">95%" label="Accuracy" description="FormX's proprietary pre-processing and post-processing pipeline delivers 95%+ accuracy on structured invoices reducing human review to a minimal." />
+            <StatCard number="3" label="Months" description="On average, businesses can realize the return on investment (ROI) of business automation in as little as 3 months after implementing FormX.ai." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

@@ -1,0 +1,32 @@
+---
+title: "FormX Product Update - Signature, Address Proof Extraction from Any Documents"
+description: "FormX has released several features to expedite verification of signatures and address. In addition, users can now extract QR cod"
+excerpt: "FormX has released several features to expedite verification of signatures and address. In addition, users can now extract QR cod"
+category: automation
+author: FormX
+date: 2025-02-10
+lastmod: 2024-03-28
+featured_image: "/images/blog/633b939b75e84d352cd5019e_address-proof-signature-features.png"
+featured_image_alt: "FormX Product Update - Signature, Address Proof Extraction from Any Documents"
+canonical_url: "/blog/formx-product-update-signature-address-proof-extraction-from-any-documents"
+---
+
+![](/images/blog/631592515dd15f3de92246de_6107bf186a1240c922940f93_Document%2520AddressProof.png)
+
+To help our clients, such as the Transport Department of HKSAR streamline their workflow, we've improved the accuracy and performance of our address proof extraction model. With the improved model, businesses or governmental institutions can verify the address more efficiently. 
+
+Verifying the signee's identity during various business processes is important; yet, most of the time, this is still done manually. To help you expedite signature verification, we've released a Signature Extraction feature that allows you to locatethe signature to check if the document has been signed and also extract it to compare it with the one stored in the database.
+
+![](/images/blog/6335096cc167283c7016d345_signature-extraction.png)
+
+The image above is a sample bank statement with the holder's signature. The bbox values are the coordinates of the bounding box. With these, you can locate the signature, slice it, and extract it for identity verification.
+
+Aside from signatures, photos found on identity documents, such as IDs, driver's licenses, and passports, can now be detected and located on FormX for identity verification too!
+
+![](/images/blog/63365ed9684b9443e95d40dd_portrait-extraction.png)
+
+![](/images/blog/6315aa4c69124eeb41993906_qr-ocr.png)
+
+More and more documents now include QR codes or barcodes with encoded values such as URLs or text strings. No matter where the QR codes or barcodes are found, You can now extract them and their values from any documents with FormX. 
+
+‍

@@ -1,0 +1,99 @@
+---
+interface CtaButton {
+  text: string;
+  href: string;
+}
+
+interface HeroImage {
+  src: string;
+  alt: string;
+  width?: number;
+  srcset?: string;
+  sizes?: string;
+}
+
+interface Props {
+  tag?: string;
+  heading: string;
+  subheading?: string;
+  ctaPrimary?: CtaButton;
+  ctaSecondary?: CtaButton;
+  ctaPrimaryClass?: string;
+  image?: HeroImage;
+  bgClass?: string;
+  showTrustIcons?: boolean;
+  headingClass?: string;
+  subheadingClass?: string;
+}
+
+const {
+  tag,
+  heading,
+  subheading,
+  ctaPrimary,
+  ctaSecondary,
+  ctaPrimaryClass = 'gray',
+  image,
+  bgClass = '',
+  showTrustIcons = false,
+  headingClass = 'product-hero-content-heading',
+  subheadingClass = 'product-hero-content-subheading',
+} = Astro.props;
+---
+
+<div class={`section product-hero ${bgClass}`.trim()}>
+  <div class="container-default w-container">
+    <div class="product-hero-wrapper">
+      <div class="hero-content-block">
+        {tag && <div class="product-hero-title paragraph-small">{tag}</div>}
+        <div class="product-hero-content-wrapper">
+          <h1 class={headingClass}>{heading}</h1>
+          {subheading && <div class={subheadingClass}>{subheading}</div>}
+        </div>
+        {(ctaPrimary || ctaSecondary) && (
+          <div class="w-layout-hflex action-buttons">
+            {ctaPrimary && (
+              <a href={ctaPrimary.href} class={`button-primary button-left ${ctaPrimaryClass} w-button`}>
+                {ctaPrimary.text}
+              </a>
+            )}
+            {ctaSecondary && (
+              <a href={ctaSecondary.href} class="button-primary button-left button-primary-shadow button-gradient w-button">
+                {ctaSecondary.text}
+              </a>
+            )}
+          </div>
+        )}
+        {showTrustIcons && (
+          <div class="w-layout-hflex icons">
+            <div class="w-layout-hflex flex-block-27">
+              <img src="/images/pages/solutions-hero-bannericon-free.svg" loading="lazy" alt="" />
+              <div>100 free pages</div>
+            </div>
+            <div class="w-layout-hflex flex-block-27">
+              <img src="/images/pages/solutions-hero-bannericon-creditcard.svg" loading="lazy" alt="" />
+              <div>No credit card</div>
+            </div>
+            <div class="w-layout-hflex flex-block-27">
+              <img src="/images/pages/solutions-hero-bannericon-lock.svg" loading="lazy" alt="" />
+              <div>100% secured</div>
+            </div>
+          </div>
+        )}
+      </div>
+      {image && (
+        <div class="hero-image-block">
+          <img
+            src={image.src}
+            loading="lazy"
+            width={image.width}
+            alt={image.alt}
+            srcset={image.srcset}
+            sizes={image.sizes}
+            class="image-7"
+          />
+        </div>
+      )}
+    </div>
+  </div>
+</div>

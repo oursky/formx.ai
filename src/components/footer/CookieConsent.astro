@@ -1,0 +1,146 @@
+---
+// Cookie consent component - Finsweet implementation extracted from Webflow
+---
+
+<div class="cookies">
+  <div id="consentPopup" fs-cc="banner" class="fs-cookie-popup">
+    <div class="cookie-tag">You&#x27;re in control</div>
+    <p class="cookie-paragraph">
+      Privacy is important to us, so in accordance to our <a href="/data-privacy-policy"
+        >Privacy Policy</a
+      >, you have the option of disabling certain types of storage that may not be necessary for the
+      basic function of the website. <br />Blocking categories may impact your experience on the
+      website.<br />
+    </p>
+    <div class="button-wrapper-2 w-clearfix">
+      <a fs-cc="allow" href="#" class="button-2 accept w-button">Accept all</a>
+      <a fs-cc="deny" href="#" class="button-2 deny w-button">Deny</a>
+      <a fs-cc="open-preferences" href="#" class="preferences-link">Manage settings</a>
+    </div>
+  </div>
+
+  <div fs-cc="preferences" class="fs-preferences-manager-wrapper">
+    <div class="preferences-container">
+      <div class="privacy-title">Preferences</div>
+      <p class="paragraph-15">
+        Privacy is important to us, so you have the option of disabling certain types of storage
+        that may not be necessary for the basic functioning of the website. Blocking categories may
+        impact your experience on the website.<br />
+      </p>
+      <a fs-cc="allow" href="#" class="button-2 w-button">Accept all cookies</a>
+      <a fs-cc="close" href="#" class="close-button-2 w-inline-block">
+        <img
+          loading="lazy"
+          src="/images/ui/np_close_25798_27313D.svg"
+          alt="Close"
+          class="image-66"
+        />
+      </a>
+      <div class="consents-form w-form">
+        <form id="cookie-prefs-form" name="cookie-prefs-form" data-name="Cookie Preferences" method="get">
+          <div class="grid-3">
+            <div class="text-div">
+              <label class="cookie-tag">Essential</label>
+              <p class="paragraph-15">
+                These items are required to enable basic website functionality.<br />
+              </p>
+            </div>
+            <p class="paragraph-15 bold">Always active<br /></p>
+          </div>
+          <div class="grid-3">
+            <div class="text-div">
+              <label class="cookie-tag">Marketing</label>
+              <p class="paragraph-15">
+                These items are used to deliver advertising that is more relevant to you and your
+                interests.<br />
+              </p>
+            </div>
+            <label class="w-checkbox">
+              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+              <input
+                type="checkbox"
+                name="checkbox-4"
+                id="checkbox-marketing"
+                data-name="Checkbox 4"
+                fs-cc-checkbox="marketing"
+                style="opacity:0;position:absolute;z-index:-1"
+              />
+              <span class="checkbox-label-2 w-form-label" for="checkbox-marketing"></span>
+            </label>
+          </div>
+          <div class="grid-3">
+            <div class="text-div">
+              <label class="cookie-tag">Personalization</label>
+              <p class="paragraph-15">
+                These items allow the website to remember choices you make and provide enhanced,
+                more personal features.<br />
+              </p>
+            </div>
+            <label class="w-checkbox">
+              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+              <input
+                type="checkbox"
+                name="checkbox-personalization"
+                id="checkbox-personalization"
+                data-name="Checkbox Personalization"
+                fs-cc-checkbox="personalization"
+                style="opacity:0;position:absolute;z-index:-1"
+              />
+              <span class="checkbox-label-2 w-form-label" for="checkbox-personalization"></span>
+            </label>
+          </div>
+          <div fs-cc-checkbox="analytics" class="grid-3">
+            <div class="text-div">
+              <label class="cookie-tag">Analytics</label>
+              <p class="paragraph-15">
+                These items help the website operator understand how its website performs and how
+                visitors interact with the site.<br />
+              </p>
+            </div>
+            <label class="w-checkbox">
+              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+              <input
+                type="checkbox"
+                name="checkbox-analytics"
+                id="checkbox-analytics"
+                data-name="Checkbox Analytics"
+                fs-cc-checkbox="analytics"
+                style="opacity:0;position:absolute;z-index:-1"
+              />
+              <span class="checkbox-label-2 w-form-label" for="checkbox-analytics"></span>
+            </label>
+          </div>
+          <div class="w-layout-hflex flex-block-28 w-clearfix">
+            <input
+              type="submit"
+              data-wait="Please wait..."
+              fs-cc="deny"
+              class="button-2 deny w-button"
+              value="Reject all cookies"
+            />
+            <input
+              type="submit"
+              data-wait="Please wait..."
+              fs-cc="submit"
+              class="button-2 field-wrapper w-button"
+              value="Confirm my choices"
+            />
+          </div>
+        </form>
+        <div class="w-form-done"><div>Thank you! Your submission has been received!</div></div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div fs-cc="manager" class="fs-manager-opener">
+    <img
+      fs-cc="open-preferences"
+      loading="lazy"
+      alt="Manage cookie preferences"
+      src="/images/ui/np_cookie_80793_FFFFFF.svg"
+    />
+  </div>
+</div>

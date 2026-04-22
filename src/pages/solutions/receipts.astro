@@ -1,0 +1,227 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+---
+
+<PageLayout
+  title="Receipt Extraction API - Scan &amp; Extract Data from Your Receipt"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/receipts"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Receipts"
+    heading="Receipt OCR&nbsp;API"
+    subheading="Automate data extraction from receipts accurately with FormX to skyrocket productivity, reduce costs, and eliminate human errors."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/documenttype_kv_receipt@2x.webp",
+      alt: "",
+      srcset: "/images/pages/documenttype_kv_receipt@2x-p-500.webp 500w, /images/pages/documenttype_kv_receipt@2x-p-800.webp 800w, /images/pages/documenttype_kv_receipt@2x-p-1080.webp 1080w, /images/pages/documenttype_kv_receipt@2x-p-1600.webp 1600w, /images/pages/documenttype_kv_receipt@2x-p-2000.webp 2000w, /images/pages/documenttype_kv_receipt@2x.webp 2400w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <section class="section">
+    <div class="w-layout-blockcontainer container-default w-container">
+      <div class="product-2-block-wrapper t-column t-gap-40">
+        <div class="product-2-block-text-wrapper">
+          <h2 class="product-2-block-heading">What is Receipt OCR API?</h2>
+          <div class="product-2-block-paragraph">The Receipt OCR API from FormX.ai is a powerful tool that utilizes a combination of Optical Character Recognition (OCR), machine learning, and natural language processing (NLP) to automatically extract important data from your receipt images or files.<br/><br/>This goes beyond simply digitizing receipts. FormX.ai converts the unstructured text on your receipts into structured data pairs. This makes the information usable by other applications for analysis, reporting, or further processing.</div>
+        </div>
+        <div class="product-2-block-image-wrapper t-full">
+          <img src="/images/pages/solutions_what-is-ocr@2x.webp" loading="lazy" width="705" sizes="(max-width: 767px) 100vw, 705px" alt="" srcset="/images/pages/solutions_what-is-ocr@2x-p-500.webp 500w, /images/pages/solutions_what-is-ocr@2x-p-800.webp 800w, /images/pages/solutions_what-is-ocr@2x.webp 1410w" class="_2-block-image-radius" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section product-section">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">How Does <span class="heading-gradient">Receipt OCR API Work?</span></h2>
+          <div class="product-subheading">Using the FormX.ai Receipt OCR API is easy because receipts are one of our pre-built document types. Here's a quick overview:</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <div class="plain-svg-card card-bg-f7f8fc p-48">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_data.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Create from the Pre-built Extractor</div>
+                <div class="svg-card-description plain-svg-card-align-left">We already have a receipt extractor ready to use! No need to build one from scratch.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card card-bg-f7f8fc p-48">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_insights.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Upload Your Documents</div>
+                <div class="svg-card-description plain-svg-card-align-left">Simply upload your receipt images or files.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card card-bg-f7f8fc p-48">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_process.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Test and Integrate</div>
+                <div class="svg-card-description plain-svg-card-align-left">Check the test extractor to verify it's working correctly. Once satisfied, integrate the API into your application for automated data extraction.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <FeatureGrid
+    heading="Why Choose FormX's Receipt OCR API"
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_insurance-icon-1@2x.webp",
+        iconWidth: 128,
+        title: "Real-time Receipt Scanning & Data Extraction",
+        description: "With our mobile scan SDK and Receipt OCR API, you can scan and extract data from all kinds of receipts within seconds."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-2@2x.webp",
+        iconWidth: 80,
+        title: "90%+ Accuracy",
+        description: "Unique models of image pre-processing & OCR result post-processing enable our receipt OCR API to achieve 90% extraction accuracy."
+      },
+      {
+        icon: "/images/pages/solutions_insurance-icon-3@2x.webp",
+        iconWidth: 80,
+        title: "Industry-Leading Security",
+        description: "FormX will not store any processed images and our services run on Google Cloud Platform, one of the leading cloud service providers, to ensure data security."
+      },
+      {
+        icon: "/images/pages/Group-239.webp",
+        iconWidth: 128,
+        title: "True Scalability with SaaS",
+        description: "You pay for what you use. Scale up with FormX as your demand for receipt scanning and data extraction grows."
+      },
+      {
+        icon: "/images/pages/Group-240.webp",
+        iconWidth: 128,
+        title: "Intuitive User Interface",
+        description: "Simple drag & drop, clear instructions and setting interface to help you easily set up your receipt OCR extractor."
+      },
+      {
+        icon: "/images/pages/Group-241.webp",
+        iconWidth: 128,
+        title: "Simple Integration",
+        description: "FormX provides receipt mobile scanning SDK and OCR API for you to easily implement receipt scanning and automated receipt data extraction on any apps."
+      }
+    ]}
+  />
+
+  <TwoBlockSection
+    heading="Auto-Extract All Receipts Fields That You Need"
+    body="The auto extraction items of our Receipt OCR include but are not limited to the fields listed below. Custom extraction items can be easily added on the portal."
+    imagePosition="left"
+    bgClass="bg-f7f8fc"
+    image={{
+      src: "/images/pages/solutions_receipt-01@2x.webp",
+      alt: "",
+      width: 685,
+      srcset: "/images/pages/solutions_receipt-01@2x-p-500.webp 500w, /images/pages/solutions_receipt-01@2x-p-800.webp 800w, /images/pages/solutions_receipt-01@2x-p-1080.webp 1080w, /images/pages/solutions_receipt-01@2x.webp 1370w",
+      sizes: "(max-width: 767px) 100vw, 685px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Win Over Customers with Guided Receipt Scanning Mobile SDK"
+    body="FormX's mobile SDK auto-detects receipts and assist your users with taking the perfect receipt image for data extraction.Data are then automatically extracted from the receipts for your users, eliminating manual data entry and offering a seamless customer experience."
+    imagePosition="right"
+    bgClass="bg-f7f8fc"
+    linkHref="https://help.formx.ai/docs/webmobile-sdks-introduction"
+    linkText="Learn more about the Receipt Scanning SDK ->"
+    image={{
+      src: "/images/pages/solutions_invoice-02@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/solutions_invoice-02@2x-p-500.webp 500w, /images/pages/solutions_invoice-02@2x-p-800.webp 800w, /images/pages/solutions_invoice-02@2x-p-1080.webp 1080w, /images/pages/solutions_invoice-02@2x.webp 1201w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <CTACard
+    heading="Automate Receipt Scanning &amp; Data Extraction Now!"
+    ctaSecondary={{ text: "Schedule Demo ->", href: "/talk-with-us" }}
+  />
+
+  <FeatureGrid
+    heading="How Businesses Use Our Receipt OCR API"
+    subheading="A variety of documents, each with its own layouts and formats, can be used as address proofs. Machine Learning allows us to recognize different address proof documents and extract the required data fields for address verification."
+    bgClass="bg-f7f8fc"
+    columns={4}
+    cards={[
+      {
+        icon: "/images/pages/Group-250@2x.webp",
+        iconWidth: 128,
+        title: "Finance & Accounting",
+        description: "Our receipt OCR API can scan receipt images, extract each line item, and convert it to structured data that can be used directly by your accounting systems, automating your finance & expense management."
+      },
+      {
+        icon: "/images/pages/Group-251@2x.webp",
+        iconWidth: 80,
+        title: "Loyalty & Rewards Program",
+        description: "Customers of several major shopping malls in Hong Kong and China can easily earn loyalty points or rewards by uploading images of their receipts, from which FormX will obtain information like shop name, date, and total amount, to the designated mobile app."
+      },
+      {
+        icon: "/images/pages/Group-252@2x.webp",
+        iconWidth: 80,
+        title: "Consumer Behavior Analysis",
+        description: "Retailers can capture real-time receipt data from consumers without manual data entry to analyze consumer behavior and better plan for furture marketing campaigns."
+      },
+      {
+        icon: "/images/pages/Group-253@2x.webp",
+        iconWidth: 80,
+        title: "And More",
+        description: "Businesses across various industries have benefited from using FormX's receipt OCR API to automate receipt scanning and processing. Learn more about how to extract receipt data with OCR, regex, and AI."
+      }
+    ]}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What is receipt OCR API and how does it work?",
+        answer: "Receipt OCR API of FormX leverages OCR, machine learning, natural language processing, etc., to recognize and extract important data from receipt images or files. It does not simply help businesses digitize receipt but more importantly convert unstructured texts to structured data pairs that can be directly used by other applications for analysis or further processing.<br/>"
+      },
+      {
+        question: "Do you also provide receipt capture feature?",
+        answer: `Yes, aside from the web portal that allows you to configure your receipt OCR API, FormX has also created receipt capture SDK for Android and iOS for you to implement real-time receipt capture &amp; data extraction on your apps. <a href="/talk-with-us?distinct_id=018ee481-39cc-74bf-980d-f5e7cf137e38" target="_blank">Contact our team</a> for more information.<br/>`
+      },
+      {
+        question: "Can FormX extract line items on receipts?",
+        answer: "Yes, our receipt OCR API is capable of extracting line items to show the name, amount, quantity, and unit price of each line item or product.<br/>"
+      },
+      {
+        question: "Can FormX be integrated with other systems for accounting or robotic process automation (RPA)?",
+        answer: "Definitely. FormX can be easily integrated with different systems or software, including accounting or ERP software, to automate data entry. For example, FormX can also be RPA to bring our advanced extraction models into your robotic process.<br/>"
+      },
+      {
+        question: "What are the pricing plans of FormX?",
+        answer: `FormX provides free trial for users to test out our features and process the first 100 pages for free. For monthly subscription, our Starter plan costs USD $299 / month, allowing you to process up to 3,000 pages. For enterprises with more documents to process, you may <a href="/talk-with-us" target="_blank">contact our team</a> for more detailed discussion.<br/>`
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

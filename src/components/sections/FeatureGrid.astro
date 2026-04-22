@@ -1,0 +1,55 @@
+---
+interface Card {
+  icon?: string;
+  iconWidth?: number;
+  iconClass?: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  heading: string;
+  subheading?: string;
+  columns?: 3 | 4;
+  bgClass?: string;
+  cards: Card[];
+}
+
+const { heading, subheading, columns = 3, bgClass = '', cards } = Astro.props;
+
+const gridClass = columns === 4 ? '_4-block-grid' : '_3-block-grid';
+---
+
+<div class={`section product-section ${bgClass}`.trim()}>
+  <div class="container-default w-container">
+    <div class="product-heading-content-wrapper">
+      <div class="product-heading-wrapper">
+        <h2 class="product-heading">{heading}</h2>
+        {subheading && <div class="product-subheading">{subheading}</div>}
+      </div>
+      <div class="product-content-wrapper">
+        <div class={gridClass}>
+          {cards.map((card) => (
+            <div class="plain-svg-card card-bg-white">
+              {card.icon && (
+                <div class="card-svg-block">
+                  <img
+                    src={card.icon}
+                    loading="lazy"
+                    width={card.iconWidth ?? 80}
+                    alt=""
+                    class={`card-svg${card.iconClass ? ` ${card.iconClass}` : ' small'}`}
+                  />
+                </div>
+              )}
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">{card.title}</h6>
+                <div class="svg-card-description">{card.description}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

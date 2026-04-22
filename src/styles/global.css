@@ -1,0 +1,31 @@
+/* Global overrides and custom properties extracted from Webflow inline styles */
+
+:root {
+  color-scheme: only light;
+}
+
+iframe {
+  border: none;
+}
+
+.w-container::before,
+.w-container::after {
+  display: none !important;
+}
+
+/* Intl-tel-input overrides */
+.hide {
+  display: none;
+}
+
+#valid-msg {
+  color: #10b981;
+}
+
+#error-msg {
+  color: #f43f5e;
+}
+
+.iti {
+  display: block;
+}

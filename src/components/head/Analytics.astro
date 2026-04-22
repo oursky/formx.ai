@@ -1,0 +1,49 @@
+---
+import { GTM_ID, OPTIBASE_KEY } from '@/lib/constants';
+---
+
+<!-- Plausible Analytics -->
+<script defer data-domain="formx.ai" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script>
+  window.plausible =
+    window.plausible ||
+    function () {
+      (window.plausible.q = window.plausible.q || []).push(arguments);
+    };
+</script>
+<script>
+  var toTag = [{ elementId: 'primary-cta-b', classes: 'plausible-event-name=Signup' }];
+  document.addEventListener('DOMContentLoaded', function (_e) {
+    toTag.forEach(function (tagObject) {
+      var element = document.getElementById(tagObject.elementId);
+      if (element) {
+        tagObject.classes.split(' ').forEach(function (className) {
+          element.classList.add(className);
+        });
+      }
+    });
+  });
+</script>
+<!-- End Plausible -->
+
+<!-- Finsweet Cookie Consent -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"
+></script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KSJJ6J4');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Optibase A/B Testing -->
+<script src="https://app.optibase.io/script.js" public-api-key={OPTIBASE_KEY}></script>

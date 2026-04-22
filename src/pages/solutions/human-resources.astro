@@ -1,0 +1,154 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+---
+
+<PageLayout
+  title="Human Resources - Simplified and Automated Workflow for HRs | FormX.ai"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/human-resources"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Human Resources"
+    heading="Automate HR Tasks with Powerful OCR Resume Scanning"
+    subheading="Simplify your HR processes with FormX.ai, an advanced AI-powered solution designed to automate the input process for resumes and employee information. From resume parsing to certificate verification, FormX.ai streamlines HR tasks."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_kv-HR@2x.webp",
+      alt: "",
+      width: 1200,
+      srcset: "/images/pages/solutions_kv-HR@2x-p-500.webp 500w, /images/pages/solutions_kv-HR@2x-p-800.webp 800w, /images/pages/solutions_kv-HR@2x-p-1080.webp 1080w, /images/pages/solutions_kv-HR@2x-p-1600.webp 1600w, /images/pages/solutions_kv-HR@2x-p-2000.webp 2000w, /images/pages/solutions_kv-HR@2x.webp 2400w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Effortless Data Extraction with Powerful OCR Resume Scanning"
+    body="FormX.ai's OCR resume scanning technology extracts relevant information like contact details, work experience, education, and skills automatically."
+    imagePosition="right"
+    image={{
+      src: "/images/pages/solutions_HR-01@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_HR-01@2x-p-500.webp 500w, /images/pages/solutions_HR-01@2x-p-800.webp 800w, /images/pages/solutions_HR-01@2x-p-1080.webp 1080w, /images/pages/solutions_HR-01@2x.webp 1200w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <div class="section product-section">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">What is OCR in <span class="heading-gradient">Resume Parsing?</span></h2>
+          <div class="product-subheading">To achieve the highest level of protection for your business,<br/>consider implementing these best practices</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_2-block-grid gap-32">
+            <div class="plain-svg-card card-bg-white bg-f7f8fc">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions-hr-whatis-imageprocessing.svg" loading="lazy" width="128" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Image Preprocessing</h6>
+                <div class="svg-card-description">The OCR system first prepares the resume image by enhancing its quality and removing noise.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card card-bg-white bg-f7f8fc">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions-hr-whatis-textlocalization.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Text Localization</h6>
+                <div class="svg-card-description">It identifies the areas within the image that contain text.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card card-bg-white bg-f7f8fc">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions-hr-whatis-character.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Character Recognition</h6>
+                <div class="svg-card-description">The OCR engine recognizes individual characters based on their shape and pattern.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card card-bg-white bg-f7f8fc">
+              <div class="card-svg-block">
+                <img src="/images/pages/solutions-hr-whatis-textreconstruction.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <h6 class="svg-card-title">Text Reconstruction</h6>
+                <div class="svg-card-description">The recognized characters are combined to form words, sentences, and paragraphs.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <TwoBlockSection
+    heading="Streamline Data Verification Beyond Resumes"
+    body="FormX.ai goes beyond OCR resume scanning to ensure data accuracy. Verify the authenticity of certificates and cross-check information from resumes with actual records."
+    imagePosition="left"
+    bgClass="bg-f7f8fc"
+    linkHref="/talk-with-us"
+    linkText="I have a different use case ->"
+    image={{
+      src: "/images/pages/solutions_HR-02@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_HR-02@2x-p-500.webp 500w, /images/pages/solutions_HR-02@2x-p-800.webp 800w, /images/pages/solutions_HR-02@2x-p-1080.webp 1080w, /images/pages/solutions_HR-02@2x.webp 1200w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Revolutionize Your HR Workflow<br/><span class="heading-gradient">with Data-Driven Decisions</span></h2>
+          <div class="product-subheading">Leveraging the power of automated data extraction from resumes, FormX.ai unlocks a range of benefits to transform your HR operations:</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <div class="image-content-card-wrapper">
+              <div class="card-image-wrapper">
+                <img src="/images/pages/solutions_HR-transform-1@2x.svg" loading="lazy" width="202.5" alt="" class="grid-card-image" />
+              </div>
+              <div class="card-content-wrapper">
+                <div class="card-content-title">Seamless HR System Integration</div>
+                <div class="card-content-description hr">Effortlessly integrate FormX.ai with your existing HR systems. Parsed resume data and employee information flow smoothly.</div>
+              </div>
+            </div>
+            <div class="image-content-card-wrapper">
+              <div class="card-image-wrapper">
+                <img src="/images/pages/solutions_HR-transform-2@2x.svg" loading="lazy" width="70" alt="" class="grid-card-image" />
+              </div>
+              <div class="card-content-wrapper">
+                <div class="card-content-title">Streamlined Candidate Evaluation</div>
+                <div class="card-content-description hr">Quickly review and compare rich candidate profiles extracted from resumes to empower informed hiring decisions and accelerate the recruitment process.</div>
+              </div>
+            </div>
+            <div class="image-content-card-wrapper">
+              <div class="card-image-wrapper">
+                <img src="/images/pages/solutions_HR-transform-3@2x.svg" loading="lazy" width="70" alt="" class="grid-card-image" />
+              </div>
+              <div class="card-content-wrapper">
+                <div class="card-content-title">Improve HR Efficiency and Accuracy</div>
+                <div class="card-content-description hr">Eliminate manual data entry and reduce administrative burdens with FormX.ai. This frees your HR team to focus on strategic initiatives.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

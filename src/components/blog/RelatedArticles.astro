@@ -1,0 +1,24 @@
+---
+import type { BlogPost } from '@/lib/blog';
+import BlogCard from './BlogCard.astro';
+
+interface Props {
+  posts: BlogPost[];
+}
+
+const { posts } = Astro.props;
+---
+
+<div class="section blog-post-latest-articles">
+  <div class="container-default w-container">
+    <div class="split-content latest-articles-top">
+      <h2 class="h2-title">Latest articles</h2>
+      <a href="/blog" class="link-arrow w-inline-block">
+        <div>Back to Blog</div>
+      </a>
+    </div>
+    <div class="blog-post-grid">
+      {posts.map((post) => <BlogCard {post} />)}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+---
+
+<PageLayout
+  title="Identity Document Extraction - Scan &amp; Extract Information from Your ID"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/id-card-ocr"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="ID Cards"
+    heading="Identity Document OCR"
+    subheading="Convert ID documents into ready-to-use structured data with artificial intelligence (AI) to save time for your customers and employees."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_idcard_kv@2x.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/solutions_idcard_kv@2x-p-500.webp 500w, /images/pages/solutions_idcard_kv@2x-p-800.webp 800w, /images/pages/solutions_idcard_kv@2x-p-1080.webp 1080w, /images/pages/solutions_idcard_kv@2x.webp 1465w",
+      sizes: "(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+    }}
+  />
+
+  <div class="section product-section">
+    <div class="container-default w-container">
+      <div class="product-2-block-wrapper reverse">
+        <div class="product-2-block-image-wrapper">
+          <img src="/images/pages/solutions_idcard_what-is@2x.webp" loading="lazy" width="600" sizes="(max-width: 767px) 100vw, 600px" alt="" srcset="/images/pages/solutions_idcard_what-is@2x-p-500.webp 500w, /images/pages/solutions_idcard_what-is@2x-p-800.webp 800w, /images/pages/solutions_idcard_what-is@2x.webp 1370w" class="_2-block-image-radius" />
+        </div>
+        <div class="product-2-block-text-wrapper">
+          <h2 class="product-2-block-heading">What is OCR for ID Recognition?</h2>
+          <div class="product-2-block-paragraph">FormX.ai's OCR for ID Recognition leverages advanced OCR, machine learning, and natural language processing to accurately extract vital information from identity document images or files. This technology goes beyond simple text extraction by transforming unstructured ID data into structured data formats, ready for verification, analysis, or integration into other systems.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <FeatureGrid
+    heading="How Does ID cards OCR API Work?"
+    subheading="Using FormX.ai's OCR for ID Recognition is efficient due to our pre-built ID extractors. Follow these steps:"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_apiworks_choose.svg",
+        iconWidth: 128,
+        iconClass: "xs",
+        title: "Create from the Pre-built Extractor",
+        description: "Select from our ready-made ID/Passport or Address Proof extractors to get started quickly."
+      },
+      {
+        icon: "/images/pages/solutions_apiworks_upload.svg",
+        iconWidth: 128,
+        iconClass: "xs",
+        title: "Upload Your Documents",
+        description: "Easily upload images or files of your identity documents."
+      },
+      {
+        icon: "/images/pages/solutions_apiworks_integrate.svg",
+        iconWidth: 128,
+        iconClass: "xs",
+        title: "Test and Integrate",
+        description: "Verify the extractor's performance through testing, then seamlessly integrate the API into your system for automated data extraction."
+      }
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-2-block-wrapper reverse">
+        <div class="product-2-block-image-wrapper">
+          <img src="/images/pages/solutions_idcard_detection@2x.webp" loading="lazy" width="600" sizes="(max-width: 767px) 100vw, 600px" alt="" srcset="/images/pages/solutions_idcard_detection@2x-p-500.webp 500w, /images/pages/solutions_idcard_detection@2x-p-800.webp 800w, /images/pages/solutions_idcard_detection@2x-p-1080.webp 1080w, /images/pages/solutions_idcard_detection@2x.webp 1370w" class="_2-block-image-radius" />
+        </div>
+        <div class="product-2-block-text-wrapper">
+          <h2 class="product-2-block-heading">Automate ID Scanning and Processing with Liveness Detection</h2>
+          <div class="product-2-block-paragraph">FormX.ai streamlines the entire process by automating ID scanning and processing. We go beyond simple OCR to ensure the authenticity of the documents with ID card liveness detection.</div>
+          <a href="/products/id-card" class="button-primary w-button">Learn More -&gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <FeatureGrid
+    heading="Why Choose FormX's ID Scanning Solution?"
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_businesscert-icon-01.svg",
+        iconWidth: 128,
+        title: "Effortless API Integration",
+        description: "Our API-based data extraction solution can be easily integrated with all kinds of apps and software. Relevant personal information from ID documents is extracted and returned in JSON format for further processing."
+      },
+      {
+        icon: "/images/pages/solutions_businesscert-icon-02.svg",
+        iconWidth: 80,
+        title: "Privacy & Security",
+        description: "Protected by industry-leading security, FormX will not use or store any images or the extracted personal information to ensure data security."
+      },
+      {
+        icon: "/images/pages/solutions_businesscert-icon-03.svg",
+        iconWidth: 80,
+        title: "Pre-configured Data Extraction Model with High Accuracy",
+        description: "We have pre-configured and trained our ID data extraction model for you to extract relevant information from ID documents with just a click."
+      }
+    ]}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "How does FormX's Identity Document OCR work?",
+        answer: "Our solution combines the power of OCR and other AI technologies to convert images of scanned ID documents, such as ID cards, passports, and driver's license, into usable data formats like JSON or CSV. It can be easily integrated with other software or applications so that end users only have to upload images of their documents during the application or verification process.<br/>"
+      },
+      {
+        question: "What does the result look like?",
+        answer: "Different from other OCR software that extracts data aimlessly, FormX can identify and extract relevant information from identity documents as key-value pairs and return a development-friendly format (i.e. JSON) or a csv file.<br/>"
+      },
+      {
+        question: "What types of identity documents can FormX extract data from?",
+        answer: "FormX can extract data from all kinds of identity documents. These include but are not limited to, Hong Kong, Macau, Singapore, Taiwan ID cards, passports, work pass / permits, driver's license, and more.<br/>"
+      },
+      {
+        question: "What information can I extract from these ID documents?",
+        answer: "The available extraction items depend on the types of ID documents. Some common extracted items include first name, last name, gender, ID document number, address, date of birth, date of issue, expiry date, nationality, issuing country, MRZ code, personal identification number, and more.<br/>"
+      },
+      {
+        question: "Is the identity document data extraction secure?",
+        answer: "Security is paramount when it comes to scanning identity documents as they usually contain important information that can be used to install ransomware, steal data, or even commit fraud. To protect your data, FormX will not use your documents or the extracted data in any way. Any processed images or files for asynchronized API calls aren't stored by FormX in any way.<br/>"
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

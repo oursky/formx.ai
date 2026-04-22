@@ -1,0 +1,59 @@
+---
+import PageLayout from './PageLayout.astro';
+import type { WhatsNewEntry } from '@/lib/blog';
+import { SITE_URL } from '@/lib/constants';
+
+interface Props {
+  entry: WhatsNewEntry;
+}
+
+const { entry } = Astro.props;
+const { title, description, date, featured_image, og_title, og_description, og_image, twitter_card, canonical_url, tag } = entry.data;
+
+const dateStr = entry.id; // YYYY-MM-DD from filename
+const canonicalUrl = canonical_url ?? `${SITE_URL}/whats-new/${entry.id}`;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<PageLayout
+  title={`What's New: ${title}`}
+  description={description}
+  ogTitle={og_title ?? `What's New: ${title}`}
+  ogDescription={og_description ?? description}
+  ogImage={og_image ?? featured_image}
+  twitterCard={twitter_card}
+  canonicalUrl={canonicalUrl}
+  bodyClass="bg-neutral-200"
+>
+  <style slot="head">
+    h1, h2, h3, h4, h5, h6 { margin-bottom: 12px; }
+    figure img { margin-top: 20px; margin-bottom: 20px; }
+  </style>
+
+  <section class="section blog-post whats-new-content">
+    <div class="container-default w-container">
+      <div class="blog-post-top-content-wrapper">
+        <div class="animation-div">
+          <a href="/whats-new">
+            <h1 class="heading-25">{title}</h1>
+            <div class="text-block-55">{dateStr}</div>
+          </a>
+        </div>
+        <img
+          src={featured_image}
+          alt={title}
+          class="whats-new-featured-image"
+          loading="eager"
+        />
+        <div class="rt-post w-richtext">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>

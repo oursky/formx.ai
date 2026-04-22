@@ -1,0 +1,119 @@
+---
+import PageLayout from './PageLayout.astro';
+import BlogCategoryBadge from '@/components/blog/BlogCategoryBadge.astro';
+import RelatedArticles from '@/components/blog/RelatedArticles.astro';
+import JsonLd from '@/components/shared/JsonLd.astro';
+import { formatDate } from '@/lib/blog';
+import type { BlogPost } from '@/lib/blog';
+import { SITE_URL } from '@/lib/constants';
+
+interface Props {
+  post: BlogPost;
+  relatedPosts: BlogPost[];
+}
+
+const { post, relatedPosts } = Astro.props;
+const { title, description, excerpt, category, date, lastmod, featured_image, featured_image_alt, og_title, og_description, og_image, twitter_card, canonical_url } = post.data;
+
+const formattedDate = formatDate(date);
+const canonicalUrl = canonical_url ?? `${SITE_URL}/blog/${post.id}`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalUrl,
+  },
+  headline: title,
+  description: description,
+  image: og_image ?? featured_image,
+  author: {
+    '@type': 'Organization',
+    name: 'FormX',
+    url: 'https://www.formx.ai/',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'FormX',
+    logo: {
+      '@type': 'ImageObject',
+      url: '/images/ui/formx-logo.webp',
+    },
+  },
+  datePublished: date.toISOString(),
+  dateModified: (lastmod ?? date).toISOString(),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'FormX Blog', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
+  ],
+};
+---
+
+<PageLayout
+  title={`${title} - FormX.ai`}
+  description={description}
+  ogTitle={og_title ?? title}
+  ogDescription={og_description ?? description}
+  ogImage={og_image ?? featured_image}
+  twitterCard={twitter_card}
+  canonicalUrl={canonicalUrl}
+  bodyClass="bg-neutral-200"
+>
+  <JsonLd slot="head" schema={[articleSchema, breadcrumbSchema]} />
+
+  <div class="section blog-post">
+    <div class="container-default w-container">
+      <div class="blog-post-top-content-wrapper">
+        <div class="animation-div">
+          <BlogCategoryBadge {category} />
+        </div>
+        <h1>{title}</h1>
+        <p class="paragraph-large blog-post-excerpt">{excerpt}</p>
+        <div class="blog-post-about-wrapper">
+          <div class="read-time-wrapper">
+            <div id="readtime"></div>
+          </div>
+          <div>{formattedDate}</div>
+        </div>
+        <img
+          src={featured_image}
+          alt={featured_image_alt || title}
+          class="image blog-post"
+          loading="eager"
+        />
+        <div id="readtimearea" class="rich-text rt-post w-richtext">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-default w-container">
+    <div class="divider"></div>
+  </div>
+
+  <RelatedArticles posts={relatedPosts} />
+
+  <!-- Read time calculation -->
+  <script>
+    window.addEventListener('load', function () {
+      const area = document.getElementById('readtimearea');
+      const readtimeEl = document.getElementById('readtime');
+      if (area && readtimeEl) {
+        const str = area.innerHTML;
+        const words = str.match(/(\w+)/g);
+        if (words) {
+          const mins = Math.max(1, Math.ceil(words.length / 265));
+          readtimeEl.innerHTML = mins + ' min to read';
+        }
+      }
+    });
+  </script>
+</PageLayout>

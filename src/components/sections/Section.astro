@@ -1,0 +1,13 @@
+---
+interface Props {
+  bgClass?: string;
+}
+
+const { bgClass = '' } = Astro.props;
+---
+
+<div class={`section ${bgClass}`.trim()}>
+  <div class="container-default w-container">
+    <slot />
+  </div>
+</div>

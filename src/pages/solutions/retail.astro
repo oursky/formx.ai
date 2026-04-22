@@ -1,0 +1,136 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import TwoBlockSection from '@/components/sections/TwoBlockSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+---
+
+<PageLayout
+  title="Transform Your Retail Business with FormX.ai | Simplify Data Extraction &amp; Centralize Customer Information"
+  description=""
+  canonicalUrl="https://www.formx.ai/solutions/retail"
+  showFooterForm={true}
+>
+  <HeroSection
+    tag="Retail"
+    heading="Unleash Retail Automation with FormX.ai's Powerful Document Extraction API"
+    subheading="FormX.ai unlocks retail automation with its document extraction API. Centralize data from your POS systems and extract accurate customer purchase data to fuel smarter decisions."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: "Try it yourself", href: "/tools/invoice-ocr-api" }}
+    ctaSecondary={{ text: "Schedule a Demo ->", href: "/talk-with-us" }}
+    showTrustIcons={true}
+    image={{
+      src: "/images/pages/solutions_retails-kv@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_retails-kv@2x-p-500.webp 500w, /images/pages/solutions_retails-kv@2x-p-800.webp 800w, /images/pages/solutions_retails-kv@2x-p-1080.webp 1080w, /images/pages/solutions_retails-kv@2x.webp 1200w",
+      sizes: "(max-width: 767px) 100vw, 600px"
+    }}
+  />
+
+  <TwoBlockSection
+    heading="Online &amp; Offline Shopping Makes Purchase Data Tracking Difficult"
+    body="With FormX.ai's loyalty program solution, you can automate the receipt submission process and centralize customer data in one place."
+    imagePosition="right"
+    image={{
+      src: "/images/pages/solutions_retails-01@2x.webp",
+      alt: "",
+      width: 600,
+      srcset: "/images/pages/solutions_retails-01@2x-p-500.webp 500w, /images/pages/solutions_retails-01@2x-p-800.webp 800w, /images/pages/solutions_retails-01@2x-p-1080.webp 1080w, /images/pages/solutions_retails-01@2x.webp 1200w",
+      sizes: "(max-width: 767px) 100vw, 600px"
+    }}
+  />
+
+  <div class="section product-section">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Streamlining Retail Operations with<br/><span class="heading-gradient">FormX.ai's Document Extraction API</span></h2>
+          <div class="product-subheading">FormX.ai's document extraction API can be a valuable component of<br/>a retail automation system by:</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_2-block-grid">
+            <div class="plain-svg-card card-bg-f7f8fc">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_data.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Centralizing Data</div>
+                <div class="svg-card-description plain-svg-card-align-left">Extracting data from various sources, such as receipts, invoices, and forms, to create a unified data repository.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_insights.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Enabling Data-Driven Insights</div>
+                <div class="svg-card-description plain-svg-card-align-left">Providing accurate and structured data for analysis, allowing retailers to make informed decisions based on customer behavior and preferences.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_process.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Streamlining Processes</div>
+                <div class="svg-card-description plain-svg-card-align-left">Automating data extraction tasks, saving time and reducing manual errors.</div>
+              </div>
+            </div>
+            <div class="plain-svg-card">
+              <div class="card-svg-block svg-left">
+                <img src="/images/pages/solutions_retails_api_cs.svg" loading="lazy" width="80" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Improving Customer Experience</div>
+                <div class="svg-card-description plain-svg-card-align-left">Enabling personalized offers and recommendations based on customer purchase data.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <TwoBlockSection
+    heading="Conquer Multi-Channel Shopping: Streamline Loyalty Programs"
+    body="Retail automation thrives on a unified view of customers. With FormX.ai, your loyalty program automates receipt capture and centralizes data, unlocking the power of retail automation."
+    imagePosition="left"
+    bgClass="bg-f7f8fc"
+    image={{
+      src: "/images/pages/solutions_retails-02@2x.webp",
+      alt: "",
+      srcset: "/images/pages/solutions_retails-02@2x-p-500.webp 500w, /images/pages/solutions_retails-02@2x-p-800.webp 800w, /images/pages/solutions_retails-02@2x-p-1080.webp 1080w, /images/pages/solutions_retails-02@2x.webp 1200w",
+      sizes: "(max-width: 767px) 100vw, 600px"
+    }}
+  />
+
+  <FeatureGrid
+    heading="Deploy FormX.ai to Drive Success in Your Insurance Business"
+    subheading="Don't miss out on a proven solution like FormX.ai and experience a return on investment within three months."
+    bgClass="bg-f7f8fc"
+    columns={3}
+    cards={[
+      {
+        icon: "/images/pages/solutions_retails-icon-1.svg",
+        iconWidth: 80,
+        title: "Effortless Loyalty Programs",
+        description: "Automate receipt capture and streamline point-earning with self-service submission."
+      },
+      {
+        icon: "/images/pages/solutions_retails-icon-2.svg",
+        iconWidth: 80,
+        title: "Data-Driven Recommendations",
+        description: "Centralise customer data for ultimate accuracy, and make product recommendations that resonate."
+      },
+      {
+        icon: "/images/pages/solutions_retails-icon-3.svg",
+        iconWidth: 80,
+        title: "Low-Barrier Training",
+        description: "Train your own extractor with minimal data samples to ensure the highest quality insights."
+      }
+    ]}
+  />
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

@@ -1,0 +1,86 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import FAQSection from '@/components/sections/FAQSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+---
+
+<PageLayout
+  title="1099 Extractor - Extract 1099 Data Instantly | FormX.ai"
+  description=""
+  canonicalUrl="https://www.formx.ai/tools/1099-extractor"
+  showFooterForm={true}
+>
+  <section class="title-2 bg-f7f8fc">
+    <div class="w-layout-blockcontainer pagetitle__container w-container">
+      <h1 class="pricing-title"><span class="heading-gradient">1099 Extractor<br/>‍</span>Pull Every Field from Any 1099</h1>
+      <p class="section__header__content">Upload a form 1099-NEC PDF or image. FormX reads every box - payer details, income amounts, federal and state tax withholding - and returns structured data instantly.</p>
+      <div class="w-embed w-iframe">
+        <iframe src="https://widgets.formx.ai/invoice/" style="width: 100%; height: 600px" frameBorder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <CTACard
+    heading="Get started with FormX.ai"
+    ctaPrimary={{ text: "Start Free Trial", href: "https://formextractorai.com/signup" }}
+    ctaSecondary={{ text: "Speak with an Expert ->", href: "/talk-with-us" }}
+  />
+
+  <FAQSection
+    heading="Frequently Asked Questions"
+    items={[
+      {
+        question: "What does this W-2 extractor do?",
+        answer: `This AI powered form 1099 OCR data extractor automatically reads IRS Form 1099 and pulls out the data inside each field - payer details, income amounts, and tax withholdings - without manual data entry. FormX uses OCR and AI to extract and structure 1099 data in seconds. <a href="/talk-with-us">Get in touch</a> to learn more!<br />`,
+      },
+      {
+        question: "What 1099 fields does FormX extract?",
+        answer: `FormX extracts all standard 1099-NEC fields including payer and recipient details, Box 1 through Box 18, federal and state tax withholdings, and header information including tax year and form type. Taxpayer Identification Numbers are masked by default. <a href="/talk-with-us">Schedule a Demo</a> to see how simple it is to automate 1099 form extraction.<br />`,
+      },
+      {
+        question: "What file formats does the 1099 extractor accept?",
+        answer: `FormX accepts PDF, JPG, and PNG. This includes scanned paper 1099s, photographs taken on a phone, and digitally generated PDFs from payer systems. Both standard and corrected 1099 forms are supported. <a href="/talk-with-us">Contact us</a> for integrating with different tools to automate your process.<br />`,
+      },
+      {
+        question: "Is it free to extract W-2 data?",
+        answer: `Yes - this free tool allows single 1099 extraction with no signup required. Batch processing of multiple 1099s and API access require a free trial account. <a href="/talk-with-us">Reach out to us</a> and we can setup a demo account for you.<br />`,
+      },
+      {
+        question: "Is it safe to upload 1099 forms?",
+        answer: `FormX is ISO 27001 and SOC 2 Type II certified. All uploaded documents are encrypted in transit (TLS 1.2+) and at rest (AES-256). Documents are not retained after extraction. Read our <a href="/data-privacy-policy" target="_blank">data privacy policy</a> for more.<br />`,
+      },
+      {
+        question: "Can FormX extract W-2 data via API for batch processing?",
+        answer: `Yes. FormX provides a REST API that accepts 1099 PDFs and images, returning structured JSON or Excel. API\u00a0documentation is available at <a href="https://help.formx.ai/reference/document-extraction">here</a>. You can also customise extracted fields through the FormX portal.<br />`,
+      },
+      {
+        question: "What is the difference between a W-2 and a 1099, and can FormX extract both?",
+        answer: `A W-2 is issued by employers to employees and reports wages and tax withholdings. A 1099-NEC is issued to non-employees such as freelancers and contractors and reports other types of income. FormX can extract data from both form types within the same workflow.<br />`,
+      },
+      {
+        question: "What is the difference between a 1099 and a W-2, and can FormX extract both?",
+        answer: `A W-2 is issued by employers to employees and reports wages and tax withholdings. A 1099 is issued to independent contractors and reports non-employment income. FormX extracts data from both form types. If you receive 1099s alongside W-2s, FormX can process them within the same workflow.<br /><br /><a href="/talk-with-us">Contact us</a> to setup a trial account for you.<br />`,
+      },
+    ]}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Extract 1099 Data Automatically with FormX</h2>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard number="10x" label="Productivity" description="Replace manual 1099 data entry with FormX to automate extraction across all box fields and improve productivity by 10 times." />
+            <StatCard number=">95%" label="Accuracy" description="FormX delivers 95%+ accuracy on 1099 forms across all payer formats and layouts, reducing manual review to a minimum." />
+            <StatCard number="3" label="Months" description="On average, businesses can realize the return on investment (ROI) of business automation in as little as 3 months after implementing FormX.ai." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-f7f8fc"></section>
+</PageLayout>

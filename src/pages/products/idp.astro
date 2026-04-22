@@ -1,0 +1,148 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import StatCard from '@/components/sections/StatCard.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+---
+
+<PageLayout
+  title="What is Intelligent Document Processing (IDP)? - FormX.ai"
+  description=""
+  canonicalUrl="https://www.formx.ai/products/idp"
+>
+  <HeroSection
+    heading="Intelligent Document Processing (IDP)"
+    subheading="Intelligent Document Processing (IDP) entails utilizing cutting-edge technologies like Artificial Intelligence (AI) and Large Language Model (LLM) to automate the extraction, understanding, and management of information from varied and unstructured document formats, transforming it into actionable data."
+    ctaPrimary={{ text: "Schedule Demo ->", href: "/talk-with-us" }}
+    ctaPrimaryClass="button-white"
+    bgClass="bg-green-shapes"
+    headingClass="product-hero-content-heading color-white"
+    subheadingClass="product-hero-content-subheading color-white"
+    image={{
+      src: "/images/pages/products_idp-kv.webp",
+      alt: "",
+      width: 968.5,
+      srcset: "/images/pages/products_idp-kv-p-500.webp 500w, /images/pages/products_idp-kv-p-800.webp 800w, /images/pages/products_idp-kv-p-1080.webp 1080w, /images/pages/products_idp-kv-p-1600.webp 1600w, /images/pages/products_idp-kv-p-2000.webp 2000w, /images/pages/products_idp-kv.webp 2400w",
+      sizes: "968px, (max-width: 991px) 95vw, 940px",
+    }}
+  />
+
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">Benefits of Intelligent Document Processing (IDP)</h2>
+          <div class="product-subheading">Automate your business processes with our IDP solution to enhance operational efficiency, freeing you from manual work and reducing human errors.</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_3-block-grid">
+            <StatCard
+              number="10x"
+              label="Productivity"
+              description="Replace manual data entry with FormX to automate data extraction and improve productivity by 10 times."
+            />
+            <StatCard
+              number="92%"
+              label="Accuracy"
+              description="Our proprietary image pre-processing and OCR result post-processing ensure a 92% extraction accuracy, minimizing the need for human intervention."
+            />
+            <StatCard
+              number="6"
+              label="Months"
+              description="On average, businesses can realize the return on investment (ROI) of business automation within 6 months after implementing FormX.ai."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="product-heading-content-wrapper">
+        <div class="product-heading-wrapper">
+          <h2 class="product-heading">How does Intelligent Document Processing work?</h2>
+          <div class="product-subheading">Extract unstructured data from any document format and transform it into actionable information.</div>
+        </div>
+        <div class="product-content-wrapper">
+          <div class="_4-block-grid">
+            <div class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Loading@2x.svg" loading="lazy" width="48" id="sma" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper plain-svg-card-align-left">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Pre-processing</div>
+                <div class="svg-card-description">Get the document ready for processing (fixing scans, removing noise)</div>
+              </div>
+            </div>
+            <div id="w-node-_2dbcc816-bcf3-b517-6edc-f6201c93dd50-83cf18d7" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Categories@2x.svg" loading="lazy" width="48" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text">Categorization</div>
+                <div class="svg-card-description">Figure out what kind of document it is (invoice, email, etc.)</div>
+              </div>
+            </div>
+            <div id="w-node-_2dbcc816-bcf3-b517-6edc-f6201c93dd58-83cf18d7" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Document-Scan@2x.svg" loading="lazy" width="48" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Data Extraction</div>
+                <div class="svg-card-description">Extract the important details from the document (and layout.)</div>
+              </div>
+            </div>
+            <div id="w-node-_57d186fe-a0a2-538d-2ca8-507e792ea304-83cf18d7" class="plain-svg-card card-bg-white card-small">
+              <div class="card-svg-block">
+                <img src="/images/pages/Check-circle@2x.svg" loading="lazy" width="48" alt="" class="card-svg xs" />
+              </div>
+              <div class="svg-card-content-wrapper">
+                <div class="svg-card-title bold-text plain-svg-card-align-left">Validations</div>
+                <div class="svg-card-description">Post-processing script + RPA integration</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="card-xl bg-white">
+        <div class="card-xl-2-block-wrapper">
+          <div class="card-xl-content-wrap">
+            <h2 class="card-xl-title">Integrate FormX.ai with any RPA tool via our API-first architecture.</h2>
+          </div>
+          <div class="card-xl-image-wrap">
+            <img
+              src="/images/pages/products_idp-json.webp"
+              loading="lazy"
+              width="968.5"
+              sizes="968px, (max-width: 991px) 95vw, 940px"
+              alt=""
+              srcset="/images/pages/products_idp-json-p-500.webp 500w, /images/pages/products_idp-json-p-800.webp 800w, /images/pages/products_idp-json-p-1080.webp 1080w, /images/pages/products_idp-json-p-1600.webp 1600w, /images/pages/products_idp-json-p-2000.webp 2000w, /images/pages/products_idp-json.webp 2400w"
+              class="image-border-rounded"
+            />
+          </div>
+        </div>
+        <a href="/talk-with-us" class="button-primary flex-child-center w-button">Book a meeting now -&gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product-section bg-f0f4f9">
+    <div class="container-default w-container">
+      <div class="card-xl bg-f3fbf9">
+        <div class="card-xl-2-block-wrapper">
+          <div class="card-xl-content-wrap">
+            <h2 class="card-xl-title text-center">80% of business data remains unstructured and underserved</h2>
+            <div class="card-xl-description text-center">Managing, analyzing, and leveraging unstructured data in a meaningful way has been a long-standing challenge for enterprises. Unlike structured data, unstructured data requires specialized approaches to effectively handle and derive value from it.</div>
+          </div>
+        </div>
+        <a href="/talk-with-us" class="button-primary flex-child-center w-button">Enable digital transformation for your businesses -&gt;</a>
+      </div>
+    </div>
+  </div>
+</PageLayout>

@@ -1,0 +1,44 @@
+---
+import { SITE_DEFAULT_OG_IMAGE, GOOGLE_VERIFICATION } from '@/lib/constants';
+
+interface Props {
+  title: string;
+  description: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  twitterCard?: string;
+  canonicalUrl?: string;
+  noIndex?: boolean;
+}
+
+const {
+  title,
+  description,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  twitterCard = 'summary_large_image',
+  canonicalUrl,
+  noIndex = false,
+} = Astro.props;
+
+const resolvedOgTitle = ogTitle ?? title;
+const resolvedOgDescription = ogDescription ?? description;
+const resolvedOgImage = ogImage ?? SITE_DEFAULT_OG_IMAGE;
+const resolvedCanonical = canonicalUrl ?? Astro.url.href;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta property="og:title" content={resolvedOgTitle} />
+<meta property="og:description" content={resolvedOgDescription} />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:type" content="website" />
+<meta name="twitter:title" content={resolvedOgTitle} />
+<meta name="twitter:description" content={resolvedOgDescription} />
+<meta name="twitter:image" content={resolvedOgImage} />
+<meta name="twitter:card" content={twitterCard} />
+<link rel="canonical" href={resolvedCanonical} />
+{noIndex && <meta name="robots" content="noindex, nofollow" />}
+<meta name="google-site-verification" content={GOOGLE_VERIFICATION} />

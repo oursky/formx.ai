@@ -1,0 +1,42 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  heading?: string;
+  items: FAQItem[];
+}
+
+const { heading, items } = Astro.props;
+---
+
+<div class="section bg-f7f8fc">
+  <div class="container-default heading-content faq-2-block w-container">
+    {heading && (
+      <div class="home-heading">
+        <h2>{heading}</h2>
+      </div>
+    )}
+    <div class="pricing-faq-container">
+      {items.map((item) => (
+        <div class="faq2_component">
+          <details class="faq2_accordion pricing">
+            <summary class="faq2_question pricing">
+              <div class="faq-accordion-question pricing">{item.question}</div>
+              <img src="/images/pages/faq_arrow.svg" loading="lazy" alt="" class="faq2_icon" />
+            </summary>
+            <div class="faq2_answer">
+              <div class="margin-bottom">
+                <div class="max-width-large pricing">
+                  <p class="referral-faq-a pricing" set:html={item.answer} />
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

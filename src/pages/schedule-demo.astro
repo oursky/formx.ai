@@ -1,0 +1,186 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import { DEMO_CALENDLY_URL } from '@/lib/constants';
+---
+
+<PageLayout
+  title="Talk to an Expert - Learn How Businesses Eliminate Manual Input with FormX.ai."
+  description=""
+  canonicalUrl="https://www.formx.ai/schedule-demo"
+  bodyClass="body-3"
+>
+  <section class="get-demo-bg">
+    <div class="w-layout-hflex get-demo">
+      <div class="w-layout-hflex get-demo-wrapper">
+        <div class="w-layout-vflex get-demo-logo-heading">
+          <img src="/images/pages/_logo_FormXai@4x.webp" loading="lazy" width="230" alt="" class="image-49"/>
+          <div class="w-layout-hflex get-demo-h1">
+            <p class="get-demo-page-title">REQUEST A DEMO</p>
+            <h1 class="get-demo-title">See Your Documents <span class="text-color-primary">Extracted Live</span> in 15 minutes</h1>
+            <p class="get-demo-feature-description">Bring your toughest files. We'll show you exactly how FormX.ai processes them in real-time. No commitment, no</p>
+          </div>
+        </div>
+        <div class="w-layout-vflex get-demo-highlight">
+          <h2 class="get-demo-feature-title">Join our demo to:</h2>
+          <div class="get-demo-feature-list">
+            <img src="/images/pages/Checkmark---Iconly-Pro.svg" loading="lazy" alt="" class="get-demo-feature-check"/>
+            <p class="get-demo-feature-bullet">See how we can extract data from your documents in real-time</p>
+          </div>
+          <div class="get-demo-feature-list">
+            <img src="/images/pages/Checkmark---Iconly-Pro.svg" loading="lazy" alt="" class="get-demo-feature-check"/>
+            <p class="get-demo-feature-bullet">See fast accurate demos tailored for your needs</p>
+          </div>
+          <div class="get-demo-feature-list">
+            <img src="/images/pages/Checkmark---Iconly-Pro.svg" loading="lazy" alt="" class="get-demo-feature-check"/>
+            <p class="get-demo-feature-bullet">Get answers to your specific use case and integration questions</p>
+          </div>
+          <div class="get-demo-feature-list">
+            <img src="/images/pages/Checkmark---Iconly-Pro.svg" loading="lazy" alt="" class="get-demo-feature-check"/>
+            <p class="get-demo-feature-bullet">Walk away knowing exactly how FormX.ai fits into your workflow</p>
+          </div>
+        </div>
+        <div class="w-layout-vflex get-demo-logo-heading">
+          <h2 class="get-demo-logo-title">FormX.ai is trusted by</h2>
+          <div class="w-layout-grid grid-13">
+            <img src="/images/pages/home_customer-logo-MTR@2x.png" loading="lazy" alt=""/>
+            <img src="/images/pages/logo-google.webp" loading="lazy" sizes="100vw" srcset="/images/pages/logo-google-p-500.png 500w, /images/pages/logo-google-p-800.png 800w, /images/pages/logo-google-p-1080.png 1080w, /images/pages/logo-google-p-1600.webp 1600w, /images/pages/logo-google.webp 2560w" alt=""/>
+            <img src="/images/pages/home_customer-logo-WilsonGroup@2x.png" loading="lazy" alt=""/>
+            <img src="/images/pages/home_customer-logo-LINKEREIT@2x.png" loading="lazy" alt=""/>
+            <img src="/images/pages/logo-lks.webp" loading="lazy" sizes="100vw" srcset="/images/pages/logo-lks-p-500.webp 500w, /images/pages/logo-lks-p-800.webp 800w, /images/pages/logo-lks-p-1080.webp 1080w, /images/pages/logo-lks-p-1600.webp 1600w, /images/pages/logo-lks.webp 2560w" alt=""/>
+            <img src="/images/pages/home_customer-logo-AyalaMall@2x.png" loading="lazy" alt=""/>
+          </div>
+        </div>
+      </div>
+      <div class="get-demo-form-wrap">
+        <div class="w-form">
+          <form id="wf-form-Email-Form" name="schedule-demo" netlify method="post" data-redirect={DEMO_CALENDLY_URL} class="form-3">
+            <input type="hidden" name="form-name" value="schedule-demo" />
+            <div class="w-layout-blockcontainer container-1470 w-container">
+              <label for="Name-2" class="form-label">Full Name<span class="get-demo-form-label-required">*</span></label>
+              <input class="form-text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="Name-2" required=""/>
+            </div>
+            <div class="w-layout-blockcontainer container-1472 w-container">
+              <label for="Email-2" class="form-label">Work Email<span class="get-demo-form-label-required">*</span></label>
+              <input class="form-text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" type="email" id="Email-2" required=""/>
+            </div>
+            <div class="w-layout-blockcontainer container-1473 w-container">
+              <label for="pages" class="form-label">How many pages do you wish to process per month?<span class="get-demo-form-label-required">* </span></label>
+              <input class="form-text-field w-input" maxlength="256" name="pages" data-name="pages" placeholder="" type="text" id="pages" required=""/>
+            </div>
+            <div class="w-layout-blockcontainer container-1474 w-container">
+              <label for="field" class="form-label">Other</label>
+              <textarea placeholder="Please share anything that will help prepare for our meeting. E.g. document type, workflow etc" maxlength="5000" id="field" name="field" data-name="Field" class="form-input form-text-field w-input"></textarea>
+            </div>
+            <input type="submit" data-wait="Please wait..." class="footer-form-submit w-button" value="Submit"/>
+          </form>
+          <div class="w-form-done">
+            <div class="text-block-51">Thank you. Your submission has been received.<br/><br/>Check your email for next steps.</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form. Please email us directly at hello@formx.ai.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function() {
+      var formEl = document.querySelector('#wf-form-Email-Form');
+      if (!formEl) return;
+      formEl.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var wform = formEl.closest('.w-form');
+        var done = wform && wform.querySelector('.w-form-done');
+        var fail = wform && wform.querySelector('.w-form-fail');
+        var redirectUrl = formEl.getAttribute('data-redirect');
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(formEl)).toString()
+        })
+          .then(function() {
+            formEl.style.display = 'none';
+            if (done) done.style.display = 'block';
+            if (redirectUrl) setTimeout(function() { window.location.href = redirectUrl; }, 1500);
+          })
+          .catch(function() {
+            if (fail) fail.style.display = 'block';
+          });
+      });
+    })();
+  </script>
+
+  <div class="cookies">
+    <div id="consentPopup" fs-cc="banner" class="fs-cookie-popup">
+      <div class="cookie-tag">You're in control</div>
+      <p class="cookie-paragraph">Privacy is important to us, so in accordance to our <a href="/data-privacy-policy">Privacy Policy</a>, you have the option of disabling certain types of storage that may not be necessary for the basic function of the website. <br/>Blocking categories may impact your experience on the website.<br/></p>
+      <div id="w-node-c82bb118-46b8-7863-2d1e-d7f072e1161c-72e11615" class="button-wrapper-2 w-clearfix">
+        <a fs-cc="allow" id="w-node-c82bb118-46b8-7863-2d1e-d7f072e1161d-72e11615" href="/schedule-demo#" class="button-2 accept w-button">Accept all</a>
+        <a fs-cc="deny" id="w-node-c82bb118-46b8-7863-2d1e-d7f072e1161f-72e11615" href="/schedule-demo#" class="button-2 deny w-button">Deny</a>
+        <a fs-cc="open-preferences" id="w-node-c82bb118-46b8-7863-2d1e-d7f072e11621-72e11615" href="/schedule-demo#" class="preferences-link">Manage settings</a>
+      </div>
+    </div>
+    <div fs-cc="preferences" class="fs-preferences-manager-wrapper">
+      <div class="preferences-container">
+        <div class="privacy-title">Preferences</div>
+        <p class="paragraph-15">Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website.<br/></p>
+        <a fs-cc="allow" href="/schedule-demo#" class="button-2 w-button">Accept all cookies</a>
+        <a fs-cc="close" href="/schedule-demo#" class="close-button-2 w-inline-block"><img loading="lazy" src="/images/ui/np_close_25798_27313D.svg" alt="" class="image-66"/></a>
+        <div class="consents-form w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="66388039cef3fa26ef59b248" data-wf-element-id="c82bb118-46b8-7863-2d1e-d7f072e1162f">
+            <div class="grid-3">
+              <div class="text-div">
+                <label for="name-2" class="cookie-tag">Essential</label>
+                <p class="paragraph-15">These items are required to enable basic website functionality.<br/></p>
+              </div>
+              <p id="w-node-c82bb118-46b8-7863-2d1e-d7f072e11637-72e11615" class="paragraph-15 bold">Always active<br/></p>
+            </div>
+            <div class="grid-3">
+              <div class="text-div">
+                <label for="name-2" class="cookie-tag">Marketing</label>
+                <p class="paragraph-15">These items are used to deliver advertising that is more relevant to you and your interests. <br/></p>
+              </div>
+              <label id="w-node-c82bb118-46b8-7863-2d1e-d7f072e11641-72e11615" class="w-checkbox">
+                <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+                <input type="checkbox" name="checkbox-4" id="checkbox-4" data-name="Checkbox 4" fs-cc-checkbox="marketing" style="opacity:0;position:absolute;z-index:-1"/>
+                <span class="checkbox-label-2 w-form-label" for="checkbox-4"></span>
+              </label>
+            </div>
+            <div class="grid-3">
+              <div class="text-div">
+                <label for="name-2" class="cookie-tag">Personalization</label>
+                <p class="paragraph-15">These items allow the website to remember choices you make (such as your user name, language, or the region you are in) and provide enhanced, more personal features. <br/></p>
+              </div>
+              <label id="w-node-c82bb118-46b8-7863-2d1e-d7f072e1164b-72e11615" class="w-checkbox">
+                <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+                <input type="checkbox" name="checkbox-3" id="checkbox-3" data-name="Checkbox 3" fs-cc-checkbox="personalization" style="opacity:0;position:absolute;z-index:-1"/>
+                <span class="checkbox-label-2 w-form-label" for="checkbox-3"></span>
+              </label>
+            </div>
+            <div fs-cc-checkbox="analytics" class="grid-3">
+              <div class="text-div">
+                <label for="name-2" class="cookie-tag">Analytics</label>
+                <p class="paragraph-15">These items help the website operator understand how its website performs, how visitors interact with the site, and whether there may be technical issues. <br/></p>
+              </div>
+              <label id="w-node-c82bb118-46b8-7863-2d1e-d7f072e11655-72e11615" class="w-checkbox">
+                <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox-4"></div>
+                <input type="checkbox" name="checkbox-3" id="checkbox-3" data-name="Checkbox 3" fs-cc-checkbox="analytics" style="opacity:0;position:absolute;z-index:-1"/>
+                <span class="checkbox-label-2 w-form-label" for="checkbox-3"></span>
+              </label>
+            </div>
+            <div class="w-layout-hflex flex-block-28 w-clearfix">
+              <input type="submit" data-wait="Please wait..." fs-cc="deny" class="button-2 deny w-button" value="Reject all cookies"/>
+              <input type="submit" data-wait="Please wait..." fs-cc="submit" class="button-2 field-wrapper w-button" value="Confirm my choices"/>
+            </div>
+          </form>
+          <div class="w-form-done"><div>Thank you! Your submission has been received!</div></div>
+          <div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>
+        </div>
+      </div>
+    </div>
+    <div fs-cc="manager" class="fs-manager-opener">
+      <img fs-cc="open-preferences" loading="lazy" alt="" src="/images/ui/np_cookie_80793_FFFFFF.svg"/>
+    </div>
+  </div>
+</PageLayout>

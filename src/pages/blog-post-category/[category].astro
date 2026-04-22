@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import PageLayout from '@/layouts/PageLayout.astro';
+import BlogCard from '@/components/blog/BlogCard.astro';
+import { CATEGORY_LABELS } from '@/lib/blog';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+  const categories = [...new Set(allPosts.map((p) => p.data.category))];
+
+  return categories.map((category) => {
+    const posts = allPosts
+      .filter((p) => p.data.category === category)
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    return {
+      params: { category },
+      props: { posts, category },
+    };
+  });
+}
+
+const { posts, category } = Astro.props;
+const categoryLabel = CATEGORY_LABELS[category] ?? category;
+const categories = Object.entries(CATEGORY_LABELS);
+---
+
+<PageLayout
+  title={`${categoryLabel} - FormX.ai Blog`}
+  description={`Read all ${categoryLabel} articles from the FormX.ai team on document processing, AI, and automation.`}
+  canonicalUrl={`https://www.formx.ai/blog-post-category/${category}`}
+>
+  <div class="section blog-hero">
+    <div class="container-default w-container">
+      <h1 class="title blog">{categoryLabel}</h1>
+    </div>
+  </div>
+
+  <div class="top-content latest-posts">
+    <div class="container-default w-container">
+      {/* Category filter tabs */}
+      <div class="blog-categories-grid">
+        <a href="/blog" class="button-blog-category w-button">All</a>
+        {categories.map(([slug, label]) => (
+          <a
+            href={`/blog-post-category/${slug}`}
+            class={`button-blog-category w-button${slug === category ? ' w--current' : ''}`}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section blog-posts-section">
+    <div class="container-default w-container">
+      <div class="blog-post-grid">
+        {posts.map((post) => (
+          <BlogCard {post} />
+        ))}
+      </div>
+    </div>
+  </div>
+</PageLayout>
