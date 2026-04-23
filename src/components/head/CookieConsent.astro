@@ -1,0 +1,124 @@
+---
+// Cookie consent - vanilla-cookieconsent v3 (orestbida/cookieconsent)
+// Included in BaseLayout <head>. Manages GDPR consent for analytics + marketing scripts.
+---
+
+<script>
+  import 'vanilla-cookieconsent/dist/cookieconsent.css';
+  import * as CookieConsent from 'vanilla-cookieconsent';
+
+  CookieConsent.run({
+    guiOptions: {
+      consentModal: {
+        layout: 'box inline',
+        position: 'bottom right',
+      },
+      preferencesModal: {
+        layout: 'box',
+      },
+    },
+
+    categories: {
+      necessary: {
+        enabled: true,
+        readOnly: true,
+      },
+      analytics: {
+        autoClear: {
+          cookies: [
+            { name: /^_ga/ },
+            { name: '_gid' },
+            { name: /^_gat/ },
+          ],
+        },
+      },
+      marketing: {
+        autoClear: {
+          cookies: [
+            { name: 'li_fat_id' },
+            { name: 'lidc' },
+            { name: 'bcookie' },
+            { name: 'UserMatchHistory' },
+            { name: 'li_sugr' },
+            { name: 'AnalyticsSyncHistory' },
+          ],
+        },
+      },
+    },
+
+    language: {
+      default: 'en',
+      translations: {
+        en: {
+          consentModal: {
+            title: 'We use cookies',
+            description:
+              'We use cookies to enhance your browsing experience, serve personalised content, and analyse our traffic. By clicking "Accept all", you consent to our use of cookies. <a href="/data-privacy-policy" class="cc__link">Privacy Policy</a>',
+            acceptAllBtn: 'Accept all',
+            acceptNecessaryBtn: 'Reject all',
+            showPreferencesBtn: 'Manage preferences',
+          },
+          preferencesModal: {
+            title: 'Cookie preferences',
+            acceptAllBtn: 'Accept all',
+            acceptNecessaryBtn: 'Reject all',
+            savePreferencesBtn: 'Save preferences',
+            closeIconLabel: 'Close',
+            sections: [
+              {
+                title: 'Cookie usage',
+                description:
+                  'We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose to opt in or out of each category. For more details, read our <a href="/data-privacy-policy" class="cc__link">Privacy Policy</a>.',
+              },
+              {
+                title: 'Strictly necessary cookies',
+                description:
+                  'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                linkedCategory: 'necessary',
+              },
+              {
+                title: 'Analytics cookies',
+                description:
+                  'These cookies collect information about how visitors use our website, including Google Tag Manager and related analytics tools. All data helps us improve our site.',
+                linkedCategory: 'analytics',
+                cookieTable: {
+                  headers: { name: 'Cookie', domain: 'Domain', description: 'Description' },
+                  body: [
+                    { name: '_ga, _ga_*', domain: '.formx.ai', description: 'Google Analytics — distinguishes users, 2 years' },
+                    { name: '_gid', domain: '.formx.ai', description: 'Google Analytics — distinguishes users, 24 hours' },
+                  ],
+                },
+              },
+              {
+                title: 'Marketing cookies',
+                description:
+                  'These cookies are used to track visitors and display relevant advertisements. This includes LinkedIn Insight Tag and Apollo website tracker.',
+                linkedCategory: 'marketing',
+                cookieTable: {
+                  headers: { name: 'Cookie', domain: 'Domain', description: 'Description' },
+                  body: [
+                    { name: 'li_fat_id, lidc, bcookie', domain: '.linkedin.com', description: 'LinkedIn — conversion tracking and retargeting' },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+      },
+    },
+  });
+</script>
+
+<style is:global>
+  :root {
+    --cc-btn-primary-bg: #0fac90;
+    --cc-btn-primary-hover-bg: #0ca389;
+    --cc-btn-primary-color: #fff;
+    --cc-btn-primary-hover-color: #fff;
+    --cc-btn-primary-border-color: #0fac90;
+    --cc-btn-primary-hover-border-color: #0ca389;
+    --cc-toggle-on-bg: #0fac90;
+    --cc-link-color: #0fac90;
+    --cc-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+</style>

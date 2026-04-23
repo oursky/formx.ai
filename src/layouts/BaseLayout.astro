@@ -1,8 +1,8 @@
 ---
 import SEO from '@/components/head/SEO.astro';
 import Analytics from '@/components/head/Analytics.astro';
+import CookieConsent from '@/components/head/CookieConsent.astro';
 import FontLoader from '@/components/head/FontLoader.astro';
-import { LINKEDIN_PARTNER_ID, APOLLO_APP_ID } from '@/lib/constants';
 import '@/styles/webflow.css';
 import '@/styles/global.css';
 import '@/styles/blog.css';
@@ -62,6 +62,7 @@ const {
 
     <FontLoader />
     <Analytics />
+    <CookieConsent />
 
     <!-- Per-page extra head content (JSON-LD, page-specific styles) -->
     <slot name="head" />
@@ -113,13 +114,13 @@ const {
       });
     </script>
 
-    <!-- LinkedIn Insight Tag -->
-    <script>
+    <!-- LinkedIn Insight Tag - gated by cookie consent (marketing category) -->
+    <script is:inline type="text/plain" data-category="marketing">
       _linkedin_partner_id = "4504041";
       window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
       window._linkedin_data_partner_ids.push(_linkedin_partner_id);
     </script>
-    <script>
+    <script is:inline type="text/plain" data-category="marketing">
       (function (l) {
         if (!l) {
           window.lintrk = function (a, b) {
@@ -136,9 +137,9 @@ const {
       })(window.lintrk);
     </script>
 
-    <!-- Apollo Website Tracker -->
-    <script>
-      function initApollo() {
+    <!-- Apollo Website Tracker - gated by cookie consent (marketing category) -->
+    <script is:inline type="text/plain" data-category="marketing">
+      (function () {
         var n = Math.random().toString(36).substring(7),
           o = document.createElement('script');
         o.src =
@@ -149,8 +150,7 @@ const {
           window.trackingFunctions.onLoad({ appId: '6632e61c4846e902e874652d' });
         };
         document.head.appendChild(o);
-      }
-      initApollo();
+      })();
     </script>
 
   </body>

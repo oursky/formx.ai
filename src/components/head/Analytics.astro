@@ -1,5 +1,6 @@
 ---
-import { GTM_ID } from '@/lib/constants';
+// Analytics scripts loaded in <head>
+// GTM is gated by vanilla-cookieconsent (analytics category)
 ---
 
 <!-- Plausible Analytics -->
@@ -26,8 +27,8 @@ import { GTM_ID } from '@/lib/constants';
 </script>
 <!-- End Plausible -->
 
-<!-- Google Tag Manager -->
-<script>
+<!-- Google Tag Manager - gated by cookie consent (analytics category) -->
+<script is:inline type="text/plain" data-category="analytics">
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
