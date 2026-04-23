@@ -27,7 +27,6 @@ const { showFooterForm = false, ...baseProps } = Astro.props;
     <main>
       <slot />
     </main>
-    {showFooterForm && <FooterForm />}
-    <Footer />
   </div>
+  {showFooterForm ? <FooterForm /> : <Footer />}
 </BaseLayout>

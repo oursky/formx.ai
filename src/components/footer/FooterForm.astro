@@ -1,7 +1,9 @@
 ---
 import { SIGNUP_URL, DEMO_CALENDLY_URL } from '@/lib/constants';
+import Footer from '@/components/footer/Footer.astro';
 ---
 
+<section class="bg-f7f8fc">
 <div class="footer-with-form">
   <div class="section footer-form">
     <div class="w-layout-blockcontainer container-default w-container">
@@ -112,7 +114,9 @@ import { SIGNUP_URL, DEMO_CALENDLY_URL } from '@/lib/constants';
       </div>
     </div>
   </div>
+  <Footer />
 </div>
+</section>
 
 <script is:inline>
   (function() {
