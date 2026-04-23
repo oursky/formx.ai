@@ -8,6 +8,11 @@ import PageLayout from '@/layouts/PageLayout.astro';
   canonicalUrl="https://www.formx.ai"
   showFooterForm={true}
 >
+  <Fragment slot="head">
+    <!-- Preload LCP hero banner images to improve LCP discovery -->
+    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_pc@2x.jpg" fetchpriority="high" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_m@2x.jpg" fetchpriority="high" media="(max-width: 767px)" />
+  </Fragment>
   <!-- Hero with animated text rotation — kept exactly as original -->
   <div class="section hero__llm__section b-version">
     <div class="container-default llmhero w-container">
@@ -45,12 +50,12 @@ import PageLayout from '@/layouts/PageLayout.astro';
   <!-- Logo carousel -->
   <div class="hero__llm__logowrap freeze">
     <ul role="list" class="logo-carousel freeze">
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-MTR@2x.png" class="logo-image"/></a></li>
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-Google@2x.png" class="logo-image"/></a></li>
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-WilsonGroup@2x.png" class="logo-image"/></a></li>
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-LINK@2x.png" class="logo-image"/></a></li>
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-LIKAHSIN@2x.png" class="logo-image"/></a></li>
-      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block"><img width="150" loading="lazy" alt="" src="/images/pages/homepage_logo-gray-AyalaMalls@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="MTR"><img width="150" loading="lazy" alt="MTR" src="/images/pages/homepage_logo-gray-MTR@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="Google"><img width="150" loading="lazy" alt="Google" src="/images/pages/homepage_logo-gray-Google@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="Wilson Group"><img width="150" loading="lazy" alt="Wilson Group" src="/images/pages/homepage_logo-gray-WilsonGroup@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="LINK"><img width="150" loading="lazy" alt="LINK" src="/images/pages/homepage_logo-gray-LINK@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="Lika Hsin"><img width="150" loading="lazy" alt="Lika Hsin" src="/images/pages/homepage_logo-gray-LIKAHSIN@2x.png" class="logo-image"/></a></li>
+      <li class="logo-carousel-item"><a href="/index#" class="logo-link w-inline-block" aria-label="Ayala Malls"><img width="150" loading="lazy" alt="Ayala Malls" src="/images/pages/homepage_logo-gray-AyalaMalls@2x.png" class="logo-image"/></a></li>
     </ul>
   </div>
 
@@ -158,42 +163,42 @@ import PageLayout from '@/layouts/PageLayout.astro';
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_switch-model.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Switch Between Vision and LLM Models with Ease</h5>
+              <h3 class="card-h">Switch Between Vision and LLM Models with Ease</h3>
               <p>Try different AI models to meet specific business needs, latency requirements, and accuracy goals.</p>
             </div>
           </div>
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_extract-production.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Production-Ready Data with LLMs</h5>
+              <h3 class="card-h">Production-Ready Data with LLMs</h3>
               <p>Guardrails ensure model stability and prevent hallucinations in production environments.</p>
             </div>
           </div>
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_optimized-prompt.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Optimized Prompt Engineering</h5>
+              <h3 class="card-h">Optimized Prompt Engineering</h3>
               <p>We continuously introduce new prompting techniques and input data preprocessing to maximize accuracy.</p>
             </div>
           </div>
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_optimized-rag.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Optimize Accuracy with Your Knowledge</h5>
+              <h3 class="card-h">Optimize Accuracy with Your Knowledge</h3>
               <p>AI can't always identify which invoice number is most relevant to your system - but YOU can! Provide samples to teach the AI which invoice numbers to extract for each merchant.</p>
             </div>
           </div>
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_production-data.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Fine-Tune LLMs with Production Data</h5>
+              <h3 class="card-h">Fine-Tune LLMs with Production Data</h3>
               <p>Continuously fine-tune LLMs using real-world feedback to achieve higher accuracy and reliability.</p>
             </div>
           </div>
           <div class="w-layout-blockcontainer home-llm-cards w-container">
             <img src="/images/pages/power-than-llm_mix-multiple.svg" loading="lazy" alt=""/>
             <div class="home-card-content">
-              <h5 class="card-h">Mix Multiple Models for Different Document Types</h5>
+              <h3 class="card-h">Mix Multiple Models for Different Document Types</h3>
               <p>Combine specialized models to handle diverse document types seamlessly, ensuring maximum efficiency.</p>
             </div>
           </div>
