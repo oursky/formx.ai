@@ -47,7 +47,6 @@ export async function getRelatedPosts(
 export const CATEGORY_LABELS: Record<string, string> = {
   accounting: 'Accounting',
   automation: 'Automation',
-  features: 'Features',
   guide: 'Guide',
   'machine-learning': 'Machine Learning',
   'ocr-software': 'OCR Software',

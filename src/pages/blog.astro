@@ -7,10 +7,46 @@ import { getAllPosts, CATEGORY_LABELS, formatDate } from '@/lib/blog';
 const allPosts = await getAllPosts();
 const allWhatsNew = await getCollection('whatsNew');
 
-// Pinned/featured post: explicit featured flag, or most recent blog post
-const featuredPost = allPosts.find((p) => p.data.featured) ?? allPosts[0];
+// Pinned featured item — whats-new entry takes priority over blog featured flag
+const PINNED_WHATS_NEW_ID = '2026-04-16';
+const pinnedWhatsNew = allWhatsNew.find((w) => w.id === PINNED_WHATS_NEW_ID);
 
-// Build unified grid: all blog posts except featured + all what's new entries
+type FeaturedItem = {
+  href: string;
+  title: string;
+  image: string;
+  imageAlt: string;
+  badge: string;
+  excerpt: string;
+  date: Date;
+};
+
+const featuredItem: FeaturedItem | undefined = pinnedWhatsNew
+  ? {
+      href: `/whats-new/${pinnedWhatsNew.id}`,
+      title: pinnedWhatsNew.data.title,
+      image: pinnedWhatsNew.data.featured_image,
+      imageAlt: pinnedWhatsNew.data.title,
+      badge: pinnedWhatsNew.data.tag,
+      excerpt: pinnedWhatsNew.data.description,
+      date: pinnedWhatsNew.data.date,
+    }
+  : (() => {
+      const p = allPosts.find((p) => p.data.featured) ?? allPosts[0];
+      return p
+        ? {
+            href: `/blog/${p.id}`,
+            title: p.data.title,
+            image: p.data.featured_image,
+            imageAlt: p.data.featured_image_alt || p.data.title,
+            badge: CATEGORY_LABELS[p.data.category] ?? p.data.category,
+            excerpt: p.data.excerpt,
+            date: p.data.date,
+          }
+        : undefined;
+    })();
+
+// Build unified grid: all blog posts + all whats-new except the pinned one
 type GridItem = {
   href: string;
   title: string;
@@ -21,27 +57,27 @@ type GridItem = {
   date: Date;
 };
 
-const blogGridItems: GridItem[] = allPosts
-  .filter((p) => p.id !== featuredPost.id)
-  .map((p) => ({
-    href: `/blog/${p.id}`,
-    title: p.data.title,
-    image: p.data.featured_image,
-    imageAlt: p.data.featured_image_alt || p.data.title,
-    tag: CATEGORY_LABELS[p.data.category] ?? p.data.category,
-    tagHref: `/blog-post-category/${p.data.category}`,
-    date: p.data.date,
-  }));
-
-const whatsNewGridItems: GridItem[] = allWhatsNew.map((w) => ({
-  href: `/whats-new/${w.id}`,
-  title: w.data.title,
-  image: w.data.featured_image,
-  imageAlt: w.data.title,
-  tag: w.data.tag,
-  tagHref: '/whats-new',
-  date: w.data.date,
+const blogGridItems: GridItem[] = allPosts.map((p) => ({
+  href: `/blog/${p.id}`,
+  title: p.data.title,
+  image: p.data.featured_image,
+  imageAlt: p.data.featured_image_alt || p.data.title,
+  tag: CATEGORY_LABELS[p.data.category] ?? p.data.category,
+  tagHref: `/blog-post-category/${p.data.category}`,
+  date: p.data.date,
 }));
+
+const whatsNewGridItems: GridItem[] = allWhatsNew
+  .filter((w) => w.id !== PINNED_WHATS_NEW_ID)
+  .map((w) => ({
+    href: `/whats-new/${w.id}`,
+    title: w.data.title,
+    image: w.data.featured_image,
+    imageAlt: w.data.title,
+    tag: w.data.tag,
+    tagHref: '/whats-new',
+    date: w.data.date,
+  }));
 
 const gridItems = [...blogGridItems, ...whatsNewGridItems].sort(
   (a, b) => b.date.valueOf() - a.date.valueOf()
@@ -60,24 +96,24 @@ const categories = Object.entries(CATEGORY_LABELS);
       <h1 class="title blog">Resource Center</h1>
 
       {/* Featured Post */}
-      {featuredPost && (
+      {featuredItem && (
         <div>
-          <a href={`/blog/${featuredPost.id}`} class="card blog-post-featured-last w-inline-block">
+          <a href={featuredItem.href} class="card blog-post-featured-last w-inline-block">
             <div class="card-blog-post-featured-content-last">
               <div class="badge blog-post-featured">
-                <div class="text-block-4">{CATEGORY_LABELS[featuredPost.data.category]}</div>
+                <div class="text-block-4">{featuredItem.badge}</div>
               </div>
-              <h2 class="h3-title-small">{featuredPost.data.title}</h2>
-              <p>{featuredPost.data.excerpt}</p>
+              <h2 class="h3-title-small">{featuredItem.title}</h2>
+              <p>{featuredItem.excerpt}</p>
               <div class="divider blog-post-featured"></div>
               <div class="card-blog-post-featured-about-wrapper">
-                <div class="card-blog-post-date">{formatDate(featuredPost.data.date)}</div>
+                <div class="card-blog-post-date">{formatDate(featuredItem.date)}</div>
               </div>
             </div>
             <div class="image-wrapper card-blog-post-featured-last">
               <img
-                src={featuredPost.data.featured_image}
-                alt={featuredPost.data.featured_image_alt || featuredPost.data.title}
+                src={featuredItem.image}
+                alt={featuredItem.imageAlt}
                 class="image card-blog-post-featured-last-image"
                 loading="eager"
               />

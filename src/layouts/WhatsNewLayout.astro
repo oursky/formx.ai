@@ -44,12 +44,14 @@ const formattedDate = date.toLocaleDateString('en-US', {
             <div class="text-block-55">{dateStr}</div>
           </a>
         </div>
-        <img
-          src={featured_image}
-          alt={title}
-          class="whats-new-featured-image"
-          loading="eager"
-        />
+        {featured_image && (
+          <img
+            src={featured_image}
+            alt={title}
+            class="whats-new-featured-image"
+            loading="eager"
+          />
+        )}
         <div class="rt-post w-richtext">
           <slot />
         </div>

@@ -4,7 +4,7 @@ description: "Discover how FormX.ai's ISO 27001 and SOC 2 Type 2 compliance elev
 excerpt: "Discover how FormX.ai's ISO 27001 and SOC 2 Type 2 compliance elevates data security and operational reliability. Learn what this means for your business and our commitment to protecting your information."
 category: ocr-software
 author: FormX
-date: 2026-04-21
+date: 2024-04-21
 lastmod: 2026-04-18
 featured_image: "/images/blog/673c2a72eed1b13ef47cdb1d_Certificate_FormX.jpeg"
 featured_image_alt: "FormX.ai Achieves ISO 27001 & SOC 2 Type 2 Compliance | Enhancing Data Security"

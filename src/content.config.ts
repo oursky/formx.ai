@@ -5,7 +5,6 @@ import { z } from 'astro/zod';
 const blogCategories = [
   'accounting',
   'automation',
-  'features',
   'guide',
   'machine-learning',
   'ocr-software',
