@@ -1,11 +1,51 @@
 ---
+import { getCollection } from 'astro:content';
 import PageLayout from '@/layouts/PageLayout.astro';
-import BlogCard from '@/components/blog/BlogCard.astro';
+import GridCard from '@/components/blog/GridCard.astro';
 import { getAllPosts, CATEGORY_LABELS, formatDate } from '@/lib/blog';
 
 const allPosts = await getAllPosts();
-const featuredPost = allPosts[0];
-const remainingPosts = allPosts.slice(1);
+const allWhatsNew = await getCollection('whatsNew');
+
+// Pinned/featured post: explicit featured flag, or most recent blog post
+const featuredPost = allPosts.find((p) => p.data.featured) ?? allPosts[0];
+
+// Build unified grid: all blog posts except featured + all what's new entries
+type GridItem = {
+  href: string;
+  title: string;
+  image: string;
+  imageAlt: string;
+  tag: string;
+  tagHref: string;
+  date: Date;
+};
+
+const blogGridItems: GridItem[] = allPosts
+  .filter((p) => p.id !== featuredPost.id)
+  .map((p) => ({
+    href: `/blog/${p.id}`,
+    title: p.data.title,
+    image: p.data.featured_image,
+    imageAlt: p.data.featured_image_alt || p.data.title,
+    tag: CATEGORY_LABELS[p.data.category] ?? p.data.category,
+    tagHref: `/blog-post-category/${p.data.category}`,
+    date: p.data.date,
+  }));
+
+const whatsNewGridItems: GridItem[] = allWhatsNew.map((w) => ({
+  href: `/whats-new/${w.id}`,
+  title: w.data.title,
+  image: w.data.featured_image,
+  imageAlt: w.data.title,
+  tag: w.data.tag,
+  tagHref: '/whats-new',
+  date: w.data.date,
+}));
+
+const gridItems = [...blogGridItems, ...whatsNewGridItems].sort(
+  (a, b) => b.date.valueOf() - a.date.valueOf()
+);
 
 const categories = Object.entries(CATEGORY_LABELS);
 ---
@@ -62,6 +102,7 @@ const categories = Object.entries(CATEGORY_LABELS);
             {label}
           </a>
         ))}
+        <a href="/whats-new" class="button-blog-category w-button">What's New</a>
       </div>
     </div>
   </div>
@@ -69,8 +110,8 @@ const categories = Object.entries(CATEGORY_LABELS);
   <div class="section blog-posts-section">
     <div class="container-default w-container">
       <div class="blog-post-grid">
-        {remainingPosts.map((post) => (
-          <BlogCard {post} />
+        {gridItems.map((item) => (
+          <GridCard {...item} />
         ))}
       </div>
     </div>

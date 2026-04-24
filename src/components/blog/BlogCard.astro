@@ -15,22 +15,23 @@ const Heading = headingLevel;
 ---
 
 <div class="card blog-post">
-  <a href={`/blog/${post.id}`} class="blog-post-img-wrap w-inline-block">
-    <img
-      src={featured_image}
-      alt={featured_image_alt || title}
-      class="image blog-post card"
-      loading="lazy"
-    />
+  <a href={`/blog/${post.id}`} class="w-inline-block">
+    <div class="image-wrapper card-blog-post-featured">
+      <img
+        src={featured_image}
+        alt={featured_image_alt || title}
+        class="image card-blog-post-featured"
+        loading="lazy"
+      />
+    </div>
   </a>
-  <div class="card-blog-post-content">
-    <a href={`/blog-post-category/${category}`} class="badge blog-post-category">
+  <div class="card-blog-post-featured-content">
+    <a href={`/blog-post-category/${category}`} class="badge card-blog-post">
       {categoryLabel}
     </a>
     <a href={`/blog/${post.id}`} class="blog-post-card-link w-inline-block">
       <Heading class="h3-title-small">{title}</Heading>
     </a>
-    <p class="paragraph blog-post-card-text">{excerpt}</p>
-    <div class="blog-post-date">{formattedDate}</div>
+    <div class="card-blog-post-date">{formattedDate}</div>
   </div>
 </div>

@@ -1,0 +1,37 @@
+---
+import { formatDate } from '@/lib/blog';
+
+interface Props {
+  href: string;
+  title: string;
+  image: string;
+  imageAlt?: string;
+  tag: string;
+  tagHref: string;
+  date: Date;
+}
+
+const { href, title, image, imageAlt, tag, tagHref, date } = Astro.props;
+---
+
+<div class="card blog-post">
+  <a href={href} class="w-inline-block">
+    <div class="image-wrapper card-blog-post-featured">
+      <img
+        src={image}
+        alt={imageAlt || title}
+        class="image card-blog-post-featured"
+        loading="lazy"
+      />
+    </div>
+  </a>
+  <div class="card-blog-post-featured-content">
+    <a href={tagHref} class="badge card-blog-post">
+      {tag}
+    </a>
+    <a href={href} class="blog-post-card-link w-inline-block">
+      <h3 class="h3-title-small">{title}</h3>
+    </a>
+    <div class="card-blog-post-date">{formatDate(date)}</div>
+  </div>
+</div>

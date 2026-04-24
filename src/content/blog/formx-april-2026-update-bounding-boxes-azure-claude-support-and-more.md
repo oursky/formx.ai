@@ -5,6 +5,7 @@ excerpt: "FormX's April 2026 update brings two features in early access: extract
 category: features
 author: FormX
 date: 2026-04-16
+featured: true
 featured_image: "/images/blog/formxrelease0327.jpg"
 featured_image_alt: "FormX April 2026 Update: Bounding Boxes, Azure Claude Support, and More"
 canonical_url: "/blog/formx-april-2026-update-bounding-boxes-azure-claude-support-and-more"

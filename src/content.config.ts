@@ -29,6 +29,7 @@ const blog = defineCollection({
     twitter_card: z.string().default('summary_large_image'),
     canonical_url: z.string().optional(),
     draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
   }),
 });
 
