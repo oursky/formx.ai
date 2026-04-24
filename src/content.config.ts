@@ -9,7 +9,6 @@ const blogCategories = [
   'guide',
   'machine-learning',
   'ocr-software',
-  'tools',
 ] as const;
 
 const blog = defineCollection({

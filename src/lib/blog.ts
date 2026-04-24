@@ -51,7 +51,6 @@ export const CATEGORY_LABELS: Record<string, string> = {
   guide: 'Guide',
   'machine-learning': 'Machine Learning',
   'ocr-software': 'OCR Software',
-  tools: 'Tools',
 };
 
 export function formatDate(date: Date): string {
