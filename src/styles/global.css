@@ -4,9 +4,6 @@
   color-scheme: only light;
 }
 
-body {
-  background-color: var(--neutral-200);
-}
 
 iframe {
   border: none;
