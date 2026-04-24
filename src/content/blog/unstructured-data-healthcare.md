@@ -2,7 +2,7 @@
 title: "The Latency Tax: Why Your Healthcare Facility is Losing 33 Hours a Month to \"Paperwork Purgatory\""
 description: "Stop losing 33 hours monthly to \"Paperwork Purgatory.\" Learn how intelligent data extraction unlocks \"dark data\" from faxes and notes, slashing administrative burnout and returning clinical focus to patient care."
 excerpt: "Stop losing 33 hours monthly to \"Paperwork Purgatory.\" Learn how intelligent data extraction unlocks \"dark data\" from faxes and notes, slashing administrative burnout and returning clinical focus to patient care."
-category: automation
+category: machine-learning
 author: FormX
 date: 2026-04-15
 featured_image: "/images/blog/Screenshot-2026-04-15-at-1.53.46 PM.png"

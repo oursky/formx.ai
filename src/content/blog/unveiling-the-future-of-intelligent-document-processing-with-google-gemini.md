@@ -2,7 +2,7 @@
 title: "Unveiling the Future of Intelligent Document Processing with Google Gemini"
 description: "Prepare for a revolution in document processing! Google Gemini's advanced LLM capabilities, integrated with FormX.ai, will unlock"
 excerpt: "Prepare for a revolution in document processing! Google Gemini's advanced LLM capabilities, integrated with FormX.ai, will unlock"
-category: automation
+category: machine-learning
 author: FormX
 date: 2026-04-18
 featured_image: "/images/blog/657560113dcb29ab01e95237__4463160b-04db-45ab-96b9-2f420901948b.jpeg"

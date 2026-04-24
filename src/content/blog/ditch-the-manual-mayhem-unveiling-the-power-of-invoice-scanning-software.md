@@ -2,7 +2,7 @@
 title: "Ditch the Manual Mayhem: Unveiling the Power of Invoice Scanning Software"
 description: "Invoice mountains got you buried? Wish you could scan and conquer mountains of paper with a digital magic wand? Enter invoice sca"
 excerpt: "Invoice mountains got you buried? Wish you could scan and conquer mountains of paper with a digital magic wand? Enter invoice sca"
-category: automation
+category: ocr-software
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

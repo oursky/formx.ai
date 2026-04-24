@@ -2,7 +2,7 @@
 title: "The Guide to AI Accounting Automation: From Invoices to Reconciliation"
 description: "Stop wasting hours on manual data entry. With 76% of employees losing three hours daily to data migration, the shift to Intelligent Document Processing (IDP) is no longer optional. Discover how to leverage enterprise automation and high-performance OCR APIs to slash operational costs by 30% and achieve 100% data integrity."
 excerpt: "Stop wasting hours on manual data entry. With 76% of employees losing three hours daily to data migration, the shift to Intelligent Document Processing (IDP) is no longer optional. Discover how to leverage enterprise automation and high-performance OCR APIs to slash operational costs by 30% and achieve 100% data integrity."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

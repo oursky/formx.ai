@@ -2,7 +2,7 @@
 title: "Purchase Order Processing: A Complete Guide"
 description: "PO processing involves several steps from creating a purchase order to closing it. Learn more about the process and how you can s"
 excerpt: "PO processing involves several steps from creating a purchase order to closing it. Learn more about the process and how you can s"
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

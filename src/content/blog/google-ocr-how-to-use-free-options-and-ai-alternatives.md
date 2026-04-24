@@ -2,7 +2,7 @@
 title: "Google OCR: How to Use, Free Options, and AI Alternatives"
 description: "Learn how to use Google OCR, explore free options, and discover how FormX.ai's AI-powered solution surpasses Google OCR for accurate and efficient data extraction."
 excerpt: "Learn how to use Google OCR, explore free options, and discover how FormX.ai's AI-powered solution surpasses Google OCR for accurate and efficient data extraction."
-category: automation
+category: ocr-software
 author: FormX
 date: 2026-04-18
 featured_image: "/images/blog/66c5ab82038660dde825433f_GoogleOCR_featured.jpeg"

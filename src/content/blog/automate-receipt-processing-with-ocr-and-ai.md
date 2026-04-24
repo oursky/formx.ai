@@ -2,7 +2,7 @@
 title: "Automate Receipt Processing with OCR and AI to Save Time and Reduce Stress"
 description: "Let\u2019s take a closer look at what receipt extraction is and how you could use it to save time and money."
 excerpt: "Let\u2019s take a closer look at what receipt extraction is and how you could use it to save time and money."
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "What Is Accounts Payable Days and How to Calculate It?"
 description: "Learn to calculate Accounts Payable Days, why it's crucial, strategies to optimize it, and how AI can help you with it."
 excerpt: "Learn to calculate Accounts Payable Days, why it's crucial, strategies to optimize it, and how AI can help you with it."
-category: automation
+category: accounting
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

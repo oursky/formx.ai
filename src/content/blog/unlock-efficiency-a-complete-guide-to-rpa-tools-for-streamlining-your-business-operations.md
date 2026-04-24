@@ -2,7 +2,7 @@
 title: "What Is Hyperautomation and Why Is It a Must-Have in 2023?"
 description: "The hyperautomation market is projected to skyrocket to $82.2 billion and many businesses now consider it a necessity instead of"
 excerpt: "The hyperautomation market is projected to skyrocket to $82.2 billion and many businesses now consider it a necessity instead of"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "Nanonets Alternative for Multi-Language AP Invoices: How FormX Handles Cross-Border Document Processing"
 description: "Juggling invoices in multiple languages, currencies, and formats? Manual AP processing is slow and error-prone. This guide explores how FormX provides a compelling alternative to Nanonets, using template-free AI with universal language support to automate cross-border document processing and conquer global invoice chaos."
 excerpt: "Juggling invoices in multiple languages, currencies, and formats? Manual AP processing is slow and error-prone. This guide explores how FormX provides a compelling alternative to Nanonets, using template-free AI with universal language support to automate cross-border document processing and conquer global invoice chaos."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

@@ -2,7 +2,7 @@
 title: "Simplify Your Finances with QuickBooks Data Entry Automation"
 description: "Understand more about Quickbooks and how automating its data entry can simplify your finances."
 excerpt: "Understand more about Quickbooks and how automating its data entry can simplify your finances."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

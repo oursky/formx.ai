@@ -2,7 +2,7 @@
 title: "OCR and Invoice Scanning Software for QuickBooks"
 description: "Discover how OCR software automates invoice processing for QuickBooks. Learn setup steps, compare pricing options, and explore ROI benefits for small business accounting teams."
 excerpt: "Discover how OCR software automates invoice processing for QuickBooks. Learn setup steps, compare pricing options, and explore ROI benefits for small business accounting teams."
-category: automation
+category: ocr-software
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

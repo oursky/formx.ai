@@ -2,7 +2,7 @@
 title: "Accounts Payable Outsourcing vs. AP Automation: The Best Solution?"
 description: "Learn more about the pros and cons of outsourcing or automating accounts payable and what the future of AP will look like with th"
 excerpt: "Learn more about the pros and cons of outsourcing or automating accounts payable and what the future of AP will look like with th"
-category: automation
+category: accounting
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "Unlock Python OCR with FormX \u2013 Revolutionize Data Extraction"
 description: "Discover the transformative power of python ocr in our comprehensive guide. Learn how to leverage top python ocr libraries, scan PDFs, and overcome common errors."
 excerpt: "Discover the transformative power of python ocr in our comprehensive guide. Learn how to leverage top python ocr libraries, scan PDFs, and overcome common errors."
-category: automation
+category: ocr-software
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

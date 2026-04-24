@@ -2,7 +2,7 @@
 title: "Beyond Docparser: Top 5 Alternatives for Streamlining Your Document Workflow"
 description: "Docparser has emerged as a popular tool for streamlining document processing and data extraction. But in today's fast-paced busin"
 excerpt: "Docparser has emerged as a popular tool for streamlining document processing and data extraction. But in today's fast-paced busin"
-category: automation
+category: ocr-software
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

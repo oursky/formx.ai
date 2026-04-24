@@ -2,7 +2,7 @@
 title: "Amazon Textract Alternative for SAP AP Automation: Why Finance Teams Choose FormX"
 description: "Amazon Textract extracts raw text. FormX delivers structured, SAP-ready invoice data out of the box - no custom development, no AWS contract, starts free."
 excerpt: "Amazon Textract extracts raw text. FormX delivers structured, SAP-ready invoice data out of the box - no custom development, no AWS contract, starts free."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

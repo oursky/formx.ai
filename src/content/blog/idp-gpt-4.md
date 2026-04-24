@@ -2,7 +2,7 @@
 title: "The Future of Intelligent Document Processing with ChatGPT"
 description: "Learn about how Large Language Models like GPT-4 can elevate Intelligent Document Processing and automate manual tasks with highe"
 excerpt: "Learn about how Large Language Models like GPT-4 can elevate Intelligent Document Processing and automate manual tasks with highe"
-category: automation
+category: machine-learning
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "Top 5 Bank Statement Analyzer Tools"
 description: "Discover the best tools for automating bank statement analysis. Explore features like AI-powered categorization, cash flow insights, and secure data handling."
 excerpt: "Discover the best tools for automating bank statement analysis. Explore features like AI-powered categorization, cash flow insights, and secure data handling."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

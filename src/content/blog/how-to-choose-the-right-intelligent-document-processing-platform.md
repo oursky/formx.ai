@@ -2,7 +2,7 @@
 title: "How to Choose the Right Intelligent Document Processing Platform"
 description: "With a crowded market of IDP solutions, selecting the right platform requires looking beyond brand names to evaluate real-world performance. This guide outlines eight essential criteria\u2014from pre-processing capabilities and pre-built extractors to security and mobile capture\u2014to help finance and IT teams find a scalable, high-accuracy solution that eliminates template maintenance."
 excerpt: "With a crowded market of IDP solutions, selecting the right platform requires looking beyond brand names to evaluate real-world performance. This guide outlines eight essential criteria\u2014from pre-processing capabilities and pre-built extractors to security and mobile capture\u2014to help finance and IT teams find a scalable, high-accuracy solution that eliminates template maintenance."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

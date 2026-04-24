@@ -2,7 +2,7 @@
 title: "Accounts Payable: Best Practices & The Role of AP Automation"
 description: "Learn more about the best practices of accounts payable, invoice processing, and accounts payable automation and how you can benefit"
 excerpt: "Learn more about the best practices of accounts payable, invoice processing, and accounts payable automation and how you can benefit"
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

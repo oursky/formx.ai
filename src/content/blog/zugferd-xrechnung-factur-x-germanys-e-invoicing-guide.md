@@ -2,7 +2,7 @@
 title: "ZUGFeRD, XRechnung & Factur-X: Germany's E-Invoicing Guide"
 description: "Learn about XRechnung, ZUGFeRD, and Factur-X\u2014Germany's e-invoicing standards. Prepare for mandatory adoption by 2025 with this comprehensive guide."
 excerpt: "Learn about XRechnung, ZUGFeRD, and Factur-X\u2014Germany's e-invoicing standards. Prepare for mandatory adoption by 2025 with this comprehensive guide."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

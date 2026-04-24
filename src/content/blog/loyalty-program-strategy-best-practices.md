@@ -2,7 +2,7 @@
 title: "Loyalty Program Strategy: Best Practices to Build Customer Loyalty"
 description: "Learn more about the 6 best practices to help you build a loyalty program that fosters long-term relationships with your customer"
 excerpt: "Learn more about the 6 best practices to help you build a loyalty program that fosters long-term relationships with your customer"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "What Is 3-Way Matching in Accounts Payable? How to Automate It with AI?"
 description: "Three-way matching involves comparing three accounting documents, namely receipt, invoice, and PO, to make sure that they match t"
 excerpt: "Three-way matching involves comparing three accounting documents, namely receipt, invoice, and PO, to make sure that they match t"
-category: automation
+category: accounting
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

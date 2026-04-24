@@ -2,7 +2,7 @@
 title: "The Developer\u2019s Blueprint for Autonomous Data Pipelines: Solving the \"Data Debt\" Crisis"
 description: "Eliminate \"Data Debt\" by transforming unstructured PDFs and images into production-ready JSON. Learn how developers use intelligent APIs and automated pipelines to replace fragile manual entry with resilient, autonomous data streams."
 excerpt: "Eliminate \"Data Debt\" by transforming unstructured PDFs and images into production-ready JSON. Learn how developers use intelligent APIs and automated pipelines to replace fragile manual entry with resilient, autonomous data streams."
-category: automation
+category: ocr-software
 author: FormX
 date: 2026-04-15
 featured_image: "/images/blog/Screenshot-2026-04-15-at-2.11.56 PM.png"

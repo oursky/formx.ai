@@ -2,7 +2,7 @@
 title: "Protect Your Business: The Threat of Fake Bank Statements and How to Defend Yourself"
 description: "In today's digital world, fraudsters are constantly devising new ways to exploit vulnerabilities. One concerning tactic is the us"
 excerpt: "In today's digital world, fraudsters are constantly devising new ways to exploit vulnerabilities. One concerning tactic is the us"
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

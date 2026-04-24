@@ -2,7 +2,7 @@
 title: "Unleash Xero Automation Powerhouse: Automating Xero Accounts Payable with FormX.ai"
 description: "Xero, the digital accounting champion, empowers countless businesses to ditch dusty ledgers and embrace sleek online accounting."
 excerpt: "Xero, the digital accounting champion, empowers countless businesses to ditch dusty ledgers and embrace sleek online accounting."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-21
 lastmod: 2026-04-18

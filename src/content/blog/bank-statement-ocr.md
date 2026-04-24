@@ -2,7 +2,7 @@
 title: "Bank Statement OCR: How to Automate Bank Statement Processing"
 description: "Bank statement OCR has been incorporated into different workflows to help businesses automate bank statement processing to provide"
 excerpt: "Bank statement OCR has been incorporated into different workflows to help businesses automate bank statement processing to provide"
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

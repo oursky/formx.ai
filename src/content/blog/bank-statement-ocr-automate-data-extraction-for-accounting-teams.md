@@ -2,7 +2,7 @@
 title: "Bank Statement OCR: Automate Data Extraction for Accounting Teams"
 description: "Manual bank reconciliation is a significant time sink that slows down month-end closes and increases the risk of data entry errors. Learn how AI-powered OCR can transform tedious PDF and paper statements into structured CSV or JSON data, helping accounting teams save up to 33 hours a month while achieving 92% extraction accuracy."
 excerpt: "Manual bank reconciliation is a significant time sink that slows down month-end closes and increases the risk of data entry errors. Learn how AI-powered OCR can transform tedious PDF and paper statements into structured CSV or JSON data, helping accounting teams save up to 33 hours a month while achieving 92% extraction accuracy."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

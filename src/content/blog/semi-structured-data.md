@@ -2,7 +2,7 @@
 title: "What Is Semi-Structured Data?"
 description: "Semi-structured data is a form of data that doesn\u2019t conform to the traditional tabular structure of data models, but it has struc"
 excerpt: "Semi-structured data is a form of data that doesn\u2019t conform to the traditional tabular structure of data models, but it has struc"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

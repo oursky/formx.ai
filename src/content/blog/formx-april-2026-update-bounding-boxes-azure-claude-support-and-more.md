@@ -2,7 +2,7 @@
 title: "FormX April 2026 Update: Bounding Boxes, Azure Claude Support, and More"
 description: "FormX's April 2026 update brings two features in early access: extraction results now include bounding box coordinates so you know exactly where on the document each value was found, and Azure-hosted Claude models are now supported for Enterprise teams through AnthropicFoundry. The release also includes accuracy improvements for smart learning and MRZ extraction fixes."
 excerpt: "FormX's April 2026 update brings two features in early access: extraction results now include bounding box coordinates so you know exactly where on the document each value was found, and Azure-hosted Claude models are now supported for Enterprise teams through AnthropicFoundry. The release also includes accuracy improvements for smart learning and MRZ extraction fixes."
-category: automation
+category: features
 author: FormX
 date: 2026-04-16
 featured_image: "/images/blog/formxrelease0327.jpg"

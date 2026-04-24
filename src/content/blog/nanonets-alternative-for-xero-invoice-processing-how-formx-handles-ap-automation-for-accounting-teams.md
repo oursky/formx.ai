@@ -2,7 +2,7 @@
 title: "Nanonets Alternative for Xero Invoice Processing: How FormX Handles AP Automation for Accounting Teams"
 description: "FormX is a Nanonets alternative for Xero teams - pre-built extractors for invoices, receipts, and bank statements, with Zapier automation"
 excerpt: "FormX is a Nanonets alternative for Xero teams - pre-built extractors for invoices, receipts, and bank statements, with Zapier automation"
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

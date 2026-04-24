@@ -2,7 +2,7 @@
 title: "AI OCR for Xero: How It Works, Costs, and Integrations"
 description: "Learn how AI-powered OCR automates invoice and receipt data entry for Xero. Explore the step-by-step workflow, compare pricing tiers, and find the best export options for your accounting team."
 excerpt: "Learn how AI-powered OCR automates invoice and receipt data entry for Xero. Explore the step-by-step workflow, compare pricing tiers, and find the best export options for your accounting team."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

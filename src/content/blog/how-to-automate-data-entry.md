@@ -2,7 +2,7 @@
 title: "How to Automate Data Entry the Easy Way: A Complete Guide"
 description: "Automating data entry can bring significant benefits to businesses troubled by document-centric processes. Learn how to automate"
 excerpt: "Automating data entry can bring significant benefits to businesses troubled by document-centric processes. Learn how to automate"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

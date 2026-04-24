@@ -2,7 +2,7 @@
 title: "Docsumo Alternative for Bank PDF to Excel: How FormX Automates Bank Statement Extraction for QuickBooks and Xero Teams"
 description: "FormX extracts transactions from PDF bank statements into CSV or Excel for QuickBooks and Xero - no template setup, no credit card, 100 free pages."
 excerpt: "FormX extracts transactions from PDF bank statements into CSV or Excel for QuickBooks and Xero - no template setup, no credit card, 100 free pages."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

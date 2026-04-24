@@ -2,7 +2,7 @@
 title: "Invoice Processing Automation: Streamline Your Workflow with AI"
 description: "Discover the benefits of invoice processing automation with AI. Learn how automation can reduce errors, improve accuracy, and save time in your invoicing process."
 excerpt: "Discover the benefits of invoice processing automation with AI. Learn how automation can reduce errors, improve accuracy, and save time in your invoicing process."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-21
 lastmod: 2026-04-18

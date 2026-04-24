@@ -2,7 +2,7 @@
 title: "ZUGFeRD & Factur-X: Your Guide to E-Invoice Compliance"
 description: "Learn how ZUGFeRD & Factur-X simplify e-invoicing with PDF/XML formats. Ensure compliance with EN 16931 and streamline your invoicing process today."
 excerpt: "Learn how ZUGFeRD & Factur-X simplify e-invoicing with PDF/XML formats. Ensure compliance with EN 16931 and streamline your invoicing process today."
-category: automation
+category: accounting
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

@@ -2,7 +2,7 @@
 title: "Rossum Alternative for Hotel and Property Invoice OCR: How FormX Handles High-Volume AP for Hospitality Teams"
 description: "The hospitality industry deals with a relentless influx of invoices, making accurate cost allocation and financial oversight a major challenge. Learn how FormX presents a powerful alternative to Rossum, engineered to handle the high-volume, multi-vendor AP workflows unique to hotel and property management."
 excerpt: "The hospitality industry deals with a relentless influx of invoices, making accurate cost allocation and financial oversight a major challenge. Learn how FormX presents a powerful alternative to Rossum, engineered to handle the high-volume, multi-vendor AP workflows unique to hotel and property management."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

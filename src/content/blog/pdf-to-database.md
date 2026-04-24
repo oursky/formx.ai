@@ -2,7 +2,7 @@
 title: "Converting PDF to Database - A Comprehensive Guide"
 description: "Unlock the full potential of your data by converting PDF files to a database. Our comprehensive guide walks you through the why,"
 excerpt: "Unlock the full potential of your data by converting PDF files to a database. Our comprehensive guide walks you through the why,"
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

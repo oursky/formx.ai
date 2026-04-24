@@ -2,7 +2,7 @@
 title: "AI OCR for Messy PDFs and Low-Quality Scans: A Complete Guide"
 description: "Discover how AI-powered OCR handles faded receipts, skewed scans, and blurry documents. Learn pre-processing techniques, accuracy tips, and which tools work best for challenging paperwork."
 excerpt: "Discover how AI-powered OCR handles faded receipts, skewed scans, and blurry documents. Learn pre-processing techniques, accuracy tips, and which tools work best for challenging paperwork."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

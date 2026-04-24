@@ -6,7 +6,7 @@ import { CATEGORY_LABELS } from '@/lib/blog';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => !data.draft);
-  const categories = [...new Set(allPosts.map((p) => p.data.category))];
+  const categories = Object.keys(CATEGORY_LABELS);
 
   return categories.map((category) => {
     const posts = allPosts

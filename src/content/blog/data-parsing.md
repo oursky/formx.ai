@@ -2,7 +2,7 @@
 title: "Data Parsing: What Is It and Should You Buy or Build?"
 description: "Learn more about data parsing and how it can help you transform raw data into structured formats and actionable items."
 excerpt: "Learn more about data parsing and how it can help you transform raw data into structured formats and actionable items."
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

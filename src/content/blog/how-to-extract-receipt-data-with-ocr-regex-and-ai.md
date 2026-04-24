@@ -2,7 +2,7 @@
 title: "How to Extract Receipt Data with OCR, Regex and AI"
 description: "Our journey of developing the high accuracy receipt extraction solution."
 excerpt: "Our journey of developing the high accuracy receipt extraction solution."
-category: automation
+category: machine-learning
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

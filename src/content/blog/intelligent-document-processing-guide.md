@@ -2,7 +2,7 @@
 title: "What Is Intelligent Document Processing: A Complete Guide"
 description: "Intelligent Document Processing leverages several AI technologies to automate data extraction from various documents. Learn more"
 excerpt: "Intelligent Document Processing leverages several AI technologies to automate data extraction from various documents. Learn more"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "Data Extraction Tools Guide: Types, Challenges, and Top 6 Use Cases"
 description: "Learn how FormX, a GenAI-powered extraction tool, streamlines document processing with unmatched accuracy, flexibility, and security."
 excerpt: "Learn how FormX, a GenAI-powered extraction tool, streamlines document processing with unmatched accuracy, flexibility, and security."
-category: automation
+category: ocr-software
 author: FormX
 date: 2026-04-18
 featured_image: "/images/blog/67a1b9d5efc1184dff9043d0_top-6-case.jpeg"

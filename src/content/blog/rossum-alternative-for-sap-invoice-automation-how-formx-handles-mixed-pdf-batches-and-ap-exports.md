@@ -2,7 +2,7 @@
 title: "Rossum Alternative for SAP Invoice Automation: How FormX Handles Mixed PDF Batches and AP Exports"
 description: "FormX processes mixed PDF batches - scanned, digital, multi-language - and exports structured invoice data to SAP via CSV, Excel, or UiPath RPA. No templates required."
 excerpt: "FormX processes mixed PDF batches - scanned, digital, multi-language - and exports structured invoice data to SAP via CSV, Excel, or UiPath RPA. No templates required."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

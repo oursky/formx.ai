@@ -2,7 +2,7 @@
 title: "FormX Product Update - Signature, Address Proof Extraction from Any Documents"
 description: "FormX has released several features to expedite verification of signatures and address. In addition, users can now extract QR cod"
 excerpt: "FormX has released several features to expedite verification of signatures and address. In addition, users can now extract QR cod"
-category: automation
+category: features
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

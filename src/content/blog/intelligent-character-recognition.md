@@ -2,7 +2,7 @@
 title: "Impact of Intelligent Character Recognition (ICR) In Modern Business"
 description: "Learn more about Intelligent Character Recognition, a subset of OCR that can recognize and convert handwritten documents or files"
 excerpt: "Learn more about Intelligent Character Recognition, a subset of OCR that can recognize and convert handwritten documents or files"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

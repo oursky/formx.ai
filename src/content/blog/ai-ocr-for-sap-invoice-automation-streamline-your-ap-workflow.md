@@ -2,7 +2,7 @@
 title: "AI OCR for SAP Invoice Automation: Streamline Your AP Workflow"
 description: "While SAP powers enterprise finance, many AP teams are still trapped in a cycle of manual data entry for vendor invoices. Explore how integrating AI-powered OCR into your SAP workflow can reduce processing costs by 64%, automate line-item extraction, and deliver a return on investment in as little as eight business days."
 excerpt: "While SAP powers enterprise finance, many AP teams are still trapped in a cycle of manual data entry for vendor invoices. Explore how integrating AI-powered OCR into your SAP workflow can reduce processing costs by 64%, automate line-item extraction, and deliver a return on investment in as little as eight business days."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

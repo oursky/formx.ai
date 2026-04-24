@@ -2,7 +2,7 @@
 title: "Document Digitization 101: A Complete Guide on How to Automate"
 description: "Learn more about what document digitization is and how AI technologies like OCR, ML, and LLM have transformed document digitizati"
 excerpt: "Learn more about what document digitization is and how AI technologies like OCR, ML, and LLM have transformed document digitizati"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

@@ -2,7 +2,7 @@
 title: "Understanding Manual Data Entry and Why It's Time to Shift"
 description: "Explore the intricacies of manual data entry, its historical significance, and the modern challenges it presents. Discover why bu"
 excerpt: "Explore the intricacies of manual data entry, its historical significance, and the modern challenges it presents. Discover why bu"
-category: automation
+category: guide
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28

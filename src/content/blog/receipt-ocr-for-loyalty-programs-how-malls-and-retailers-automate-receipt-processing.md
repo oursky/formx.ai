@@ -2,7 +2,7 @@
 title: "Receipt OCR for Loyalty Programs: How Malls and Retailers Automate Receipt Processing"
 description: "Scaling a receipt-based loyalty program is nearly impossible when relying on manual staff reviews. Discover how retailers and mall operators are using mobile SDKs and AI extraction to provide instant reward credits, detect fraudulent submissions, and process thousands of receipts in seconds to drive higher customer engagement."
 excerpt: "Scaling a receipt-based loyalty program is nearly impossible when relying on manual staff reviews. Discover how retailers and mall operators are using mobile SDKs and AI extraction to provide instant reward credits, detect fraudulent submissions, and process thousands of receipts in seconds to drive higher customer engagement."
-category: automation
+category: guide
 author: FormX
 date: 2026-04-14
 lastmod: 2026-04-13

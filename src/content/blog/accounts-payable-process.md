@@ -2,7 +2,7 @@
 title: "What Is The Accounts Payable Process?"
 description: "Discover the accounts payable process: steps, challenges, and how to streamline it with AI technologies."
 excerpt: "Discover the accounts payable process: steps, challenges, and how to streamline it with AI technologies."
-category: automation
+category: accounting
 author: FormX
 date: 2025-02-10
 lastmod: 2024-03-28
