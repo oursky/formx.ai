@@ -350,7 +350,6 @@
   from = "/blog/accounting-automation"
   to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/automate-sap-ap-processing-with-ai-ocr-to-save-time-and-reduce-manual-keying"
@@ -380,7 +379,6 @@
   from = "/blog/enterprise-automation-transform-workflows-with-formx-ai"
   to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/automated-form-processing"
@@ -430,13 +428,11 @@
   from = "/blog/intelligent-document-processing"
   to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/conquer-invoice-chaos-automate-processing-with-ocr-invoice-processing"
   to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/conquer-invoice-reconciliation-automation-vs-manual-methods"
@@ -456,13 +452,11 @@
   from = "/blog/ai-multilingual-document-processing-for-businesses"
   to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/overcoming-multilingual-invoice-processing-challenges"
   to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
   status = 301
-  force = true
 
 # ---------------------------------------------------------------------------
 # Blog consolidations → healthcare latency tax
@@ -472,13 +466,11 @@
   from = "/blog/healthcare-automation"
   to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/unstructured-data-healthcare"
   to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
   status = 301
-  force = true
 
 # ---------------------------------------------------------------------------
 # Blog consolidations → developers blueprint / autonomous data pipelines
@@ -493,19 +485,16 @@
   from = "/blog/top-ocr-api"
   to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/what-is-ocr-and-how-business-leverage"
   to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/blog/automate-kyc-with-ocr-ai"
   to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
   status = 301
-  force = true
 
 # ---------------------------------------------------------------------------
 # Blog pages with no replacement → /blog index
