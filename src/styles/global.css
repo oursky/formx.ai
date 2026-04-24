@@ -9,6 +9,11 @@ iframe {
   border: none;
 }
 
+/* Keep the invisible subcolumn title the same height as visible titles so adjacent columns align */
+.dropdown-title.subcolumn {
+  min-height: 40px;
+}
+
 .w-container::before,
 .w-container::after {
   display: none !important;
