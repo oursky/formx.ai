@@ -7494,6 +7494,8 @@ figcaption {
 }
 .hover-change-content.w--current {
   background-color: #0000;
+  border-left-color: var(--primary-formx-green);
+  color: var(--primary-formx-green);
   margin-bottom: 16px;
   padding-bottom: 0;
   overflow: hidden;
@@ -7562,6 +7564,7 @@ figcaption {
   font-size: 16px;
   line-height: 22px;
   overflow: hidden;
+  transition: height 0.35s ease;
 }
 .hover-change-description.accordion {
   padding-left: 48px;
@@ -10307,6 +10310,8 @@ figcaption {
 }
 .hover-change-content-2.w--current {
   background-color: #0000;
+  border-left-color: #0fac90;
+  color: #0fac90;
   margin-bottom: 16px;
   padding-bottom: 0;
   overflow: hidden;
@@ -10318,6 +10323,7 @@ figcaption {
   font-size: 16px;
   line-height: 22px;
   overflow: hidden;
+  transition: height 0.35s ease;
 }
 .section-10 {
   padding-top: 96px;

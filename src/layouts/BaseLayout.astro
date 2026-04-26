@@ -84,6 +84,26 @@ const {
 
     <!-- Vanilla tab switching for w-tabs components -->
     <script is:inline>
+      function setTabDescHeight(link, isActive, animate) {
+        var desc = link.querySelector('.hover-change-description, .hover-change-description-2');
+        if (!desc) return;
+        if (!animate) desc.style.transition = 'none';
+        desc.style.height = isActive ? desc.scrollHeight + 'px' : '0px';
+        if (!animate) {
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() { desc.style.transition = ''; });
+          });
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.w-tab-menu').forEach(function(menu) {
+          menu.querySelectorAll('.w-tab-link').forEach(function(link) {
+            setTabDescHeight(link, link.classList.contains('w--current'), false);
+          });
+        });
+      });
+
       document.addEventListener('click', function(e) {
         var link = e.target.closest('.w-tab-link');
         if (!link) return;
@@ -94,7 +114,10 @@ const {
         if (!menu || !content) return;
         var links = Array.from(menu.querySelectorAll('.w-tab-link'));
         var idx = links.indexOf(link);
-        links.forEach(function(l, i) { l.classList.toggle('w--current', i === idx); });
+        links.forEach(function(l, i) {
+          l.classList.toggle('w--current', i === idx);
+          setTabDescHeight(l, i === idx, true);
+        });
         Array.from(content.querySelectorAll('.w-tab-pane')).forEach(function(p, i) {
           p.classList.toggle('w--tab-active', i === idx);
         });
