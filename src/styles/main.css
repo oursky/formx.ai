@@ -4475,7 +4475,8 @@ figcaption {
   margin-bottom: 18px;
 }
 .badge.blog-post-category {
-  margin-bottom: 18px;
+  display: inline-block;
+  margin-bottom: 28px;
   text-decoration: none;
   transition-property: transform;
 }
