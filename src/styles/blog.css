@@ -1,3 +1,8 @@
+/* Blog hero background */
+.section.blog-hero {
+  background-color: rgb(123, 128, 138);
+}
+
 /* Rich text post styles - extracted from Webflow inline styles present on blog/whats-new pages */
 
 .rt-post h1 {
