@@ -3,6 +3,16 @@
   publish = "dist"
 
 # ---------------------------------------------------------------------------
+# Canonical domain redirect — send all Netlify subdomain traffic to production
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "https://formxai.netlify.app/*"
+  to = "https://www.formx.ai/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
 # HTML extension redirects (Webflow legacy URLs → clean Astro URLs)
 # ---------------------------------------------------------------------------
 
