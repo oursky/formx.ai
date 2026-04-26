@@ -36,14 +36,21 @@ body.blog-page {
   margin-bottom: 8px;
 }
 
-/* What's-new specific heading spacing */
-.whats-new-content h1,
-.whats-new-content h2,
-.whats-new-content h3,
-.whats-new-content h4,
-.whats-new-content h5,
-.whats-new-content h6 {
-  margin-bottom: 12px;
+/* What's-new content heading spacing — large top margin separates headings from
+   preceding body text (proximity principle: heading belongs to what follows it) */
+.whats-new-content .rt-post h2,
+.whats-new-content .rt-post h3,
+.whats-new-content .rt-post h4,
+.whats-new-content .rt-post h5,
+.whats-new-content .rt-post h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+/* First heading sits closer to the intro paragraph / featured image */
+.whats-new-content .rt-post h2:first-child,
+.whats-new-content .rt-post h3:first-child {
+  margin-top: 1rem;
 }
 
 .whats-new-content figure img {
