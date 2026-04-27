@@ -22,6 +22,20 @@
   force = true
 
 # ---------------------------------------------------------------------------
+# Campaign landing page redirects
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/simplify-and-automate-your-logistics-operations"
+  to = "/landing/logistics"
+  status = 301
+
+[[redirects]]
+  from = "/simplify-and-automate-your-logistics-operations.html"
+  to = "/landing/logistics"
+  status = 301
+
+# ---------------------------------------------------------------------------
 # HTML extension redirects (Webflow legacy URLs → clean Astro URLs)
 # ---------------------------------------------------------------------------
 
