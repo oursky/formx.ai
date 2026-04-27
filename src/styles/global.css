@@ -4,6 +4,31 @@
   color-scheme: only light;
 }
 
+/* Skip navigation link — visually hidden until focused */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-main:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 12px 20px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  z-index: 9999;
+  text-decoration: none;
+  outline: 3px solid #00c07b;
+}
+
 
 iframe {
   border: none;
@@ -19,19 +44,3 @@ iframe {
   display: none !important;
 }
 
-/* Intl-tel-input overrides */
-.hide {
-  display: none;
-}
-
-#valid-msg {
-  color: #10b981;
-}
-
-#error-msg {
-  color: #f43f5e;
-}
-
-.iti {
-  display: block;
-}

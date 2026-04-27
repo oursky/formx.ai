@@ -10,8 +10,8 @@ import PageLayout from '@/layouts/PageLayout.astro';
 >
   <Fragment slot="head">
     <!-- Preload LCP hero banner images to improve LCP discovery -->
-    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_pc@2x.jpg" fetchpriority="high" media="(min-width: 768px)" />
-    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_m@2x.jpg" fetchpriority="high" media="(max-width: 767px)" />
+    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_pc@2x.webp" fetchpriority="high" media="(min-width: 768px)" />
+    <link rel="preload" as="image" href="/images/ui/FormX_25Q2_hero_banner_m@2x.webp" fetchpriority="high" media="(max-width: 767px)" />
   </Fragment>
   <!-- Hero with animated text rotation — kept exactly as original -->
   <div class="section hero__llm__section b-version">
@@ -20,7 +20,7 @@ import PageLayout from '@/layouts/PageLayout.astro';
         <div class="hero__llm__content b-version">
           <div class="hero__llm__tagline__wrap">
             <h1 class="hero__llm__tagline heading-gradient-v2 home-heading b-version">Automate Document Workflow with <span class="ai---b-version">AI</span><span class="home__llm-tagline--3rdline b-version">and Read </span></h1>
-            <h1 class="hero__llm__tagline heading-gradient-v2 home-heading b-version smaller-mobile"><span class="ai---b-version">Automate Data Processing with AI and</span><span class="home__llm-tagline--3rdline b-version">and Read </span></h1>
+            <p class="hero__llm__tagline heading-gradient-v2 home-heading b-version smaller-mobile" aria-hidden="true"><span class="ai---b-version">Automate Data Processing with AI and</span><span class="home__llm-tagline--3rdline b-version">and Read </span></p>
             <div class="hero__llm__tagline__lastlinewrap b-version">
               <div class="hero__llm__tagline__lastline--left heading-gradient-v2 home-heading desktop-img b-version"><span class="normal-h b-version">AI and</span> Read</div>
               <div class="hero__llm__tagline__lastline--left heading-gradient-v2 home-heading desktop-img b-version and-read">and Read</div>
