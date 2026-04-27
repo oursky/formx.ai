@@ -4,11 +4,13 @@ import Footer from '@/components/footer/Footer.astro';
 ---
 
 <section class="bg-f7f8fc">
-<div class="footer-with-form">
+<div
+  class="footer-with-form -mt-[60px] max-[767px]:-mt-10 bg-transparent"
+>
   <div class="section footer-form">
-    <div class="w-layout-blockcontainer container-default w-container">
+    <div class="w-layout-blockcontainer container-default w-container min-w-0 max-w-full">
       <div class="_2-block-flex footer-form">
-        <div class="footer-left">
+        <div class="footer-left min-w-0 max-w-full lg:basis-1/2 lg:shrink-0">
           <div class="footer-subtitle-2">Free trials available.</div>
           <h2 class="footer-heading">
             Ready to<span class="text-color-primary">Automate</span> Your Document Processing?
@@ -20,7 +22,7 @@ import Footer from '@/components/footer/Footer.astro';
             >Start for Free -&gt;</a
           >
         </div>
-        <div class="footer-right">
+        <div class="footer-right min-w-0 w-full max-w-full lg:basis-1/2">
           <div class="footer-form-wrap">
             <div class="w-form">
               <form

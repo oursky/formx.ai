@@ -48,26 +48,3 @@ iframe {
   display: none !important;
 }
 
-/*
- * Schedule-demo footer strip: `._2-block-flex.footer-form` sets `flex-flow: row` in main.css
- * with higher specificity than the generic `._2-block-flex { flex-flow: column }` tablet rules,
- * so the CTA and form stayed side-by-side on narrow viewports. Stack copy, then form, ≤991px.
- */
-@media screen and (max-width: 991px) {
-  ._2-block-flex.footer-form {
-    flex-flow: column;
-    align-items: stretch;
-  }
-
-  ._2-block-flex.footer-form .footer-left {
-    flex: none;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  ._2-block-flex.footer-form .footer-right {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-

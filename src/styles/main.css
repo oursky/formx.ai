@@ -7493,9 +7493,6 @@ figcaption {
 .footer-paragraph {
   color: var(--typography-body);
 }
-.footer-with-form {
-  margin-top: -60px;
-}
 .form-text-field {
   color: var(--neutral-800);
   border-radius: 4px;
@@ -13899,9 +13896,6 @@ figcaption {
   .next:hover {
     color: #28d1b3;
   }
-  .footer-with-form {
-    background-color: #0000;
-  }
   .bg-f7f8fc {
     background-color: #f7f8fc;
   }
@@ -17416,9 +17410,6 @@ figcaption {
   .footer-paragraph {
     font-size: 16px;
     line-height: 24px;
-  }
-  .footer-with-form {
-    margin-top: -40px;
   }
   .navigation-dropdown-login-icon {
     width: auto;

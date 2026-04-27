@@ -1,14 +1,40 @@
-/* Tailwind v4: theme + utilities only (no Preflight) while legacy main.css owns resets. */
+/*
+ * Tailwind v4: theme + utilities only. Preflight stays OFF while main.css Webflow
+ * resets exist—see docs/todo/tailwind-main-css-inventory.md §Preflight milestone.
+ */
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
 
-/* Mirror FormX tokens from main.css :root for Tailwind color utilities in new markup. */
+/* Map design tokens from main.css :root for utility classes (bg-*, text-*, etc.). */
 @theme {
   --color-formx-green: var(--primary-formx-green);
   --color-formx-heading: var(--typography-heading);
   --color-formx-body: var(--typography-body);
   --color-formx-link: var(--typography-link);
   --color-formx-footer: var(--footer-blue);
+  --color-formx-footer-muted: var(--footer-list-title);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-primary-green-20: var(--primary-green-20);
+  --color-primary-green-40: var(--primary-green-40);
+  --color-primary-green-60: var(--primary-green-60);
+  --color-primary-green-80: var(--primary-green-80);
+  --color-primary-green-100: var(--primary-green-100);
+  --color-secondary-neon: var(--secondary-neon-green);
+  --color-secondary-navy: var(--secondary-navy);
+  --color-secondary-blue: var(--secondary-blue);
+  --color-secondary-light-blue: var(--secondary-light-blue);
+  --color-gray-300: var(--gray-300);
+  --color-secondary-1: var(--secondary-1);
+  --color-primary-2: var(--primary-2);
+  --color-secondary-2: var(--secondary-2);
+  --color-secondary-3: var(--secondary-3);
 }
 
 @layer components {
@@ -41,5 +67,24 @@
   img._2-block-image-radius,
   img.home-tab-img {
     @apply max-w-full h-auto w-full;
+  }
+
+  /*
+   * Schedule-demo strip: main.css sets ._2-block-flex.footer-form { flex-flow: row }
+   * with higher specificity than generic tablet column rules—stack CTA then form ≤991px.
+   */
+  @media screen and (max-width: 991px) {
+    ._2-block-flex.footer-form {
+      @apply flex-col items-stretch;
+    }
+
+    ._2-block-flex.footer-form .footer-left {
+      @apply max-w-full flex-none;
+      width: 100%;
+    }
+
+    ._2-block-flex.footer-form .footer-right {
+      @apply w-full max-w-full;
+    }
   }
 }
