@@ -30,6 +30,10 @@
 }
 
 
+img {
+  height: auto;
+}
+
 iframe {
   border: none;
 }
