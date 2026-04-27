@@ -1,0 +1,51 @@
+---
+/**
+ * Raster-friendly image with sensible fluid defaults.
+ * Pass `variant="icon"` for small SVGs / trust badges.
+ */
+interface Props {
+  src: string;
+  alt: string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  width?: number | string;
+  height?: number | string;
+  srcset?: string;
+  sizes?: string;
+  variant?: 'fluid' | 'block' | 'cover' | 'icon';
+}
+
+const {
+  src,
+  alt,
+  class: className = '',
+  loading = 'lazy',
+  width,
+  height,
+  srcset,
+  sizes,
+  variant = 'block',
+} = Astro.props;
+
+const variantClass =
+  variant === 'icon'
+    ? 'img-icon'
+    : variant === 'fluid'
+      ? 'img-fluid'
+      : variant === 'cover'
+        ? 'img-fluid-cover'
+        : 'img-fluid-block';
+
+const classes = [variantClass, className].filter(Boolean).join(' ');
+---
+
+<img
+  src={src}
+  alt={alt}
+  class={classes}
+  loading={loading}
+  width={width}
+  height={height}
+  srcset={srcset}
+  sizes={sizes}
+/>

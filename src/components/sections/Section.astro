@@ -6,8 +6,8 @@ interface Props {
 const { bgClass = '' } = Astro.props;
 ---
 
-<div class={`section ${bgClass}`.trim()}>
-  <div class="container-default w-container">
+<div class={`section min-h-0 min-w-0 max-w-full ${bgClass}`.trim()}>
+  <div class="container-default w-container min-h-0 min-w-0 max-w-full">
     <slot />
   </div>
 </div>

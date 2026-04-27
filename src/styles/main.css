@@ -2763,14 +2763,6 @@ figcaption {
 .footer-logo-container.logo-footer-v3 {
   margin-bottom: 0;
 }
-.page-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-.page-wrapper.relative.overflow-visible {
-  width: 100%;
-  overflow: visible;
-}
 .licenses-hero {
   background-color: var(--primary-formx-green);
   padding-top: 90px;
@@ -7506,9 +7498,6 @@ figcaption {
 }
 .footer-paragraph {
   color: var(--typography-body);
-}
-.footer-with-form {
-  margin-top: -60px;
 }
 .form-text-field {
   color: var(--neutral-800);
@@ -13931,9 +13920,6 @@ figcaption {
   .next:hover {
     color: #28d1b3;
   }
-  .footer-with-form {
-    background-color: #0000;
-  }
   .bg-f7f8fc {
     background-color: #f7f8fc;
   }
@@ -13995,9 +13981,6 @@ figcaption {
   h1 {
     margin-bottom: 25px;
     font-size: 48px;
-  }
-  img {
-    width: auto;
   }
   blockquote {
     padding: 60px 80px 80px;
@@ -17458,9 +17441,6 @@ figcaption {
     font-size: 16px;
     line-height: 24px;
   }
-  .footer-with-form {
-    margin-top: -40px;
-  }
   .navigation-dropdown-login-icon {
     width: auto;
   }
@@ -18448,13 +18428,6 @@ figcaption {
   }
   .footer-logo-container {
     margin-bottom: 20px;
-  }
-  .page-wrapper {
-    box-sizing: border-box;
-    aspect-ratio: auto;
-    object-fit: fill;
-    position: relative;
-    overflow: visible;
   }
   .section {
     padding-top: 20px;

@@ -22,7 +22,9 @@ const { showFooterForm = false, ...baseProps } = Astro.props;
 
 <BaseLayout {...baseProps}>
   <slot name="head" slot="head" />
-  <div class="page-wrapper">
+  <div
+    class="page-wrapper relative min-h-0 min-w-0 max-w-full overflow-hidden max-[479px]:overflow-visible"
+  >
     <Header />
     <main id="main-content">
       <slot />

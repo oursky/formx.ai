@@ -66,3 +66,102 @@ iframe {
   display: none !important;
 }
 
+/*
+ * Home hero — rotating document-type labels (crossfade).
+ * Opacity animates on .hero-llm__filetype-slot (plain box); inner text stays full opacity.
+ */
+@keyframes hero-filetype-crossfade {
+  0%,
+  3% {
+    opacity: 0;
+  }
+  7%,
+  13% {
+    opacity: 1;
+  }
+  17%,
+  20% {
+    opacity: 0;
+  }
+  20.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-llm__filetype-line {
+  display: flex;
+  /* Top-align so min-height does not push the line away from the h1 (center would mimic extra leading). */
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 58px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-llm__filetype-line {
+    min-height: 38px;
+  }
+}
+
+.hero-llm__filetype-track {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  animation: hero-filetype-crossfade 18s linear infinite;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(2) {
+  animation-delay: -3.6s;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(3) {
+  animation-delay: -7.2s;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(4) {
+  animation-delay: -10.8s;
+}
+
+.hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(5) {
+  animation-delay: -14.4s;
+}
+
+.hero-llm__filetype-line:hover .hero-llm__filetype-track > .hero-llm__filetype-slot {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-llm__filetype-track > .hero-llm__filetype-slot {
+    animation: none !important;
+    opacity: 0;
+  }
+
+  .hero-llm__filetype-track > .hero-llm__filetype-slot:nth-child(1) {
+    opacity: 1;
+  }
+}

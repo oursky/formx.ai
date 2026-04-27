@@ -17,7 +17,7 @@ const formattedDate = date.toLocaleDateString('en-US', {
 
 <div class={`whats-new-card ${featured ? 'featured' : ''}`}>
   <a href={`/whats-new/${entry.id}`} class="w-inline-block">
-    <img src={featured_image} alt={title} loading="lazy" class="whats-new-card-image" />
+    <img src={featured_image} alt={title} loading="lazy" class="whats-new-card-image img-fluid-block" />
   </a>
   <div class="whats-new-card-content">
     <div class="new-feature-tag">{tag}</div>

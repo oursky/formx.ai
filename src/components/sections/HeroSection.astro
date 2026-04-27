@@ -43,8 +43,8 @@ const {
 ---
 
 <div class={`section product-hero ${bgClass}`.trim()}>
-  <div class="container-default w-container">
-    <div class="product-hero-wrapper">
+  <div class="container-default w-container min-w-0 max-w-full">
+    <div class="product-hero-wrapper min-w-0">
       <div class="hero-content-block">
         {tag && <div class="product-hero-title paragraph-small">{tag}</div>}
         <div class="product-hero-content-wrapper">
@@ -68,22 +68,22 @@ const {
         {showTrustIcons && (
           <div class="w-layout-hflex icons">
             <div class="w-layout-hflex flex-block-27">
-              <img src="/images/pages/solutions-hero-bannericon-free.svg" loading="lazy" alt="" />
+              <img src="/images/pages/solutions-hero-bannericon-free.svg" loading="lazy" alt="" class="img-icon" />
               <div>100 free pages</div>
             </div>
             <div class="w-layout-hflex flex-block-27">
-              <img src="/images/pages/solutions-hero-bannericon-creditcard.svg" loading="lazy" alt="" />
+              <img src="/images/pages/solutions-hero-bannericon-creditcard.svg" loading="lazy" alt="" class="img-icon" />
               <div>No credit card</div>
             </div>
             <div class="w-layout-hflex flex-block-27">
-              <img src="/images/pages/solutions-hero-bannericon-lock.svg" loading="lazy" alt="" />
+              <img src="/images/pages/solutions-hero-bannericon-lock.svg" loading="lazy" alt="" class="img-icon" />
               <div>100% secured</div>
             </div>
           </div>
         )}
       </div>
       {image && (
-        <div class="hero-image-block">
+        <div class="hero-image-block min-w-0">
           <img
             src={image.src}
             loading="lazy"
@@ -92,7 +92,7 @@ const {
             alt={image.alt}
             srcset={image.srcset}
             sizes={image.sizes}
-            class="image-7"
+            class="image-7 img-fluid-block"
           />
         </div>
       )}

@@ -21,7 +21,7 @@ const gridClass = columns === 4 ? '_4-block-grid' : '_3-block-grid';
 ---
 
 <div class={`section product-section ${bgClass}`.trim()}>
-  <div class="container-default w-container">
+  <div class="container-default w-container min-w-0 max-w-full">
     <div class="product-heading-content-wrapper">
       <div class="product-heading-wrapper">
         <h2 class="product-heading">{heading}</h2>
@@ -38,7 +38,7 @@ const gridClass = columns === 4 ? '_4-block-grid' : '_3-block-grid';
                     loading="lazy"
                     width={card.iconWidth ?? 80}
                     alt=""
-                    class={`card-svg${card.iconClass ? ` ${card.iconClass}` : ' small'}`}
+                    class={`card-svg${card.iconClass ? ` ${card.iconClass}` : ' small'} img-fluid`}
                   />
                 </div>
               )}

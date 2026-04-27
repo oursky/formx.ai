@@ -32,11 +32,11 @@ const imageFirst = imagePosition === 'left';
 ---
 
 <div class={`section product-section ${bgClass}`.trim()}>
-  <div class="container-default w-container">
-    <div class="product-2-block-wrapper">
+  <div class="container-default w-container min-w-0 max-w-full">
+    <div class="product-2-block-wrapper min-w-0">
       {imageFirst ? (
         <>
-          <div class="product-2-block-image-wrapper">
+          <div class="product-2-block-image-wrapper min-w-0">
             <img
               src={image.src}
               loading="lazy"
@@ -45,9 +45,10 @@ const imageFirst = imagePosition === 'left';
               alt={image.alt}
               srcset={image.srcset}
               sizes={image.sizes}
+              class="img-fluid-block"
             />
           </div>
-          <div class="product-2-block-text-wrapper">
+          <div class="product-2-block-text-wrapper min-w-0">
             <h2 class="product-2-block-heading">{heading}</h2>
             <div class="product-2-block-paragraph" set:html={body} />
             {linkHref && linkText && (
@@ -59,7 +60,7 @@ const imageFirst = imagePosition === 'left';
         </>
       ) : (
         <>
-          <div class="product-2-block-text-wrapper">
+          <div class="product-2-block-text-wrapper min-w-0">
             <h2 class="product-2-block-heading">{heading}</h2>
             <div class="product-2-block-paragraph" set:html={body} />
             {linkHref && linkText && (
@@ -68,7 +69,7 @@ const imageFirst = imagePosition === 'left';
               </a>
             )}
           </div>
-          <div class="product-2-block-image-wrapper">
+          <div class="product-2-block-image-wrapper min-w-0">
             <img
               src={image.src}
               loading="lazy"
@@ -77,6 +78,7 @@ const imageFirst = imagePosition === 'left';
               alt={image.alt}
               srcset={image.srcset}
               sizes={image.sizes}
+              class="img-fluid-block"
             />
           </div>
         </>
