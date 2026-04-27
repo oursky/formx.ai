@@ -7340,6 +7340,7 @@ figcaption {
 ._2-block-flex-image.tabs {
   flex: 0 50%;
   margin-left: 40px;
+  padding-right: 24px;
 }
 ._2-block-flex-image.tabs.overflow-visible {
   overflow: visible;
