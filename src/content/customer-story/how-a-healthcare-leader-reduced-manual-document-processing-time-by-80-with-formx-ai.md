@@ -2,13 +2,13 @@
 title: "How a healthcare leader reduced manual document processing time by 80% with FormX.ai"
 description: "Discover how a US-based healthcare provider used FormX.ai to cut manual document processing time by 80%, achieve 178% ROI, and reduce data processing costs by 64%."
 excerpt: "A US-based post-discharge healthcare provider eliminated a major scaling bottleneck by automating PDF data extraction with FormX.ai — cutting processing time by 80% and achieving 178% ROI."
-customer_name: "Dimer Health"
+customer_name: "US Healthcare Provider"
 industry: "Healthcare"
-location: "Hong Kong"
-customer_logo: "/images/customer-story/dimer-health-logo.png"
-customer_logo_alt: "Dimer Health logo"
+location: "United States"
+customer_logo: ""
+customer_logo_alt: ""
 featured_image: "/images/customer-story/case-study-dimer-health.jpg"
-featured_image_alt: "Dimer Health case study"
+featured_image_alt: "Healthcare provider case study"
 metrics:
   - value: "80%"
     label: "Reduction in processing time"
@@ -27,9 +27,9 @@ canonical_url: "/success-stories/how-a-healthcare-leader-reduced-manual-document
 featured: true
 ---
 
-## About Dimer Health
+## About the Client
 
-Dimer Health is a healthcare provider dedicated to improving patient outcomes through innovative care models and digital solutions. With a focus on accessibility and efficiency, Dimer Health supports clinics and medical professionals in delivering high-quality services while reducing administrative burdens.
+This US-based healthcare provider is dedicated to improving patient outcomes through innovative care models and digital solutions. With a focus on accessibility and efficiency, they support clinics and medical professionals in delivering high-quality services while reducing administrative burdens.
 
 A US-based healthcare provider specializing in post-discharge patient care provides 24/7 support via phone and video, assisting patients with recovery plans, medication management, and urgent care. This approach has successfully lowered patient readmission rates by 67%. However, despite their innovative and effective service model, their manual document processing was a major bottleneck to scaling their business.
 
