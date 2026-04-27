@@ -1816,68 +1816,6 @@ textarea.w-select {
 .wf-layout-layout {
   display: grid;
 }
-@font-face {
-  font-family: Icons Saasly Template;
-  src: url(/fonts/icons-saasly-template.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Filled Icons;
-  src:
-    url(/fonts/filled-icon-font.woff2) format("woff2"),
-    url(/fonts/filled-icon-font.eot) format("embedded-opentype"),
-    url(/fonts/filled-icon-font.woff) format("woff"),
-    url(/fonts/filled-icon-font.ttf) format("truetype"),
-    url(/images/ui/filled-icon-font.svg) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Line Rounded Icons;
-  src:
-    url(/fonts/line-rounded-icons.woff2) format("woff2"),
-    url(/fonts/line-rounded-icons.eot) format("embedded-opentype"),
-    url(/fonts/line-rounded-icons.woff) format("woff"),
-    url(/fonts/line-rounded-icons.ttf) format("truetype"),
-    url(/images/ui/line-rounded-icons.svg) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Line Square Icons;
-  src:
-    url(/fonts/line-square-icons.woff2) format("woff2"),
-    url(/fonts/line-square-icons.eot) format("embedded-opentype"),
-    url(/fonts/line-square-icons.woff) format("woff"),
-    url(/fonts/line-square-icons.ttf) format("truetype"),
-    url(/images/ui/line-square-icons.svg) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Social Icons Font;
-  src:
-    url(/fonts/social-icon-font.woff2) format("woff2"),
-    url(/fonts/social-icon-font.eot) format("embedded-opentype"),
-    url(/fonts/social-icon-font.woff) format("woff"),
-    url(/fonts/social-icon-font.ttf) format("truetype"),
-    url(/images/ui/social-icon-font.svg) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Fa 400";
-  src: url(/fonts/fa-regular-400.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 :root {
   --neutral-600: #5f6470;
   --typography-heading: #2e2e2e;
@@ -3202,7 +3140,7 @@ figcaption {
 }
 .section.hero__llm__section.b-version {
   color: #1cffb3;
-  background-image: url(/images/ui/FormX_25Q2_hero_banner_pc@2x.jpg);
+  background-image: url(/images/ui/FormX_25Q2_hero_banner_pc@2x.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5825,12 +5763,8 @@ figcaption {
 }
 .arrow-dropdown {
   margin-left: 4px;
-  font-family:
-    Icons Saasly Template,
-    sans-serif;
-  font-size: 6px;
-  line-height: 22px;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 }
 .password-icon {
   width: 66px;
@@ -15224,9 +15158,8 @@ figcaption {
     margin-bottom: 20px;
   }
   .arrow-dropdown {
-    font-size: 8px;
-    line-height: 16px;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
   }
   .line-square-icon.top-bar-close-icon {
     padding: 18px 24px;
@@ -16498,7 +16431,7 @@ figcaption {
     padding-top: 0;
   }
   .section.hero__llm__section.b-version {
-    background-image: url(/images/ui/FormX_25Q2_hero_banner_m@2x.jpg);
+    background-image: url(/images/ui/FormX_25Q2_hero_banner_m@2x.webp);
     background-position: 50% 0;
   }
   .section.padding-bottom-40 {
