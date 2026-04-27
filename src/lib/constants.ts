@@ -1,4 +1,9 @@
 export const SITE_URL = 'https://www.formx.ai';
+
+export function toAbsoluteUrl(pathOrUrl: string): string {
+  if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
+  return `${SITE_URL}${pathOrUrl.startsWith('/') ? '' : '/'}${pathOrUrl}`;
+}
 export const SITE_NAME = 'FormX.ai';
 export const SITE_DEFAULT_OG_IMAGE =
   '/images/ui/og_image.webp';

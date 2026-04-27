@@ -1,7 +1,7 @@
 ---
 import PageLayout from './PageLayout.astro';
 import type { WhatsNewEntry } from '@/lib/blog';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, toAbsoluteUrl } from '@/lib/constants';
 
 interface Props {
   entry: WhatsNewEntry;
@@ -11,7 +11,7 @@ const { entry } = Astro.props;
 const { title, description, date, featured_image, og_title, og_description, og_image, twitter_card, canonical_url, tag } = entry.data;
 
 const dateStr = entry.id; // YYYY-MM-DD from filename
-const canonicalUrl = canonical_url ?? `${SITE_URL}/whats-new/${entry.id}`;
+const canonicalUrl = toAbsoluteUrl(canonical_url ?? `/whats-new/${entry.id}`);
 
 const formattedDate = date.toLocaleDateString('en-US', {
   year: 'numeric',

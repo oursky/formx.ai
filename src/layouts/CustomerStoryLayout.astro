@@ -5,7 +5,7 @@ import CustomerStoryCard from '@/components/customer-story/CustomerStoryCard.ast
 import StreamlineCta from '@/components/customer-story/StreamlineCta.astro';
 import { formatDate } from '@/lib/blog';
 import type { CustomerStoryEntry } from '@/lib/customer-story';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, toAbsoluteUrl } from '@/lib/constants';
 
 interface Props {
   story: CustomerStoryEntry;
@@ -20,7 +20,7 @@ const {
   twitter_card, canonical_url,
 } = story.data;
 
-const canonicalUrl = canonical_url ?? `${SITE_URL}/success-stories/${story.id}`;
+const canonicalUrl = toAbsoluteUrl(canonical_url ?? `/success-stories/${story.id}`);
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -33,7 +33,7 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     name: 'FormX',
-    logo: { '@type': 'ImageObject', url: '/images/ui/formx-logo.webp' },
+    logo: { '@type': 'ImageObject', url: toAbsoluteUrl('/images/ui/formx-logo.webp') },
   },
   datePublished: date.toISOString(),
   dateModified: (lastmod ?? date).toISOString(),

@@ -5,7 +5,7 @@ import RelatedArticles from '@/components/blog/RelatedArticles.astro';
 import JsonLd from '@/components/shared/JsonLd.astro';
 import { formatDate } from '@/lib/blog';
 import type { BlogPost } from '@/lib/blog';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, toAbsoluteUrl } from '@/lib/constants';
 
 interface Props {
   post: BlogPost;
@@ -16,7 +16,7 @@ const { post, relatedPosts } = Astro.props;
 const { title, description, excerpt, category, date, lastmod, featured_image, featured_image_alt, og_title, og_description, og_image, twitter_card, canonical_url } = post.data;
 
 const formattedDate = formatDate(date);
-const canonicalUrl = canonical_url ?? `${SITE_URL}/blog/${post.id}`;
+const canonicalUrl = toAbsoluteUrl(canonical_url ?? `/blog/${post.id}`);
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -38,7 +38,7 @@ const articleSchema = {
     name: 'FormX',
     logo: {
       '@type': 'ImageObject',
-      url: '/images/ui/formx-logo.webp',
+      url: toAbsoluteUrl('/images/ui/formx-logo.webp'),
     },
   },
   datePublished: date.toISOString(),
