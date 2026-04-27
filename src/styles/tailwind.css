@@ -1,0 +1,45 @@
+/* Tailwind v4: theme + utilities only (no Preflight) while legacy main.css owns resets. */
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+/* Mirror FormX tokens from main.css :root for Tailwind color utilities in new markup. */
+@theme {
+  --color-formx-green: var(--primary-formx-green);
+  --color-formx-heading: var(--typography-heading);
+  --color-formx-body: var(--typography-body);
+  --color-formx-link: var(--typography-link);
+  --color-formx-footer: var(--footer-blue);
+}
+
+@layer components {
+  /* Raster/SVG: scale down inside container; keep intrinsic width when smaller than container */
+  .img-fluid {
+    @apply max-h-none max-w-full h-auto;
+  }
+
+  /* Fill content box width (heroes, column screenshots) */
+  .img-fluid-block {
+    @apply max-w-full h-auto w-full;
+  }
+
+  /* Avatars / thumbs in fixed frames */
+  .img-fluid-cover {
+    @apply h-full max-h-full max-w-full w-full object-cover;
+  }
+
+  /* Icons, trust badges, inline pictograms — do not stretch to full column width */
+  .img-icon {
+    @apply h-auto max-w-full shrink-0;
+  }
+
+  /* Descendant images in common Webflow columns (reduces per-page class churn) */
+  ._2-block-flex-image img,
+  ._2-block-flex-image-2 img {
+    @apply max-w-full h-auto w-full;
+  }
+
+  img._2-block-image-radius,
+  img.home-tab-img {
+    @apply max-w-full h-auto w-full;
+  }
+}
