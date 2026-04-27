@@ -1,0 +1,58 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import CustomerStoryCard from '@/components/customer-story/CustomerStoryCard.astro';
+import StreamlineCta from '@/components/customer-story/StreamlineCta.astro';
+import { getAllStories, getFeaturedStory } from '@/lib/customer-story';
+import { SITE_URL } from '@/lib/constants';
+
+const stories = await getAllStories();
+const featured = await getFeaturedStory();
+const rest = stories.filter((s) => s.id !== featured?.id);
+---
+
+<PageLayout
+  title="Customer Success Stories - FormX.ai"
+  description="Discover how businesses across industries streamline document processing, cut manual work, and boost efficiency with FormX. Explore real-world case studies to see how our customers achieve measurable results."
+  canonicalUrl={`${SITE_URL}/success-stories`}
+>
+  <!-- Hero -->
+  <div class="section-11 blog-hero">
+    <div class="w-layout-blockcontainer container-default-8 w-container">
+      <div class="case-study-container success-stories-banner">
+        <h1 class="success-stories-h1">Customer Success Stories</h1>
+        <p class="paragraph-17">
+          Discover how businesses across industries streamline document processing, cut manual work,
+          and boost efficiency with FormX. Explore real-world case studies to see how our customers
+          achieve measurable results.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust logos -->
+  <div class="case-study-container logo-section">
+    <p class="logo-title">Trusted by International Companies</p>
+    <div class="flex-block-34">
+      <img width="150" height="60" loading="lazy" alt="MTR" src="/images/pages/homepage_logo-gray-MTR@2x.png" class="logo-image" />
+      <img width="150" height="60" loading="lazy" alt="Google" src="/images/pages/homepage_logo-gray-Google@2x.png" class="logo-image" />
+      <img width="150" height="60" loading="lazy" alt="Wilson Group" src="/images/pages/homepage_logo-gray-WilsonGroup@2x.png" class="logo-image" />
+      <img width="150" height="60" loading="lazy" alt="LINK" src="/images/pages/homepage_logo-gray-LINK@2x.png" class="logo-image" />
+      <img width="150" height="60" loading="lazy" alt="Lika Hsin" src="/images/pages/homepage_logo-gray-LIKAHSIN@2x.png" class="logo-image" />
+      <img width="150" height="60" loading="lazy" alt="Ayala Malls" src="/images/pages/homepage_logo-gray-AyalaMalls@2x.png" class="logo-image" />
+    </div>
+  </div>
+
+  <!-- Stories grid -->
+  {stories.length > 0 && (
+    <div class="case-study-container">
+      <div class="success-stories-grid">
+        {featured && <CustomerStoryCard story={featured} featured={true} />}
+        {rest.map((story) => (
+          <CustomerStoryCard story={story} />
+        ))}
+      </div>
+    </div>
+  )}
+
+  <StreamlineCta />
+</PageLayout>

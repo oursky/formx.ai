@@ -1,0 +1,41 @@
+---
+import type { CustomerStoryEntry } from '@/lib/customer-story';
+
+interface Props {
+  story: CustomerStoryEntry;
+  featured?: boolean;
+}
+
+const { story, featured = false } = Astro.props;
+const { title, excerpt, industry, featured_image } = story.data;
+---
+
+<a
+  href={`/success-stories/${story.id}`}
+  class={`success-stories-card${featured ? ' large' : ''} w-inline-block`}
+  style={featured ? `background-image: url(${featured_image}); background-size: cover; background-position: center;` : ''}
+>
+  {featured && <div class="card-gradient-overlay"></div>}
+  <div class="success-stories-content-wrap">
+    <div class={`success-stories-card-content${featured ? ' color-white' : ''}`}>
+      <div class="success-stories-card-category">{industry}</div>
+      <div class="success-stories-card-title">{title}</div>
+      <p class="success-stories-card-description">{excerpt}</p>
+    </div>
+  </div>
+</a>
+
+<style>
+  .card-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.15) 50%, transparent 100%);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .success-stories-content-wrap {
+    position: relative;
+    z-index: 1;
+  }
+</style>

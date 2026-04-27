@@ -1,0 +1,154 @@
+---
+import PageLayout from './PageLayout.astro';
+import JsonLd from '@/components/shared/JsonLd.astro';
+import CustomerStoryCard from '@/components/customer-story/CustomerStoryCard.astro';
+import StreamlineCta from '@/components/customer-story/StreamlineCta.astro';
+import { formatDate } from '@/lib/blog';
+import type { CustomerStoryEntry } from '@/lib/customer-story';
+import { SITE_URL } from '@/lib/constants';
+
+interface Props {
+  story: CustomerStoryEntry;
+  relatedStories: CustomerStoryEntry[];
+}
+
+const { story, relatedStories } = Astro.props;
+const {
+  title, description, excerpt, customer_name, industry, location,
+  customer_logo, customer_logo_alt, featured_image, featured_image_alt,
+  metrics, date, lastmod, og_title, og_description, og_image,
+  twitter_card, canonical_url,
+} = story.data;
+
+const canonicalUrl = canonical_url ?? `${SITE_URL}/success-stories/${story.id}`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+  headline: title,
+  description,
+  image: og_image ?? featured_image,
+  author: { '@type': 'Organization', name: 'FormX', url: `${SITE_URL}/` },
+  publisher: {
+    '@type': 'Organization',
+    name: 'FormX',
+    logo: { '@type': 'ImageObject', url: '/images/ui/formx-logo.webp' },
+  },
+  datePublished: date.toISOString(),
+  dateModified: (lastmod ?? date).toISOString(),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Success Stories', item: `${SITE_URL}/success-stories` },
+    { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
+  ],
+};
+---
+
+<PageLayout
+  title={`${title} - FormX.ai`}
+  description={description}
+  ogTitle={og_title ?? title}
+  ogDescription={og_description ?? description}
+  ogImage={og_image ?? featured_image}
+  twitterCard={twitter_card}
+  canonicalUrl={canonicalUrl}
+>
+  <JsonLd slot="head" schema={[articleSchema, breadcrumbSchema]} />
+
+  <!-- Hero banner -->
+  <div class="first-section">
+    <div class="case-study-container case-study-banner">
+      <div class="case-study-banner-left">
+        <div class="flex-block-29">
+          {customer_logo && (
+            <img src={customer_logo} alt={customer_logo_alt || customer_name} class="image-75" loading="eager" width="120" height="auto" />
+          )}
+          <div class="customer-story-tag">{industry}</div>
+        </div>
+        <h1>{title}</h1>
+        <p class="paragraph-16">{excerpt}</p>
+      </div>
+      <img
+        src={featured_image}
+        alt={featured_image_alt || title}
+        class="image-74"
+        loading="eager"
+      />
+    </div>
+  </div>
+
+  <!-- Body: sidebar + content -->
+  <div class="case-study-container">
+    <div class="flex-block-31">
+      <div class="side-content">
+        {customer_logo && (
+          <img src={customer_logo} alt={customer_logo_alt || customer_name} class="image-75" loading="lazy" width="120" height="auto" />
+        )}
+        <div class="flex-block-32">
+          <p class="caption">Company</p>
+          <p class="text-block-52">{customer_name}</p>
+        </div>
+        <div class="flex-block-32">
+          <p class="caption">Industry</p>
+          <p class="text-block-52">{industry}</p>
+        </div>
+        {location && (
+          <div class="flex-block-32">
+            <p class="caption">Location</p>
+            <p class="text-block-52">{location}</p>
+          </div>
+        )}
+      </div>
+
+      <div class="container-27">
+        {metrics.length > 0 && (
+          <div class="key-metric-conatiner">
+            <h4 class="h4-style">Key Results</h4>
+            <div class="numbers-container">
+              {metrics.map((m) => (
+                <div>
+                  <div class="flex-block-30">
+                    <img src={m.icon} alt={m.icon_alt} loading="lazy" width="40" height="40" />
+                  </div>
+                  <p class="key-result-metric">{m.value}</p>
+                  <p class="body">{m.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        <div class="customer-story-rich">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <StreamlineCta />
+
+  {relatedStories.length > 0 && (
+    <div class="case-study-container more-story">
+      <h3>More Customer Stories</h3>
+      <div class="success-stories-grid">
+        {relatedStories.map((s) => (
+          <CustomerStoryCard story={s} />
+        ))}
+      </div>
+    </div>
+  )}
+</PageLayout>
+
+<style>
+  .case-study-banner-left {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+    flex: 1;
+  }
+</style>

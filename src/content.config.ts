@@ -58,4 +58,35 @@ const legal = defineCollection({
   }),
 });
 
-export const collections = { blog, whatsNew, legal };
+const customerStory = defineCollection({
+  loader: glob({ base: './src/content/customer-story', pattern: '**/*.{md,mdx}' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    excerpt: z.string(),
+    customer_name: z.string(),
+    industry: z.string(),
+    location: z.string().optional(),
+    customer_logo: z.string().optional(),
+    customer_logo_alt: z.string().default(''),
+    featured_image: z.string(),
+    featured_image_alt: z.string().default(''),
+    metrics: z.array(z.object({
+      value: z.string(),
+      label: z.string(),
+      icon: z.string(),
+      icon_alt: z.string().default(''),
+    })).default([]),
+    date: z.coerce.date(),
+    lastmod: z.coerce.date().optional(),
+    og_title: z.string().optional(),
+    og_description: z.string().optional(),
+    og_image: z.string().optional(),
+    twitter_card: z.string().default('summary_large_image'),
+    canonical_url: z.string().optional(),
+    draft: z.boolean().default(false),
+    featured: z.boolean().default(false),
+  }),
+});
+
+export const collections = { blog, whatsNew, legal, customerStory };

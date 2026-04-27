@@ -7061,9 +7061,10 @@ figcaption {
   overflow: hidden;
 }
 .success-stories-grid {
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "Area." "Area." ".Area-2" ".Area-2";
+  grid-template-columns: 1fr 1fr;
   width: 100%;
+  display: grid;
+  gap: 16px;
 }
 .success-stories-card {
   background-color: var(--neutral-400);
@@ -7073,13 +7074,17 @@ figcaption {
   height: 450px;
   padding: 48px;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 .success-stories-card.large {
   justify-content: center;
   align-items: flex-end;
-  height: 916px;
-  max-height: 916px;
+  height: 520px;
+  max-height: 520px;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 .success-stories-card-content {
   grid-column-gap: 10px;
@@ -12566,6 +12571,9 @@ figcaption {
 .flex-block-29 {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }
 .image-74 {
   border-radius: 19px;
@@ -12581,6 +12589,8 @@ figcaption {
   align-items: center;
   width: 100%;
   padding: 40px 32px;
+  display: flex;
+  flex-flow: column;
 }
 .h4-style {
   margin-bottom: 0;
@@ -12604,6 +12614,8 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  display: flex;
+  flex-flow: row;
 }
 .body {
   color: var(--typography-body);
@@ -12627,6 +12639,8 @@ figcaption {
   padding-right: 40px;
   position: sticky;
   top: 160px;
+  display: flex;
+  flex-flow: column;
 }
 .divider-line {
   background-color: #e5e5e5;
@@ -12638,6 +12652,8 @@ figcaption {
   grid-row-gap: 40px;
   align-items: flex-start;
   width: 100%;
+  display: flex;
+  flex-flow: row;
 }
 .image-75 {
   max-width: 120px;
@@ -12658,6 +12674,8 @@ figcaption {
 .flex-block-32 {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
+  display: flex;
+  flex-flow: column;
 }
 .container-27 {
   width: 100%;
@@ -12754,6 +12772,8 @@ figcaption {
   grid-row-gap: 24px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-flow: row;
 }
 .success-stories-h1 {
   margin-bottom: 0;
@@ -12775,6 +12795,9 @@ figcaption {
   align-items: center;
   width: 100%;
   height: 60px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 .image-76 {
   height: 100%;

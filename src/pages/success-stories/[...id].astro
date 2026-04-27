@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from 'astro:content';
+import CustomerStoryLayout from '@/layouts/CustomerStoryLayout.astro';
+import { getRelatedStories } from '@/lib/customer-story';
+
+export async function getStaticPaths() {
+  const stories = await getCollection('customerStory', ({ data }) => !data.draft);
+  return stories.map((story) => ({
+    params: { id: story.id },
+    props: { story },
+  }));
+}
+
+const { story } = Astro.props;
+const relatedStories = await getRelatedStories(story.id);
+const { Content } = await render(story);
+---
+
+<CustomerStoryLayout {story} {relatedStories}>
+  <Content />
+</CustomerStoryLayout>

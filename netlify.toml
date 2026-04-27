@@ -211,6 +211,11 @@
   status = 301
 
 [[redirects]]
+  from = "/customer-story/:splat"
+  to = "/success-stories/:splat"
+  status = 301
+
+[[redirects]]
   from = "/case-studies"
   to = "/"
   status = 301
