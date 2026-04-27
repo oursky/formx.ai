@@ -50,7 +50,7 @@ When building an extraction pipeline, developers often start with a "Homebuilt" 
 
 
 
-For teams managing financial documents, utilizing a specialized[ invoice ocr api](<../tools/invoice-ocr-api.html>) or a[ bank statement converter](<../tools/bank-statement-converter.html>) allows engineers to focus on core product features rather than the nuances of document variance.
+For teams managing financial documents, utilizing a specialized[ invoice ocr api](<../tools/invoice-ocr-api.html>) or a[ bank statement converter](</tools/bank-statement-converter>) allows engineers to focus on core product features rather than the nuances of document variance.
 
 ## **3\. High-Velocity Workflows: Building a Frictionless KYC Pipeline**
 

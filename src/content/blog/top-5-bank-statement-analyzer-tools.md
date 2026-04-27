@@ -37,7 +37,7 @@ Key features to look for in bank statement analysis tools.
 
 ### 1\. FormX.ai
 
-[FormX.ai](<https://FormX.ai>) offers a [bank statement converter](<../tools/bank-statement-converter.html>) that utilizes AI to transform PDF bank statements into [structured data formats such as Excel, CSV, or JSON](<../tools/pdf-to-csv-converter.html>). Here are some key features of FormX.ai for bank statement analysis:
+[FormX.ai](<https://FormX.ai>) offers a [bank statement converter](</tools/bank-statement-converter>) that utilizes AI to transform PDF bank statements into [structured data formats such as Excel, CSV, or JSON](<../tools/pdf-to-csv-converter.html>). Here are some key features of FormX.ai for bank statement analysis:
 
 ![Diagram showing FormX.ai converting documents into structured data.](/images/blog/proxyimage-67dbb2b2.webp)
 

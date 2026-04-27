@@ -31,7 +31,7 @@ Organizations can use data capture technologies in a variety of ways, such as:
   * Financial institutions can use data capture to automate customer onboarding. By capturing data from passports, IDs, and [proof of address](<../documents/address-proof.html>), banks and insurance companies can quickly and easily verify customer identity to avoid money laundering and other illegal corruption schemes.
   * Healthcare organizations can use data capture to streamline patient intake. By capturing data from patient forms, hospitals can speed up the admissions process and reduce paperwork.
   * Governments can use data capture to reduce fraud and speed up the processing of benefits claims. By [capturing data from ID cards](<../documents/identity-documents/id-card-ocr.html>), birth certificates, and other documents, government agencies can verify the identity of applicants and prevent fraud.
-  * Data capture can also extract and [digitize data from business certificates](<../documents/business-certificates.html>). Details such as the company name, registration number, and date of incorporation can be quickly captured and stored in a digital format.
+  * Data capture can also extract and [digitize data from business certificates](</solutions/business-certificates>). Details such as the company name, registration number, and date of incorporation can be quickly captured and stored in a digital format.
 
 
 

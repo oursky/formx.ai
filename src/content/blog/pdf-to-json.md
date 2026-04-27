@@ -74,11 +74,11 @@ Telecom operators generally require users to upload images of their ID documents
 
 OCR provides similar benefits in the banking and insurance world. Thanks to the early adoption of automation software and [OCR in the finance industry](/blog/ocr-finance-and-accounting), we’ve been able to see just how much this technology can improve a business's workflow. OCR has allowed banks and insurers to automate customer onboarding by capturing data from passports, [IDs](<../documents/identity-documents.html>), and [proof of address](<../documents/address-proof.html>) documents, thus creating a better customer experience overall.
 
-Most of those documents tend to be submitted as scanned, PDF copies and would usually require a lot of time and effort to manually extract the necessary data. Software that can convert those PDFs to JSON makes that data available for automation and speeds up the entire process. It's also been used to seriously improve the accuracy and efficiency of how data is extracted from other PDFs such as mortgage applications, [bank statements](/blog/bank-statement-ocr), pay slips, [business certificates](<../documents/business-certificates.html>), and loan applications.
+Most of those documents tend to be submitted as scanned, PDF copies and would usually require a lot of time and effort to manually extract the necessary data. Software that can convert those PDFs to JSON makes that data available for automation and speeds up the entire process. It's also been used to seriously improve the accuracy and efficiency of how data is extracted from other PDFs such as mortgage applications, [bank statements](/blog/bank-statement-ocr), pay slips, [business certificates](</solutions/business-certificates>), and loan applications.
 
 FormX is a robust, reliable solution that helps businesses automate the data extraction process and extract more accurate insights from their PDF documents. Here are the steps for you to convert your PDF file to JSON with the help of FormX
 
-### **Sign-up for FormX**[‍](<../documents/business-certificates.html>)
+### **Sign-up for FormX**[‍](</solutions/business-certificates>)
 
 [Sign up for a free trial](<https://formextractorai.com/signup>) to start setting up your extractor to convert PDF or images to JSON.
 

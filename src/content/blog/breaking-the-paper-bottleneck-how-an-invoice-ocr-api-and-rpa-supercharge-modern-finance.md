@@ -54,7 +54,7 @@ When managed manually, this process is plagued by four primary challenges:
 
 To truly conquer this chaos, businesses must embrace **ocr accounting automated** solutions. These automated systems act as a digital reading assistant. They use Intelligent Character Recognition (ICR) to capture data perfectly, drastically reducing discrepancies. Furthermore, AI intelligently matches data points across purchase orders and receiving reports on autopilot.
 
-This transition allows accounts payable teams to stop typing and start analyzing spending trends and managing vendor relationships. For teams managing heavy statement loads, utilizing a[ bank statement converter](<../tools/bank-statement-converter.html>) can further accelerate this reconciliation cycle.
+This transition allows accounts payable teams to stop typing and start analyzing spending trends and managing vendor relationships. For teams managing heavy statement loads, utilizing a[ bank statement converter](</tools/bank-statement-converter>) can further accelerate this reconciliation cycle.
 
 ‍
 

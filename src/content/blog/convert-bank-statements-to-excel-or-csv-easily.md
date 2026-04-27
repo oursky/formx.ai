@@ -11,7 +11,7 @@ featured_image_alt: "Convert Bank Statements to Excel or CSV Easily"
 canonical_url: "/blog/convert-bank-statements-to-excel-or-csv-easily"
 ---
 
-‍[Converting bank statements from PDF to Excel or CSV format](<../tools/bank-statement-converter.html>) can significantly streamline your financial management processes. This article will guide you through the various methods and tools available to [transform your PDF bank statements into structured, easily analyzable data](/blog/extract-data-from-pdf-to-structured-data).
+‍[Converting bank statements from PDF to Excel or CSV format](</tools/bank-statement-converter>) can significantly streamline your financial management processes. This article will guide you through the various methods and tools available to [transform your PDF bank statements into structured, easily analyzable data](/blog/extract-data-from-pdf-to-structured-data).
 
 ## Why Convert Bank Statements to Excel or CSV?
 

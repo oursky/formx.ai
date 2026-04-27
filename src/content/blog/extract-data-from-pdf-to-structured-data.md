@@ -40,7 +40,7 @@ Depending on the business, common use cases for extracting data from PDF files c
 
 ### Finance & Banking
 
-Extracting data from PDF files is a common requirement in many businesses, especially those in the financial and banking industries. For example, banks and insurance companies need to be able to capture data from passports, IDs, [business certificates](<../documents/business-certificates.html>), and proof of address documents on a daily basis. However, these documents are often scanned in picture form and then converted into PDF files, which can present a challenge for financial institutions when it comes to extracting the data.
+Extracting data from PDF files is a common requirement in many businesses, especially those in the financial and banking industries. For example, banks and insurance companies need to be able to capture data from passports, IDs, [business certificates](</solutions/business-certificates>), and proof of address documents on a daily basis. However, these documents are often scanned in picture form and then converted into PDF files, which can present a challenge for financial institutions when it comes to extracting the data.
 
 In many cases, the images will need to be manually reviewed to identify the relevant information. This can be a time-consuming and labor-intensive process. However, some advanced PDF software solutions can automate the data extraction process, making it much faster and easier. As a result, these solutions can save businesses a significant amount of time and money.
 

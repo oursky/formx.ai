@@ -63,8 +63,8 @@ Supercharge Your Xero with Extracted Data: Unleash the Kraken!
 
 Ready to join the Xero automation revolution with FormX.ai? Take the first step towards a streamlined, error-free accounts payable process with our free online data extraction tools. It's like a taste of accounting nirvana, risk-free and delicious.
 
-  * [Bank Statement Converter](<../tools/bank-statement-converter.html>)
-  * [Image to Excel Converter](<../tools/image-to-excel-converter.html>)
+  * [Bank Statement Converter](</tools/bank-statement-converter>)
+  * [Image to Excel Converter](</tools/image-to-excel-converter>)
 
 
 

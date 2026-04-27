@@ -54,7 +54,7 @@ Online banking: convenience meets modern financial tools.
 
 ### 1\. Gather Bank Statements
 
-Collect [digital bank statements](<../tools/bank-statement-converter.html>) from all relevant accounts.
+Collect [digital bank statements](</tools/bank-statement-converter>) from all relevant accounts.
 
 Many tools offer direct bank connections to automatically fetch statement data.
 

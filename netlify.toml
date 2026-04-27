@@ -57,12 +57,22 @@
 
 [[redirects]]
   from = "/partner-program.html"
-  to = "/partner-program"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/partner-program"
+  to = "/"
   status = 301
 
 [[redirects]]
   from = "/referral-program.html"
-  to = "/referral-program"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/referral-program"
+  to = "/"
   status = 301
 
 [[redirects]]
@@ -302,7 +312,7 @@
 
 [[redirects]]
   from = "/blog/data-extraction-tools"
-  to = "/blog/best-data-extraction-software"
+  to = "/blog"
   status = 301
 
 [[redirects]]

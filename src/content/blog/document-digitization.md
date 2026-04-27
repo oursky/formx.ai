@@ -85,7 +85,7 @@ The public sector sees some of the highest rates of document processing thanks t
 
 [PDF parsers](/blog/pdf-parser) are a type of document digitization tool that the public sector tends to benefit from greatly. It provides a far more precise way of extracting data from documents than manual processes and saves employees from having to perform tedious, repetitive tasks all day. It also speeds up application processes which means that public sector staff can more easily stay on top of their workload and there’s less backlog and delay for those relying on them.
 
-FormX can be used to automate the digitization of [business certificates](<../documents/business-certificates.html>), [IDs,](<../documents/identity-documents.html>) and plenty of other application materials that the public sector is faced with.
+FormX can be used to automate the digitization of [business certificates](</solutions/business-certificates>), [IDs,](<../documents/identity-documents.html>) and plenty of other application materials that the public sector is faced with.
 
 ### Finance and Accounting
 
