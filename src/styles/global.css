@@ -41,6 +41,17 @@ img {
   flex-shrink: 0;
 }
 
+/* Webflow's .image-7 / .image-border-rounded only set max-width: 100%, so
+   inside flex wrappers the image can collapse to its intrinsic width. Force
+   the rendered width to fill the wrapper while the width/height attrs still
+   provide the aspect-ratio hint for CLS. */
+.hero-image-block img,
+.card-xl-image-wrap img,
+.product-2-block-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
 iframe {
   border: none;
 }

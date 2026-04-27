@@ -8,6 +8,7 @@ interface HeroImage {
   src: string;
   alt: string;
   width?: number;
+  height?: number;
   srcset?: string;
   sizes?: string;
 }
@@ -87,6 +88,7 @@ const {
             src={image.src}
             loading="lazy"
             width={image.width}
+            height={image.height}
             alt={image.alt}
             srcset={image.srcset}
             sizes={image.sizes}
