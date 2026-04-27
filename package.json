@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
     "astro": "^6.1.9",
+    "lite-youtube-embed": "^0.3.4",
     "vanilla-cookieconsent": "^3.1.0"
   }
 }

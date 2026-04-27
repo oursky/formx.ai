@@ -1872,7 +1872,7 @@ textarea.w-select {
   display: flex;
 }
 .w-embed-youtubevideo {
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
+  background-image: url(/images/ui/youtube-placeholder.svg);
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -1914,7 +1914,7 @@ textarea.w-select {
 }
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 11'%3E%3Cpath fill='none' stroke='white' stroke-width='2' stroke-miterlimit='10' d='M11 2L5.5 8.5 2 5'/%3E%3C/svg%3E");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
