@@ -34,6 +34,13 @@ img {
   height: auto;
 }
 
+.bullet-check,
+.image-83,
+.image-84,
+.image-85 {
+  flex-shrink: 0;
+}
+
 iframe {
   border: none;
 }
