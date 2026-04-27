@@ -17419,6 +17419,8 @@ figcaption {
     order: -1;
     margin-bottom: 20px;
     margin-left: 0;
+    flex: 0 0 auto;
+    width: 100%;
   }
   ._2-block-flex-image.tabs.overflow-visible.transform {
     transform: none;
@@ -17428,6 +17430,10 @@ figcaption {
   }
   ._2-block-flex.footer-form {
     padding: 24px;
+    flex-flow: column;
+  }
+  .footer-form-wrap {
+    min-width: 0;
   }
   ._2-block-flex.mobile-footer {
     grid-column-gap: 0px;
@@ -18291,9 +18297,6 @@ figcaption {
   }
   h6 {
     font-size: 18px;
-  }
-  img {
-    width: 56px;
   }
   label {
     margin-bottom: 10px;
