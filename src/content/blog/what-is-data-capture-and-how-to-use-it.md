@@ -37,15 +37,11 @@ Organizations can use data capture technologies in a variety of ways, such as:
 
 As you can see, data capture has a wide range of applications. It can be used to automate various business processes and workflows, which can lead to increased efficiency and productivity.
 
-![](/images/blog/63679246fe9d3c71aca31e35_Untitled-\(1\).jpeg)
-
 In today's digital age, data is more critical than ever before. Businesses rely on data to make informed decisions, enhance operational efficiency, understand their customers, and improve their products and services.
 
 However, a lot of data is still trapped in physical documents and forms. About 80% of data is unstructured, which means it's not in a format that computers can easily analyze. This includes data like emails, images, PDFs, and handwritten documents.
 
 Businesses need to capture this data and convert it into a digital format to unlock its value.
-
-![](/images/blog/636792518bef74f2efca1cf6_Untitled-\(2\).jpeg)
 
 To better understand how data capture works, we need to look at some of the different methods that businesses use. Here are the two main types:
 
@@ -84,8 +80,6 @@ Voice capture is a data entry method involving using speech recognition software
 It can also be used to understand and interpret spoken commands. Apple's Siri, Amazon's Alexa, and Microsoft's Cortana are all examples of voice capture technology.
 
 Many other data capture methods exist, including magnetic stripe cards, Optical Mark Reading, Magnetic Ink Character Recognition, smart cards, video/image capture, and more. However, these are the most common methods used today.
-
-![](/images/blog/636792621e9265a8b2935823_Untitled-\(3\).jpeg)
 
 Investing in data capture in your business can profit your organization in several ways. Here are some of them.
 

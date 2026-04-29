@@ -71,8 +71,6 @@ Human errors are inherent in [manual data entry](/blog/manual-data-entry), rangi
 
 The financial implications of manual data entry are significant. Labor costs make up the bulk of it, but even small errors can incur major costs for a business, either because they misdirect financial decisions or because payment deadlines are missed, etc.
 
-![](/images/blog/64fadf099d4749301c6df7b7_Training-\(7\).png)
-
 An alternative approach to manual QuickBooks data entry is the automated route, which uses AI technology to extract data and input the information into the software with limited human involvement required.
 
 At FormX, we’ve developed an AI-based data extractor that uses advanced algorithms and technology to identify key information points such as dates, amounts, names, and other relevant fields from documents and make them available as structured, usable data. Our tools are designed to intelligently analyze and extract pertinent information from various documents and sources, including invoices, receipts, contracts, and more.

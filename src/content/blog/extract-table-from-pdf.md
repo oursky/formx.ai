@@ -121,4 +121,4 @@ As the volume of PDF documents increases, you need a reliable solution that can 
 
 FormX is a no-code solution that allows you to extract data and tables from all kinds of documents, including receipts, IDs, passports, purchase order, and business certificates. Simply upload some samples of the documents you want to process, label the data fields, and verify the results.
 
-FormX will automatically detect patterns in each document and extract tables with minimal manual intervention. [Contact us today](<..//blog/talk-with-us>) to schedule a demo and experience the power of FormX.
+FormX will automatically detect patterns in each document and extract tables with minimal manual intervention. [Contact us today](</schedule-demo>) to schedule a demo and experience the power of FormX.

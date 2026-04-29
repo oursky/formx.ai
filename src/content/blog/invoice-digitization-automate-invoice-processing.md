@@ -49,7 +49,7 @@ If we extract the texts using an [online OCR tool](<https://www.onlineocr.net/>)
 
 The extracted information is not paired or structured in any way. The computer will not know that the total amount due is 896.50 USD or the bank name is actually HSBC as they are not extracted as key-value pairs. To overcome this, another solution called intelligent document processing was introduced. 
 
-[Intelligent document processing](</blog/what-is-document-processing#idp>) solutions like[ FormX](<..//blog/index>) integrate OCR with other AI technologies to automatically extract data from images or PDFs and generate structured data in JSON or CSV formats that can be directly imported into other software. 
+[Intelligent document processing](</blog/what-is-document-processing#idp>) solutions like[ FormX](</blog>) integrate OCR with other AI technologies to automatically extract data from images or PDFs and generate structured data in JSON or CSV formats that can be directly imported into other software. 
 
 FormX comes with a set of pre-configured extraction models, including receipts, ID documents, business certificates, invoices, and more. Custom models with high accuracy can also be developed upon requests. 
 
@@ -63,4 +63,4 @@ The essential information, such as invoice date, total amount, invoice number, d
 
 After the integration, you can easily process piles of invoices within minutes or even seconds and automatically send the result to your accounting software or generate csv files and import them into other systems.
 
-[Sign up](<https://formextractorai.com/signup>) or [contact us](<..//blog/talk-with-us>) to see how FormX can help you digitize your invoices and automate invoice processing to help you gain a competitive advantage. 
+[Sign up](<https://formextractorai.com/signup>) or [contact us](</schedule-demo>) to see how FormX can help you digitize your invoices and automate invoice processing to help you gain a competitive advantage. 

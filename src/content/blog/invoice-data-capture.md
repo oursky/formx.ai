@@ -37,7 +37,7 @@ In terms of automation, this has created a challenge because OCR and other tradi
 
 At FormX, we offer something a little different from traditional OCR tools in that our technology is combined with Machine Learning and falls into the category of “[Intelligent Document Processing](</blog/what-is-document-processing#idp>)”. What this means for invoice data capture is that we can help you automate all of it, no matter the vendor, layout, or document format.
 
-We have a [pre-built invoice extractor](<../documents//blog/invoice-ocr-api>) to help you extract everything from the vendor’s name to the payment due date, without any manual intervention needed. Where traditional rule-based extraction tolls have faltered invoice capture automation, our IDP solution is more than equipped to take over.
+We have a [pre-built invoice extractor](</solutions/invoice-ocr-api>) to help you extract everything from the vendor’s name to the payment due date, without any manual intervention needed. Where traditional rule-based extraction tolls have faltered invoice capture automation, our IDP solution is more than equipped to take over.
 
 The benefits of automating invoice data capture using IDP tools like FormX are significant. We’ve worked with many companies over the years and seen for ourselves just how transformational an automation system can be in key areas of business:
 
@@ -84,4 +84,4 @@ Staying on top of invoices is a highly important part of maintaining a business�
 
 At FormX, we’ve made it as simple as possible for you to perform invoice data capture with our pre-set models and send it to your existing accounting and financial software for further use. You don’t need to be a coder, or particularly well-versed in ML and OCR software to use our tools. We’ve designed our IDP software to do all the heavy lifting so that your business doesn’t have to.
 
-[Contact us](<..//blog/talk-with-us>) to tell us more about your AP workflow and how FormX can help you handle invoices automatically.
+[Contact us](</schedule-demo>) to tell us more about your AP workflow and how FormX can help you handle invoices automatically.

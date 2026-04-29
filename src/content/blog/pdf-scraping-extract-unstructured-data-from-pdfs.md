@@ -49,8 +49,6 @@ A PDF scraper or Intelligent Document Processing solution like FormX will not on
 
 By integrating different technologies, including OCR, machine learning, and image optimization, PDF scrapers like FormX can “read” PDFs, extract the necessary information and deliver it as structured data, often in the form of JSON or CSV. This is why PDF data scraping is so effective at streamlining business workflows.
 
-![](/images/blog/64e46e946ed7bb90d6f00bc1_Training-\(6\).png)
-
 Here’s a step-by-step process of how an Automated PDF Extractor works:
 
 ### **1\. Collecting Samples**

@@ -85,4 +85,4 @@ Businesses are under extreme pressure to provide excellent customer services. Ho
 
 FormX has trained different document extraction models, such as bank statement, receipts, IDs, etc., to help businesses resolve the document processing bottleneck to increase operational efficiency and provide better customer services.
 
-[Contact us](<..//blog/talk-with-us>) to tell us more about how you would like to automate processing of bank statements or other documents and how FormX can help you do that with ease.
+[Contact us](</schedule-demo>) to tell us more about how you would like to automate processing of bank statements or other documents and how FormX can help you do that with ease.

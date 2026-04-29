@@ -21,6 +21,13 @@
   status = 301
   force = true
 
+# /smartadapt (old Webflow path) → correct Astro page
+[[redirects]]
+  from = "/smartadapt"
+  to = "/products/smartadapt"
+  status = 301
+  force = true
+
 # Strip trailing slashes — redirect /path/ → /path (except root /)
 [[redirects]]
   from = "/*/"

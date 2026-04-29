@@ -21,13 +21,13 @@ Document classification is the **process of sorting documents into categories ba
 
 For instance, think of the myriad invoices an organization can receive, such as reimbursements, bills for office expenses, and third-party software. Generally speaking, these need to be sorted into different folders or databases depending on the invoice type. However, if you attempted to categorize hundreds of thousands of invoices manually, it would be quite improbable to achieve absolute accuracy. Moreover, manually examining all these documents one by one is laborious and tedious work. Thus, automated document classification can be extremely useful for cases such as this one.
 
-Structured documents or fixed forms provide a consistent and organized format for presenting information. The font, numbering, and layout are standardized and do not vary. These features make it straightforward to develop automated solutions to convert these physical structured documents into structured data, as their predictability and consistency facilitate the processing of information. Some good examples of structured documents are [ID cards](<../documents/identity-documents//blog/id-card-ocr>) and [business registration certificates](<../documents//blog/business-certificates>).
+Structured documents or fixed forms provide a consistent and organized format for presenting information. The font, numbering, and layout are standardized and do not vary. These features make it straightforward to develop automated solutions to convert these physical structured documents into structured data, as their predictability and consistency facilitate the processing of information. Some good examples of structured documents are [ID cards](</solutions/id-card-ocr>) and [business registration certificates](</solutions/business-certificates>).
 
 An unstructured document typically contains information whose format is open. Examples include contracts, orders, letters, and bills. Tables within these documents may not contain borders, making it much more challenging for a document classification algorithm to determine their exact position. Identifying the required data is thus more difficult.
 
 Semi-structured documents are a unique blend of structured and unstructured components. Multiple static tables with data portrayed in various formats often occupy the same page, creating an entirely new document type.
 
-In the business realm, [invoices](<../documents//blog/invoice-ocr-api>) and [receipts](<../documents//blog/receipts>) are among some of the most commonplace semi-structured documents. Gleaning information from these particular documents can be a complicated task due to their blend of structured and unstructured components.
+In the business realm, [invoices](</solutions/invoice-ocr-api>) and [receipts](</solutions/receipts>) are among some of the most commonplace semi-structured documents. Gleaning information from these particular documents can be a complicated task due to their blend of structured and unstructured components.
 
 ![](/images/blog/63c756dce9f6710d0ace9d2e_doc-diff.jpeg)
 
@@ -81,4 +81,4 @@ When testing, you can also verify the JSON output and integrate FormX with your 
 
 ![](/images/blog/63c759ec403da9b7f198a01b_detect-json.png)
 
-[Get in touch with us today](<..//blog/talk-with-us>) to find out how FormX can help you streamline and automate your operations. With our automated processing solutions, you'll be able to tackle even the most complex data processing challenges in no time.
+[Get in touch with us today](</schedule-demo>) to find out how FormX can help you streamline and automate your operations. With our automated processing solutions, you'll be able to tackle even the most complex data processing challenges in no time.

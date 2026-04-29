@@ -57,8 +57,6 @@ For example, data entry automation powered by OCR and Machine Learning can extra
 
 Data entry automation can also do wonders for your marketing efforts. With data entry automation, businesses can have a complete and up-to-date view of their customer data. Businesses can extract information from different data fields, such as product name, product amount, price, etc., from consumers’ receipts. This allows businesses to segment their customers more effectively and target them with more [personalized marketing campaigns](<https://www.forbes.com/sites/forbescommunicationscouncil/2021/10/14/14-smart-ways-to-effectively-personalize-marketing-campaigns/?sh=213f7c0a5a39>).
 
-![](/images/blog/64e46f0d59df87be19d3bfde_Training-\(4\).png)
-
 The advent of automated data entry processes has revolutionized the way organizations handle vast amounts of unstructured data. Here are the key stages of an automated data entry process:
 
 ### **1\. Adding a Data Source**

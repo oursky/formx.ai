@@ -180,8 +180,6 @@ After the conversion is complete, there are several post-conversion steps to ens
 
 By following these steps, you can ensure a smooth and effective PDF to database conversion process, setting the stage for more efficient and data-driven operations in your organization.
 
-![](/images/blog/64fad9feecc183a3ddd518d2_1-\(3\).png)
-
 After delving into the immense advantages of using databases and how they revolutionize data management, let's now explore how FormX effortlessly transforms PDF documents into Excel:
 
 ### **1\. Create an Account**
