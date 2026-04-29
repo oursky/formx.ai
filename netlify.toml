@@ -21,6 +21,13 @@
   status = 301
   force = true
 
+# Strip trailing slashes — redirect /path/ → /path (except root /)
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
 # ---------------------------------------------------------------------------
 # Campaign landing page redirects
 # ---------------------------------------------------------------------------

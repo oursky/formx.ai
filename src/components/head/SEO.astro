@@ -23,10 +23,22 @@ const {
   noIndex = false,
 } = Astro.props;
 
+function stripTrailingSlash(url: string): string {
+  try {
+    const u = new URL(url);
+    if (u.pathname !== '/' && u.pathname.endsWith('/')) {
+      u.pathname = u.pathname.slice(0, -1);
+    }
+    return u.toString();
+  } catch {
+    return url;
+  }
+}
+
 const resolvedOgTitle = ogTitle ?? title;
 const resolvedOgDescription = ogDescription ?? description;
 const resolvedOgImage = ogImage ?? SITE_DEFAULT_OG_IMAGE;
-const resolvedCanonical = canonicalUrl ?? Astro.url.href;
+const resolvedCanonical = stripTrailingSlash(canonicalUrl ?? Astro.url.href);
 ---
 
 <title>{title}</title>
