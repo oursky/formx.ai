@@ -1,0 +1,44 @@
+/* Cascade order matters — do not reorder imports arbitrarily.
+   See docs/todo/css-purge-and-migration.md for migration context. */
+
+/* Breakpoints: 479 (mobile-sm), 767 (mobile-lg), 991 (tablet),
+   1280 (desktop), 1440 (desktop-xl), 1920 (desktop-xxl) */
+
+/* 1. Design tokens (:root custom properties) */
+@import './tokens.css';
+
+/* 2. Normalize / reset */
+@import './reset.css';
+
+/* 3. Webflow icon glyphs, widgets, lightbox, richtext */
+@import './webflow/legacy.css';
+
+/* 4. Base typography (Webflow defaults + project overrides using tokens) */
+@import './base.css';
+
+/* 5. Webflow JS-coupled runtime classes: forms, slider, dropdown, nav, tabs, CMS */
+@import './webflow/runtime.css';
+
+/* 6. Webflow layout grid: .w-container, .w-col-*, .w-layout-* */
+@import './webflow/grid.css';
+
+/* 7. Named component files (extracted in Phase 3) */
+@import './components/buttons.css';
+@import './components/headings.css';
+@import './components/cards.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/cta.css';
+@import './components/faq.css';
+
+/* 7b. Remaining project utilities + layout + shared classes */
+@import './components/legacy.css';
+
+/* 9. #w-node-* grid placement rules (to be replaced by markup in Phase 5) */
+@import './responsive/nodes.css';
+
+/* 10. Site-wide fixes and overrides */
+@import './global.css';
+
+/* 11. Blog typography (to be merged into pages/blog.css in Phase 2) */
+@import './blog.css';

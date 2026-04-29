@@ -1,0 +1,214 @@
+
+.success-stories-grid {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  display: grid;
+  gap: 16px;
+}
+.success-stories-card {
+  background-color: var(--neutral-400);
+  border-radius: 16px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 450px;
+  padding: 48px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.success-stories-card.large {
+  justify-content: center;
+  align-items: flex-end;
+  height: 520px;
+  max-height: 520px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.success-stories-card-content {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  display: flex;
+}
+.success-stories-card-content.color-white {
+  justify-content: flex-end;
+  height: auto;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+.success-stories-card-category {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+.success-stories-card-title {
+  font-family:
+    Inter Tight,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.success-stories-card-description {
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+}
+.success-stories-content-wrap {
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  display: flex;
+}
+.case-study-container {
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1102px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 96px 20px;
+  display: flex;
+}
+.case-study-container.case-study-banner {
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  flex-flow: row;
+}
+.case-study-container.more-story {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  max-width: 882px;
+}
+.case-study-container.success-stories-banner {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  max-width: 882px;
+}
+.case-study-container.logo-section {
+  z-index: 3;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.customer-story-tag {
+  color: var(--primary-formx-green);
+  background-color: #0fac901a;
+  border-radius: 90px;
+  padding: 6px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.key-result-metric {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(71.08deg, #21d8b8 32.89%, #3b56f0 61.63%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+}
+.customer-story-rich {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  margin-top: 40px;
+  margin-bottom: 0;
+  display: flex;
+}
+.customer-story-rich h2 {
+  margin-bottom: -24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.customer-story-rich h3 {
+  margin-bottom: -24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.customer-story-rich h4 {
+  margin-bottom: -24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.customer-story-rich p,
+.customer-story-rich li {
+  color: var(--typography-body);
+}
+.customer-story-rich a {
+  color: var(--primary-green-20);
+}
+.customer-story-rich blockquote {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  color: var(--typography-heading);
+  text-align: left;
+  background-color: #f9f9fb;
+  border-top-style: none;
+  border-left-style: none;
+  border-radius: 24px;
+  flex-flow: column;
+  margin-bottom: 0;
+  padding: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  display: flex;
+}
+.success-stories-h1 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1920px) {
+
+  .success-stories-card.large {
+    overflow: hidden;
+  }
+  .success-stories-card-content {
+    padding: 0;
+    overflow: hidden;
+  }
+  .success-stories-card-content.color-white {
+    padding: 0;
+    overflow: hidden;
+    transform: translate(0);
+  }
+  .success-stories-content-wrap {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .success-stories-grid {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    display: block;
+  }
+  .success-stories-card {
+    height: 100%;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+  .success-stories-card.large {
+    height: 100%;
+    max-height: none;
+    overflow: hidden;
+  }
+  .case-study-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .case-study-container.case-study-banner {
+    flex-flow: column;
+  }
+}

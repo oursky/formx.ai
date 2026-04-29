@@ -1,0 +1,159 @@
+
+.doctype__label {
+  color: #000;
+  font-size: 12px;
+}
+.doctypes__container {
+  text-align: center;
+  background-color: #0000;
+  border: 2px solid #333;
+  border-radius: 20px;
+  flex-flow: row;
+  place-content: stretch flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+  display: flex;
+  box-shadow: -6px 6px #00000080;
+}
+.doctypes__container.tool-page {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  box-shadow: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid.doctypes__grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: start;
+  place-items: stretch stretch;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.fa-icon.doctype__icons {
+  color: #333;
+  font-size: 24px;
+  line-height: 48px;
+}
+.doctypes__title__container {
+  text-align: left;
+}
+.doctypes__title__container.tool-page {
+  max-width: 50%;
+}
+.doctypes__title {
+  color: #333;
+  text-align: left;
+  flex: auto;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px 0 0;
+  font-family: Inter, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 44px;
+  overflow: visible;
+}
+.doctypes__title.tool-page {
+  margin-bottom: 20px;
+}
+.capabilities__doctype__container {
+  background-color: #f8f8f8;
+  border: 2px #838c9b;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 108px;
+  max-height: none;
+  padding: 10px 10px 16px;
+  display: flex;
+}
+@media screen and (min-width: 1280px) {
+
+  .hero-button.hero__secondarybtn.tool-page {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .doctypes__container.tool-page {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .doctypes__container {
+    justify-content: center;
+  }
+  .grid.doctypes__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .doctypes__title {
+    justify-content: center;
+    display: block;
+  }
+  .hero-button.hero__secondarybtn.tool-page {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .doctypes__container {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .grid.doctypes__grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .doctypes__title__container {
+    text-align: left;
+  }
+  .doctypes__title__container.tool-page {
+    max-width: 100%;
+  }
+  .doctypes__title {
+    flex: 0 auto;
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .doctype__label {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .grid.doctypes__grid {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .doctypes__title {
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .hero-button.hero__secondarybtn.tool-page {
+    width: auto;
+    min-width: 0;
+    padding: 20px;
+  }
+}

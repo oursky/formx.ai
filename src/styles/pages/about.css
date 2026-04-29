@@ -1,0 +1,140 @@
+
+.section.about-hero {
+  padding-top: 58px;
+  padding-bottom: 100px;
+}
+.section.team-members {
+  padding-top: 100px;
+}
+.section.principles {
+  padding-bottom: 100px;
+}
+.section.mission {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.image.about-hero {
+  max-width: 52%;
+}
+.container-medium-651px.team-members {
+  text-align: center;
+  margin-bottom: 53px;
+}
+.split-content.about-hero-left {
+  max-width: 520px;
+  margin-right: 20px;
+}
+.about-hero-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.team-members-tabs-menu {
+  border-bottom: 1px solid var(--neutral-400);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-members-tabs {
+  margin-bottom: 34px;
+}
+.team-members-grid {
+  grid-column-gap: 28px;
+  grid-row-gap: 34px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+@media screen and (max-width: 991px) {
+
+  .section.about-hero {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .section.team-members,
+  .section.principles {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .section.mission {
+    padding-top: 80px;
+    padding-bottom: 130px;
+  }
+  .image.about-hero {
+    max-width: 80%;
+  }
+  .split-content.about-hero-left {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .about-hero-wrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+  .team-members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .section.about-hero {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .section.team-members,
+  .section.principles {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section.mission {
+    padding-top: 60px;
+    padding-bottom: 110px;
+  }
+  .image.about-hero {
+    max-width: 100%;
+  }
+  .container-medium-651px.section-about-app,
+  .container-medium-651px.team-members,
+  .container-medium-651px.pricing,
+  .container-medium-651px.contact-more-info {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+  .about-hero-wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .team-members-tabs-menu {
+    margin-bottom: 40px;
+  }
+  .team-members-grid {
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .section.mission {
+    padding-bottom: 90px;
+  }
+  .container-medium-651px.section-about-app,
+  .container-medium-651px.team-members,
+  .container-medium-651px.pricing,
+  .container-medium-651px.contact-more-info {
+    margin-bottom: 30px;
+  }
+  .team-members-tabs-menu {
+    border-bottom-width: 0;
+    margin-bottom: 30px;
+  }
+  .team-members-tabs {
+    margin-bottom: 24px;
+  }
+  .team-members-grid {
+    grid-row-gap: 20px;
+  }
+}
