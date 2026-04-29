@@ -66,6 +66,96 @@
   to = "/blog/p2p-data-flow-mapping-enterprise-automation"
   status = 301
 
+# Blog post consolidation redirects to Straight-Through Processing Maturity Framework
+[[redirects]]
+  from = "/blog/invoice-data-capture"
+  to = "/blog/straight-through-processing-maturity-framework"
+  status = 301
+
+[[redirects]]
+  from = "/blog/accounts-payable-outsourcing"
+  to = "/blog/straight-through-processing-maturity-framework"
+  status = 301
+
+[[redirects]]
+  from = "/blog/invoice-parsing"
+  to = "/blog/straight-through-processing-maturity-framework"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ai-for-invoice-processing-benefits-use-cases"
+  to = "/blog/straight-through-processing-maturity-framework"
+  status = 301
+
+[[redirects]]
+  from = "/blog/insurance-straight-through-processing"
+  to = "/blog/straight-through-processing-maturity-framework"
+  status = 301
+
+# Blog post consolidation redirects to OCR Accounting Automated Ecosystems
+[[redirects]]
+  from = "/blog/unlocking-the-power-of-rag-revolutionizing-document-processing-with-ai"
+  to = "/blog/ocr-accounting-automated-ecosystems"
+  status = 301
+
+[[redirects]]
+  from = "/blog/pdf-processing"
+  to = "/blog/ocr-accounting-automated-ecosystems"
+  status = 301
+
+[[redirects]]
+  from = "/blog/invoice-digitization-automate-invoice-processing"
+  to = "/blog/ocr-accounting-automated-ecosystems"
+  status = 301
+
+# Blog post consolidation redirects to Data Entry Automation Enterprise Superpower
+[[redirects]]
+  from = "/blog/intelligent-data-extraction"
+  to = "/blog/data-entry-automation-enterprise-superpower"
+  status = 301
+
+[[redirects]]
+  from = "/blog/unstructured-data-extraction"
+  to = "/blog/data-entry-automation-enterprise-superpower"
+  status = 301
+
+[[redirects]]
+  from = "/blog/data-extraction-tools-guide-types-challenges-and-top-6-use-cases"
+  to = "/blog/data-entry-automation-enterprise-superpower"
+  status = 301
+
+# Blog post consolidation redirects to Bill of Lading Unstructured Data Extraction
+[[redirects]]
+  from = "/blog/extract-data-from-bill-of-lading"
+  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  status = 301
+
+[[redirects]]
+  from = "/blog/extract-data-from-pdf-to-structured-data"
+  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  status = 301
+
+[[redirects]]
+  from = "/blog/master-pdf-table-extraction-for-global-data-insights"
+  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  status = 301
+
+# Blog post consolidation redirects to OCR Accounting Automated Workflows Future Finance
+[[redirects]]
+  from = "/blog/convert-pdf-bank-statements-into-csv"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/document-classification"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/reduce-data-entry-and-start-automating-with-machine-learning-ocr"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  status = 301
+
 # ---------------------------------------------------------------------------
 # HTML extension redirects (Webflow legacy URLs → clean Astro URLs)
 # ---------------------------------------------------------------------------
@@ -193,12 +283,12 @@
 
 [[redirects]]
   from = "/post/best-ocr-software"
-  to = "/blog"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
   status = 301
 
 [[redirects]]
   from = "/post/convert-pdf-bank-statements-into-csv"
-  to = "/blog"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance"
   status = 301
 
 [[redirects]]
@@ -213,12 +303,17 @@
 
 [[redirects]]
   from = "/post/optical-character-recognition"
-  to = "/blog"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
   status = 301
 
 [[redirects]]
   from = "/post/uipath-rpa-invoice-receipt-processing-with-ocr-using-formx"
-  to = "/blog"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  status = 301
+
+[[redirects]]
+  from = "/post/5-best-ocr-software-of-2021-extract-text-from-images"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
   status = 301
 
 [[redirects]]
@@ -352,12 +447,7 @@
 
 [[redirects]]
   from = "/blog/5-best-ocr-software-of-2021-extract-text-from-images"
-  to = "/blog/best-ocr-software"
-  status = 301
-
-[[redirects]]
-  from = "/post/5-best-ocr-software-of-2021-extract-text-from-images"
-  to = "/blog/best-ocr-software"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
   status = 301
 
 [[redirects]]
@@ -367,12 +457,12 @@
 
 [[redirects]]
   from = "/blog/optical-character-recognition"
-  to = "/blog/what-is-ocr-and-how-business-leverage"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
   status = 301
 
 [[redirects]]
   from = "/blog/how-to-automate-purchase-order-processing-with-ai-for-operational-efficiency"
-  to = "/blog/automate-purchase-orders-with-ai-for-efficiency"
+  to = "/blog/purchase-order-processing"
   status = 301
 
 [[redirects]]
