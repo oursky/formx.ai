@@ -97,7 +97,7 @@ FormX's ROI tracking shows a 178% monthly return on investment for automated doc
 
 **Enterprise:** Custom pricing for high-volume needs, private cloud deployment, and advanced features including mobile SDKs and fraud detection.
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
 
 ## Frequently Asked Questions
 

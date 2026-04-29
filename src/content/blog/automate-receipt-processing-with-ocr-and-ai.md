@@ -104,5 +104,5 @@ The FormX process is as follows:
 
 
 
-To learn more about our automated receipt scanner, [schedule a demo online](<../talk-with-us.html>) or [sign up](<https://formextractorai.com/signup>) to put FormX to work for your business. Take advantage of our free trial, which ensures your first 100 pages are free.   
+To learn more about our automated receipt scanner, [schedule a demo online](</schedule-demo>) or [sign up](<https://formextractorai.com/signup>) to put FormX to work for your business. Take advantage of our free trial, which ensures your first 100 pages are free.   
 

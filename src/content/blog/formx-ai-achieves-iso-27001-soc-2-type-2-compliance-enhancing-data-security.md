@@ -79,7 +79,7 @@ As we continue to innovate and grow, we remain focused on delivering secure, rel
 
 #### **Get in Touch**
 
-Have questions about our compliance or want to learn how FormX.ai can support your business with secure and innovative solutions? Reach out to us today—we’d love to hear from you! [Contact us and let’s start a conversation.](<../talk-with-us.html>)
+Have questions about our compliance or want to learn how FormX.ai can support your business with secure and innovative solutions? Reach out to us today—we’d love to hear from you! [Contact us and let’s start a conversation.](</schedule-demo>)
 
 ‍
 

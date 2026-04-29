@@ -109,7 +109,7 @@ While traditional resume parsers have made significant strides in streamlining t
 
 **Multilingual Mastery:** With support for multiple languages, FormX ensures that you can tap into global talent without any barriers.
 
-[Contact us today](<../talk-with-us.html>) to see how FormX can help you automate data extraction from resume or any other documents for background check and transform your recruitment workflows.
+[Contact us today](</schedule-demo>) to see how FormX can help you automate data extraction from resume or any other documents for background check and transform your recruitment workflows.
 
 ### **1\. Who exactly uses resume parsing software?**
 

@@ -93,11 +93,11 @@ You should have document capture capabilities that integrate with your scanning 
 
 ### Customer Onboarding
 
-Automatically process [identity documents](<../documents/identity-documents.html>) and [proof of address](<../documents/address-proof.html>) to help move the process of customer onboarding along in industries such as banks, hospitals, government agencies, etc.
+Automatically process [identity documents](</solutions/id-card-ocr>) and [proof of address](</solutions/address-proof>) to help move the process of customer onboarding along in industries such as banks, hospitals, government agencies, etc.
 
 ### Finance and Accounting Automation
 
-Automate the processing of [receipts](<../documents/receipts.html>), [invoices](<../documents/invoice-ocr-api.html>), and financial statements to send the extracted data to accounting or other financial softwares.
+Automate the processing of [receipts](</solutions/receipts>), [invoices](</solutions/invoice-ocr-api>), and financial statements to send the extracted data to accounting or other financial softwares.
 
 ### Points for Loyalty Program
 
@@ -111,4 +111,4 @@ FormX is an [Intelligent Document Processing solution](<../index.html>) that com
 
 FormX includes a variety of preconfigured data extraction models on business certificates, identity cards, receipts, and other common business documents to help enterprises and organizations automate document processing. Additionally, FormX can develop custom models for organizations with high extraction accuracy upon request. FormX can also be readily integrated with other applications to automate and expedite your business processes.
 
-[Sign up for a free trial](<https://formextractorai.com/signup>) or [schedule a demo](<../talk-with-us.html>) today with one of our experts to see how you can take your business down the path of digital transformation!
+[Sign up for a free trial](<https://formextractorai.com/signup>) or [schedule a demo](</schedule-demo>) today with one of our experts to see how you can take your business down the path of digital transformation!

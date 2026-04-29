@@ -93,4 +93,4 @@ What truly sets FormX apart is its adaptability. Regardless of your document’s
 
 Recognizing the undeniable benefits of automation, is it time for your business to move forward? Don't let manual AP processes hold you back. Embrace the future with FormX to start automating AP document processing as your first step towards complete AP automation. Unleash unparalleled efficiency, precision, and scalability, ensuring your business thrives in this digital age.
 
-[Schedule a demo with FormX today](<../talk-with-us.html>) and begin your journey to optimal AP management. Experience firsthand how FormX can transform your Accounts Payable processes. Unlock the potential of automation and position your business for success.
+[Schedule a demo with FormX today](</schedule-demo>) and begin your journey to optimal AP management. Experience firsthand how FormX can transform your Accounts Payable processes. Unlock the potential of automation and position your business for success.

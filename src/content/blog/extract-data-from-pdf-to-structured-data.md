@@ -46,7 +46,7 @@ In many cases, the images will need to be manually reviewed to identify the rele
 
 ### Public Sector
 
-In public sectors, extracting data from PDF files happens every day. As this sector deals with hundreds or even thousands of citizens waiting for services, efficiency becomes the top priority. The data might be in the form of application forms, birth certificates, [ID cards](<../documents/identity-documents/id-card-ocr.html>), or any other government-issued document. The process of extracting this data is manual and time-consuming, often causing delays in service delivery.
+In public sectors, extracting data from PDF files happens every day. As this sector deals with hundreds or even thousands of citizens waiting for services, efficiency becomes the top priority. The data might be in the form of application forms, birth certificates, [ID cards](</solutions/id-card-ocr>), or any other government-issued document. The process of extracting this data is manual and time-consuming, often causing delays in service delivery.
 
 In addition, there is a risk of human error, which can lead to inaccuracies in the data. This can create problems down the line, especially if the data is being used for decision-making purposes. To overcome these challenges, public sectors are increasingly turning to automated data extraction solutions. These solutions can quickly and accurately extract data from PDF files without requiring manual input. This saves time and resources and reduces the risk of errors.
 
@@ -91,4 +91,4 @@ However, one potential downside of using IDP for data extraction is that it can 
 
 There you have it! These are just a few of the many different methods that you can use to extract data from PDF documents. As you can see, each method has its own unique advantages and disadvantages. Ultimately, the best method for you will depend on your specific needs and preferences. If you're looking for a quick and easy way to get started, FormX Automated Data Extraction is a great option. With FormX, you can easily extract data from all kinds of PDF documents; moreover, you can even train your own custom extraction models with a simple 3-step process.
 
-[Sign up for a free trial](<https://formextractorai.com/signup>) or [contact us](<../talk-with-us.html>) so that we can learn more about your use cases and how FormX can be of help to you.
+[Sign up for a free trial](<https://formextractorai.com/signup>) or [contact us](</schedule-demo>) so that we can learn more about your use cases and how FormX can be of help to you.

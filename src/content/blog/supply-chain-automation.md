@@ -107,6 +107,6 @@ FormX merges cutting-edge technologies, including OCR, machine learning, natural
 
 It also refines its accuracy with every interaction, adapting to specific nuances and requirements. Integrating FormX into your business allows you to tap into real-time data, drastically reduce human error, and achieve significant cost savings.
 
-[Contact us today](<../talk-with-us.html>) to schedule a demo and see how FormX can supercharge your supply chain data management.
+[Contact us today](</schedule-demo>) to schedule a demo and see how FormX can supercharge your supply chain data management.
 
 ‍

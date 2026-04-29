@@ -41,4 +41,4 @@ Automating claims processing involves a systematic approach to ensure a seamless
 
 Automating claims processing presents a significant opportunity for insurance companies to revolutionize their operations and elevate the customer experience. The traditional manual claims workflow can be transformed into an efficient and accurate process through intelligent document processing, RPA, and other intelligent process automation solutions. By embracing automation, insurance companies can reap numerous benefits, including improved accuracy, enhanced efficiency, cost savings, standardized data extraction, and real-time tracking and analytics.
 
-[Contact us](<../talk-with-us.html>) today to tell us more about your insurance businesses for us to help you automate data extraction and claims processing.
+[Contact us](</schedule-demo>) today to tell us more about your insurance businesses for us to help you automate data extraction and claims processing.

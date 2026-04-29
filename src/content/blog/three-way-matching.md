@@ -110,7 +110,7 @@ Checking data across multiple documents is usually the slowest part of three-way
 
 Human error is an unavoidable risk in any type of manual data entry system. It’s of particular concern with three-way matching as the process involves checking various documents with differing formats. Getting a digit wrong is easy when you’re going from looking at a PO to an invoice, especially when it’s your 15th of the day from a different supplier.
 
-Our IDP solution at FormX can automatically extract data from a myriad of document formats with a far lower error rate than manual equivalents. We have a few data extractors ready to be used, such as for [invoices](<../documents/invoice-ocr-api.html>) and [receipts](<../documents/receipts.html>), but are flexible enough that users can easily train their own extractors without any coding or software know-how.
+Our IDP solution at FormX can automatically extract data from a myriad of document formats with a far lower error rate than manual equivalents. We have a few data extractors ready to be used, such as for [invoices](</solutions/invoice-ocr-api>) and [receipts](</solutions/receipts>), but are flexible enough that users can easily train their own extractors without any coding or software know-how.
 
 Compared to manual approaches, businesses get far better accuracy with these extractors. They don’t get tired or distracted or bored – they simply get the job done. The added accuracy they provide prevents incorrect transactions from occurring and any subsequent problems.
 
@@ -128,4 +128,4 @@ IDP scans, captures, and inputs data to a central system, while also saving that
 
 Automating 3-way matching in accounts payable enhances accuracy, fraud protection, and efficiency, while also lowering cost and staff demands. Automating the AP workflow and seeing these benefits all starts with automating data extraction. However, automation of three-way matching cannot be done without data. This is where FormX comes in.
 
-FormX’s AI-powered solutions can help you automate data extraction from relevant documents and get the best out of three-way matching, allowing you to build a more trustworthy accounts payable process that benefits your business and its reputation. To chat with someone from our team or book a demo, click [here](<../talk-with-us.html>).
+FormX’s AI-powered solutions can help you automate data extraction from relevant documents and get the best out of three-way matching, allowing you to build a more trustworthy accounts payable process that benefits your business and its reputation. To chat with someone from our team or book a demo, click [here](</schedule-demo>).

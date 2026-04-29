@@ -89,4 +89,4 @@ FormX combines advanced technologies to streamline major financial processes so 
 
 QuickBooks has so much to offer businesses, but its best aspects are shaped by the quality of the data the software is provided with. Automated QuickBooks data extraction eliminates tedious manual tasks, and the errors manual data extraction involves, instead giving businesses the option to embrace a future marked by precision and efficiency.
 
-[Sign up](<https://formextractorai.com/signup>) for a trial or [schedule a demo](<../talk-with-us.html>) with our experts today and see for yourself how effective our data extractors are in easing your QuickBooks data entry workflow.
+[Sign up](<https://formextractorai.com/signup>) for a trial or [schedule a demo](</schedule-demo>) with our experts today and see for yourself how effective our data extractors are in easing your QuickBooks data entry workflow.

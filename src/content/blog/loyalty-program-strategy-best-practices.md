@@ -93,4 +93,4 @@ A solution like [FormX](<../index.html>) is ideal for loyalty programs that use 
 
 Once the receipt is uploaded, data extraction is automated. The receipt image is more than a digitized receipt; it’s converted fields of structured data pairs that can be integrated with other systems your business may use. Ultimately, FormX offers a valuable way for businesses to reduce costs and improve operational efficiency.
 
-Prepare to roll out a loyalty program that will help your business boom. [Schedule a demo](<../talk-with-us.html>) with FormX today.
+Prepare to roll out a loyalty program that will help your business boom. [Schedule a demo](</schedule-demo>) with FormX today.

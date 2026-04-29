@@ -79,4 +79,4 @@ FormX is an AI-driven data extraction software that transforms information conta
 
 The best thing about this Machine Learning & OCR (Optical Character Recognition) tool is that it's easy to set up. You can use it in any situation that requires you to start typing information requested from another source into your system.
 
-If you’re considering automating your purchase order processing, [start by trying FormX for free](<https://formextractorai.com/signup>) to see the difference it can make or you can [contact us today](<../talk-with-us.html>) to learn more how we can help you come up with an automated PO workflow.
+If you’re considering automating your purchase order processing, [start by trying FormX for free](<https://formextractorai.com/signup>) to see the difference it can make or you can [contact us today](</schedule-demo>) to learn more how we can help you come up with an automated PO workflow.

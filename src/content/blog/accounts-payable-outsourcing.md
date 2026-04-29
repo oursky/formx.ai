@@ -112,7 +112,7 @@ The choice between AP outsourcing and AP automation is nuanced, influenced by a 
 
 
 
-[Contact us](<../talk-with-us.html>) today for a free demo and step into a new era of efficiency, intelligence, and security.
+[Contact us](</schedule-demo>) today for a free demo and step into a new era of efficiency, intelligence, and security.
 
 ‍
 

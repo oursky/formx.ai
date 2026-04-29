@@ -137,4 +137,4 @@ FormX is an exceptional Intelligent data extraction software, setting a new stan
 
 The extracted results are returned in JSON or XML, making it both developer-friendly and business-savvy. The user-friendly web portal is an intuitive playground, enabling users of all backgrounds to configure parsing settings. You can also use it to test data extractions and access integration resources seamlessly. All in all, with FormX's mobile scanning capability and optimization processes, data extraction accuracy reaches new heights.
 
-[Contact us](<../talk-with-us.html>) today or [sign up for a free trial](<https://formextractorai.com/signup>) to see how FormX can make your data extraction process intelligent and automated.
+[Contact us](</schedule-demo>) today or [sign up for a free trial](<https://formextractorai.com/signup>) to see how FormX can make your data extraction process intelligent and automated.

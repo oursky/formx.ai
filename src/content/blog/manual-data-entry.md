@@ -195,4 +195,4 @@ The drawbacks of manual data entry are not mere inconveniences; they represent t
 
 The journey towards efficient, accurate, and secure data processing begins with a single step. Don't let manual processes hold you back. Discover the transformative potential of FormX and redefine what's possible for your business.
 
-[Schedule a demo](<../talk-with-us.html>), interact with our experts, and witness firsthand the power of AI-driven data extraction to eliminate manual data entry.
+[Schedule a demo](</schedule-demo>), interact with our experts, and witness firsthand the power of AI-driven data extraction to eliminate manual data entry.

@@ -127,4 +127,4 @@ The speed of automated payment reconciliation systems gives businesses a major a
 
 Automated payment reconciliation not only allows businesses to benefit from the very best aspects of this financial process but also saves money and time.
 
-Ready to boost your overall financial efficiency and accuracy? [Sign up for free ](<https://formextractorai.com/signup>)or [contact us](<../talk-with-us.html>) to learn more about how our automated data extraction solution can be of help to your business.
+Ready to boost your overall financial efficiency and accuracy? [Sign up for free ](<https://formextractorai.com/signup>)or [contact us](</schedule-demo>) to learn more about how our automated data extraction solution can be of help to your business.

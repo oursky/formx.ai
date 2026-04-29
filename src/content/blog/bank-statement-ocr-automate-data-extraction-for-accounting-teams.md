@@ -144,7 +144,7 @@ Bank statements contain highly sensitive financial data. FormX is built for this
 
 
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
 
 ## Frequently Asked Questions
 

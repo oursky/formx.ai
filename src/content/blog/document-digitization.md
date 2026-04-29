@@ -85,17 +85,17 @@ The public sector sees some of the highest rates of document processing thanks t
 
 [PDF parsers](/blog/pdf-parser) are a type of document digitization tool that the public sector tends to benefit from greatly. It provides a far more precise way of extracting data from documents than manual processes and saves employees from having to perform tedious, repetitive tasks all day. It also speeds up application processes which means that public sector staff can more easily stay on top of their workload and there’s less backlog and delay for those relying on them.
 
-FormX can be used to automate the digitization of [business certificates](</solutions/business-certificates>), [IDs,](<../documents/identity-documents.html>) and plenty of other application materials that the public sector is faced with.
+FormX can be used to automate the digitization of [business certificates](</solutions/business-certificates>), [IDs,](</solutions/id-card-ocr>) and plenty of other application materials that the public sector is faced with.
 
 ### Finance and Accounting
 
 The way that document digitization has helped most in banks and financial institutions is by [automating the Know Your Customer (KYC) process](/blog/automate-kyc-with-ocr-ai). Used to analyze credit reports, investment portfolios, income verification, and deriving accurate insights about customers, the process usually involves extensive customer data that has to be sorted through.
 
-Data parsing helps finance and accounting firms scrape through everything from customer [IDs](<../documents/identity-documents.html>) to [proof of residence documents](<../documents/address-proof.html>) in a fraction of the time it would have taken to do manually and with far greater accuracy.
+Data parsing helps finance and accounting firms scrape through everything from customer [IDs](</solutions/id-card-ocr>) to [proof of residence documents](</solutions/address-proof>) in a fraction of the time it would have taken to do manually and with far greater accuracy.
 
 ### Retail and Wholesale
 
-Our FormX document scanning and digitization also extends to retail and wholesale use. The data parsers we offer automate data retrieval from images of [receipts](<../documents/receipts.html>) stored in PDFs so that retailers can better use that data to inform marketing campaigns, and product launches, and to personalize marketing with customers based on their buying trends.
+Our FormX document scanning and digitization also extends to retail and wholesale use. The data parsers we offer automate data retrieval from images of [receipts](</solutions/receipts>) stored in PDFs so that retailers can better use that data to inform marketing campaigns, and product launches, and to personalize marketing with customers based on their buying trends.
 
 Automating data extraction from receipts also reduces the manual labor involved in calculating taxes, discounts, and other operations related to a sale. By using the automated extraction of PDFs, the entire process can be completed in minutes instead of hours.
 
@@ -105,4 +105,4 @@ FormX leverages AI technologies such as OCR, ML, and LLM to help businesses acro
 
 All kinds of documents, regardless of the layouts, can be processed automatically with our extractors which can be trained with new samples and without any coding required.
 
-[Contact us](<../talk-with-us.html>) to learn more about FormX and how your first step of document digitization can begin.
+[Contact us](</schedule-demo>) to learn more about FormX and how your first step of document digitization can begin.
