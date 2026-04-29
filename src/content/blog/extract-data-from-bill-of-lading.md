@@ -115,4 +115,4 @@ BoLs aren’t just important for freight and logistics operations, they’re the
 
 FormX’s Bill of Lading OCR removes the need for manual data extraction which means less spending on staff, a lower risk of mistakes being made, and as a result, fewer shipping delays caused by administrative issues. Added to all this, OCR makes it far easier to perform further analysis on Bill of Lading data which only benefits operations further.
 
-If you’re interested in improving the efficiency of how Bill of Lading data is extracted and handled, click [here](<https://formextractorai.com/login>) to start a free trial with FormX and see our tools at work for yourself or [contact us](<../talk-with-us.html>) to help us learn more about your logistics business and how FormX can be of help to it.
+If you’re interested in improving the efficiency of how Bill of Lading data is extracted and handled, click [here](<https://formextractorai.com/login>) to start a free trial with FormX and see our tools at work for yourself or [contact us](</schedule-demo>) to help us learn more about your logistics business and how FormX can be of help to it.

@@ -111,5 +111,5 @@ You can greatly optimize your business processes by using PDF parsers. Here are 
 
 
 
-PDF parsing is a complex task that requires a powerful and reliable tool such as FormX. With its advanced AI models, robust automation features, and cost-effective pricing plans, FormX is the ideal solution for businesses of all sizes looking to accurately extract data from their PDF documents. [Sign up for a free trial](<https://formextractorai.com/signup>) or [contact us](<../talk-with-us.html>) to tell us more about your needs and how FormX can be of help to you.  
+PDF parsing is a complex task that requires a powerful and reliable tool such as FormX. With its advanced AI models, robust automation features, and cost-effective pricing plans, FormX is the ideal solution for businesses of all sizes looking to accurately extract data from their PDF documents. [Sign up for a free trial](<https://formextractorai.com/signup>) or [contact us](</schedule-demo>) to tell us more about your needs and how FormX can be of help to you.  
 

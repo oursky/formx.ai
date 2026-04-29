@@ -123,4 +123,4 @@ FormX uses AI and OCR technologies to simplify this process. We automate data ex
 
 As the world becomes increasingly digital, the demand for such efficient data extraction methods will only grow. Harnessing the power of intelligent document processing will be essential for industries to keep up, ensuring faster, more accurate data handling, and better service delivery overall.
 
-[Sign up for a free account](<https://formextractorai.com/signup>) or [contact us](<../talk-with-us.html>) to see how FormX can help you intelligently digitize your passports and ID cards. 
+[Sign up for a free account](<https://formextractorai.com/signup>) or [contact us](</schedule-demo>) to see how FormX can help you intelligently digitize your passports and ID cards. 

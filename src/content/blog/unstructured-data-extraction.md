@@ -116,4 +116,4 @@ Furthermore, edge computing will bring unstructured data extraction closer to da
 
 FormX is a intelligent Document Processing solution that can turn unstructured data or documents into structured formats. It offers a set of pre-trained data extraction models, including receipt, invoice, bank statement, bill of lading, etc., and training a new one requires just a few minutes and as little as one to three sample images. Users can easily their extractors on the user-friendly web portal and integrate FormX with their existing workflow smoothly.
 
-[Contact us](<../talk-with-us.html>) to or [sign up for a free trial](<https://formextractorai.com/signup>) see how simple it is to automate unstructured data extraction with FormX.
+[Contact us](</schedule-demo>) to or [sign up for a free trial](<https://formextractorai.com/signup>) see how simple it is to automate unstructured data extraction with FormX.

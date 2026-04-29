@@ -218,4 +218,4 @@ If you're looking for a hassle-free, efficient way to convert your PDF files to 
 
 Don't spend another minute wrestling with cumbersome PDFs. Take the first step towards better data management by trying FormX.ai today!
 
-[Contact us](<../talk-with-us.html>) to learn more about FormX or [start a free trial](<https://formextractorai.com/signup>) to start automating PDF to database today!
+[Contact us](</schedule-demo>) to learn more about FormX or [start a free trial](<https://formextractorai.com/signup>) to start automating PDF to database today!

@@ -170,7 +170,7 @@ No credit card required to start.
 
 
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
 
 ## Frequently Asked Questions
 

@@ -39,11 +39,11 @@ Manual processes also tend to be error-prone, and this can mean huge losses for 
 
 ![](/images/blog/63c3ee947239e9148056570d_construction-ml.jpeg)
 
-Construction firms across the country are leveraging OCR software to automate their Accounts Payable processes. This allows them to significantly reduce manual labor while boosting growth. Not only can IDP powered by OCR and ML read and extract[ data from invoices](<../documents/invoice-ocr-api.html>), purchase orders, and receipts quickly, but it also returns structured information that is sent directly to their accounting software for automated accounts payable processes. This increases efficiency within the finance team while greatly reducing human error..
+Construction firms across the country are leveraging OCR software to automate their Accounts Payable processes. This allows them to significantly reduce manual labor while boosting growth. Not only can IDP powered by OCR and ML read and extract[ data from invoices](</solutions/invoice-ocr-api>), purchase orders, and receipts quickly, but it also returns structured information that is sent directly to their accounting software for automated accounts payable processes. This increases efficiency within the finance team while greatly reducing human error..
 
 As a construction firm, dealing with certain physical documents such as reports, contracts, billing invoices, and more is inevitable. But using a legacy IT system and manual efforts for [document processing](/blog/what-is-document-processing) can prove cumbersome and slow your company's growth.
 
-However, with the help of OCR and ML, these documents can be managed more efficiently. These AI technologies have the ability to recognize text from scanned documents, capture data from them automatically, and store this information in an organized manner for easy retrieval at any time. With [receipt OCR API](<../documents/receipts.html>), for instance, you can extract data from receipts quickly and accurately. The same approach can be applied to contract documents, daily reports, and more.
+However, with the help of OCR and ML, these documents can be managed more efficiently. These AI technologies have the ability to recognize text from scanned documents, capture data from them automatically, and store this information in an organized manner for easy retrieval at any time. With [receipt OCR API](</solutions/receipts>), for instance, you can extract data from receipts quickly and accurately. The same approach can be applied to contract documents, daily reports, and more.
 
 Data from construction documents must be stored securely and reported on quickly for better quality control. To do this manually would be an inefficient use of time and resources. However, with OCR technology, construction firms can quickly collect data from their documents and store them securely.
 
@@ -79,4 +79,4 @@ The process should be improved over time as you identify certain areas that need
 
 Overall, OCR technology can help construction firms gain a competitive edge by streamlining their business processes and ensuring accuracy in data entry. By leveraging machine learning and AI, it's now possible to automate document processing tasks with speed and precision. With its rapid adoption, businesses are now able to improve efficiency and save time and money.
 
-Are you ready to kickstart your construction business's journey to automation? FormX can help you unlock the full potential of intelligent document processing. [Get in touch with us](<../talk-with-us.html>) today and start the journey towards increased productivity and cost savings.
+Are you ready to kickstart your construction business's journey to automation? FormX can help you unlock the full potential of intelligent document processing. [Get in touch with us](</schedule-demo>) today and start the journey towards increased productivity and cost savings.

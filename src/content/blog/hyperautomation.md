@@ -161,4 +161,4 @@ In 2023, hyperautomation is not just a buzzword but a crucial strategy to propel
 
 FormX, our Intelligent Document Processing (IDP), solution integrates OCR, ML, NLP, and LLMs into one single platform to help businesses automatically process all kinds of documents. Our low-code solution can be easily integrated into variou software or applications to help you build a completely automated workflow without writing a single line of code.
 
-To truly harness hyperautomation’s potential and navigate its intricacies, [connect with us](<../talk-with-us.html>) for a tailored consultation.
+To truly harness hyperautomation’s potential and navigate its intricacies, [connect with us](</schedule-demo>) for a tailored consultation.

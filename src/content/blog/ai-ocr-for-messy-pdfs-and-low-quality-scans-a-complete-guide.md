@@ -140,7 +140,7 @@ Messy PDFs and low-quality scans do not have to mean manual data entry. FormX co
 
 With pre-built extractors for common finance documents, guided mobile capture, and flexible integration options, FormX helps finance teams automate document processing without sacrificing accuracy.
 
-[Start Free Trial](<../index.html>) \- 100 free pages, no credit card required [Schedule a Demo](<../talk-with-us.html>)
+[Start Free Trial](<../index.html>) \- 100 free pages, no credit card required [Schedule a Demo](</schedule-demo>)
 
 ## Frequently Asked Questions
 

@@ -168,4 +168,4 @@ As discussed earlier, mistakes in calculating AP days can have significant impli
 
 By incorporating FormX into your accounting practices, you not only streamline the data extraction process but also gain a potent tool for enhancing the overall financial health of your business.
 
-[Contact us today for a personalized demo](<../talk-with-us.html>) and experience firsthand how FormX can empower your journey toward optimized financial management.
+[Contact us today for a personalized demo](</schedule-demo>) and experience firsthand how FormX can empower your journey toward optimized financial management.

@@ -47,7 +47,7 @@ Data parsing is particularly useful in the domain of human resources. For instan
 
 However, data parsing allows for automated extraction of data from these documents and subsequent feeding of the information directly into the HR system. This greatly accelerates the screening process, ensures more precise assessments of candidate profiles, and saves HR professionals valuable time.
 
-Customer onboarding is another area where data parsing proves essential. Conventionally, new customers need to manually input data from their [identity documents](<../documents/identity-documents.html>), such as passports or ID cards, into application forms - a tedious and error-prone process.
+Customer onboarding is another area where data parsing proves essential. Conventionally, new customers need to manually input data from their [identity documents](</solutions/id-card-ocr>), such as passports or ID cards, into application forms - a tedious and error-prone process.
 
 Data parsing can streamline this, as customers just need to upload images of their identity documents. The parsing tool then extracts the necessary data and automatically populates the application forms, enhancing the onboarding process's speed and accuracy and elevating the customer experience.
 
@@ -111,4 +111,4 @@ Deciding whether to build or buy a data parsing solution depends on each busines
 
 Ready to harness the power of intelligent document processing in your business? Consider FormX, a cutting-edge solution that transforms unstructured data into actionable insights. FormX leverages advanced technologies like Optical Character Recognition (OCR), Machine Learning (ML), and Large Language Models (LLM) to extract data from a wide array of documents, including receipts, invoices, and bank statements. Unlike traditional solutions, setting up a new extractor with FormX only requires as little as one sample and can be achieved within minutes. Don't let the potential of your data go untapped.
 
-[Contact us](<../talk-with-us.html>) to empower your business operations with FormX and experience the efficiency and precision of automated data parsing today!
+[Contact us](</schedule-demo>) to empower your business operations with FormX and experience the efficiency and precision of automated data parsing today!

@@ -225,5 +225,5 @@ Aside from that, you can set up your own template, or Form as we call it, by fol
 Your receipt extractor is then ready to go!  
 
 
-FormX can digitize your receipts and integrate it with your systems to automate data extraction from receipts without having to write countless codes and maintain them afterwards. [Contact us](<../talk-with-us.html>) to talk about your use cases and learn more about how FormX can help you become even more competitive in the digital era.   
+FormX can digitize your receipts and integrate it with your systems to automate data extraction from receipts without having to write countless codes and maintain them afterwards. [Contact us](</schedule-demo>) to talk about your use cases and learn more about how FormX can help you become even more competitive in the digital era.   
 

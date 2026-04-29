@@ -143,4 +143,4 @@ The accuracy that automated ESG data collection provides, as well as the level o
 
 As regulatory bodies such as the SEC create stricter rules around ESG reporting and investors rely more on it for their decisions too, ESG will only become a greater part of business operations. Automating ESG data collection readies companies for this future with technology that can keep up, no matter the changing demands.
 
-[Schedule a demo](<../talk-with-us.html>) or talk with the FormX team about how our platform can integrate into your business and automate ESG data collection.
+[Schedule a demo](</schedule-demo>) or talk with the FormX team about how our platform can integrate into your business and automate ESG data collection.

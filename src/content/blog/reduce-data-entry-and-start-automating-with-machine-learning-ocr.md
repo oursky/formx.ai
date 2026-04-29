@@ -57,7 +57,7 @@ The future is here, and machine learning will play a major role in the way we ha
 
 Businesses can find a competitive advantage by understanding and utilizing the power of machine learning technology and automation to increase productivity and better serve their clients. Interested in learning how your business can take advantage of this technology? Contact us with any questions or suggestions, we would love to hear from you!
 
-For any additional questions on how your business can utilize machine learning technology, [contact us on this page](<../talk-with-us.html>).
+For any additional questions on how your business can utilize machine learning technology, [contact us on this page](</schedule-demo>).
 
   
 
