@@ -5,7 +5,7 @@ excerpt: "The modern supply chain moves at the speed of light, yet backend recon
 category: automation
 author: FormX
 date: 2026-04-29
-featured_image: "/images/blog/Consolidated Blog7.png"
+featured_image: "/images/blog/consolidated-blog-7.png"
 featured_image_alt: "P2P Data Flow Mapping and Enterprise Automation"
 canonical_url: "/blog/p2p-data-flow-mapping-enterprise-automation"
 ---
