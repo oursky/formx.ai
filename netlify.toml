@@ -43,6 +43,30 @@
   status = 301
 
 # ---------------------------------------------------------------------------
+# Blog post consolidation redirects to P2P Data Flow Mapping
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/automate-receipt-processing-with-ocr-and-ai"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/purchase-order-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/supply-chain-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  status = 301
+
+[[redirects]]
+  from = "/blog/unleash-xero-automation-powerhouse-automating-xero-accounts-payable-with-formx-ai"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  status = 301
+
+# ---------------------------------------------------------------------------
 # HTML extension redirects (Webflow legacy URLs → clean Astro URLs)
 # ---------------------------------------------------------------------------
 
