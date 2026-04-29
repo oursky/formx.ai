@@ -111,4 +111,4 @@ FormX is an [Intelligent Document Processing solution](<../index.html>) that com
 
 FormX includes a variety of preconfigured data extraction models on business certificates, identity cards, receipts, and other common business documents to help enterprises and organizations automate document processing. Additionally, FormX can develop custom models for organizations with high extraction accuracy upon request. FormX can also be readily integrated with other applications to automate and expedite your business processes.
 
-[Sign up for a free trial](<https://formextractorai.com/signup>) or [schedule a demo](</schedule-demo>) today with one of our experts to see how you can take your business down the path of digital transformation!
+[Sign up for a free trial](<https://formextractorai.com/signup>) or [schedule a demo](<../talk-with-us.html>) today with one of our experts to see how you can take your business down the path of digital transformation!

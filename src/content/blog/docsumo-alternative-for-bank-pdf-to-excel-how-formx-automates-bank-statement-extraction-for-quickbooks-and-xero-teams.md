@@ -105,7 +105,7 @@ Businesses automating document processing with FormX have reported 80% reduction
 
 **Enterprise:** Custom pricing for high-volume needs, private cloud deployment, and advanced features.
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
 
 ## Frequently Asked Questions
 

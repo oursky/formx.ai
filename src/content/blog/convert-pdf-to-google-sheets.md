@@ -140,7 +140,7 @@ You can set up a Webhook and use Zapier to connect it with Google Sheets.
 
 ![](/images/blog/63ef0fac71fbd14022a067aa_webhook.png)
 
-Lastly, we can also automatically send API to Google Sheets for you to have a completely automatic workflow of PDF to Google Sheets conversion ([contact us](</schedule-demo>) for closed beta).
+Lastly, we can also automatically send API to Google Sheets for you to have a completely automatic workflow of PDF to Google Sheets conversion ([contact us](<../talk-with-us.html>) for closed beta).
 
 There are several ways to convert native PDF files into Google formats. In this article, we'll look at two methods: manual copy and paste and convert PDF to CSV, then open with Google Sheets.
 
@@ -194,4 +194,4 @@ Note that this only works for native PDFs. It’s impossible to convert PDF cont
 
 Converting PDFs to Google Sheets can be a daunting task, but it doesn’t have to be. Whether you need to convert native or non-native documents, there are several tools and methods available that can help make the process simpler and more efficient. Instead of manually copying and pasting text from a PDF file into Google Docs, you can try leveraging IDP technology. With the right tools, such as FormX, you can make sure that your data stays up-to-date and accessible so you can get back to focusing on what’s most important.
 
-Ready for the FormX experience? [Get in touch with us](</schedule-demo>) today to schedule a demo.
+Ready for the FormX experience? [Get in touch with us](<../talk-with-us.html>) today to schedule a demo.

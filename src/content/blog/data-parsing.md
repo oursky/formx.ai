@@ -111,4 +111,4 @@ Deciding whether to build or buy a data parsing solution depends on each busines
 
 Ready to harness the power of intelligent document processing in your business? Consider FormX, a cutting-edge solution that transforms unstructured data into actionable insights. FormX leverages advanced technologies like Optical Character Recognition (OCR), Machine Learning (ML), and Large Language Models (LLM) to extract data from a wide array of documents, including receipts, invoices, and bank statements. Unlike traditional solutions, setting up a new extractor with FormX only requires as little as one sample and can be achieved within minutes. Don't let the potential of your data go untapped.
 
-[Contact us](</schedule-demo>) to empower your business operations with FormX and experience the efficiency and precision of automated data parsing today!
+[Contact us](<../talk-with-us.html>) to empower your business operations with FormX and experience the efficiency and precision of automated data parsing today!

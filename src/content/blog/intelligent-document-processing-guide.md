@@ -142,4 +142,4 @@ FormX's user-friendly web portal adds to its allure, offering intuitive instruct
 
 Intelligent Document Processing (IDP) has emerged as a transformative force in document management and data extraction. Its integration of technologies like OCR, NLP, machine learning, and large language model has revolutionized how you handle unstructured data. From reducing human errors to boosting efficiency and saving costs, IDP has demonstrated its worth across various industries.
 
-[Contact us](</schedule-demo>) if you are interested in learning how FormX can be of help to your business or [sign up for a free trial](<https://formextractorai.com/signup>) to see how simple data extraction can be.
+[Contact us](<../talk-with-us.html>) if you are interested in learning how FormX can be of help to your business or [sign up for a free trial](<https://formextractorai.com/signup>) to see how simple data extraction can be.

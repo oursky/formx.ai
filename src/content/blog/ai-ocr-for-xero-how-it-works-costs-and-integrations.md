@@ -133,7 +133,7 @@ FormX helps bookkeepers and accounting teams eliminate manual data entry and foc
 
 
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
 
 ## Frequently Asked Questions
 

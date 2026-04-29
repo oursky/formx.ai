@@ -124,4 +124,4 @@ Though storing semi-structured data can be challenging and it offers some issues
 
 That’s why, at FormX, our AI-powered data extractors is capable of extracting data from all kinds of documents and returning them results in JSON and CSV. It ensures that data is ready for further analysis or workflow automation on a range of platforms, thus allowing for easy integration with whatever software you already have.
 
-[Contact us](</schedule-demo>) today to see how you can automatically convert various documents into JSON or CSV today.
+[Contact us](<../talk-with-us.html>) today to see how you can automatically convert various documents into JSON or CSV today.

@@ -113,7 +113,7 @@ At $299/month for 3,000 pages on the Starter plan, the break-even point is a sma
 
 **Enterprise:** Custom pricing for high-volume needs. Includes custom SLA, private cloud deployment, dedicated account manager, and advanced features including mobile SDKs, split and classify, and fraud detection.
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
 
 ## Frequently Asked Questions
 

@@ -137,7 +137,7 @@ FormX is built for handling sensitive financial documents:
 
 
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
 
 ## Frequently Asked Questions
 

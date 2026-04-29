@@ -152,4 +152,4 @@ FormX is an Intelligent Document Processing (IDP) solution that helps retailer a
 
 Moreover, you can then use the extracted information to formulate informed business strategies that align with the unique needs of your target customers so that you can stay ahead of your competition.
 
-[Contact us](</schedule-demo>) today to learn more about how FormX has helped business make more informed business decisions, provide better customer experience, and significantly reduce cost with automated data extraction.
+[Contact us](<../talk-with-us.html>) today to learn more about how FormX has helped business make more informed business decisions, provide better customer experience, and significantly reduce cost with automated data extraction.

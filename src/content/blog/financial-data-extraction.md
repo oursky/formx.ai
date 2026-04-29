@@ -88,4 +88,4 @@ Leveraging powerful IDP capabilities, FormX’s financial data extraction softwa
 
 There are several FormX data extractors ready to use, but the platform also allows you to [train your own ML models](</whats-new/2023-06-01>) to suit your specific needs, whether dealing with payroll records, balance sheets, or income statements.
 
-[Sign up](<https://formextractorai.com/signup>) for a free trial or [schedule a demo](</schedule-demo>) with our experts today to start your digital transformation journey with FormX and optimize your approach to financial data extraction.
+[Sign up](<https://formextractorai.com/signup>) for a free trial or [schedule a demo](<../talk-with-us.html>) with our experts today to start your digital transformation journey with FormX and optimize your approach to financial data extraction.

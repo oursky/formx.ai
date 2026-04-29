@@ -103,5 +103,5 @@ FormX is the leading data capture platform, helping businesses, including major 
 
 Alternatively, you can train your own custom extractor that requires as little as one sample to train and a few minutes to set up.
 
-[Contact us](</schedule-demo>) today to learn more about how FormX can help your business.  
+[Contact us](<../talk-with-us.html>) today to learn more about how FormX can help your business.  
 

@@ -45,4 +45,4 @@ Traditionally, creating custom extractors can take some time and it usually requ
 
 Although integrating Intelligent Document Processing with Large Language Models like GPT-4 is still in its early stages, the potential for future development is enormous. Our team have launched a private beta to integrate them and seen promising results that can revolutionize document processing and data extraction.
 
-If you’re interested in seeing how FormX & GPT-4 can take your intelligent workflow to the next level, [contact us](</schedule-demo>) and tell us more about your business.
+If you’re interested in seeing how FormX & GPT-4 can take your intelligent workflow to the next level, [contact us](<../talk-with-us.html>) and tell us more about your business.

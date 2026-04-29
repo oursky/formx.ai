@@ -70,7 +70,7 @@ In addition, many retail businesses have developed loyalty apps where consumers 
 
 Telecom operators generally require users to upload images of their ID documents in PDF form when getting new phone numbers. With the boost of an OCR application or IDP, the software could import a customer’s information from those images to the company’s database in seconds. This saves both the salesperson’s time and makes for a far swifter and neater experience for the telecom customer.
 
-[Contact us](</schedule-demo>) to see how you can benefit from automating data extraction from PDF to JSON.
+[Contact us](<../talk-with-us.html>) to see how you can benefit from automating data extraction from PDF to JSON.
 
 OCR provides similar benefits in the banking and insurance world. Thanks to the early adoption of automation software and [OCR in the finance industry](/blog/ocr-finance-and-accounting), we’ve been able to see just how much this technology can improve a business's workflow. OCR has allowed banks and insurers to automate customer onboarding by capturing data from passports, [IDs](</solutions/id-card-ocr>), and [proof of address](</solutions/address-proof>) documents, thus creating a better customer experience overall.
 
@@ -110,4 +110,4 @@ The extractor can be integrated using the RESTful API and enrich the automation 
 
 Automation can bring major improvements to a business’s overall efficiency, the experience of their customers, and in turn, their profit margins. The obstacle that often stops this process from getting off the ground is how much data is stuck in unstructured PDF files. OCR software, alongside AI and ML technology, means that you can convert PDF to JSON and free that data for automation and analysis.
 
-If you’re not sure how to automate converting PDF files to JSON format, contact us [here](</schedule-demo>) to tell us more about your business needs and learn more about how FormX can help you.
+If you’re not sure how to automate converting PDF files to JSON format, contact us [here](<../talk-with-us.html>) to tell us more about your business needs and learn more about how FormX can help you.

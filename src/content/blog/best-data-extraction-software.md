@@ -108,4 +108,4 @@ Information can be extracted from things like invoices, bank statements, and pur
 
 Our use of both ML and OCR technology means that FormX offers a particularly powerful data extraction tool to businesses wanting to streamline their data practices. Not only can it be adjusted to suit multiple dynamic formats, but we've also made sure to have preset software for the most common business tasks.
 
-See for yourself how we can simplify data for your business by [scheduling a demo](/schedule-demo) with us or [signing up](https://formextractorai.com/signup) for a free trial.
+See for yourself how we can simplify data for your business by [scheduling a demo](<../talk-with-us.html>) with us or [signing up](https://formextractorai.com/signup) for a free trial.

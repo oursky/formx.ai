@@ -165,7 +165,7 @@ FormX does not store uploaded images or use your documents for training AI model
 
 
 
-[Start Free Trial](<../index.html>) | [Schedule a Demo](</schedule-demo>)
+[Start Free Trial](<../index.html>) | [Schedule a Demo](<../talk-with-us.html>)
 
 ## Frequently Asked Questions
 

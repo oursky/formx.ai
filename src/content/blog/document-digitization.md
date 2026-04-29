@@ -105,4 +105,4 @@ FormX leverages AI technologies such as OCR, ML, and LLM to help businesses acro
 
 All kinds of documents, regardless of the layouts, can be processed automatically with our extractors which can be trained with new samples and without any coding required.
 
-[Contact us](</schedule-demo>) to learn more about FormX and how your first step of document digitization can begin.
+[Contact us](<../talk-with-us.html>) to learn more about FormX and how your first step of document digitization can begin.

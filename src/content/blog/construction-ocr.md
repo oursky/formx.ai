@@ -79,4 +79,4 @@ The process should be improved over time as you identify certain areas that need
 
 Overall, OCR technology can help construction firms gain a competitive edge by streamlining their business processes and ensuring accuracy in data entry. By leveraging machine learning and AI, it's now possible to automate document processing tasks with speed and precision. With its rapid adoption, businesses are now able to improve efficiency and save time and money.
 
-Are you ready to kickstart your construction business's journey to automation? FormX can help you unlock the full potential of intelligent document processing. [Get in touch with us](</schedule-demo>) today and start the journey towards increased productivity and cost savings.
+Are you ready to kickstart your construction business's journey to automation? FormX can help you unlock the full potential of intelligent document processing. [Get in touch with us](<../talk-with-us.html>) today and start the journey towards increased productivity and cost savings.

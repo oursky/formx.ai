@@ -99,4 +99,4 @@ Samples of the documents just need to be collected to train the software, after 
 
 We understand that PDFs are unstructured data and that most of what businesses are trying to deal with each day is unstructured too. Receipts may be top of mind today but tomorrow proof of address may be an issue. We simply provide software that can automate and streamline how data is extracted so that businesses can save time and money, regardless of context or even country.
 
-If you’d like to see FormX in action, [talk with us](</schedule-demo>) directly to see how we can make your workflow more efficient. If it sounds simple, it’s because it is.
+If you’d like to see FormX in action, [talk with us](<../talk-with-us.html>) directly to see how we can make your workflow more efficient. If it sounds simple, it’s because it is.

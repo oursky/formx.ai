@@ -132,4 +132,4 @@ Integrating more sophisticated algorithms, such as deep learning models and cont
 
 In conclusion, informative extraction is helpful for businesses and other educational facilities. It helps you find meaningful data from unstructured text, easing your decision-making process. If you are searching for the best information extraction tool for automating the whole data extraction process, FormX can be the most desirable one.
 
-This tool revolutionizes the way you identify critical information from a sea of unstructured data. Even novices can use it thanks to its smooth and easy-to-navigate user interface. So, even without experience with such tools, you can easily use FormX. [Contact us now](</schedule-demo>) to streamline your information extraction processes with accuracy and reliability.
+This tool revolutionizes the way you identify critical information from a sea of unstructured data. Even novices can use it thanks to its smooth and easy-to-navigate user interface. So, even without experience with such tools, you can easily use FormX. [Contact us now](<../talk-with-us.html>) to streamline your information extraction processes with accuracy and reliability.

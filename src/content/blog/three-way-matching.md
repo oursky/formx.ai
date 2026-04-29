@@ -128,4 +128,4 @@ IDP scans, captures, and inputs data to a central system, while also saving that
 
 Automating 3-way matching in accounts payable enhances accuracy, fraud protection, and efficiency, while also lowering cost and staff demands. Automating the AP workflow and seeing these benefits all starts with automating data extraction. However, automation of three-way matching cannot be done without data. This is where FormX comes in.
 
-FormX’s AI-powered solutions can help you automate data extraction from relevant documents and get the best out of three-way matching, allowing you to build a more trustworthy accounts payable process that benefits your business and its reputation. To chat with someone from our team or book a demo, click [here](</schedule-demo>).
+FormX’s AI-powered solutions can help you automate data extraction from relevant documents and get the best out of three-way matching, allowing you to build a more trustworthy accounts payable process that benefits your business and its reputation. To chat with someone from our team or book a demo, click [here](<../talk-with-us.html>).

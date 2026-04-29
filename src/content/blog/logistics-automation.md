@@ -115,4 +115,4 @@ FormX comes packed with ready-to-use extractors —be it invoices, receipts, bil
 
 But what if your document type doesn't fit the usual mold? No worries! FormX introduces a groundbreaking zero-training extractor, powered by few-shot learning. You don't need a data science degree or hours of tinkering. Just provide as little as one sample, and within minutes, your custom extractor is trained and ready to go.
 
-[Schedule a demo](</schedule-demo>) and start automating logistics data capture with FormX today!
+[Schedule a demo](<../talk-with-us.html>) and start automating logistics data capture with FormX today!

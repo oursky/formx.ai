@@ -115,4 +115,4 @@ As you use data entry software, you may need to make adjustments to your data en
 
 Automating your data entry can save you time and money. FormX, an Intelligent Document Processing solution, has helped various businesses across the globe automate data extraction and data entry. FormX is designed to be easy to use and integrates seamlessly with your existing business applications with simple API. Moreover, FormX has several pre-trained data extraction models, including receipt, bank statement, ID, driver’s license, passport, and more, to help you automate data entry and expedite different business processes.
 
-[Contact us](</schedule-demo>) and tell us about your use cases and see how FormX can help you automate data entry with ease.
+[Contact us](<../talk-with-us.html>) and tell us about your use cases and see how FormX can help you automate data entry with ease.
