@@ -28,14 +28,6 @@
   status = 301
   force = true
 
-# Strip trailing slashes — redirect /path/ → /path
-# Note: force=true causes a redirect loop on the root URL (/*/ matches / with empty splat).
-# Netlify's built-in pretty-URL handling already strips trailing slashes for directory builds.
-[[redirects]]
-  from = "/*/"
-  to = "/:splat"
-  status = 301
-
 # ---------------------------------------------------------------------------
 # Campaign landing page redirects
 # ---------------------------------------------------------------------------
