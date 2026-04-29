@@ -75,7 +75,7 @@ Streamlined tools enhance financial data accuracy and flow.
 
 ### Corpay Cross-Border
 
-Corpay offers an end-to-end solution for automating international invoice processing and payments. Their platform handles [data extraction](/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance), compliance checks, and currency conversions while [integrating with existing ERP systems](</solutions/invoice-ocr-api>).
+Corpay offers an end-to-end solution for automating international invoice processing and payments. Their platform handles [data extraction](/blog/ai-ocr-revolutionizing-document-processing-with-formx-ai), compliance checks, and currency conversions while [integrating with existing ERP systems](<../documents/invoice-ocr-api.html>).
 
 ### SAP Concur Invoice
 

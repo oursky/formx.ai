@@ -93,11 +93,11 @@ You should have document capture capabilities that integrate with your scanning 
 
 ### Customer Onboarding
 
-Automatically process [identity documents](</solutions/id-card-ocr>) and [proof of address](</solutions/address-proof>) to help move the process of customer onboarding along in industries such as banks, hospitals, government agencies, etc.
+Automatically process [identity documents](<../documents/identity-documents.html>) and [proof of address](<../documents/address-proof.html>) to help move the process of customer onboarding along in industries such as banks, hospitals, government agencies, etc.
 
 ### Finance and Accounting Automation
 
-Automate the processing of [receipts](</solutions/receipts>), [invoices](</solutions/invoice-ocr-api>), and financial statements to send the extracted data to accounting or other financial softwares.
+Automate the processing of [receipts](<../documents/receipts.html>), [invoices](<../documents/invoice-ocr-api.html>), and financial statements to send the extracted data to accounting or other financial softwares.
 
 ### Points for Loyalty Program
 

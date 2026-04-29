@@ -18,7 +18,7 @@ Data extraction has come a long way though, with multiple offerings that make it
 
 Very simply, data extraction is the process of identifying and retrieving relevant information from various data sources and turning it into structured formats. Once that's done, the data is then far easier to analyze and take further.
 
-When we refer to "structured data", what we mean is that the information is organized in a way that it's very easy for software or computers to understand and process. On the opposite end of this spectrum is unstructured data and it is what PDFs tend to contain, making [extracting data from PDF](/blog/extract-data-from-pdf-to-structured-data) quite a challenging task. As the name suggests, there's little structure to this data which makes it difficult for machines to decipher it. Semi-structured data is somewhere in between these two extremes.
+When we refer to "structured data", what we mean is that the information is organized in a way that it's very easy for software or computers to understand and process. On the opposite end of this spectrum is unstructured data and it is what PDFs tend to contain, making [extracting data from PDF](/post/extract-data-from-pdf-to-structured-data) quite a challenging task. As the name suggests, there's little structure to this data which makes it difficult for machines to decipher it. Semi-structured data is somewhere in between these two extremes.
 
 Data can be obtained from a myriad of sources and arrive in any variation of the types just mentioned, but structured data is what's needed before it can be processed through other software. The true value of business data lies in how it can shape analytics and strategies, but that requires extracting and combining information from multiple sources. Formats and file types should not be preventing your business from seeing the full picture of its data.
 
@@ -42,7 +42,7 @@ With so many data extraction software available now, it can be difficult to unde
 
 Powered by OCR and Machine Learning, FormX is a uniquely intelligent tool in that it can extract data from images and PDFs. The AI capabilities that it offers mean that this tool is not only trained to process certain document types but can also be expanded upon by users to suit their own needs. It can extract tables and a variety of data fields, such as date, time, address, phone number, product information, etc., for businesses to eliminate manual data entry.
 
-It comes with pre-trained extractors for some of the most widely processed documents such as [IDs and passports](/solutions/id-card-ocr), [receipts](/solutions/receipts), proof of address documents, and [invoices](/solutions/invoice-ocr-api). To create your own no-code extractors that suit other kinds of documents, you simply upload a master image, label the data fields and test the extractor.
+It comes with pre-trained extractors for some of the most widely processed documents such as [IDs and passports](/documents/identity-documents), [receipts](/documents/receipts), proof of address documents, and [invoices](/documents/invoice-ocr-api). To create your own no-code extractors that suit other kinds of documents, you simply upload a master image, label the data fields and test the extractor.
 
 ![FormX labeling interface](/images/blog/6604f2811f1dc4c738a67929_63ef0b0fadd38babf89bc880_labeling.png)
 
@@ -108,4 +108,4 @@ Information can be extracted from things like invoices, bank statements, and pur
 
 Our use of both ML and OCR technology means that FormX offers a particularly powerful data extraction tool to businesses wanting to streamline their data practices. Not only can it be adjusted to suit multiple dynamic formats, but we've also made sure to have preset software for the most common business tasks.
 
-See for yourself how we can simplify data for your business by [scheduling a demo](<../talk-with-us.html>) with us or [signing up](https://formextractorai.com/signup) for a free trial.
+See for yourself how we can simplify data for your business by [scheduling a demo](/talk-with-us) with us or [signing up](https://formextractorai.com/signup) for a free trial.

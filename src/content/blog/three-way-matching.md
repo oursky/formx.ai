@@ -110,7 +110,7 @@ Checking data across multiple documents is usually the slowest part of three-way
 
 Human error is an unavoidable risk in any type of manual data entry system. It’s of particular concern with three-way matching as the process involves checking various documents with differing formats. Getting a digit wrong is easy when you’re going from looking at a PO to an invoice, especially when it’s your 15th of the day from a different supplier.
 
-Our IDP solution at FormX can automatically extract data from a myriad of document formats with a far lower error rate than manual equivalents. We have a few data extractors ready to be used, such as for [invoices](</solutions/invoice-ocr-api>) and [receipts](</solutions/receipts>), but are flexible enough that users can easily train their own extractors without any coding or software know-how.
+Our IDP solution at FormX can automatically extract data from a myriad of document formats with a far lower error rate than manual equivalents. We have a few data extractors ready to be used, such as for [invoices](<../documents/invoice-ocr-api.html>) and [receipts](<../documents/receipts.html>), but are flexible enough that users can easily train their own extractors without any coding or software know-how.
 
 Compared to manual approaches, businesses get far better accuracy with these extractors. They don’t get tired or distracted or bored – they simply get the job done. The added accuracy they provide prevents incorrect transactions from occurring and any subsequent problems.
 

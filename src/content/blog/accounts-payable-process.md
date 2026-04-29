@@ -77,7 +77,7 @@ This is why inconsistencies are so important to keep track of and unfortunately,
 
 “Too much data entry” and slow invoice approval processes have been counted as the [chief concerns](<https://acarp-edu.org/ifol-research-shows-the-rate-and-speed-of-accounts-payable-automation-across-businesses-worldwide/>) of most AP teams. Our automation solutions at FormX directly tackle both issues so that the entire accounts payable process is more streamlined and less prone to errors or fraud.
 
-Our intelligent document processing (IDP) tools use AI and OCR technology to automate the extraction of data from [invoices](</solutions/invoice-ocr-api>), [receipts](</solutions/receipts>), [purchase orders](/blog/purchase-order-processing), and any kind of documents with fixed or dynamic layouts.
+Our intelligent document processing (IDP) tools use AI and OCR technology to automate the extraction of data from [invoices](<../documents/invoice-ocr-api.html>), [receipts](<../documents/receipts.html>), [purchase orders](/blog/purchase-order-processing), and any kind of documents with fixed or dynamic layouts.
 
 How our solution works is that people can send images of scanned invoice, PO, or receipt to FormX via API and our technology will return the extracted data as JSON files to your accounting software for further AP processing and automation. The data is extracted far more quickly than it would be manually, which means fewer delays, while never compromising on accuracy. Vendors get paid on time, business relationships are protected, cash flow is easier to manage, and it’s harder for fraudsters to manipulate the system.
 

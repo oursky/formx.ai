@@ -15,7 +15,7 @@ Almost every business today stores its documents in PDF format. It's no surprise
 
 Although you can use the tedious approach of manually copying and pasting data from PDFs into another document, extracting tables from PDF files is certainly way more challenging and complicated. You cannot copy and paste without distorting columns and rows.
 
-Despite the challenges, it's vital to understand how to extract tables from PDFs because various documents like [bank statements](/blog/bank-statement-ocr), [purchase orders](/blog/purchase-order-processing), and other financial statements include tables. You can only benefit from the data in these documents if you make sense of it by digitizing and turning it into a structured format.
+Despite the challenges, it's vital to understand how to extract tables from PDFs because various documents like [bank statements](/blog/convert-pdf-bank-statements-into-csv), [purchase orders](/blog/purchase-order-processing), and other financial statements include tables. You can only benefit from the data in these documents if you make sense of it by digitizing and turning it into a structured format.
 
 Luckily, there are several tools like FormX to help you extract tables from PDF efficiently. Read on to learn about the various solutions you can leverage to get a table from a PDF in no time.
 

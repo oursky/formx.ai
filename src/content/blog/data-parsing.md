@@ -47,7 +47,7 @@ Data parsing is particularly useful in the domain of human resources. For instan
 
 However, data parsing allows for automated extraction of data from these documents and subsequent feeding of the information directly into the HR system. This greatly accelerates the screening process, ensures more precise assessments of candidate profiles, and saves HR professionals valuable time.
 
-Customer onboarding is another area where data parsing proves essential. Conventionally, new customers need to manually input data from their [identity documents](</solutions/id-card-ocr>), such as passports or ID cards, into application forms - a tedious and error-prone process.
+Customer onboarding is another area where data parsing proves essential. Conventionally, new customers need to manually input data from their [identity documents](<../documents/identity-documents.html>), such as passports or ID cards, into application forms - a tedious and error-prone process.
 
 Data parsing can streamline this, as customers just need to upload images of their identity documents. The parsing tool then extracts the necessary data and automatically populates the application forms, enhancing the onboarding process's speed and accuracy and elevating the customer experience.
 

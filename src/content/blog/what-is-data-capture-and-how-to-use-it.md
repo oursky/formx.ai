@@ -27,10 +27,10 @@ Now, with more advanced technologies, businesses can automate data capture. Auto
 
 Organizations can use data capture technologies in a variety of ways, such as:
 
-  * Retailers can use data capture to automatically [extract data from receipts](</solutions/receipts>). This can be used to track customer purchase history and better understand consumer behavior. Shopping malls with loyalty programs can integrate automated data capture with their apps so that the users can easily accumulate loyalty point by uploading images of their receipts.
-  * Financial institutions can use data capture to automate customer onboarding. By capturing data from passports, IDs, and [proof of address](</solutions/address-proof>), banks and insurance companies can quickly and easily verify customer identity to avoid money laundering and other illegal corruption schemes.
+  * Retailers can use data capture to automatically [extract data from receipts](<../documents/receipts.html>). This can be used to track customer purchase history and better understand consumer behavior. Shopping malls with loyalty programs can integrate automated data capture with their apps so that the users can easily accumulate loyalty point by uploading images of their receipts.
+  * Financial institutions can use data capture to automate customer onboarding. By capturing data from passports, IDs, and [proof of address](<../documents/address-proof.html>), banks and insurance companies can quickly and easily verify customer identity to avoid money laundering and other illegal corruption schemes.
   * Healthcare organizations can use data capture to streamline patient intake. By capturing data from patient forms, hospitals can speed up the admissions process and reduce paperwork.
-  * Governments can use data capture to reduce fraud and speed up the processing of benefits claims. By [capturing data from ID cards](</solutions/id-card-ocr>), birth certificates, and other documents, government agencies can verify the identity of applicants and prevent fraud.
+  * Governments can use data capture to reduce fraud and speed up the processing of benefits claims. By [capturing data from ID cards](<../documents/identity-documents/id-card-ocr.html>), birth certificates, and other documents, government agencies can verify the identity of applicants and prevent fraud.
   * Data capture can also extract and [digitize data from business certificates](</solutions/business-certificates>). Details such as the company name, registration number, and date of incorporation can be quickly captured and stored in a digital format.
 
 
@@ -97,7 +97,7 @@ Storing data physically comes with a lot of risks. Physical documents are prone 
 
 Data capture technology helps to solve both of these problems. By digitizing your data, you can create backups and manage access much more easily than with physical documents. This makes your data more secure and less likely to be lost or damaged. In addition, it makes it much easier to track who is accessing your data and when, which enhances security even further.
 
-Data capture technology helps businesses to get usable insights in real time. This allows for better and faster decision-making. For example, retailers can use data capture to gain insights about consumers' purchase behaviors, frequencies, preferences, and more. This information can be used to segment customers and send them personalized recommendations. In this way, data capture technology can help businesses to[ increase customer loyalty](/blog/receipt-ocr-for-loyalty-programs-how-malls-and-retailers-automate-receipt-processing) and improve their bottom line.
+Data capture technology helps businesses to get usable insights in real time. This allows for better and faster decision-making. For example, retailers can use data capture to gain insights about consumers' purchase behaviors, frequencies, preferences, and more. This information can be used to segment customers and send them personalized recommendations. In this way, data capture technology can help businesses to[ increase customer loyalty](/blog/customer-loyalty-program-data) and improve their bottom line.
 
 FormX is the leading data capture platform, helping businesses, including major shopping malls, real estate businesses, charities, etc., automate their data capture and various workflow with little to zero code. We can process various documents, such as invoices, receipts, proof of address, bank statements, etc.
 

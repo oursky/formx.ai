@@ -21,7 +21,7 @@ If you’ve never heard of the term before, PDF scraping simply refers to the ac
 
 As mentioned, PDFs are an unstructured form of data. This is quite common. Unstructured data accounts for about [80% to 90%](<https://www.mongodb.com/unstructured-data#:~:text=From%2080%25%20to%2090%25%20of,used%20to%20guide%20business%20decisions>) of data generated and collected by businesses. The challenge that this creates, however, is that the information they contain cannot be processed by software for further analysis. Well, not unless the data is extracted first.
 
-PDFs are used to exchange all manner of business documents such as [bank statements](/blog/bank-statement-ocr), [invoices](</solutions/invoice-ocr-api>), and [receipts](</solutions/receipts>). The information in those documents is valuable but can only be processed by software if it’s extracted and placed into structured formats. A PDF on its own is just a flat document for humans to read but PDF scraping ensures that the data on it can become multi-dimensional in use.
+PDFs are used to exchange all manner of business documents such as [bank statements](/blog/bank-statement-ocr), [invoices](<../documents/invoice-ocr-api.html>), and [receipts](<../documents/receipts.html>). The information in those documents is valuable but can only be processed by software if it’s extracted and placed into structured formats. A PDF on its own is just a flat document for humans to read but PDF scraping ensures that the data on it can become multi-dimensional in use.
 
 To be processed directly by data software and understood programmatically, PDFs would need some kind of markup or hierarchy of data. They tend to lack both these things, which is why many businesses have resorted to simply extracting data from PDFs manually.
 
@@ -77,7 +77,7 @@ The extracted data will then be transformed into a structured format such as XML
 
 The usefulness of PDF scraping across industries and businesses is undeniable. Not only does it take a fraction of the time manual data extraction would take, but there’s also less chance of silly, costly errors being made.
 
-The most common uses that we see are for document verification or customer onboarding with [identity documents](</solutions/id-card-ocr>) and [proof of address](</solutions/address-proof>). It also has great uses in [finance and accounting](/blog/ocr-finance-and-accounting) by streamlining how information is extracted from receipts and invoices. In fact, PDF scraping can help automate the entire accounts payable system.
+The most common uses that we see are for document verification or customer onboarding with [identity documents](<../documents/identity-documents.html>) and [proof of address](<../documents/address-proof.html>). It also has great uses in [finance and accounting](/blog/ocr-finance-and-accounting) by streamlining how information is extracted from receipts and invoices. In fact, PDF scraping can help automate the entire accounts payable system.
 
 Any accounts department knows the headache of receiving invoices in a multitude of formats. It doesn’t matter if they’re all PDFs, extracting the data is no less time-consuming. PDF scraping that incorporates machine learning and OCR however is equipped to read the documents, regardless of the format, and automate the extraction of that data.
 
@@ -89,7 +89,7 @@ Though smaller businesses might be fine with manual data extraction from PDFs, a
 
 An intelligent solution like FormX, which integrates OCR technology, is scalable and far more accurate and efficient than manual data entry or even using PDF converters. The accuracy that we can offer is also far more cost-effective in the long term. Mistakes cost a business. FormX PDF data scraping helps to limit that from happening.
 
-FormX has a set of pre-trained templates that cover an array of uses such as extracting data from [receipts](</solutions/receipts>), [identity documents](</solutions/id-card-ocr>), business registration, and more. Our software reads the PDF that you upload, extracts the data, and then makes it available in a structured format as a JSON or CSV file that can easily be used by other systems for further analysis.
+FormX has a set of pre-trained templates that cover an array of uses such as extracting data from [receipts](<../documents/receipts.html>), [identity documents](<../documents/identity-documents.html>), business registration, and more. Our software reads the PDF that you upload, extracts the data, and then makes it available in a structured format as a JSON or CSV file that can easily be used by other systems for further analysis.
 
 All of our sets can be integrated with API to help your business batch process PDFs and return CSV files in a fraction of the time it would have taken someone to do the work manually.
 
