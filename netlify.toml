@@ -146,6 +146,11 @@
   to = "/blog/data-entry-automation-enterprise-superpower"
   status = 301
 
+[[redirects]]
+  from = "/blog/customer-loyalty-program-data"
+  to = "https://www.formx.ai/blog/data-entry-automation-enterprise-superpower/"
+  status = 301
+
 # Blog post consolidation redirects to Bill of Lading Unstructured Data Extraction
 [[redirects]]
   from = "/blog/extract-data-from-bill-of-lading"
