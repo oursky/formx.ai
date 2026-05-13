@@ -17,6 +17,8 @@ According to a study conducted by Bond, 71% of consumers claim that loyalty prog
 
 In this blog post, we will share some best practices and strategies to build the loyalty program that helps you turn first-time customers into lifetime customers.
 
+## Why loyalty programs work
+
 A loyalty program is one of the essential businesses strategies to not only attract and retain repeat customers but also build loyalty with an existing customer base.
 
 Loyalty programs inspire more than half of consumers to make repeat transactions in order to keep building points and rewards. Over time, these repeat customers spend more per transaction and will even buy more expensive products/services because of the established trust.
@@ -39,6 +41,8 @@ Research shows that offering immediate gratification is the best way to get some
 
 [According to Forbes and Bond,](<https://www.forbes.com/sites/blakemorgan/2020/05/07/50-stats-that-show-the-importance-of-good-loyalty-programs-even-during-a-crisis/?sh=64af849e2410>) “87% of consumers are open to brands monitoring details of their activity if it leads to more personalized rewards.” So, determine what motivates your customer and make it part of the signup offer.
 
+## Enrollment: Make it frictionless
+
 Don’t lose a loyal customer over a cumbersome registration process. If the signup process for the loyalty program leaves a negative impression, you won’t perpetuate repeat business. Moreover, “[the average consumer belongs to 14.8 loyalty programs but is only active in 6.7 of them](<https://cdn2.hubspot.net/hubfs/352767/TLR%202019/Bond_US%20TLR19%20Exec%20Summary%20Launch%20Edition.pdf>).” You want to start on the right note that puts your business in the active category.
 
 In today’s highly digital and mobile-friendly world, you can have customers join in three simple steps:
@@ -46,8 +50,6 @@ In today’s highly digital and mobile-friendly world, you can have customers jo
   * Download an app
   * Complete a short registration form on the app
   * Scan receipts of qualifying purchases
-
-
 
 Be careful not to ask for too much personal information during the signup. This can detour consumer trust and interest.
 
@@ -57,7 +59,7 @@ Once signed up, make it simple for the customer to continue participating in the
   * Define how awards are achieved (number of transactions, the total amount spent over a timeframe, quantity of items purchased, etc.)
   * Define the award incentives and how these will be delivered to the consumer
 
-
+## Engagement and growth strategies
 
 A flexible program can offer benefits to you and the customer. Consider allowing current loyalty program members to transfer points to another customer. In doing so, you can increase customer satisfaction and the potential to acquire new customers.
 

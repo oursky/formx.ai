@@ -13,7 +13,7 @@ canonical_url: "/blog/ditch-the-manual-mayhem-unveiling-the-power-of-invoice-sca
 
 Invoice mountains got you buried? Wish you could scan and conquer mountains of paper with a digital magic wand? Enter invoice scanning software, the hero you've been waiting for!
 
-What is it and who needs it?
+## What is it and who needs it?
 
 This software scans paper invoices and receipts, extracting data like vendor, amount, date, and line items. Like a tireless, tech-savvy assistant, it then sorts, categorizes, and uploads them directly into your accounting system, transforming paper chaos into digital order.
 
