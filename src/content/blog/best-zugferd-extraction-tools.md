@@ -1,12 +1,13 @@
 ---
-title: "Best ZUGFeRD Extraction Tools in 2025 (API, Bulk & Free Options)"
-description: "Compare the best ZUGFeRD data extraction tools for 2025, covering API access, Factur-X and XRechnung compatibility, bulk processing, free options, and the EU e-invoice mandate."
-excerpt: "Compare the best ZUGFeRD data extraction tools for 2025, covering API access, Factur-X and XRechnung compatibility, bulk processing, free options, and the EU e-invoice mandate."
+title: "Best ZUGFeRD Extraction Tools in 2026 (API, Bulk & Free Options)"
+description: "Compare the best ZUGFeRD data extraction tools for 2026, covering API access, Factur-X and XRechnung compatibility, bulk processing, free options, and the EU e-invoice mandate."
+excerpt: "Compare the best ZUGFeRD data extraction tools for 2026, covering API access, Factur-X and XRechnung compatibility, bulk processing, free options, and the EU e-invoice mandate."
 category: guide
 author: FormX
 date: 2026-06-29
+lastmod: 2026-07-07
 featured_image: "/images/blog/best-zugferd-extraction-tools-hero.png"
-featured_image_alt: "Best ZUGFeRD Extraction Tools in 2025 (API, Bulk & Free Options)"
+featured_image_alt: "Best ZUGFeRD Extraction Tools in 2026 (API, Bulk & Free Options)"
 canonical_url: "/blog/best-zugferd-extraction-tools/"
 ---
 
@@ -68,7 +69,7 @@ Before any tool ranking: here are the eight criteria this comparison is built on
 
 **8. Free tier or trial.** Is there a free online tool for single-document testing, a free tier for developers, or at minimum a meaningful trial before committing?
 
-## **ZUGFeRD Extraction Tools Compared — 2025**
+## **ZUGFeRD Extraction Tools Compared — 2026**
 
 | Tool | XML-native (not OCR) | All profiles + XRechnung | Factur-X | JSON output | REST API | Bulk processing | Self-hosted option | Free tier |
 |---|---|---|---|---|---|---|---|---|
