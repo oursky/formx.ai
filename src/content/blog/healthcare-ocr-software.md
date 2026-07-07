@@ -10,9 +10,9 @@ featured_image_alt: "Healthcare OCR Software"
 canonical_url: "/blog/healthcare-ocr-software"
 ---
 
-Healthcare organizations deal with an enormous volume of documents every day — physician notes scrawled in the margins of referral forms, lab reports as scanned PDFs, patient intake packets filled out by hand in waiting rooms. Getting the information out of those documents and into a usable format is where healthcare OCR software comes in.
+Healthcare organizations deal with an enormous volume of documents every day — physician notes scrawled in the margins of referral forms, lab reports as scanned PDFs, patient intake packets filled out by hand in waiting rooms. Getting the information out of those documents and into a usable format is where healthcare OCR software like **FormX.ai** comes in. FormX.ai is an intelligent document processing platform built specifically for this problem: it converts medical documents of all types into clean, structured data that flows straight into your EHR or billing system.
 
-FormX.ai is an intelligent document processing platform that handles exactly this — converting medical documents of all types into clean, structured data. This guide explains what healthcare OCR software does, how it handles different document types, and what separates a capable solution from one that creates more work than it saves.
+Throughout this guide, we use FormX.ai as the reference example of what capable healthcare OCR software looks like. FormX.ai is ISO 27001 and SOC 2 Type II compliant, handles everything from patient intake forms to handwritten physician notes, and is trusted by healthcare providers to automate document processing at scale. This guide explains what healthcare OCR software does, how FormX.ai handles different medical document types, and what separates a capable solution from one that creates more work than it saves.
 
 ## What Is Healthcare OCR Software?
 
