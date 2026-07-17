@@ -26,6 +26,7 @@ interface Props {
   showTrustIcons?: boolean;
   headingClass?: string;
   subheadingClass?: string;
+  centered?: boolean;
 }
 
 const {
@@ -41,13 +42,14 @@ const {
   showTrustIcons = false,
   headingClass = 'product-hero-content-heading',
   subheadingClass = 'product-hero-content-subheading',
+  centered = false,
 } = Astro.props;
 ---
 
 <div class={`section product-hero ${bgClass}`.trim()}>
   <div class="container-default w-container min-w-0 max-w-full">
     <div class="product-hero-wrapper min-w-0">
-      <div class="hero-content-block">
+      <div class={`hero-content-block${centered ? ' hero-content-block-centered' : ''}`}>
         <div class="product-hero-content-wrapper">
           {tag && <div class={tagClass}>{tag}</div>}
           <h1 class={headingClass}>{heading}</h1>
@@ -101,3 +103,27 @@ const {
     </div>
   </div>
 </div>
+
+<style>
+  /* Centered variant for heroes without an image (default layout reserves 50% width for one) */
+  .hero-content-block-centered {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-content-block-centered .product-hero-content-wrapper {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  /* .action-buttons is a 2-column grid; a lone button lands in the left cell */
+  .hero-content-block-centered .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .hero-content-block-centered .icons {
+    justify-content: center;
+  }
+</style>
