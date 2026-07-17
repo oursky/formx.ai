@@ -29,12 +29,15 @@ export function partnerTypeLabel(type: string): string {
 }
 
 // The directory endpoint occasionally returns transient 5xx errors, so retry
-// a few times before failing the build.
+// a few times before failing the build. The timestamp query param defeats any
+// intermediate HTTP cache so every build gets the latest directory.
 export async function getPartners(): Promise<Partner[]> {
   let lastError: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(PARTNER_DIRECTORY_URL);
+      const res = await fetch(`${PARTNER_DIRECTORY_URL}?t=${Date.now()}`, {
+        headers: { 'cache-control': 'no-cache' },
+      });
       if (!res.ok) throw new Error(`Partner directory returned ${res.status}`);
       const data = (await res.json()) as { partners?: Partner[] };
       return data.partners ?? [];
