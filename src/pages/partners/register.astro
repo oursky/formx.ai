@@ -1,0 +1,61 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import FeatureGrid from '@/components/sections/FeatureGrid.astro';
+import CTACard from '@/components/sections/CTACard.astro';
+import { PARTNER_REGISTER_URL, PARTNER_CONTACT_EMAIL } from '@/lib/partners';
+import { SITE_URL } from '@/lib/constants';
+---
+
+<PageLayout
+  title="Become a Partner | FormX.ai"
+  description="Join the FormX.ai partner program. Earn new revenue, get sales and technical enablement, and grow with co-marketing opportunities. Register as a channel or referral partner today."
+  canonicalUrl={`${SITE_URL}/partners/register/`}
+>
+  <HeroSection
+    tag="Partner Program"
+    heading="Grow Your Business with FormX.ai"
+    subheading="Join our partner network and help your clients automate document data extraction with AI — while unlocking a new revenue stream for your business."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: 'Register as a Partner ->', href: PARTNER_REGISTER_URL }}
+    centered={true}
+  />
+
+  <FeatureGrid
+    heading="Why Partner with FormX.ai?"
+    subheading="Whether you refer clients or resell and deliver solutions, our program is built to help you win."
+    bgClass="bg-f7f8fc"
+    columns={3}
+    centerCards={true}
+    cards={[
+      {
+        icon: '/images/pages/Up-graph-line.svg',
+        iconWidth: 80,
+        title: 'Unlock New Revenue',
+        description:
+          'Earn referral commissions and reseller margins on every customer you bring to FormX.ai, with recurring revenue as your clients grow.',
+      },
+      {
+        icon: '/images/pages/users-group.svg',
+        iconWidth: 80,
+        title: 'Sales & Technical Enablement',
+        description:
+          'Get demo accounts, product training, and pre-sales support from our team, so you can pitch, close, and deliver with confidence.',
+      },
+      {
+        icon: '/images/pages/chart-magnifier.svg',
+        iconWidth: 80,
+        title: 'Co-Marketing & Visibility',
+        description:
+          'Get listed in our partner directory and collaborate on case studies, events, and campaigns that put your business in front of new customers.',
+      },
+    ]}
+  />
+
+  <CTACard
+    heading="Ready to Partner with FormX.ai?"
+    description={`Register in minutes — or contact us at ${PARTNER_CONTACT_EMAIL} to learn more about the program.`}
+    ctaPrimary={{ text: 'Register Now', href: PARTNER_REGISTER_URL }}
+    ctaSecondary={{ text: 'Contact Us', href: `mailto:${PARTNER_CONTACT_EMAIL}` }}
+  />
+</PageLayout>

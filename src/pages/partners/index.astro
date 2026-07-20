@@ -1,0 +1,217 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import HeroSection from '@/components/sections/HeroSection.astro';
+import { getPartners, type Partner } from '@/lib/partners';
+import { SITE_URL } from '@/lib/constants';
+
+const partners = await getPartners();
+
+// Group by country, ranked by partner count (ties alphabetical), partners A-Z within each group
+const grouped = new Map<string, Partner[]>();
+for (const partner of partners) {
+  const country = partner.country?.trim() || 'Other Regions';
+  if (!grouped.has(country)) grouped.set(country, []);
+  grouped.get(country)!.push(partner);
+}
+const regions = [...grouped.entries()]
+  .map(([country, list]) => ({
+    country,
+    list: list.sort((a, b) => a.name.localeCompare(b.name)),
+  }))
+  .sort(
+    (a, b) => b.list.length - a.list.length || a.country.localeCompare(b.country)
+  );
+---
+
+<PageLayout
+  title="Partners | FormX.ai"
+  description="Meet the FormX.ai partner network — channel and referral partners helping businesses automate document data extraction with AI. Find a partner near you or join the program."
+  canonicalUrl={`${SITE_URL}/partners/`}
+>
+  <HeroSection
+    tag="Partners"
+    heading="FormX.ai Partner Network"
+    subheading="Our trusted partners help businesses around the world automate document processing with AI. Find a partner in your region, or join the network yourself."
+    bgClass="bg-f0f4f9"
+    ctaPrimary={{ text: 'Become a Partner ->', href: '/partners/register/' }}
+    centered={true}
+  />
+
+  <div class="section product-section bg-f7f8fc">
+    <div class="container-default w-container min-w-0 max-w-full">
+      <div class="product-heading-content-wrapper">
+        <div class="product-content-wrapper">
+          {regions.length > 0 ? (
+            regions.map((region) => (
+              <div class="partner-region-group">
+                <h2 class="partner-region-title">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 21C12 21 19 15.4183 19 10C19 6.13401 15.866 3 12 3C8.13401 3 5 6.13401 5 10C5 15.4183 12 21 12 21Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 12.5C13.3807 12.5 14.5 11.3807 14.5 10C14.5 8.61929 13.3807 7.5 12 7.5C10.6193 7.5 9.5 8.61929 9.5 10C9.5 11.3807 10.6193 12.5 12 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  {region.country}
+                </h2>
+                <div class="_3-block-grid">
+                  {region.list.map((partner) => (
+                    <div class="plain-svg-card card-bg-white partner-directory-card">
+                      <div class="partner-directory-logo-wrap">
+                        {partner.logo_url ? (
+                          <img
+                            src={partner.logo_url}
+                            loading="lazy"
+                            alt={`${partner.name} logo`}
+                            class="partner-directory-logo"
+                          />
+                        ) : (
+                          <div class="partner-directory-logo-fallback" aria-hidden="true">
+                            {partner.name.charAt(0)}
+                          </div>
+                        )}
+                      </div>
+                      <div class="svg-card-content-wrapper partner-directory-content">
+                        <h3 class="svg-card-title partner-directory-title">{partner.name}</h3>
+                        {partner.description && (
+                          <div class="svg-card-description">{partner.description}</div>
+                        )}
+                        {partner.website && (
+                          <a
+                            href={partner.website}
+                            target="_blank"
+                            rel="noopener"
+                            class="partner-directory-link"
+                          >
+                            Visit Website -&gt;
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div class="partner-directory-empty">
+              Our partner directory is being updated. Check back soon, or contact us at
+              <a href="mailto:hello@formx.ai"> hello@formx.ai</a>.
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product-section bg-green-gradient">
+    <div class="container-default w-container">
+      <div class="card-xl card-bg-green-shape">
+        <div class="card-xl-vertical-wrap text-center">
+          <div class="card-xl-content-wrap">
+            <h2 class="card-xl-title color-white">Interested in Partnering with FormX.ai?</h2>
+            <div class="card-xl-description color-white pricing">
+              Join our partner network to bring AI-powered document processing to your clients —
+              and unlock a new revenue stream for your business.
+            </div>
+            <div class="card-xl-2-cta-wrap">
+              <a href="/partners/register/" class="button-primary button-white button-center w-button">
+                Become a Partner
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .partner-region-group {
+    margin-bottom: 64px;
+  }
+  .partner-region-group:last-child {
+    margin-bottom: 0;
+  }
+  .partner-region-title {
+    align-items: center;
+    border-bottom: 1px solid #e4e8ee;
+    display: flex;
+    font-size: 24px;
+    gap: 10px;
+    line-height: 1.3em;
+    margin-bottom: 32px;
+    margin-top: 0;
+    padding-bottom: 16px;
+  }
+  .partner-region-title svg {
+    color: var(--primary-formx-green);
+    flex-shrink: 0;
+  }
+  .partner-directory-card {
+    height: 100%;
+    padding: 40px;
+  }
+  .partner-directory-logo-wrap {
+    align-items: center;
+    display: flex;
+    height: 56px;
+  }
+  .partner-directory-logo {
+    max-height: 56px;
+    max-width: 200px;
+    object-fit: contain;
+  }
+  .partner-directory-logo-fallback {
+    align-items: center;
+    background-color: #f0f4f9;
+    border-radius: 12px;
+    color: var(--primary-formx-green);
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    width: 56px;
+  }
+  .partner-directory-content {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    grid-row-gap: 8px;
+  }
+  .partner-directory-title {
+    margin-bottom: 0;
+  }
+  .partner-directory-link {
+    color: var(--primary-formx-green);
+    font-weight: 600;
+    margin-top: auto;
+    padding-top: 16px;
+    text-decoration: none;
+  }
+  .partner-directory-link:hover {
+    text-decoration: underline;
+  }
+  .partner-directory-empty {
+    color: var(--neutral-600);
+    font-size: 18px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+</style>
