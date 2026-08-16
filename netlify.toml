@@ -316,7 +316,7 @@
 
 [[redirects]]
   from = "/post/customer-loyalty-program-data"
-  to = "/blog"
+  to = "/blog/loyalty-program-strategy-best-practices/"
   status = 301
 
 [[redirects]]
@@ -921,4 +921,18 @@
 [[redirects]]
   from = "/whats-new/2023-10-01/2023-10-01.html"
   to = "/whats-new/2023-10-01/"
+  status = 301
+
+# ---------------------------------------------------------------------------
+# Missed redirect from the Apr-May 2026 blog consolidation
+# (SEO investigation 2026-08-16)
+#
+# /blog/customer-loyalty-program-data returned a hard 404: only the legacy
+# /post/ variant had a rule. The page held 1,762 impressions and 69 keywords
+# in Jan-Apr 2026. Both variants now point at the surviving loyalty article.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/blog/customer-loyalty-program-data"
+  to = "/blog/loyalty-program-strategy-best-practices/"
   status = 301
