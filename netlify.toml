@@ -215,22 +215,22 @@
 
 [[redirects]]
   from = "/partner-program.html"
-  to = "/"
+  to = "/partners/"
   status = 301
 
 [[redirects]]
   from = "/partner-program"
-  to = "/"
+  to = "/partners/"
   status = 301
 
 [[redirects]]
   from = "/referral-program.html"
-  to = "/"
+  to = "/partners/"
   status = 301
 
 [[redirects]]
   from = "/referral-program"
-  to = "/"
+  to = "/partners/"
   status = 301
 
 [[redirects]]
@@ -321,7 +321,7 @@
 
 [[redirects]]
   from = "/post/data-extraction-tools"
-  to = "/blog"
+  to = "/blog/best-data-extraction-software/"
   status = 301
 
 [[redirects]]
@@ -380,13 +380,13 @@
 
 [[redirects]]
   from = "/case-studies"
-  to = "/"
+  to = "/success-stories/"
   status = 301
 
 [[redirects]]
   from = "/events/formx-genai-academy"
   to = "/"
-  status = 301
+  status = 410
 
 # ---------------------------------------------------------------------------
 # Solutions / section moves
@@ -510,7 +510,7 @@
 
 [[redirects]]
   from = "/blog/data-extraction-tools"
-  to = "/blog"
+  to = "/blog/best-data-extraction-software/"
   status = 301
 
 [[redirects]]
@@ -724,157 +724,159 @@
   status = 301
 
 # ---------------------------------------------------------------------------
-# Blog pages with no replacement → /blog index
+# Retired Webflow-era blog slugs → closest live article, or 410 Gone.
+# Never point these at /blog — a redirect to an index page reads as a soft 404.
+# 410 rules still need a `to` field; Netlify's parser rejects the rule without one.
 # ---------------------------------------------------------------------------
 
 [[redirects]]
   from = "/blog/idp-ai-transforming-workflow-automation"
-  to = "/blog"
+  to = "/blog/intelligent-document-processing-guide/"
   status = 301
 
 [[redirects]]
   from = "/blog/hardware-integrated-idp-boosting-accuracy-efficiency"
-  to = "/blog"
-  status = 301
+  to = "/"
+  status = 410
 
 [[redirects]]
   from = "/blog/ai-for-multilingual-document-processing"
-  to = "/blog"
+  to = "/blog/nanonets-alternative-for-multi-language-ap-invoices-how-formx-handles-cross-border-document-processing/"
   status = 301
 
 [[redirects]]
   from = "/blog/generative-ai-for-summarization-decision-making"
-  to = "/blog"
+  to = "/blog/idp-gpt-4/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-legal-document-review-risk-analysis-revolution"
-  to = "/blog"
+  to = "/blog/ocr-in-legal-financial-document-management/"
   status = 301
 
 [[redirects]]
   from = "/blog/extract-pdf-data-to-excel-best-methods-practices"
-  to = "/blog"
+  to = "/tools/pdf-to-excel-converter/"
   status = 301
 
 [[redirects]]
   from = "/blog/convert-pdfs-to-google-docs-easily"
-  to = "/blog"
-  status = 301
+  to = "/"
+  status = 410
 
 [[redirects]]
   from = "/blog/convert-pdf-to-csv-for-business-analytics"
-  to = "/blog"
+  to = "/tools/pdf-to-csv-converter/"
   status = 301
 
 [[redirects]]
   from = "/blog/convert-pdf-to-csv-easy-accurate-methods"
-  to = "/blog"
+  to = "/tools/pdf-to-csv-converter/"
   status = 301
 
 [[redirects]]
   from = "/blog/free-tools-to-convert-pdfs-to-google-sheets"
-  to = "/blog"
+  to = "/blog/convert-pdf-to-google-sheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/convert-pdf-to-xml-for-seamless-data-integration"
-  to = "/blog"
+  to = "/tools/pdf-to-xml-converter/"
   status = 301
 
 [[redirects]]
   from = "/blog/convert-pdf-tables-to-google-sheets-easily"
-  to = "/blog"
+  to = "/blog/convert-pdf-to-google-sheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/master-the-payable-period-formula-for-cash-flow"
-  to = "/blog"
+  to = "/blog/accounts-payable-days/"
   status = 301
 
 [[redirects]]
   from = "/blog/master-the-days-to-pay-formula-for-business-success"
-  to = "/blog"
+  to = "/blog/accounts-payable-days/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-powered-document-processing-the-ultimate-guide"
-  to = "/blog"
+  to = "/blog/intelligent-document-processing-guide/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-powered-forms-revolutionizing-data-capture"
-  to = "/blog"
+  to = "/blog/what-is-data-capture-and-how-to-use-it/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-invoice-processing-automate-accounts-payable"
-  to = "/blog"
+  to = "/blog/invoice-processing-automation-streamline-your-workflow-with-ai/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-tools-for-efficient-pdf-data-extraction"
-  to = "/blog"
+  to = "/blog/pdf-scraping-extract-unstructured-data-from-pdfs/"
   status = 301
 
 [[redirects]]
   from = "/blog/why-scalability-matters-in-ai-document-processing"
-  to = "/blog"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-powered-document-processing-benefits"
-  to = "/blog"
+  to = "/blog/what-is-document-processing/"
   status = 301
 
 [[redirects]]
   from = "/blog/choose-the-best-iam-solution-for-your-organization"
-  to = "/blog"
-  status = 301
+  to = "/"
+  status = 410
 
 [[redirects]]
   from = "/blog/ai-revolutionizing-document-workflows"
-  to = "/blog"
+  to = "/blog/intelligent-document-processing-guide/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-driven-document-management-in-2025"
-  to = "/blog"
+  to = "/blog/document-digitization/"
   status = 301
 
 [[redirects]]
   from = "/blog/master-data-parsing-for-effective-data-management"
-  to = "/blog"
+  to = "/blog/data-parsing/"
   status = 301
 
 [[redirects]]
   from = "/blog/transform-semi-structured-data-with-ai-tools"
-  to = "/blog"
+  to = "/blog/semi-structured-data/"
   status = 301
 
 [[redirects]]
   from = "/blog/three-way-matching-in-accounts-payable-explained"
-  to = "/blog"
+  to = "/blog/three-way-matching/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-in-accounts-payable-transforming-finance"
-  to = "/blog"
+  to = "/blog/ap-best-practices/"
   status = 301
 
 [[redirects]]
   from = "/blog/automate-invoice-reconciliation-with-ai-tools"
-  to = "/blog"
+  to = "/blog/automated-payment-reconciliation/"
   status = 301
 
 [[redirects]]
   from = "/blog/pdf-data-extraction-trends-in-finance-healthcare"
-  to = "/blog"
+  to = "/blog/pdf-scraping-extract-unstructured-data-from-pdfs/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-powered-inventory-management-for-retail"
-  to = "/blog"
+  to = "/blog/retail-automation/"
   status = 301
 
 [[redirects]]
