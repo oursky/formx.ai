@@ -293,6 +293,13 @@
   to = "/solutions/id-card-ocr/"
   status = 301
 
+# id-cards is the same slug mismatch: /solutions/id-cards/ does not exist.
+# Was sitting after the catch-all below, so it never matched and 404'd.
+[[redirects]]
+  from = "/documents/id-cards"
+  to = "/solutions/id-card-ocr/"
+  status = 301
+
 [[redirects]]
   from = "/documents/*"
   to = "/solutions/:splat/"
@@ -415,11 +422,6 @@
 [[redirects]]
   from = "/mobile-document-capture/receipt-scanning-sdk"
   to = "/solutions/receipts/"
-  status = 301
-
-[[redirects]]
-  from = "/documents/id-cards"
-  to = "/solutions/id-card-ocr/"
   status = 301
 
 [[redirects]]
