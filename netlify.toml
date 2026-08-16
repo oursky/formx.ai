@@ -46,7 +46,7 @@
 # /smartadapt (old Webflow path) → correct Astro page
 [[redirects]]
   from = "/smartadapt"
-  to = "/products/smartadapt"
+  to = "/products/smartadapt/"
   status = 301
   force = true
 
@@ -56,12 +56,12 @@
 
 [[redirects]]
   from = "/simplify-and-automate-your-logistics-operations"
-  to = "/landing/logistics"
+  to = "/landing/logistics/"
   status = 301
 
 [[redirects]]
   from = "/simplify-and-automate-your-logistics-operations.html"
-  to = "/landing/logistics"
+  to = "/landing/logistics/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -70,112 +70,112 @@
 
 [[redirects]]
   from = "/blog/automate-receipt-processing-with-ocr-and-ai"
-  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation/"
   status = 301
 
 [[redirects]]
   from = "/blog/purchase-order-automation"
-  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation/"
   status = 301
 
 [[redirects]]
   from = "/blog/supply-chain-automation"
-  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation/"
   status = 301
 
 [[redirects]]
   from = "/blog/unleash-xero-automation-powerhouse-automating-xero-accounts-payable-with-formx-ai"
-  to = "/blog/p2p-data-flow-mapping-enterprise-automation"
+  to = "/blog/p2p-data-flow-mapping-enterprise-automation/"
   status = 301
 
 # Blog post consolidation redirects to Straight-Through Processing Maturity Framework
 [[redirects]]
   from = "/blog/invoice-data-capture"
-  to = "/blog/straight-through-processing-maturity-framework"
+  to = "/blog/straight-through-processing-maturity-framework/"
   status = 301
 
 [[redirects]]
   from = "/blog/accounts-payable-outsourcing"
-  to = "/blog/straight-through-processing-maturity-framework"
+  to = "/blog/straight-through-processing-maturity-framework/"
   status = 301
 
 [[redirects]]
   from = "/blog/invoice-parsing"
-  to = "/blog/straight-through-processing-maturity-framework"
+  to = "/blog/straight-through-processing-maturity-framework/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-for-invoice-processing-benefits-use-cases"
-  to = "/blog/straight-through-processing-maturity-framework"
+  to = "/blog/straight-through-processing-maturity-framework/"
   status = 301
 
 [[redirects]]
   from = "/blog/insurance-straight-through-processing"
-  to = "/blog/straight-through-processing-maturity-framework"
+  to = "/blog/straight-through-processing-maturity-framework/"
   status = 301
 
 # Blog post consolidation redirects to OCR Accounting Automated Ecosystems
 [[redirects]]
   from = "/blog/unlocking-the-power-of-rag-revolutionizing-document-processing-with-ai"
-  to = "/blog/ocr-accounting-automated-ecosystems"
+  to = "/blog/ocr-accounting-automated-ecosystems/"
   status = 301
 
 [[redirects]]
   from = "/blog/pdf-processing"
-  to = "/blog/ocr-accounting-automated-ecosystems"
+  to = "/blog/ocr-accounting-automated-ecosystems/"
   status = 301
 
 [[redirects]]
   from = "/blog/invoice-digitization-automate-invoice-processing"
-  to = "/blog/ocr-accounting-automated-ecosystems"
+  to = "/blog/ocr-accounting-automated-ecosystems/"
   status = 301
 
 # Blog post consolidation redirects to Data Entry Automation Enterprise Superpower
 [[redirects]]
   from = "/blog/intelligent-data-extraction"
-  to = "/blog/data-entry-automation-enterprise-superpower"
+  to = "/blog/data-entry-automation-enterprise-superpower/"
   status = 301
 
 [[redirects]]
   from = "/blog/unstructured-data-extraction"
-  to = "/blog/data-entry-automation-enterprise-superpower"
+  to = "/blog/data-entry-automation-enterprise-superpower/"
   status = 301
 
 [[redirects]]
   from = "/blog/data-extraction-tools-guide-types-challenges-and-top-6-use-cases"
-  to = "/blog/data-entry-automation-enterprise-superpower"
+  to = "/blog/data-entry-automation-enterprise-superpower/"
   status = 301
 
 # Blog post consolidation redirects to Bill of Lading Unstructured Data Extraction
 [[redirects]]
   from = "/blog/extract-data-from-bill-of-lading"
-  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  to = "/blog/bill-of-lading-unstructured-data-extraction/"
   status = 301
 
 [[redirects]]
   from = "/blog/extract-data-from-pdf-to-structured-data"
-  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  to = "/blog/bill-of-lading-unstructured-data-extraction/"
   status = 301
 
 [[redirects]]
   from = "/blog/master-pdf-table-extraction-for-global-data-insights"
-  to = "/blog/bill-of-lading-unstructured-data-extraction"
+  to = "/blog/bill-of-lading-unstructured-data-extraction/"
   status = 301
 
 # Blog post consolidation redirects to OCR Accounting Automated Workflows Future Finance
 [[redirects]]
   from = "/blog/convert-pdf-bank-statements-into-csv"
-  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/document-classification"
-  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/reduce-data-entry-and-start-automating-with-machine-learning-ocr"
-  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance/"
   status = 301
 
 
@@ -190,27 +190,27 @@
 
 [[redirects]]
   from = "/blog.html"
-  to = "/blog"
+  to = "/blog/"
   status = 301
 
 [[redirects]]
   from = "/pricing.html"
-  to = "/pricing"
+  to = "/pricing/"
   status = 301
 
 [[redirects]]
   from = "/why-formx.html"
-  to = "/why-formx"
+  to = "/why-formx/"
   status = 301
 
 [[redirects]]
   from = "/talk-with-us.html"
-  to = "/talk-with-us"
+  to = "/schedule-demo/"
   status = 301
 
 [[redirects]]
   from = "/schedule-demo.html"
-  to = "/schedule-demo"
+  to = "/schedule-demo/"
   status = 301
 
 [[redirects]]
@@ -235,22 +235,22 @@
 
 [[redirects]]
   from = "/data-privacy-policy.html"
-  to = "/data-privacy-policy"
+  to = "/data-privacy-policy/"
   status = 301
 
 [[redirects]]
   from = "/terms-of-service.html"
-  to = "/terms-of-service"
+  to = "/terms-of-service/"
   status = 301
 
 [[redirects]]
   from = "/service-level-agreement.html"
-  to = "/service-level-agreement"
+  to = "/service-level-agreement/"
   status = 301
 
 [[redirects]]
   from = "/whats-new.html"
-  to = "/whats-new"
+  to = "/whats-new/"
   status = 301
 
 [[redirects]]
@@ -285,12 +285,12 @@
 
 [[redirects]]
   from = "/documents/identity-documents"
-  to = "/solutions/id-card-ocr"
+  to = "/solutions/id-card-ocr/"
   status = 301
 
 [[redirects]]
   from = "/documents/identity-documents/*"
-  to = "/solutions/id-card-ocr"
+  to = "/solutions/id-card-ocr/"
   status = 301
 
 [[redirects]]
@@ -306,12 +306,12 @@
 
 [[redirects]]
   from = "/post/best-ocr-software"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/post/convert-pdf-bank-statements-into-csv"
-  to = "/blog/ocr-accounting-automated-workflows-future-finance"
+  to = "/blog/ocr-accounting-automated-workflows-future-finance/"
   status = 301
 
 [[redirects]]
@@ -326,22 +326,22 @@
 
 [[redirects]]
   from = "/post/optical-character-recognition"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 [[redirects]]
   from = "/post/uipath-rpa-invoice-receipt-processing-with-ocr-using-formx"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/post/5-best-ocr-software-of-2021-extract-text-from-images"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/post/:slug"
-  to = "/blog/:slug"
+  to = "/blog/:slug/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -350,17 +350,17 @@
 
 [[redirects]]
   from = "/talk-with-us"
-  to = "/schedule-demo"
+  to = "/schedule-demo/"
   status = 301
 
 [[redirects]]
   from = "/sla"
-  to = "/service-level-agreement"
+  to = "/service-level-agreement/"
   status = 301
 
 [[redirects]]
   from = "/terms"
-  to = "/terms-of-service"
+  to = "/terms-of-service/"
   status = 301
 
 [[redirects]]
@@ -370,7 +370,7 @@
 
 [[redirects]]
   from = "/contact"
-  to = "/schedule-demo"
+  to = "/schedule-demo/"
   status = 301
 
 [[redirects]]
@@ -394,18 +394,18 @@
 
 [[redirects]]
   from = "/solutions/receipt"
-  to = "/solutions/receipts"
+  to = "/solutions/receipts/"
   status = 301
 
 # Chain: healthcare → medical → ocr-medical (keep both so direct hits on /medical work)
 [[redirects]]
   from = "/solutions/healthcare"
-  to = "/solutions/ocr-medical"
+  to = "/solutions/ocr-medical/"
   status = 301
 
 [[redirects]]
   from = "/solutions/medical"
-  to = "/solutions/ocr-medical"
+  to = "/solutions/ocr-medical/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -414,12 +414,12 @@
 
 [[redirects]]
   from = "/mobile-document-capture/receipt-scanning-sdk"
-  to = "/solutions/receipts"
+  to = "/solutions/receipts/"
   status = 301
 
 [[redirects]]
   from = "/documents/id-cards"
-  to = "/solutions/id-card-ocr"
+  to = "/solutions/id-card-ocr/"
   status = 301
 
 [[redirects]]
@@ -429,7 +429,7 @@
 
 [[redirects]]
   from = "/whats-new/smart-learning"
-  to = "/whats-new/2025-09-22"
+  to = "/whats-new/2025-09-22/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -438,23 +438,23 @@
 
 [[redirects]]
   from = "/tools/invoice-converter"
-  to = "/tools/invoice-extraction"
+  to = "/tools/invoice-ocr-api/"
   status = 301
 
 [[redirects]]
   from = "/tools/invoice-data-extraction"
-  to = "/tools/invoice-extractor"
+  to = "/tools/invoice-ocr-api/"
   status = 301
 
 [[redirects]]
   from = "/blog/pdf-to-xml-converter"
-  to = "/tools/pdf-to-xml-converter"
+  to = "/tools/pdf-to-xml-converter/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/tools/pdf-to-%5Bxml%5D%28https://www.formx.ai/tools/pdf-to-xml-converter%29-converter"
-  to = "/tools/pdf-to-xml-converter"
+  to = "/tools/pdf-to-xml-converter/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -494,7 +494,7 @@
 
 [[redirects]]
   from = "/blog/pdf-to-google-sheets"
-  to = "/blog/convert-pdf-to-google-sheets"
+  to = "/blog/convert-pdf-to-google-sheets/"
   status = 301
   force = true
 
@@ -505,7 +505,7 @@
 
 [[redirects]]
   from = "/blog/5-best-ocr-software-of-2021-extract-text-from-images"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
@@ -515,58 +515,58 @@
 
 [[redirects]]
   from = "/blog/optical-character-recognition"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 [[redirects]]
   from = "/blog/how-to-automate-purchase-order-processing-with-ai-for-operational-efficiency"
-  to = "/blog/purchase-order-processing"
+  to = "/blog/purchase-order-processing/"
   status = 301
 
 [[redirects]]
   from = "/blog/retail-"
-  to = "/blog/retail-automation"
+  to = "/blog/retail-automation/"
   status = 301
 
 [[redirects]]
   from = "/blog/ai-compliance-trends-in-2025-key-insights"
-  to = "/blog/protect-your-business-the-threat-of-fake-bank-statements-and-how-to-defend-yourself"
+  to = "/blog/protect-your-business-the-threat-of-fake-bank-statements-and-how-to-defend-yourself/"
   status = 301
 
 [[redirects]]
   from = "/blog/liveness-detection-a-cornerstone-of-secure-and-convenient-digital-experiences"
-  to = "/blog/google-ocr-how-to-use-free-options-and-ai-alternatives"
+  to = "/blog/google-ocr-how-to-use-free-options-and-ai-alternatives/"
   status = 301
 
 [[redirects]]
   from = "/blog/hyperautomation-explained-transform-your-business-with-intelligent-automation"
-  to = "/blog/hyperautomation"
+  to = "/blog/hyperautomation/"
   status = 301
 
 [[redirects]]
   from = "/blog/unlock-efficiency-a-complete-guide-to-rpa-tools-for-streamlining-your-business-operations"
-  to = "/blog/hyperautomation"
+  to = "/blog/hyperautomation/"
   status = 301
 
 [[redirects]]
   from = "/blog/unlocking-efficiency-how-ai-knowledge-management-software-transforms-the-way-you-work"
-  to = "/blog/ai-powered-erp-revolutionizing-invoice-processing"
+  to = "/blog/ai-powered-erp-revolutionizing-invoice-processing/"
   status = 301
 
 [[redirects]]
   from = "/blog/improve-insurance-customer-experience"
-  to = "/blog/the-8-day-roi"
+  to = "/blog/the-8-day-roi/"
   status = 301
 
 [[redirects]]
   from = "/blog/document-management-workflow"
-  to = "/blog/document-digitization"
+  to = "/blog/document-digitization/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/multi-region-server"
-  to = "/blog/ai-for-global-invoice-management-simplified"
+  to = "/blog/ai-for-global-invoice-management-simplified/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -575,27 +575,27 @@
 
 [[redirects]]
   from = "/blog/accounting-automation"
-  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation/"
   status = 301
 
 [[redirects]]
   from = "/blog/automate-sap-ap-processing-with-ai-ocr-to-save-time-and-reduce-manual-keying"
-  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation/"
   status = 301
 
 [[redirects]]
   from = "/blog/mastering-automated-reconciliation-transform-your-financial-processes-with-formx"
-  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation/"
   status = 301
 
 [[redirects]]
   from = "/blog/automated-invoice-processing"
-  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation/"
   status = 301
 
 [[redirects]]
   from = "/blog/accounts-payable-best-practices"
-  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation"
+  to = "/blog/the-guide-to-ai-accounting-automation-from-invoices-to-reconciliation/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -604,37 +604,37 @@
 
 [[redirects]]
   from = "/blog/enterprise-automation-transform-workflows-with-formx-ai"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/automated-form-processing"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/expense-automation"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/automation-insurance"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/data-automation"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/best-ocr-software"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 [[redirects]]
   from = "/blog/data-entry-software"
-  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets"
+  to = "/blog/scaling-corporate-operations-beyond-manual-data-entry-and-spreadsheets/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -643,32 +643,32 @@
 
 [[redirects]]
   from = "/blog/ai-ocr-revolutionizing-document-processing-with-formx-ai"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/uipath-rpa-invoice-receipt-processing-with-ocr-using-formx"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/intelligent-document-processing"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/conquer-invoice-chaos-automate-processing-with-ocr-invoice-processing"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/conquer-invoice-reconciliation-automation-vs-manual-methods"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 [[redirects]]
   from = "/blog/master-bank-reconciliation-with-formx-ai-automated-accurate-and-efficient"
-  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance"
+  to = "/blog/breaking-the-paper-bottleneck-how-an-invoice-ocr-api-and-rpa-supercharge-modern-finance/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -677,12 +677,12 @@
 
 [[redirects]]
   from = "/blog/ai-multilingual-document-processing-for-businesses"
-  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
+  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system/"
   status = 301
 
 [[redirects]]
   from = "/blog/overcoming-multilingual-invoice-processing-challenges"
-  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system"
+  to = "/blog/overcoming-the-global-growth-paradox-scaling-cross-border-ap-with-an-invoice-ocr-enterprise-system/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -691,12 +691,12 @@
 
 [[redirects]]
   from = "/blog/healthcare-automation"
-  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
+  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory/"
   status = 301
 
 [[redirects]]
   from = "/blog/unstructured-data-healthcare"
-  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory"
+  to = "/blog/the-latency-tax-why-your-healthcare-facility-is-losing-33-hours-a-month-to-paperwork-purgatory/"
   status = 301
 
 # ---------------------------------------------------------------------------
@@ -705,22 +705,22 @@
 
 [[redirects]]
   from = "/blog/unlock-python-ocr-with-formx-revolutionize-data-extractio"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 [[redirects]]
   from = "/blog/top-ocr-api"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 [[redirects]]
   from = "/blog/what-is-ocr-and-how-business-leverage"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 [[redirects]]
   from = "/blog/automate-kyc-with-ocr-ai"
-  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis"
+  to = "/blog/the-developers-blueprint-for-autonomous-data-pipelines-solving-the-data-debt-crisis/"
   status = 301
 
 # ---------------------------------------------------------------------------
