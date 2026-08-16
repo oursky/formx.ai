@@ -213,7 +213,7 @@ File size limit per document is 50 MB. Supported input formats are PDF, JPEG, PN
 
 If you are building a tax document processing pipeline that includes employee W-2s alongside contractor 1099-NECs, see the [W-2 OCR API guide](/blog/w2-ocr-api/) for the equivalent JSON schema and integration patterns for US W-2 forms. For European invoice processing with ZUGFeRD or Factur-X structured data, see the [ZUGFeRD Extraction API guide](/blog/zugferd-extraction-api/).
 
-Not a developer? See our [1099-NEC extraction guide](/blog/1099-nec-extraction-guide/) for no-code options including the browser-based extractor tool.
+Not a developer? Use the [1099 Extractor](/tools/1099-extractor/) for a no-code, browser-based option — no signup required for single-document extractions.
 
 ---
 

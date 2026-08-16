@@ -12,7 +12,7 @@ canonical_url: "/blog/ai-healthcare-document-processing"
 
 Healthcare organizations generate more documents than almost any other industry. Patient intake forms, referral packets, lab reports, clinical notes, discharge summaries, prior authorization requests, billing documents — the list is long and the volume doesn't slow down.
 
-Processing those documents manually creates delays, introduces errors, and consumes staff time that should go toward patients. FormX.ai is the platform healthcare teams use to replace manual processing — not by adding headcount, but by automating the most repetitive, highest-volume document workflows with measurable results.
+Processing those documents manually creates delays, introduces errors, and consumes staff time that should go toward patients. FormX.ai is the platform healthcare teams use to replace manual processing — not by adding headcount, but by automating the most repetitive, highest-volume document workflows with measurable results. FormX.ai's [medical OCR solution](/solutions/ocr-medical/) is purpose-built for exactly this kind of automation.
 
 Here are five use cases where FormX.ai is replacing manual document processing in healthcare today.
 

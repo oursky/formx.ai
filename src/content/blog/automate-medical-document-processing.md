@@ -12,7 +12,7 @@ canonical_url: "/blog/automate-medical-document-processing"
 
 Medical document processing is one of the largest sources of manual administrative work in healthcare. Patient intake packets, clinical notes, referral forms, lab reports, discharge summaries, medication lists — each one requires someone to read it, interpret it, and enter the relevant information into a system somewhere.
 
-That work is expensive, error-prone, and difficult to scale. FormX.ai is the platform healthcare teams use to automate it. This guide explains how medical document processing automation works, which document types benefit most, and what the implementation actually looks like.
+That work is expensive, error-prone, and difficult to scale. FormX.ai is the platform healthcare teams use to automate it. This guide explains how medical document processing automation works, which document types benefit most, and what the implementation actually looks like. For the full picture of what's available out of the box, see FormX.ai's [healthcare document processing platform](/solutions/ocr-medical/).
 
 ## Why Medical Document Processing Is Hard to Automate (and Why That's Changed)
 

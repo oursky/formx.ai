@@ -12,7 +12,7 @@ canonical_url: "/blog/medical-form-data-extraction"
 
 If your team is manually copying patient data from PDFs into your EHR, you already know the problem. A single referral packet takes 10–15 minutes to process by hand. Multiply that across hundreds of patients per week, add the inevitable transposition errors, and you have a process that's expensive, slow, and fragile.
 
-FormX.ai is built to replace that process. This guide covers how AI-powered medical form data extraction works, which form types benefit most, and what to look for in a solution.
+FormX.ai is built to replace that process. This guide covers how AI-powered medical form data extraction works, which form types benefit most, and what to look for in a solution. FormX.ai's [healthcare document processing platform](/solutions/ocr-medical/) covers each of these form types out of the box.
 
 ## What Is Medical Form Data Extraction?
 

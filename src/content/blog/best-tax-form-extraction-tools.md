@@ -19,7 +19,7 @@ canonical_url: "/blog/best-tax-form-extraction-tools"
 
 For most teams processing W-2, P60, PAYG, 1099-NEC, or ZUGFeRD forms, FormX is the fastest path from a PDF or photo to structured data, with no signup required for single-document extractions and a developer API for batch workflows. If you need an enterprise OCR SDK that handles dozens of document types, ABBYY FineReader is the main alternative to evaluate.
 
-This guide compares five tools across the dimensions that matter most: which form types are supported, accuracy on real-world documents, output formats, free tier availability, and API access.
+This guide compares five tools across the dimensions that matter most: which form types are supported, accuracy on real-world documents, output formats, free tier availability, and API access. If you already know FormX is the tool you want to use, see our [step-by-step guide to converting a tax form photo to Excel](/blog/convert-tax-form-photo-to-excel/).
 
 ## **Comparison Table**
 

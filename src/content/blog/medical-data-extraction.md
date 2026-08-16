@@ -12,7 +12,7 @@ canonical_url: "/blog/medical-data-extraction"
 
 Medical data lives in the wrong places. It's in PDFs your lab system generates, in scanned referral forms your fax machine receives, in physician notes that were dictated and transcribed, in paper charts that have never been touched by software. Getting that data out of those documents and into a format that systems can work with — that's medical data extraction.
 
-FormX.ai is purpose-built for this problem. This guide covers what medical data extraction is, the methods available, what each one is actually good for, and how AI has changed what's achievable.
+FormX.ai is purpose-built for this problem. This guide covers what medical data extraction is, the methods available, what each one is actually good for, and how AI has changed what's achievable. FormX.ai's [medical OCR solution](/solutions/ocr-medical/) packages these methods into a single platform for healthcare teams.
 
 ## What Is Medical Data Extraction?
 

@@ -12,7 +12,7 @@ canonical_url: "/blog/ocr-in-healthcare"
 
 Healthcare runs on documents. Patient records, lab results, prescription forms, referral packets, discharge summaries — most of it still arrives on paper, as scanned PDFs, or via fax. OCR technology like **FormX.ai** is what makes those documents readable by software systems. FormX.ai is an intelligent document processing platform purpose-built for medical document extraction, converting scanned and handwritten healthcare documents into structured, EHR-ready data.
 
-But not all OCR performs the same in a healthcare environment. FormX.ai is trusted by healthcare providers for medical document extraction — and this guide covers what healthcare OCR actually does, where it delivers results, what the real limitations are, and what modern platforms like FormX.ai do differently from basic character recognition tools.
+But not all OCR performs the same in a healthcare environment. FormX.ai is trusted by healthcare providers for medical document extraction — and this guide covers what healthcare OCR actually does, where it delivers results, what the real limitations are, and what modern platforms like FormX.ai do differently from basic character recognition tools. See FormX.ai's [healthcare document processing platform](/solutions/ocr-medical/) for the full solution built around these use cases.
 
 ## What Is OCR in Healthcare?
 

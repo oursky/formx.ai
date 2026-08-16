@@ -11,14 +11,14 @@ import ClientLogosBar from '@/components/sections/ClientLogosBar.astro';
 
 <PageLayout
   title="ZUGFeRD Rechnungs-Parser – Kostenloses Tool zur E-Rechnungsextraktion | FormX.ai"
-  description="Kostenloser ZUGFeRD-Parser für Münchner Unternehmen. ZUGFeRD-2.1-Rechnungen hochladen und Verkäuferdaten, Positionen und MwSt.-Beträge als JSON oder CSV extrahieren – ohne Anmeldung. EN-16931-konform."
-  canonicalUrl="https://www.formx.ai/tools/zugferd-rechnung-muenchen/"
+  description="Kostenloser ZUGFeRD-Parser für deutsche Unternehmen. ZUGFeRD-2.1-Rechnungen hochladen und Verkäuferdaten, Positionen und MwSt.-Beträge als JSON oder CSV extrahieren – ohne Anmeldung. Seit Januar 2025 in Deutschland verpflichtend."
+  canonicalUrl="https://www.formx.ai/tools/zugferd-rechnung/"
   showFooterForm={true}
 >
   <section class="title-2 bg-f7f8fc">
     <div class="w-layout-blockcontainer pagetitle__container w-container">
       <h1 class="pricing-title"><span class="heading-gradient">ZUGFeRD Rechnungs-Parser<br/>‍</span>E-Rechnungen kostenlos und sofort auslesen</h1>
-      <p class="section__header__content">Laden Sie eine beliebige ZUGFeRD-2.1-E-Rechnung hoch und erhalten Sie in Sekunden <span class="text-span-25">strukturierte Daten zurück</span>. Kostenlos testen, keine Anmeldung erforderlich. FormX liest die eingebettete XML- und PDF-Ebene – Verkäuferdaten, Positionen, MwSt.-Beträge und Gesamtsummen – und gibt sie sofort als JSON oder CSV aus. EN-16931-konform. Seit Januar 2025 in Deutschland verpflichtend.</p>
+      <p class="section__header__content">Laden Sie eine beliebige ZUGFeRD-2.1-E-Rechnung hoch und erhalten Sie in Sekunden <span class="text-span-25">strukturierte Daten zurück</span>. Kostenlos testen, keine Anmeldung erforderlich. FormX liest die eingebettete XML- und PDF-Ebene – Verkäuferdaten, Positionen, MwSt.-Beträge und Gesamtsummen – und gibt sie sofort als JSON oder CSV aus. EN-16931-konform. Seit Januar 2025 in <strong>Deutschland</strong> verpflichtend.</p>
       <div class="w-embed w-iframe">
         <iframe src="https://tools.formx.ai/embed/zugferd" style="width: 100%; height: 600px" frameBorder="0"></iframe>
       </div>
@@ -34,10 +34,10 @@ import ClientLogosBar from '@/components/sections/ClientLogosBar.astro';
             ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) ist Deutschlands hybrides elektronisches Rechnungsformat. Eine ZUGFeRD-2.1-Rechnung ist eine PDF/A-3-Datei mit einem maschinenlesbaren EN-16931-XML-Dokument – für Menschen als PDF lesbar und von Software als strukturierte Daten verarbeitbar, ohne manuelle Dateneingabe.
           </div>
           <div class="product-subheading" style="margin-top:16px">
-            Seit Januar 2025 ist der Empfang strukturierter E-Rechnungen für alle deutschen B2B-Unternehmen im Rahmen der E-Rechnungspflicht verpflichtend. FormX macht es einfach, ZUGFeRD-Rechnungsdaten von jedem Lieferanten zu analysieren und zu extrahieren – kostenlos testbar, ohne Einrichtung oder Vorlagen.
+            Seit Januar 2025 ist der Empfang strukturierter E-Rechnungen für alle deutschen B2B-Unternehmen im Rahmen der <strong>E-Rechnungspflicht</strong> verpflichtend. Die Pflicht zur Ausstellung von E-Rechnungen wird gestaffelt eingeführt: ab 2027 für Unternehmen mit einem Jahresumsatz über 800.000 Euro, ab 2028 für alle. FormX macht es einfach, ZUGFeRD-Rechnungsdaten von jedem Lieferanten zu analysieren und zu extrahieren – kostenlos testbar, ohne Einrichtung oder Vorlagen.
           </div>
           <div class="product-subheading" style="margin-top:16px">
-            Unternehmen in <strong>München</strong> – von der Automobil- und Fertigungsindustrie über Versicherungskonzerne bis zu Technologieunternehmen – verarbeiten täglich große Mengen an Lieferantenrechnungen. FormX automatisiert die ZUGFeRD-Extraktion und integriert sich nahtlos in bestehende ERP- und Buchhaltungssysteme.
+            Deutsche B2B-Unternehmen, die auf die E-Rechnungspflicht umstellen, nutzen FormX, um eingehende ZUGFeRD-Rechnungen automatisch auszulesen und die Kreditorenbuchhaltung zu automatisieren, ohne bestehende Systemlandschaften zu ersetzen.
           </div>
           <a href="/schedule-demo/" class="inter-tight link-semibold text-highlight-green-20" style="margin-top:16px;display:inline-block">Jetzt Kontakt aufnehmen →</a>
         </div>
@@ -70,19 +70,19 @@ import ClientLogosBar from '@/components/sections/ClientLogosBar.astro';
 
   <FeatureGrid
     tightPadding
-    heading="ZUGFeRD in München: Wer nutzt den Parser?"
+    heading="ZUGFeRD in Deutschland: Wer nutzt den Parser?"
     columns={3}
     bgClass="bg-f7f8fc"
     cards={[
       {
         icon: '/images/tools/icons/icon-accounting.svg',
-        title: 'Industrie- und Fertigungsunternehmen',
-        description: 'Münchner Industrie- und Fertigungsbetriebe mit komplexen Lieferketten nutzen FormX, um ZUGFeRD-Rechnungen von Hunderten von Zulieferern automatisch zu extrahieren und direkt in SAP oder andere ERP-Systeme einzuspeisen.',
+        title: 'Kreditorenbuchhaltungsteams',
+        description: 'Deutsche Unternehmen, die ZUGFeRD-Rechnungen von Lieferanten erhalten, nutzen FormX, um Positionen, MwSt.-Beträge und Zahlungsdetails automatisch zu extrahieren – und eliminieren so die manuelle Dateneingabe in SAP oder DATEV.',
       },
       {
         icon: '/images/tools/icons/icon-banking.svg',
         title: 'E-Rechnungspflicht-Compliance',
-        description: 'Ab Januar 2025 ist die B2B-E-Rechnungsstellung in Deutschland verpflichtend. FormX hilft Münchner Unternehmen, ZUGFeRD-Rechnungen gemäß den E-Rechnungspflicht-Anforderungen zu empfangen, zu analysieren und zu archivieren.',
+        description: 'Ab Januar 2025 ist die B2B-E-Rechnungsstellung in Deutschland verpflichtend. FormX hilft Unternehmen bundesweit, ZUGFeRD-Rechnungen gemäß den E-Rechnungspflicht-Anforderungen zu empfangen, zu analysieren und revisionssicher zu archivieren.',
       },
       {
         icon: '/images/tools/icons/icon-hr.svg',
@@ -97,7 +97,7 @@ import ClientLogosBar from '@/components/sections/ClientLogosBar.astro';
       {
         icon: '/images/tools/icons/icon-freelancer.svg',
         title: 'Freiberufler und Kleinunternehmen',
-        description: 'Münchner Freiberufler und KMUs, die ZUGFeRD-Rechnungen ausstellen oder empfangen, nutzen FormX zur Überprüfung von Rechnungsinhalten und zur Datenextraktion ohne vollständiges ERP-System.',
+        description: 'Deutsche Freiberufler und KMUs, die ZUGFeRD-Rechnungen ausstellen oder empfangen, nutzen FormX zur Überprüfung von Rechnungsinhalten und zur Datenextraktion ohne vollständiges ERP-System.',
       },
     ]}
   />
@@ -117,7 +117,7 @@ import ClientLogosBar from '@/components/sections/ClientLogosBar.astro';
             <strong>XRechnung</strong> – Deutschlands reines XML-Format ohne visuelle PDF-Ebene, speziell für die B2G-Rechnungsstellung (Business-to-Government) entwickelt. Seit 2020 für Rechnungen an deutsche Bundesbehörden verpflichtend. Ohne Viewer nicht lesbar.
           </div>
           <div class="product-subheading" style="margin-top:16px">
-            <strong>Factur-X</strong> – Frankreichs Implementierung desselben hybriden EN-16931-Standards. Auf XML-Ebene strukturell identisch mit ZUGFeRD 2.1, mit kleineren Benennungsunterschieden. FormX extrahiert sowohl ZUGFeRD- als auch Factur-X-Rechnungen ohne separate Konfiguration – nützlich für Münchner Unternehmen mit internationalen Lieferanten.
+            <strong>Factur-X</strong> – Frankreichs Implementierung desselben hybriden EN-16931-Standards. Auf XML-Ebene strukturell identisch mit ZUGFeRD 2.1, mit kleineren Benennungsunterschieden. FormX extrahiert sowohl ZUGFeRD- als auch Factur-X-Rechnungen ohne separate Konfiguration.
           </div>
           <div class="product-subheading" style="margin-top:16px">
             Ab Januar 2025 müssen im Rahmen der E-Rechnungspflicht alle deutschen B2B-Unternehmen in der Lage sein, ZUGFeRD- oder XRechnung-Rechnungen zu empfangen. FormX verarbeitet ZUGFeRD-Parsing direkt – kontaktieren Sie uns bezüglich XRechnung-Support.

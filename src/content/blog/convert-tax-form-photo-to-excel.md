@@ -19,7 +19,7 @@ canonical_url: "/blog/convert-tax-form-photo-to-excel"
 
 You can convert a photo of a W-2, P60, PAYG summary, or 1099-NEC to Excel in seconds using a form-specific extraction tool. Upload the photo, download the structured file. No typing required, and no account needed.
 
-This guide compares three approaches in order of accuracy, walks through the step-by-step process for the fastest method, and explains what makes tax form photos harder to extract than standard documents.
+This guide compares three approaches in order of accuracy, walks through the step-by-step process for the fastest method, and explains what makes tax form photos harder to extract than standard documents. If you want a full comparison of vendors rather than just the FormX walkthrough, see our [tax form extraction tools comparison](/blog/best-tax-form-extraction-tools/).
 
 ## **Three Methods Compared**
 

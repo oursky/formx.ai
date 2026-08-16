@@ -42,7 +42,7 @@ With so many data extraction software available now, it can be difficult to unde
 
 Powered by OCR and Machine Learning, FormX is a uniquely intelligent tool in that it can extract data from images and PDFs. The AI capabilities that it offers mean that this tool is not only trained to process certain document types but can also be expanded upon by users to suit their own needs. It can extract tables and a variety of data fields, such as date, time, address, phone number, product information, etc., for businesses to eliminate manual data entry.
 
-It comes with pre-trained extractors for some of the most widely processed documents such as [IDs and passports](/solutions/id-card-ocr/), [receipts](/solutions/receipts/), proof of address documents, and [invoices](/solutions/invoice-ocr-api/). To create your own no-code extractors that suit other kinds of documents, you simply upload a master image, label the data fields and test the extractor.
+It comes with pre-trained extractors for some of the most widely processed documents such as [IDs and passports](/solutions/id-card-ocr/), [receipts](/solutions/receipts/), proof of address documents, and [invoices](/solutions/invoice-ocr-api/). Tax forms are a dedicated category of their own — see the [W-2 extractor](/tools/w2-extractor/) and [1099 extractor](/tools/1099-extractor/) for form-specific extraction tools, or the [full comparison of tax form extraction tools](/blog/best-tax-form-extraction-tools/) if you're evaluating options. To create your own no-code extractors that suit other kinds of documents, you simply upload a master image, label the data fields and test the extractor.
 
 ![FormX labeling interface](/images/blog/6604f2811f1dc4c738a67929_63ef0b0fadd38babf89bc880_labeling.png)
 

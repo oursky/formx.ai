@@ -73,4 +73,4 @@ FormX is purpose-built for structured financial documents like the 1099-NEC:
 - Returns normalized JSON with per-field confidence scores
 - Batch and async endpoints for 1099-season volume, pay-as-you-go pricing
 
-*Related reading: [1099-NEC OCR API](/blog/1099-nec-ocr-api/) · [1099-NEC extraction guide](/blog/1099-nec-extraction-guide/) · [Best tax form extraction tools](/blog/best-tax-form-extraction-tools/)*
+*Related reading: [1099-NEC OCR API](/blog/1099-nec-ocr-api/) · [Best tax form extraction tools](/blog/best-tax-form-extraction-tools/)*

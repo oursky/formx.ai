@@ -458,6 +458,36 @@
   status = 301
 
 # ---------------------------------------------------------------------------
+# ZUGFeRD city page consolidation (SEO review 2026-08-05)
+# City qualifiers had zero search demand and zero impressions in 31 days.
+# ---------------------------------------------------------------------------
+
+[[redirects]]
+  from = "/tools/zugferd-rechnung-berlin"
+  to = "/tools/zugferd-rechnung/"
+  status = 301
+
+[[redirects]]
+  from = "/tools/zugferd-rechnung-frankfurt"
+  to = "/tools/zugferd-rechnung/"
+  status = 301
+
+[[redirects]]
+  from = "/tools/zugferd-rechnung-koeln"
+  to = "/tools/zugferd-rechnung/"
+  status = 301
+
+[[redirects]]
+  from = "/tools/zugferd-rechnung-muenchen"
+  to = "/tools/zugferd-rechnung/"
+  status = 301
+
+[[redirects]]
+  from = "/tools/zugferd-rechnung-deutschland"
+  to = "/tools/zugferd-rechnung/"
+  status = 301
+
+# ---------------------------------------------------------------------------
 # Blog slug renames (1:1 remaps to a different slug)
 # force = true needed where the source post still exists as a static file
 # ---------------------------------------------------------------------------
@@ -467,6 +497,11 @@
   to = "/blog/convert-pdf-to-google-sheets"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/1099-nec-extraction-guide"
+  to = "/blog/1099-nec-ocr-api/"
+  status = 301
 
 [[redirects]]
   from = "/blog/5-best-ocr-software-of-2021-extract-text-from-images"
