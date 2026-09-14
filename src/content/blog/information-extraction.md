@@ -88,7 +88,7 @@ Breaking down a text into smaller units/chunks called tokens. They are typically
 
 #### **Parts of Speech Tagging**
 
-Parts of Speech (POS) tagging in NLP involves assigning specific grammatical categories or "tags'' to each word in a sentence. POS does everything from providing information about the syntactic role and grammatical function to contextual relationships of words within the sentence.
+Parts of Speech (POS) tagging in NLP involves assigning specific grammatical categories or "tags" to each word in a sentence. POS does everything from providing information about the syntactic role and grammatical function to contextual relationships of words within the sentence.
 
 #### **Sentiment Analysis**
 
