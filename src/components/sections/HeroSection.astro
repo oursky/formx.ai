@@ -46,7 +46,7 @@ const {
 } = Astro.props;
 ---
 
-<div class={`section product-hero ${bgClass}`.trim()}>
+<div class={`section product-hero ${bgClass}`.trim()} data-plausible-section="hero">
   <div class="container-default w-container min-w-0 max-w-full">
     <div class="product-hero-wrapper min-w-0">
       <div class={`hero-content-block${centered ? ' hero-content-block-centered' : ''}`}>

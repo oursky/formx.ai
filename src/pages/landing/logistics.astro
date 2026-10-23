@@ -205,6 +205,7 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
         body: new URLSearchParams(new FormData(formEl)).toString()
       })
         .then(function() {
+          if (window.plausible) window.plausible('contact-form-submit', { props: { location: 'landing-hero' } });
           formEl.style.display = 'none';
           if (done) done.style.display = 'block';
           if (redirectUrl) setTimeout(function() { window.location.href = redirectUrl; }, 1500);

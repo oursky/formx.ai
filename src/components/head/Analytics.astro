@@ -13,14 +13,50 @@
     };
 </script>
 <script>
-  var toTag = [{ elementId: 'primary-cta-b', classes: 'plausible-event-name=Signup' }];
+  // Conversion tracking, same model as authgear.com (see docs/plausible-tagging-plan.md):
+  // a few canonical events, each with a `location` prop naming the button. Links are
+  // tagged here at load time, so a CTA anywhere on the site (header, tool pages, blog
+  // markdown) is counted without its own classes. script.tagged-events.js sends the click.
+  //
+  // location = the link's data-plausible-location, else `<page>-<section>`, where section
+  // comes from the nearest data-plausible-section, the header, footer or blog body.
+  var CONVERSION_LINKS = [
+    { event: 'signup', match: function (url) { return /formextractorai\.com$/.test(url.hostname) && url.pathname.indexOf('/signup') === 0; } },
+    { event: 'login', match: function (url) { return /formextractorai\.com$/.test(url.hostname) && url.pathname.indexOf('/login') === 0; } },
+    {
+      event: 'get-demo',
+      match: function (url) {
+        return (url.hostname === location.hostname && url.pathname.replace(/\/$/, '') === '/schedule-demo') || url.hostname === 'calendly.com';
+      },
+    },
+  ];
+
+  function pageType(path) {
+    if (path === '/') return 'home';
+    var first = path.split('/')[1];
+    var types = { tools: 'tool', blog: 'post', pricing: 'pricing', solutions: 'solution', landing: 'landing', 'customer-stories': 'story', 'whats-new': 'whats-new', 'schedule-demo': 'schedule-demo' };
+    return types[first] || 'page';
+  }
+
+  function linkLocation(el) {
+    var explicit = el.closest('[data-plausible-location]');
+    if (explicit) return explicit.getAttribute('data-plausible-location');
+    if (el.closest('.header')) return 'nav-header';
+    var section = el.closest('[data-plausible-section]');
+    var name = section ? section.getAttribute('data-plausible-section') : el.closest('.footer') ? 'footer' : el.closest('.w-richtext') ? 'inline' : 'body';
+    return pageType(location.pathname) + '-' + name;
+  }
+
   document.addEventListener('DOMContentLoaded', function (_e) {
-    toTag.forEach(function (tagObject) {
-      var element = document.getElementById(tagObject.elementId);
-      if (element) {
-        tagObject.classes.split(' ').forEach(function (className) {
-          element.classList.add(className);
-        });
+    document.querySelectorAll('a[href]').forEach(function (el) {
+      var url;
+      try { url = new URL(el.getAttribute('href'), location.href); } catch (_err) { return; }
+      for (var i = 0; i < CONVERSION_LINKS.length; i++) {
+        if (CONVERSION_LINKS[i].match(url)) {
+          el.classList.add('plausible-event-name--' + CONVERSION_LINKS[i].event);
+          el.classList.add('plausible-event-location--' + linkLocation(el));
+          return;
+        }
       }
     });
   });

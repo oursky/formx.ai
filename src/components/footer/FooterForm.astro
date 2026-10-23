@@ -26,7 +26,7 @@ const resolvedCtaHref = ctaHref !== undefined ? ctaHref : SIGNUP_URL;
 const resolvedCtaText = ctaText ?? 'Start for Free ->';
 ---
 
-<section class="bg-f7f8fc">
+<section class="bg-f7f8fc" data-plausible-section="footer-form">
 <div
   class="footer-with-form -mt-[60px] max-[767px]:-mt-10 bg-transparent"
 >
@@ -159,6 +159,7 @@ const resolvedCtaText = ctaText ?? 'Start for Free ->';
         body: new URLSearchParams(new FormData(formEl)).toString()
       })
         .then(function() {
+          if (window.plausible) window.plausible('contact-form-submit', { props: { location: 'footer-form' } });
           formEl.style.display = 'none';
           if (done) done.style.display = 'block';
           if (redirectUrl) setTimeout(function() { window.location.href = redirectUrl; }, 1500);

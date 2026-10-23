@@ -15,7 +15,7 @@ interface Props {
 const { heading, description, ctaPrimary, ctaSecondary, bgClass = 'bg-green-gradient' } = Astro.props;
 ---
 
-<div class={`section product-section ${bgClass}`.trim()}>
+<div class={`section product-section ${bgClass}`.trim()} data-plausible-section="cta-card">
   <div class="container-default w-container">
     <div class="card-xl card-bg-green-shape">
       <div class="card-xl-vertical-wrap text-center">
