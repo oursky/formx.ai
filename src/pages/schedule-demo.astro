@@ -93,6 +93,27 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
       formEl.addEventListener('submit', function(e) {
         e.preventDefault();
         var wform = formEl.closest('.w-form');
+        // Netlify adds the reCAPTCHA widget at deploy time. If it is on the page
+        // but not ticked, ask the visitor instead of sending a submission that
+        // Netlify will not save.
+        var recaptcha = formEl.querySelector('[name="g-recaptcha-response"]');
+        if (recaptcha && !recaptcha.value) {
+          var hint = formEl.querySelector('.recaptcha-hint');
+          if (!hint) {
+            hint = document.createElement('p');
+            hint.className = 'recaptcha-hint';
+            hint.setAttribute('role', 'alert');
+            hint.style.cssText = 'color:#b42318;margin:0 0 12px;font-size:14px';
+            hint.textContent = 'Please tick “I’m not a robot” before submitting.';
+            // Netlify rewrites the widget markup at deploy time, so anchor the
+            // message to the submit button instead of the widget element.
+            var submitBtn = formEl.querySelector('[type="submit"]');
+            submitBtn.parentNode.insertBefore(hint, submitBtn);
+          }
+          return;
+        }
+        var oldHint = formEl.querySelector('.recaptcha-hint');
+        if (oldHint) oldHint.remove();
         var done = wform && wform.querySelector('.w-form-done');
         var fail = wform && wform.querySelector('.w-form-fail');
         var redirectUrl = formEl.getAttribute('data-redirect');
