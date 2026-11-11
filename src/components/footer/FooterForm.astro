@@ -163,7 +163,7 @@ const resolvedCtaText = ctaText ?? 'Start for Free ->';
           hint.className = 'recaptcha-hint';
           hint.setAttribute('role', 'alert');
           hint.style.cssText = 'color:#b42318;margin:0 0 12px;font-size:14px';
-          hint.textContent = 'Please tick “I’m not a robot” before submitting.';
+          hint.textContent = 'Please tick the box above to confirm you’re human.';
           // Netlify rewrites the widget markup at deploy time, so anchor the
           // message to the submit button instead of the widget element.
           var submitBtn = formEl.querySelector('[type="submit"]');
