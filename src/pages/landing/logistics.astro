@@ -7,7 +7,6 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
   title="Simplify & Automate Your Logistics Operations | FormX.ai"
   description="Automate document processing and eliminate manual tasks—save time, reduce errors, and streamline your workflow."
   canonicalUrl="https://www.formx.ai/landing/logistics/"
-  showFooterForm={true}
 >
   <div class="section product-hero bg-logistic">
     <div class="container-default w-container">
@@ -30,6 +29,7 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
               name="schedule-demo"
               netlify
               netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
               data-redirect={DEMO_CALENDLY_URL}
               method="post"
               class="form-3"
@@ -88,6 +88,7 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
                   data-name="Field"
                   class="form-input form-text-field w-input"></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <input
                 type="submit"
                 data-wait="Please wait..."
@@ -196,6 +197,27 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
     formEl.addEventListener('submit', function(e) {
       e.preventDefault();
       var wform = formEl.closest('.w-form');
+      // Netlify adds the reCAPTCHA widget at deploy time. If it is on the page
+      // but not ticked, ask the visitor instead of sending a submission that
+      // Netlify will not save.
+      var recaptcha = formEl.querySelector('[name="g-recaptcha-response"]');
+      if (recaptcha && !recaptcha.value) {
+        var hint = formEl.querySelector('.recaptcha-hint');
+        if (!hint) {
+          hint = document.createElement('p');
+          hint.className = 'recaptcha-hint';
+          hint.setAttribute('role', 'alert');
+          hint.style.cssText = 'color:#b42318;margin:0 0 12px;font-size:14px';
+          hint.textContent = 'Please tick the box above to confirm you’re human.';
+          // Netlify rewrites the widget markup at deploy time, so anchor the
+          // message to the submit button instead of the widget element.
+          var submitBtn = formEl.querySelector('[type="submit"]');
+          submitBtn.parentNode.insertBefore(hint, submitBtn);
+        }
+        return;
+      }
+      var oldHint = formEl.querySelector('.recaptcha-hint');
+      if (oldHint) oldHint.remove();
       var done = wform && wform.querySelector('.w-form-done');
       var fail = wform && wform.querySelector('.w-form-fail');
       var redirectUrl = formEl.getAttribute('data-redirect');
@@ -204,7 +226,8 @@ import { DEMO_CALENDLY_URL } from '@/lib/constants';
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(new FormData(formEl)).toString()
       })
-        .then(function() {
+        .then(function(res) {
+          if (!res.ok) throw new Error('Form submission rejected: ' + res.status);
           if (window.plausible) window.plausible('contact-form-submit', { props: { location: 'landing-hero' } });
           formEl.style.display = 'none';
           if (done) done.style.display = 'block';
