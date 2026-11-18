@@ -5,7 +5,7 @@ description: "FormX Data Processing Agreement for customers processing personal 
 canonicalUrl: "https://www.formx.ai/dpa/"
 ---
 
-**Last updated: 2026-05-31**
+**Last updated: 2026-11-18**
 
 This Data Processing Agreement ("DPA") forms part of the agreement between Skymakers Digital Limited ("FormX," "Processor") and the customer entity that has accepted the FormX Terms of Service ("Controller"), collectively "the Parties."
 
@@ -181,10 +181,11 @@ FormX implements the following measures to protect Personal Data:
 
 **Data Minimisation and Retention**
 - Documents submitted via the synchronous API are not stored in permanent storage
-- Documents submitted via the asynchronous API are stored temporarily with encryption and deleted upon result retrieval or job expiry
+- Documents submitted via the asynchronous API are stored temporarily with encryption for seven (7) days after processing completes, after which they are automatically deleted
 - Configurable retention periods with automated soft-delete (logical removal) followed by scheduled hard-delete (physical removal from storage)
 - Explicit customer deletion requests tracked and fulfilled with expiry management
 - No Personal Data is used to train AI models without explicit customer consent
+- Retention periods for each type of data are described in FormX's [data retention documentation](https://help.formx.ai/docs/data-retention), as updated from time to time; any update will not materially reduce the protection of Personal Data provided under this DPA
 
 **Audit Logging**
 - All API requests logged (endpoint, method, user identity, workspace, timestamp)
