@@ -5,7 +5,7 @@ description: "FormX Sub-Processors list and other vendor relationships."
 canonicalUrl: "https://www.formx.ai/sub-processors/"
 ---
 
-**Last updated: 2026-05-31**
+**Last updated: 2026-11-18**
 
 This page lists the third-party Sub-processors engaged by FormX (Skymakers Digital Limited) to deliver the FormX Services. Each Sub-processor is bound by data-protection obligations substantially equivalent to those in the [Data Processing Agreement](/dpa/).
 
@@ -18,7 +18,7 @@ The vendors in the table below Process Personal Data on Customer's behalf in con
 | Sub-Processor | Entity | Region | Purpose | Personal Data |
 |---|---|---|---|---|
 | Google Cloud Platform | Google LLC | United States, Taiwan, Singapore | Cloud hosting and infrastructure (compute, managed databases, object storage, networking) | All Personal Data processed by the Services |
-| Microsoft Azure | Microsoft Corporation | United States | AI model inference for document processing (where enabled) | Document Content submitted for extraction (where Azure inference is enabled) |
+| Microsoft Azure | Microsoft Corporation | United States, Hong Kong, Singapore, Japan | AI model inference for document processing ([where enabled](#customer-configured-integrations-not-formx-sub-processors)) | Document Content submitted for extraction (where Azure inference is enabled) |
 | Postmark | ActiveCampaign, LLC | United States | Transactional email delivery for the FormX portal (account invitations, password resets, billing and security notifications) | Recipient email address; message content |
 | Stripe | Stripe, Inc. | United States | Subscription billing and payment processing | Customer billing contact details; payment-card data (stored by Stripe, not by FormX) |
 | Sentry | Functional Software, Inc. d/b/a Sentry | United States | Application error and exception monitoring across the FormX Services and portal | Error and stack-trace data; may incidentally contain limited Personal Data from request context |
@@ -46,6 +46,7 @@ Categories include:
 - **External API endpoints (webhooks)** — Customer-controlled destinations to which FormX sends Parsed Content or other Service output
 - **Customer-controlled cloud storage** (AWS S3, Google Cloud Storage, Azure Blob Storage, or equivalent) for Customer-controlled storage of Parsed Content and other Service output
 - **OAuth source connectors** — Customer-authorised integrations with cloud-storage and document services (currently Google Drive) used to fetch source documents into FormX for processing, using credentials granted by the Customer to FormX through the third-party service's OAuth flow
+- **AI model inference and OCR providers** — Customers may configure the AI model inference and OCR used to process their documents to run on a service of their choice, including OpenAI, Anthropic (Claude), AWS Bedrock, OpenRouter, or a specific FormX regional deployment (currently United States, Taiwan, Hong Kong, and Singapore)
 
 ## Subscribing to Changes
 
