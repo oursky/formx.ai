@@ -1,0 +1,50 @@
+---
+// Renders one of the standalone Clark pages (src/clark/*.html) exactly as
+// approved: its own <head> content (CSS, fonts), <template> and scripts are
+// output untouched. The site's main CSS is deliberately NOT loaded here, so
+// the design is not affected. Added on top: favicon, site analytics, cookie
+// banner, and the booking form hook-up to Netlify Forms.
+import Analytics from '@/components/head/Analytics.astro';
+import CookieConsent from '@/components/head/CookieConsent.astro';
+
+interface Props {
+  html: string;
+}
+
+const { html } = Astro.props;
+const lang = html.match(/<html[^>]*\slang="([^"]+)"/i)?.[1] ?? 'en';
+const head = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1];
+const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/i)?.[1];
+if (!head || !body) throw new Error('ClarkPage: could not find <head> or <body> in the page HTML');
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <Fragment set:html={head} />
+    <link href="/images/ui/Favicon_32x32.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="/images/ui/Favicon_256x256.png" rel="apple-touch-icon" />
+    <Analytics />
+    <CookieConsent />
+  </head>
+  <body>
+    <Fragment set:html={body} />
+
+    <!--
+      Declares the "clark-demo" form for Netlify Forms. Netlify only detects forms
+      in the built HTML, and the visible form lives inside the page <template>,
+      so this hidden copy lists every field Netlify should store.
+      /js/clark-form.js sends the visible form's entries under this name.
+    -->
+    <form name="clark-demo" method="post" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="clark-demo" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="text" name="team" />
+      <input type="text" name="page" />
+      <input type="text" name="bot-field" />
+    </form>
+    <script is:inline src="/js/clark-form.js"></script>
+  </body>
+</html>
