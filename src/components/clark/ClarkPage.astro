@@ -6,6 +6,7 @@
 // banner, and the booking form hook-up to Netlify Forms.
 import Analytics from '@/components/head/Analytics.astro';
 import CookieConsent from '@/components/head/CookieConsent.astro';
+import { prerenderClarkPage } from '@/lib/clark-prerender';
 
 interface Props {
   html: string;
@@ -14,8 +15,16 @@ interface Props {
 const { html } = Astro.props;
 const lang = html.match(/<html[^>]*\slang="([^"]+)"/i)?.[1] ?? 'en';
 const head = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1];
-const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/i)?.[1];
-if (!head || !body) throw new Error('ClarkPage: could not find <head> or <body> in the page HTML');
+const rawBody = html.match(/<body[^>]*>([\s\S]*)<\/body>/i)?.[1];
+if (!head || !rawBody) throw new Error('ClarkPage: could not find <head> or <body> in the page HTML');
+
+// Put the page's first render into <div id="page"> so crawlers that don't run
+// JavaScript can read the text. clark-runtime.js replaces it with the same
+// content on load. See src/lib/clark-prerender.ts.
+const PAGE_DIV = '<div id="page"></div>';
+if (rawBody.split(PAGE_DIV).length !== 2) throw new Error('ClarkPage: expected exactly one <div id="page"></div>');
+const firstRender = await prerenderClarkPage(html);
+const body = rawBody.replace(PAGE_DIV, () => `<div id="page">${firstRender}</div>`);
 ---
 
 <!doctype html>
