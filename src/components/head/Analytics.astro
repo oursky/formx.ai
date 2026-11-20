@@ -63,6 +63,50 @@
 </script>
 <!-- End Plausible -->
 
+<!--
+  Keep in-page links working when a tag adds a query to them. After cookie
+  consent, a GTM tag appends ?distinct_id=… to every link, so "#use-cases"
+  becomes "#use-cases?distinct_id=…". Everything after # is the section id, so
+  the browser finds no such section and doesn't scroll. Drop the "?…" from the
+  fragment, on click and when a page is opened with such a URL.
+-->
+<script is:inline>
+  (function () {
+    function sectionFor(hash) {
+      var q = hash.indexOf('?');
+      if (q < 2) return null; // no query in the fragment, or a bare "#?…"
+      var id = hash.slice(1, q);
+      try { id = decodeURIComponent(id); } catch (_err) {}
+      var el = document.getElementById(id);
+      return el ? { hash: hash.slice(0, q), el: el } : null;
+    }
+
+    document.addEventListener('click', function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || (a.target && a.target !== '_self')) return;
+      var url;
+      try { url = new URL(a.href); } catch (_err) { return; }
+      if (url.origin !== location.origin || url.pathname !== location.pathname) return;
+      var s = sectionFor(url.hash);
+      if (!s) return;
+      e.preventDefault();
+      if (location.hash === s.hash) s.el.scrollIntoView();
+      else location.hash = s.hash; // native jump: keeps ?query, smooth scroll, :target, history
+    });
+
+    function fixLandingUrl() {
+      var s = sectionFor(location.hash);
+      if (!s) return;
+      history.replaceState(history.state, '', location.pathname + location.search + s.hash);
+      s.el.scrollIntoView();
+    }
+    // Wait for load: Clark pages render their sections from a template after parsing.
+    if (document.readyState === 'complete') fixLandingUrl();
+    else window.addEventListener('load', fixLandingUrl);
+  })();
+</script>
+
 <!-- Google Tag Manager - gated by cookie consent (analytics category) -->
 <script is:inline type="text/plain" data-category="analytics">
   (function (w, d, s, l, i) {
