@@ -44,8 +44,12 @@ const body = rawBody.replace(PAGE_DIV, () => `<div id="page">${firstRender}</div
       in the built HTML, and the visible form lives inside the page <template>,
       so this hidden copy lists every field Netlify should store.
       /js/clark-form.js sends the visible form's entries under this name.
+
+      reCAPTCHA (same as the site's other demo forms, PR #24): Netlify replaces
+      the data-netlify-recaptcha div with Google's widget at deploy time, and
+      clark-form.js shows that widget inside the visible form.
     -->
-    <form name="clark-demo" method="post" netlify netlify-honeypot="bot-field" hidden>
+    <form name="clark-demo" method="post" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
       <input type="hidden" name="form-name" value="clark-demo" />
       <input type="text" name="name" />
       <input type="email" name="email" />
@@ -53,6 +57,18 @@ const body = rawBody.replace(PAGE_DIV, () => `<div id="page">${firstRender}</div
       <input type="text" name="team" />
       <input type="text" name="page" />
       <input type="text" name="bot-field" />
+      {
+        import.meta.env.DEV ? (
+          // Local preview only: Netlify doesn't run locally, so stand in for its
+          // deploy-time markup using Google's public test key (always passes).
+          <div>
+            <script is:inline src="https://www.google.com/recaptcha/api.js"></script>
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+          </div>
+        ) : (
+          <div data-netlify-recaptcha="true"></div>
+        )
+      }
     </form>
     <script is:inline src="/js/clark-form.js"></script>
   </body>
