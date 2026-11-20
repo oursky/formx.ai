@@ -152,7 +152,9 @@
     root = instantiate(Array.from(tplEl.content.childNodes), host, null);
     render();
     if (typeof comp.componentDidMount === 'function') comp.componentDidMount();
-    window.addEventListener('pagehide', () => { if (typeof comp.componentWillUnmount === 'function') comp.componentWillUnmount(); });
+    // Skip when the page is kept for Back/Forward (e.persisted): the browser pauses
+    // its timers and resumes them on return, so the animations carry on.
+    window.addEventListener('pagehide', (e) => { if (e.persisted) return; if (typeof comp.componentWillUnmount === 'function') comp.componentWillUnmount(); });
     return comp;
   }
 

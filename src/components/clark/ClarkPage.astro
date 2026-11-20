@@ -3,9 +3,11 @@
 // approved: its own <head> content (CSS, fonts), <template> and scripts are
 // output untouched. The site's main CSS is deliberately NOT loaded here, so
 // the design is not affected. Added on top: favicon, site analytics, cookie
-// banner, and the booking form hook-up to Netlify Forms.
+// banner, the site's SEO tags (canonical, Open Graph, Twitter) and the booking
+// form hook-up to Netlify Forms.
 import Analytics from '@/components/head/Analytics.astro';
 import CookieConsent from '@/components/head/CookieConsent.astro';
+import SEO from '@/components/head/SEO.astro';
 import { prerenderClarkPage } from '@/lib/clark-prerender';
 
 interface Props {
@@ -13,24 +15,46 @@ interface Props {
 }
 
 const { html } = Astro.props;
-const lang = html.match(/<html[^>]*\slang="([^"]+)"/i)?.[1] ?? 'en';
-const head = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1];
+
+// Only <html lang> is carried over and <body> is output bare, so refuse any
+// other attributes rather than silently dropping them from the approved design.
+const htmlAttrs = html.match(/<html([^>]*)>/i)?.[1] ?? '';
+if (htmlAttrs.replace(/\slang="[^"]*"/i, '').trim()) throw new Error(`ClarkPage: unsupported <html> attributes: ${htmlAttrs.trim()}`);
+const bodyAttrs = html.match(/<body([^>]*)>/i)?.[1] ?? '';
+if (bodyAttrs.trim()) throw new Error(`ClarkPage: unsupported <body> attributes: ${bodyAttrs.trim()}`);
+
+const lang = htmlAttrs.match(/\slang="([^"]+)"/i)?.[1] ?? 'en';
+const rawHead = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1];
 const rawBody = html.match(/<body[^>]*>([\s\S]*)<\/body>/i)?.[1];
-if (!head || !rawBody) throw new Error('ClarkPage: could not find <head> or <body> in the page HTML');
+if (!rawHead || !rawBody) throw new Error('ClarkPage: could not find <head> or <body> in the page HTML');
+
+// Title and description come from the page's own <head>; SEO.astro outputs
+// them again together with the canonical and social-sharing tags.
+const TITLE_RE = /<title>([\s\S]*?)<\/title>/i;
+const DESC_RE = /<meta\s+name="description"\s+content="([^"]*)"\s*\/?>/i;
+const title = rawHead.match(TITLE_RE)?.[1]?.trim();
+const description = rawHead.match(DESC_RE)?.[1];
+if (!title || !description) throw new Error('ClarkPage: page <head> needs a <title> and <meta name="description">');
+const decode = (s: string) => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+const head = rawHead.replace(TITLE_RE, '').replace(DESC_RE, '');
 
 // Put the page's first render into <div id="page"> so crawlers that don't run
 // JavaScript can read the text. clark-runtime.js replaces it with the same
 // content on load. See src/lib/clark-prerender.ts.
+// The snapshot is taken at phone width, so it is kept invisible (but in the
+// HTML for crawlers): otherwise desktop visitors could glimpse the phone
+// layout before clark-runtime.js swaps in the real one.
 const PAGE_DIV = '<div id="page"></div>';
 if (rawBody.split(PAGE_DIV).length !== 2) throw new Error('ClarkPage: expected exactly one <div id="page"></div>');
 const firstRender = await prerenderClarkPage(html);
-const body = rawBody.replace(PAGE_DIV, () => `<div id="page">${firstRender}</div>`);
+const body = rawBody.replace(PAGE_DIV, () => `<div id="page"><div data-clark-prerender style="visibility:hidden">${firstRender}</div></div>`);
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <Fragment set:html={head} />
+    <SEO title={decode(title)} description={decode(description)} />
     <link href="/images/ui/Favicon_32x32.png" rel="shortcut icon" type="image/x-icon" />
     <link href="/images/ui/Favicon_256x256.png" rel="apple-touch-icon" />
     <Analytics />

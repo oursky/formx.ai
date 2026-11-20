@@ -10,12 +10,17 @@
  *    the thank-you message but nothing is sent.
  *  - reCAPTCHA, as on the site's other demo forms (PR #24): Netlify puts
  *    Google's widget in the hidden "clark-demo" form at deploy time; this
- *    script shows it in the visible form, above the Send button. If it is on
- *    the page but not ticked, the visitor is asked to tick it and nothing is
- *    sent (Netlify would drop the entry). If it is missing (e.g. its script is
- *    blocked) the form still sends and Netlify decides, so nobody is locked out.
- *  - Valid entries are posted in the background; the page then shows its own
- *    thank-you message as before.
+ *    script shows it in the visible form, above the Send button. Netlify drops
+ *    entries without a ticked box but still replies "OK", so nothing is sent
+ *    unless the box is ticked:
+ *      - not ticked yet: the visitor is asked to tick it;
+ *      - still loading: the visitor is asked to wait a moment;
+ *      - could not load (e.g. blocked): the visitor is asked to email us.
+ *    On a deploy without reCAPTCHA (no widget in the hidden form) the form
+ *    sends as normal.
+ *  - The thank-you only shows once Netlify has accepted the entry. While
+ *    sending, the button says "Sending…"; if sending fails, the form stays and
+ *    an error with our email address shows instead.
  */
 (function () {
   'use strict';
@@ -23,6 +28,13 @@
   var FORM_NAME = 'clark-demo';
   var CAPTCHA_W = 304; // Google's widget size, in px
   var CAPTCHA_H = 78;
+  var MSG = {
+    tick: 'Please tick the box above to confirm you’re human.',
+    loading: 'The “I’m not a robot” box is still loading. Please try again in a moment.',
+    unavailable: 'The “I’m not a robot” box couldn’t load, so we can’t send this form. Please email us at hello@formx.ai.',
+    failed: 'Sorry, something went wrong while sending your details. Please try again or email us at hello@formx.ai.',
+    sending: 'Sending…'
+  };
 
   function clarkForm(el) {
     var form = el && el.closest && el.closest('#page form');
@@ -38,12 +50,24 @@
     form.insertBefore(p, form.firstChild);
   }
 
-  function showFailure(form) {
-    var msg = document.createElement('p');
-    msg.setAttribute('role', 'alert');
-    msg.style.cssText = 'margin:0;font-size:14px;color:#b42318';
-    msg.textContent = 'Sorry, something went wrong while sending your details. Please email us at hello@formx.ai.';
-    form.appendChild(msg);
+  // One message line above the Send button, for reCAPTCHA hints and errors.
+  function showMessage(form, text) {
+    var msg = form.querySelector('.clark-form-msg');
+    var button = form.querySelector('button');
+    if (!msg) {
+      if (!button) return;
+      msg = document.createElement('p');
+      msg.className = 'clark-form-msg';
+      msg.setAttribute('role', 'alert');
+      msg.style.cssText = 'margin:0;font-size:14px;color:#b42318';
+      button.parentNode.insertBefore(msg, button);
+    }
+    msg.textContent = text;
+  }
+
+  function clearMessage(form) {
+    var msg = form.querySelector('.clark-form-msg');
+    if (msg) msg.remove();
   }
 
   // ---- reCAPTCHA -----------------------------------------------------------
@@ -78,7 +102,8 @@
     box.appendChild(inner);
     button.parentNode.insertBefore(box, button);
 
-    var state = { id: null };
+    // id: Google's widget id once drawn; failed: the widget can't be drawn.
+    var state = { id: null, failed: false };
     form.__clarkCaptcha = state;
     fitCaptcha(box);
     if (window.ResizeObserver) new ResizeObserver(function () { if (box.isConnected) fitCaptcha(box); }).observe(box);
@@ -91,37 +116,30 @@
         try {
           state.id = window.grecaptcha.render(inner, {
             sitekey: sitekey,
-            callback: function () { clearHint(form); }
+            callback: function () { clearMessage(form); }
           });
-        } catch (err) { /* widget unavailable: the form still sends, Netlify decides */ }
+        } catch (err) {
+          state.failed = true;
+          box.remove();
+        }
         return;
       }
       if (++tries < 150) setTimeout(render, 100); // wait up to ~15s for Google's script
-      else box.remove(); // never loaded (e.g. blocked): don't leave an empty gap
+      else { state.failed = true; box.remove(); } // never loaded (e.g. blocked): don't leave an empty gap
     })();
   }
 
-  // The widget's answer, '' if not ticked, or null if there is no working widget.
-  function captchaResponse(form) {
+  // What to do about reCAPTCHA before sending:
+  //   { token: '...' } ticked, or { token: null } no reCAPTCHA on this deploy;
+  //   { block: MSG.x } don't send, show this message instead.
+  function captchaCheck(form) {
+    if (!captchaSource()) return { token: null };
     var state = form.__clarkCaptcha;
-    if (!state || state.id === null || !window.grecaptcha) return null;
-    try { return window.grecaptcha.getResponse(state.id) || ''; } catch (err) { return null; }
-  }
-
-  function showHint(form) {
-    if (form.querySelector('.recaptcha-hint')) return;
-    var hint = document.createElement('p');
-    hint.className = 'recaptcha-hint';
-    hint.setAttribute('role', 'alert');
-    hint.style.cssText = 'margin:0;font-size:14px;color:#b42318';
-    hint.textContent = 'Please tick the box above to confirm you’re human.';
-    var button = form.querySelector('button');
-    button.parentNode.insertBefore(hint, button);
-  }
-
-  function clearHint(form) {
-    var hint = form.querySelector('.recaptcha-hint');
-    if (hint) hint.remove();
+    if (!state || state.failed || (state.id !== null && !window.grecaptcha)) return { block: MSG.unavailable };
+    if (state.id === null) return { block: MSG.loading };
+    var token;
+    try { token = window.grecaptcha.getResponse(state.id); } catch (err) { return { block: MSG.unavailable }; }
+    return token ? { token: token } : { block: MSG.tick };
   }
 
   // ---- Form ----------------------------------------------------------------
@@ -138,28 +156,34 @@
     });
   }
 
+  function setSending(form, button, on) {
+    form.__clarkSending = on;
+    button.disabled = on;
+    if (on) { button.__clarkLabel = button.textContent; button.textContent = MSG.sending; }
+    else if (button.__clarkLabel) button.textContent = button.__clarkLabel;
+  }
+
   // Capture phase on document: runs before the page's own click handler on the
-  // button, so an invalid form can be stopped before the thank-you shows.
+  // button (which shows the thank-you), so that handler only runs once the
+  // entry has been accepted.
   document.addEventListener('click', function (e) {
     var button = e.target.closest && e.target.closest('button');
     var form = button && clarkForm(button);
     if (!form || button.closest('[aria-hidden="true"]')) return;
+
+    // Our own replayed click after a successful send: let the page show its thank-you.
+    if (form.__clarkSent) { form.__clarkSent = false; return; }
+
+    function hold() { e.preventDefault(); e.stopPropagation(); }
+
     prepare();
+    if (form.__clarkSending) { hold(); return; } // already sending: ignore extra clicks
 
-    if (!form.reportValidity()) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
+    if (!form.reportValidity()) { hold(); return; }
 
-    var token = captchaResponse(form);
-    if (token === '') { // widget is there but not ticked
-      e.preventDefault();
-      e.stopPropagation();
-      showHint(form);
-      return;
-    }
-    clearHint(form);
+    var check = captchaCheck(form);
+    if (check.block) { hold(); showMessage(form, check.block); return; }
+    clearMessage(form);
 
     // Read the values now: the page removes the inputs when it shows the thank-you.
     var data = new FormData(form);
@@ -172,8 +196,10 @@
     });
     body.append('page', location.pathname);
     body.append('bot-field', '');
-    if (token) body.append('g-recaptcha-response', token);
+    if (check.token) body.append('g-recaptcha-response', check.token);
 
+    hold();
+    setSending(form, button, true);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -182,8 +208,17 @@
       .then(function (res) {
         if (!res.ok) throw new Error('Form submission rejected: ' + res.status);
         if (window.plausible) window.plausible('contact-form-submit', { props: { location: 'clark-form' } });
+        setSending(form, button, false);
+        form.__clarkSent = true;
+        button.click(); // let the page's own handler show the thank-you
       })
-      .catch(function () { showFailure(form); });
+      .catch(function () {
+        setSending(form, button, false);
+        // A token can only be used once: reset the box so the visitor can tick it again.
+        var state = form.__clarkCaptcha;
+        if (check.token && state && state.id !== null) { try { window.grecaptcha.reset(state.id); } catch (err) { /* ignore */ } }
+        showMessage(form, MSG.failed);
+      });
   }, true);
 
   // Stop Enter-to-submit from reloading the page.

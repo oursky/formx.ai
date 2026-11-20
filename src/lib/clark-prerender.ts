@@ -52,12 +52,12 @@ export async function prerenderClarkPage(html: string): Promise<string> {
   const own: Record<PropertyKey, unknown> = { ...browserish };
   const pageWindow: any = new Proxy(window, {
     get(target, key) {
-      if (key in own) return own[key as string];
+      if (Object.prototype.hasOwnProperty.call(own, key)) return own[key as string];
       const v = Reflect.get(target, key);
       return typeof v === 'function' && !/^[A-Z]/.test(String(key)) ? v.bind(target) : v;
     },
     set(_target, key, value) { own[key as string] = value; return true; },
-    has(target, key) { return key in own || Reflect.has(target, key); },
+    has(target, key) { return Object.prototype.hasOwnProperty.call(own, key) || Reflect.has(target, key); },
   });
   // clientWidth is 0 in a non-layout DOM; the page reads it to pick the narrow layout.
   Object.defineProperty(document.documentElement, 'clientWidth', { value: SNAPSHOT_WIDTH, configurable: true });

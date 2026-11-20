@@ -1936,10 +1936,17 @@ class Component extends DCLogic {
   }
   flyUpdate() {
     const f = this.fly; if (!f || !f.el.isConnected) return;
-    const vh = Math.min(window.innerHeight || 800, 1000);
+    const vh = window.innerHeight || 800;
     const r = f.el.getBoundingClientRect();
     const narrow = (document.documentElement.clientWidth || window.innerWidth) <= 720;
-    const p = narrow ? 1 : Math.min(1, Math.max(0, (vh * 0.8 - r.top) / (vh * 0.75)));
+    // Starts as the panel comes on screen and finishes once all of it is on
+    // screen (or, if it is taller than the screen, once its top is just below
+    // the header), so visitors see the finished flowchart while reading it.
+    // Once played it doesn't rewind; it replays only after the panel has been
+    // scrolled back down out of view.
+    const startTop = vh * 0.85, endTop = Math.max(80, vh - r.height - 24);
+    let p = narrow ? 1 : Math.min(1, Math.max(0, (startTop - r.top) / Math.max(1, startTop - endTop)));
+    if (!narrow) { if (r.top > vh) f.pMax = 0; p = Math.max(p, f.pMax || 0); f.pMax = p; }
     const cl = (x) => Math.min(1, Math.max(0, x));
     const io = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
     const eo = (x) => 1 - Math.pow(1 - x, 3);
