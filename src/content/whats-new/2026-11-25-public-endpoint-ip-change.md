@@ -13,9 +13,10 @@ Update your allowlists with the **new** IPs below **before the DNS cutover windo
 
 ## Timeline
 
-**Update allowlists by:** Before 4 January 2027, 11:00 (Hong Kong time)
-
-**DNS cutover:** 4 January 2027 to 8 January 2027 (Hong Kong time), Monday–Friday — hostnames below switch to the new IPs during this period.
+| | When |
+| --- | --- |
+| **Update allowlists by** | **Before 4 January 2027, 11:00 (Hong Kong time)** |
+| **DNS cutover** | **4 January 2027 to 8 January 2027 (Hong Kong time), Monday–Friday** — hostnames below switch to the new IPs during this period |
 
 During and after the cutover window, some DNS resolvers may still return the previous IP for a few hours.
 
@@ -25,21 +26,36 @@ Add the **new** IP for each region you use.
 
 ### Global default
 
-* **Previous IP:** `35.201.226.173`
-* **New IP:** `104.199.211.182`
-* **Hostnames:** `formextractorai.com`, `worker.formextractorai.com`
+```text
+Previous: 35.201.226.173
+New:      104.199.211.182
+
+Hostnames:
+  formextractorai.com
+  worker.formextractorai.com
+```
 
 ### Singapore (`sg-gcp`)
 
-* **Previous IP:** `34.124.213.52`
-* **New IP:** `34.87.164.111`
-* **Hostnames:** `sg-gcp.formextractorai.com`, `sg-gcp.worker.formextractorai.com`
+```text
+Previous: 34.124.213.52
+New:      34.87.164.111
+
+Hostnames:
+  sg-gcp.formextractorai.com
+  sg-gcp.worker.formextractorai.com
+```
 
 ### United States (`us-gcp`)
 
-* **Previous IP:** `34.59.242.141`
-* **New IP:** `34.134.235.32`
-* **Hostnames:** `us-gcp.formextractorai.com`, `us-gcp.worker.formextractorai.com`
+```text
+Previous: 34.59.242.141
+New:      34.134.235.32
+
+Hostnames:
+  us-gcp.formextractorai.com
+  us-gcp.worker.formextractorai.com
+```
 
 ## Questions
 
