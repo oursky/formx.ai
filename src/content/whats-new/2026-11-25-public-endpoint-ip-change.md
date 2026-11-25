@@ -1,10 +1,10 @@
 ---
 title: "FormX public endpoint IP addresses are changing"
 description: "If your network allowlists FormX by IP, update your firewall or egress rules before the January 2027 DNS cutover. Hostnames, API paths, and tokens are not changing."
-date: 2026-12-01
+date: 2026-11-25
 tag: ANNOUNCEMENT
-featured_image: "/images/whats-new/2026-12-01-public-endpoint-ip-change.png"
-canonical_url: "/whats-new/2026-12-01-public-endpoint-ip-change/"
+featured_image: "/images/whats-new/2026-11-25-public-endpoint-ip-change.png"
+canonical_url: "/whats-new/2026-11-25-public-endpoint-ip-change/"
 ---
 
 We are updating the IP addresses used by FormX public hostnames (`*.formextractorai.com`). If your applications rely on outbound IP allowlisting, firewall rules, or other egress controls that reference our current IPs, you will need to update your configuration (including rules tied to IPs your resolvers return for FormX hostnames). FormX URLs, API paths, and tokens are **not** changing.
