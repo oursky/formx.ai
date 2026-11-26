@@ -278,8 +278,15 @@
     var from = window.pageYOffset, start = null, still = 0, frames = 0, stopped = false;
     var duration = instant || reduce ? 0 : Math.min(1000, 450 + Math.abs(spot() - from) / 20);
     function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-    function stop() { stopped = true; ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.removeEventListener(t, stop, true); }); }
-    ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, stop, true); });
+    var takeover = ['wheel', 'touchstart', 'keydown', 'pointerdown'];
+    function stop() { stopped = true; takeover.forEach(function (t) { window.removeEventListener(t, onTakeover, true); }); }
+    function onTakeover(e) {
+      // A press only counts on the page's scrollbar, or with the middle button
+      // (auto-scroll). Other clicks on the page leave the scroll running.
+      if (e.type === 'pointerdown' && e.button !== 1 && e.clientX < document.documentElement.clientWidth) return;
+      stop();
+    }
+    takeover.forEach(function (t) { window.addEventListener(t, onTakeover, true); });
     requestAnimationFrame(function step(now) {
       if (stopped || me !== currentScroll || ++frames > 240) return stop(); // at most ~4s
       if (start === null) start = now;
@@ -289,6 +296,23 @@
       if (t === 1) { if (Math.abs(window.pageYOffset - aim) <= 1) { if (++still > 12) return stop(); } else still = 0; }
       requestAnimationFrame(step);
     });
+  }
+
+  // Move keyboard focus to the section, so the next Tab carries on from there
+  // instead of from the link in the header. The section only takes focus for
+  // this (no focus ring, no scrolling) and goes back to normal once focus
+  // moves on.
+  function focusSection(el) {
+    if (el.hasAttribute('tabindex')) { try { el.focus({ preventScroll: true }); } catch (err) { /* ignore */ } return; }
+    var outline = el.style.outline;
+    el.setAttribute('tabindex', '-1');
+    el.style.outline = 'none';
+    el.addEventListener('blur', function tidy() {
+      el.removeEventListener('blur', tidy);
+      el.removeAttribute('tabindex');
+      el.style.outline = outline;
+    });
+    try { el.focus({ preventScroll: true }); } catch (err) { /* ignore */ }
   }
 
   // Clicks. Also handles links a tag has rewritten to "#section?distinct_id=…"
@@ -305,6 +329,7 @@
     if (!s) return;
     e.preventDefault();
     if (location.hash !== s.hash) history.pushState(history.state, '', location.pathname + location.search + s.hash);
+    focusSection(s.el);
     scrollToSection(s.el, false);
   }, true);
 
@@ -312,10 +337,25 @@
   // ?distinct_id=… after it): the browser jumps there before the chat demos
   // have settled, so settle onto the section once the page has loaded. The
   // site's ?distinct_id fix tidies the address on load first.
+  // Leave the page where it is when the visitor reloads or comes back with
+  // Back/Forward (the browser puts them back where they were), or when they
+  // have already scrolled the page themselves before it finished loading.
+  var scrolledByVisitor = false;
+  function onVisitorScroll(e) {
+    // A press only counts when it is on the page's scrollbar.
+    if (e.type === 'pointerdown' && e.clientX < document.documentElement.clientWidth) return;
+    scrolledByVisitor = true;
+  }
+  var visitorScrollEvents = ['wheel', 'touchstart', 'keydown', 'pointerdown'];
+  visitorScrollEvents.forEach(function (t) { window.addEventListener(t, onVisitorScroll, { capture: true, passive: true }); });
   function settleOnLanding() {
+    visitorScrollEvents.forEach(function (t) { window.removeEventListener(t, onVisitorScroll, { capture: true, passive: true }); });
     var s = sectionFor(location.hash);
     if (!s) return;
     if (location.hash !== s.hash) history.replaceState(history.state, '', location.pathname + location.search + s.hash);
+    var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    if (nav && (nav.type === 'reload' || nav.type === 'back_forward')) return;
+    if (scrolledByVisitor) return;
     scrollToSection(s.el, true);
   }
   if (document.readyState === 'complete') settleOnLanding();

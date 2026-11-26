@@ -43,6 +43,15 @@ if (!hostDeclarations.includes('--footer-blue')) throw new Error('ClarkSiteFoote
   (function () {
     var host = document.querySelector('clark-site-footer');
     var root = host && host.shadowRoot;
+    // Older browsers (Firefox before 123, Safari before 16.4) leave the
+    // <template> as it is instead of turning it into the shadow root: do that
+    // here, so the footer still shows.
+    var template = host && !root && host.attachShadow && host.querySelector('template[shadowrootmode]');
+    if (template) {
+      root = host.attachShadow({ mode: 'open' });
+      root.appendChild(template.content);
+      template.remove();
+    }
     var proxy = document.getElementById('clark-cookie-settings');
     if (!root || !proxy) return;
     root.addEventListener('click', function (e) {

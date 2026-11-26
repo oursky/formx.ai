@@ -2,7 +2,7 @@
 /* 9. Menu toggle (use case pages only) */
 (function(){var h=document.querySelector('header.nv'),b=h&&h.querySelector('.nv-burger');if(!b||!h.querySelector('.uc-links'))return;
 b.addEventListener('click',function(){var o=!h.hasAttribute('data-open');o?h.setAttribute('data-open',''):h.removeAttribute('data-open');b.setAttribute('aria-expanded',o?'true':'false');});
-h.querySelectorAll('.nv-panel a').forEach(function(a){a.addEventListener('click',function(){h.removeAttribute('data-open');b.setAttribute('aria-expanded','false');});});})();
+h.querySelectorAll('.nv-panel a,.nv-cta a').forEach(function(a){a.addEventListener('click',function(){h.removeAttribute('data-open');b.setAttribute('aria-expanded','false');});});})();
 /* 11. Mobile workflow: measure the cards so each keeps fixed padding */
 (function(){var mq=window.matchMedia('(max-width:760px)');
 function fit(){document.querySelectorAll('.ifx').forEach(function(x){var c=x.querySelectorAll('.ib');if(!mq.matches||c.length<4){['--y1','--y2','--d1','--d2','--ct','--ifx-h'].forEach(function(v){x.style.removeProperty(v)});return;}
