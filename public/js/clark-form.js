@@ -21,11 +21,18 @@
  *  - The thank-you only shows once Netlify has accepted the entry. While
  *    sending, the button says "Sending…"; if sending fails, the form stays and
  *    an error with our email address shows instead.
+ *  - 1.5 seconds after the thank-you shows, the visitor goes on to the Clark
+ *    demo booking page (Calendly), as on /schedule-demo/. Bot entries stay on
+ *    the thank-you.
  */
 (function () {
   'use strict';
 
   var FORM_NAME = 'clark-demo';
+  // After the thank-you shows, go to the Clark demo booking page (Calendly),
+  // the same journey as /schedule-demo/ (1.5 seconds on the thank-you).
+  var BOOKING_URL = 'https://go.formx.ai/clark-schedule-demo';
+  var REDIRECT_DELAY = 1500;
   var CAPTCHA_W = 304; // Google's widget size, in px
   var CAPTCHA_H = 78;
   var MSG = {
@@ -211,6 +218,8 @@
         setSending(form, button, false);
         form.__clarkSent = true;
         button.click(); // let the page's own handler show the thank-you
+        // Then on to booking a time, as on /schedule-demo/.
+        setTimeout(function () { window.location.href = BOOKING_URL; }, REDIRECT_DELAY);
       })
       .catch(function () {
         setSending(form, button, false);
@@ -228,4 +237,127 @@
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', prepare);
   else prepare();
+
+  // ---- In-page links ("Book a demo", nav, "See how it works") -------------
+
+  // A plain jump can stop short or run past its section: on /clark/ the
+  // scroll-driven chat demos get shorter as the page scrolls past them, so
+  // every section below them moves up mid-scroll. Keep aiming at the
+  // section's current spot until the page settles there.
+
+  // The Clark page section a "#id" or "#id?distinct_id=…" fragment points to.
+  function sectionFor(hash) {
+    var m = /^#([^?]+)/.exec(hash || '');
+    if (!m) return null;
+    var id = m[1];
+    try { id = decodeURIComponent(id); } catch (err) { /* keep as is */ }
+    if (id === 'early-access') id = 'book-a-demo'; // the form's old name, for links shared before the rename
+    var el = document.getElementById(id);
+    return el && el.closest('#page') ? { el: el, hash: '#' + id } : null;
+  }
+
+  // Scroll to the section: eased over up to a second (instantly with
+  // `instant`, or when the visitor prefers reduced motion), then hold on it
+  // until it stops moving. Scrolling by the visitor takes over at once.
+  var currentScroll = 0; // a new scroll cancels one still in progress
+  function scrollToSection(target, instant) {
+    var me = ++currentScroll;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Where the page should stop: wherever the browser's own jump to the
+    // section would land (scroll-margin and page zoom included). Measured with
+    // an instant jump and straight back, in the same frame, so nothing is
+    // painted in between.
+    function spot() {
+      var y = window.pageYOffset;
+      target.scrollIntoView({ block: 'start', behavior: 'instant' });
+      var s = window.pageYOffset;
+      window.scrollTo({ top: y, behavior: 'instant' });
+      return s;
+    }
+    function jump(y) { window.scrollTo({ top: Math.round(y), behavior: 'instant' }); }
+    var from = window.pageYOffset, start = null, still = 0, frames = 0, stopped = false;
+    var duration = instant || reduce ? 0 : Math.min(1000, 450 + Math.abs(spot() - from) / 20);
+    function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    var takeover = ['wheel', 'touchstart', 'keydown', 'pointerdown'];
+    function stop() { stopped = true; takeover.forEach(function (t) { window.removeEventListener(t, onTakeover, true); }); }
+    function onTakeover(e) {
+      // A press only counts on the page's scrollbar, or with the middle button
+      // (auto-scroll). Other clicks on the page leave the scroll running.
+      if (e.type === 'pointerdown' && e.button !== 1 && e.clientX < document.documentElement.clientWidth) return;
+      stop();
+    }
+    takeover.forEach(function (t) { window.addEventListener(t, onTakeover, true); });
+    requestAnimationFrame(function step(now) {
+      if (stopped || me !== currentScroll || ++frames > 240) return stop(); // at most ~4s
+      if (start === null) start = now;
+      var t = duration ? Math.min(1, (now - start) / duration) : 1;
+      var aim = spot(); // re-read every frame: the section may have moved
+      jump(from + (aim - from) * ease(t));
+      if (t === 1) { if (Math.abs(window.pageYOffset - aim) <= 1) { if (++still > 12) return stop(); } else still = 0; }
+      requestAnimationFrame(step);
+    });
+  }
+
+  // Move keyboard focus to the section, so the next Tab carries on from there
+  // instead of from the link in the header. The section only takes focus for
+  // this (no focus ring, no scrolling) and goes back to normal once focus
+  // moves on.
+  function focusSection(el) {
+    if (el.hasAttribute('tabindex')) { try { el.focus({ preventScroll: true }); } catch (err) { /* ignore */ } return; }
+    var outline = el.style.outline;
+    el.setAttribute('tabindex', '-1');
+    el.style.outline = 'none';
+    el.addEventListener('blur', function tidy() {
+      el.removeEventListener('blur', tidy);
+      el.removeAttribute('tabindex');
+      el.style.outline = outline;
+    });
+    try { el.focus({ preventScroll: true }); } catch (err) { /* ignore */ }
+  }
+
+  // Clicks. Also handles links a tag has rewritten to "#section?distinct_id=…"
+  // or to a full URL with that fragment. Runs before the site's own
+  // ?distinct_id fix (Analytics.astro), which then leaves these clicks alone.
+  window.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || (a.target && a.target !== '_self')) return;
+    var url;
+    try { url = new URL(a.href); } catch (err) { return; }
+    if (url.origin !== location.origin || url.pathname !== location.pathname) return;
+    var s = sectionFor(url.hash);
+    if (!s) return;
+    e.preventDefault();
+    if (location.hash !== s.hash) history.pushState(history.state, '', location.pathname + location.search + s.hash);
+    focusSection(s.el);
+    scrollToSection(s.el, false);
+  }, true);
+
+  // Opening a page at a section (e.g. /clark/#security, or with
+  // ?distinct_id=… after it): the browser jumps there before the chat demos
+  // have settled, so settle onto the section once the page has loaded. The
+  // site's ?distinct_id fix tidies the address on load first.
+  // Leave the page where it is when the visitor reloads or comes back with
+  // Back/Forward (the browser puts them back where they were), or when they
+  // have already scrolled the page themselves before it finished loading.
+  var scrolledByVisitor = false;
+  function onVisitorScroll(e) {
+    // A press only counts when it is on the page's scrollbar.
+    if (e.type === 'pointerdown' && e.clientX < document.documentElement.clientWidth) return;
+    scrolledByVisitor = true;
+  }
+  var visitorScrollEvents = ['wheel', 'touchstart', 'keydown', 'pointerdown'];
+  visitorScrollEvents.forEach(function (t) { window.addEventListener(t, onVisitorScroll, { capture: true, passive: true }); });
+  function settleOnLanding() {
+    visitorScrollEvents.forEach(function (t) { window.removeEventListener(t, onVisitorScroll, { capture: true, passive: true }); });
+    var s = sectionFor(location.hash);
+    if (!s) return;
+    if (location.hash !== s.hash) history.replaceState(history.state, '', location.pathname + location.search + s.hash);
+    var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    if (nav && (nav.type === 'reload' || nav.type === 'back_forward')) return;
+    if (scrolledByVisitor) return;
+    scrollToSection(s.el, true);
+  }
+  if (document.readyState === 'complete') settleOnLanding();
+  else window.addEventListener('load', settleOnLanding);
 })();

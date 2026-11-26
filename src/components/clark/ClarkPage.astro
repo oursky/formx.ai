@@ -8,7 +8,12 @@
 import Analytics from '@/components/head/Analytics.astro';
 import CookieConsent from '@/components/head/CookieConsent.astro';
 import SEO from '@/components/head/SEO.astro';
+import FontLoader from '@/components/head/FontLoader.astro';
+import ClarkSiteFooter from '@/components/clark/ClarkSiteFooter.astro';
 import { prerenderClarkPage } from '@/lib/clark-prerender';
+import { toAbsoluteUrl } from '@/lib/constants';
+import fs from 'node:fs';
+import path from 'node:path';
 
 interface Props {
   html: string;
@@ -38,6 +43,15 @@ if (!title || !description) throw new Error('ClarkPage: page <head> needs a <tit
 const decode = (s: string) => s.replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const head = rawHead.replace(TITLE_RE, '').replace(DESC_RE, '');
 
+// Link preview images (public/images/clark/og/): a horizontal one (also used
+// by SEO.astro for og:image and twitter:image) and a square one, per page.
+const slug = Astro.url.pathname.replace(/^\/clark\/?/, '').replace(/\/$/, '') || 'index';
+const ogImage = (shape: 'horizontal' | 'square') => toAbsoluteUrl(`/images/clark/og/clark-${slug}-${shape}.jpg`);
+const OG_IMAGES_DIR = path.join(process.cwd(), 'public/images/clark/og');
+for (const shape of ['horizontal', 'square'] as const) {
+  if (!fs.existsSync(path.join(OG_IMAGES_DIR, `clark-${slug}-${shape}.jpg`))) throw new Error(`ClarkPage: missing link preview image clark-${slug}-${shape}.jpg`);
+}
+
 // Put the page's first render into <div id="page"> so crawlers that don't run
 // JavaScript can read the text. clark-runtime.js replaces it with the same
 // content on load. See src/lib/clark-prerender.ts.
@@ -54,7 +68,16 @@ const body = rawBody.replace(PAGE_DIV, () => `<div id="page"><div data-clark-pre
 <html lang={lang}>
   <head>
     <Fragment set:html={head} />
-    <SEO title={decode(title)} description={decode(description)} />
+    <SEO title={decode(title)} description={decode(description)} ogImage={ogImage('horizontal')} />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
+    <meta property="og:image:alt" content="FormX.ai Clark" />
+    <meta property="og:image" content={ogImage('square')} />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="2400" />
+    <meta property="og:image:alt" content="FormX.ai Clark" />
+    <meta property="og:site_name" content="FormX.ai" />
+    <FontLoader />
     <link href="/images/ui/Favicon_32x32.png" rel="shortcut icon" type="image/x-icon" />
     <link href="/images/ui/Favicon_256x256.png" rel="apple-touch-icon" />
     <Analytics />
@@ -62,6 +85,7 @@ const body = rawBody.replace(PAGE_DIV, () => `<div id="page"><div data-clark-pre
   </head>
   <body>
     <Fragment set:html={body} />
+    <ClarkSiteFooter />
 
     <!--
       Declares the "clark-demo" form for Netlify Forms. Netlify only detects forms

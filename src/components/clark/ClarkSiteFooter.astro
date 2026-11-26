@@ -1,0 +1,64 @@
+---
+// The site-wide footer (components/footer/Footer.astro), unchanged, for the
+// Clark pages.
+//
+// The footer is styled by the site's main CSS, which the Clark pages
+// deliberately don't load (it would restyle their approved design). So the
+// footer sits in its own shadow root with the site's stylesheets: the site CSS
+// can't reach the Clark page, and the Clark CSS can't reach the footer.
+//
+// Inside a shadow root, `:root` and `body` rules don't match, so the site's
+// :root variables and body text styles are applied to the shadow host instead.
+import fs from 'node:fs';
+import path from 'node:path';
+import Footer from '@/components/footer/Footer.astro';
+import mainCssUrl from '@/styles/main.css?url';
+import tailwindCssUrl from '@/styles/tailwind.css?url';
+import globalCssUrl from '@/styles/global.css?url';
+
+const mainCss = fs.readFileSync(path.join(process.cwd(), 'src/styles/main.css'), 'utf8');
+const hostDeclarations = [...mainCss.matchAll(/(?:^|\n)(?::root|body)\s*\{([^{}]*)\}/g)]
+  .map((m) => m[1].trim())
+  .join('\n');
+if (!hostDeclarations.includes('--footer-blue')) throw new Error('ClarkSiteFooter: could not find the site :root variables in main.css');
+---
+
+<clark-site-footer style="display:block">
+  <template shadowrootmode="open">
+    <link rel="stylesheet" href={mainCssUrl} />
+    <link rel="stylesheet" href={tailwindCssUrl} />
+    <link rel="stylesheet" href={globalCssUrl} />
+    <style set:html={`:host{display:block;\n${hostDeclarations}\n}`} />
+    <Footer />
+  </template>
+</clark-site-footer>
+
+<!--
+  The footer's "Cookie Settings" link is inside the shadow root, where the
+  cookie banner script can't see it. Forward its clicks to this hidden link,
+  which the cookie banner script does handle.
+-->
+<a href="#" data-cc="show-preferencesModal" hidden aria-hidden="true" tabindex="-1" id="clark-cookie-settings"></a>
+<script is:inline>
+  (function () {
+    var host = document.querySelector('clark-site-footer');
+    var root = host && host.shadowRoot;
+    // Older browsers (Firefox before 123, Safari before 16.4) leave the
+    // <template> as it is instead of turning it into the shadow root: do that
+    // here, so the footer still shows.
+    var template = host && !root && host.attachShadow && host.querySelector('template[shadowrootmode]');
+    if (template) {
+      root = host.attachShadow({ mode: 'open' });
+      root.appendChild(template.content);
+      template.remove();
+    }
+    var proxy = document.getElementById('clark-cookie-settings');
+    if (!root || !proxy) return;
+    root.addEventListener('click', function (e) {
+      var link = e.target.closest && e.target.closest('[data-cc="show-preferencesModal"]');
+      if (!link) return;
+      e.preventDefault();
+      proxy.click();
+    });
+  })();
+</script>
